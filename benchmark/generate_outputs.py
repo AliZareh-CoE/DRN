@@ -33,7 +33,7 @@ def generate_reviewer_response(all_results, theoretical, output_dir):
 
     # Extract key numbers
     drn = next((r for r in all_results if 'DRN' in r.get('method', '')), {})
-    drn_acc = drn.get('accuracy', 0.90) * 100
+    drn_acc = drn.get('accuracy', 0.865) * 100
     drn_params = drn.get('n_parameters', 7_700_000)
     drn_infer_ms = drn.get('inference_time_per_sample_ms', 0.5)
     drn_mem = drn.get('train_peak_memory_mb', 30)
@@ -122,7 +122,7 @@ def generate_talking_points(all_results, theoretical, output_dir):
     """Generate talking_points.md with key arguments."""
 
     drn = next((r for r in all_results if 'DRN' in r.get('method', '')), {})
-    drn_acc = drn.get('accuracy', 0.90) * 100
+    drn_acc = drn.get('accuracy', 0.865) * 100
     drn_params = drn.get('n_parameters', 7_700_000)
     drn_infer_ms = drn.get('inference_time_per_sample_ms', 0.5)
     drn_mem = drn.get('train_peak_memory_mb', 30)

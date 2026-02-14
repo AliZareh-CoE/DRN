@@ -244,7 +244,7 @@ def profile_drn(data=None):
     return {
         'method': 'DRN (Ours)',
         'category': 'Deep Learning (Custom)',
-        'accuracy': 0.90,  # Final test accuracy from paper
+        'accuracy': 0.865,  # From paper
         'total_parameters': int(total_params),
         'trainable_parameters': int(trainable_params),
         'model_size_mb': float(model_size_mb),
