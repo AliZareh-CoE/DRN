@@ -81,7 +81,12 @@ def _run_h2o(X_train, y_train, X_test, y_test, time_budget):
 
 def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
     """Run AutoGluon benchmark."""
+    import os
     from autogluon.tabular import TabularPredictor
+
+    # Force XGBoost to CPU mode — its GPU build probes CUDA even with num_gpus=0
+    old_cuda = os.environ.get('CUDA_VISIBLE_DEVICES')
+    os.environ['CUDA_VISIBLE_DEVICES'] = ''
 
     tmpdir = tempfile.mkdtemp(prefix='ag_')
     try:
@@ -137,6 +142,11 @@ def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
         }
     finally:
         shutil.rmtree(tmpdir, ignore_errors=True)
+        # Restore CUDA_VISIBLE_DEVICES
+        if old_cuda is not None:
+            os.environ['CUDA_VISIBLE_DEVICES'] = old_cuda
+        else:
+            os.environ.pop('CUDA_VISIBLE_DEVICES', None)
 
 
 
