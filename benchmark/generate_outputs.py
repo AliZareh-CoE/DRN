@@ -19,7 +19,7 @@ sys.path.insert(0, project_root)
 from benchmark.data_utils import prepare_all_data
 from benchmark.classical_ml import run_all_classical
 from benchmark.automl_benchmark import run_all_automl
-from benchmark.drn_profiler import profile_drn
+from benchmark.drn_profiler import profile_drn, benchmark_drn
 from benchmark.complexity_analysis import theoretical_complexity, compute_scaling_projections
 from benchmark.visualize import (
     plot_absolute_comparison, plot_log_comparison,
@@ -213,6 +213,8 @@ def main():
                         help='Skip classical ML benchmarks')
     parser.add_argument('--output-dir', default='benchmark/outputs',
                         help='Output directory for results')
+    parser.add_argument('--skip-drn-train', action='store_true',
+                        help='Skip DRN training (profile only, no accuracy)')
     parser.add_argument('--time-budget', type=int, default=600,
                         help='AutoML time budget in seconds (default: 600)')
     args = parser.parse_args()
@@ -251,9 +253,13 @@ def main():
     else:
         print("\n[3/7] Skipping AutoML benchmarks")
 
-    # Step 4: DRN profiling
-    print("\n[4/7] Profiling DRN model...")
-    drn_result = profile_drn(data)
+    # Step 4: DRN benchmarking (train + profile at raw 32x21 shape)
+    if not args.skip_drn_train:
+        print("\n[4/7] Training and benchmarking DRN at raw (32,21) input shape...")
+        drn_result = benchmark_drn(data)
+    else:
+        print("\n[4/7] Profiling DRN model (no training)...")
+        drn_result = profile_drn(data)
     all_results.append(drn_result)
 
     # Step 5: Theoretical complexity

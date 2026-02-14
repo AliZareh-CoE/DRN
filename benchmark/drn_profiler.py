@@ -13,7 +13,7 @@ import torch.nn as nn
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models import DualRegionNet
-from data import normalize_data_robust, enhance_features_advanced
+from data import normalize_data_robust
 from benchmark.data_utils import prepare_all_data
 
 
@@ -182,26 +182,20 @@ def measure_memory(model, ob_shape, pcx_shape, device='cpu'):
     return {'peak_memory_mb': float(peak / 1e6), 'device': 'cpu'}
 
 
-def get_enhanced_input_shapes(data):
-    """Get input shapes after normalization and enhancement."""
-    X_ob_n, _, _ = normalize_data_robust(data['X_ob_train'])
-    X_ob_e = enhance_features_advanced(X_ob_n)
-    ob_channels, ob_bands = X_ob_e.shape[1], X_ob_e.shape[2]
-
-    X_pcx_n, _, _ = normalize_data_robust(data['X_pcx_train'])
-    X_pcx_e = enhance_features_advanced(X_pcx_n)
-    pcx_channels, pcx_bands = X_pcx_e.shape[1], X_pcx_e.shape[2]
-
+def get_raw_input_shapes(data):
+    """Get raw input shapes (32, 21) — no feature enhancement."""
+    ob_channels, ob_bands = data['X_ob_train'].shape[1], data['X_ob_train'].shape[2]
+    pcx_channels, pcx_bands = data['X_pcx_train'].shape[1], data['X_pcx_train'].shape[2]
     return ob_channels, ob_bands, pcx_channels, pcx_bands
 
 
 def profile_drn(data=None):
-    """Full profiling of DRN model."""
+    """Full profiling of DRN model using raw (32,21) input shapes."""
     if data is None:
         data = prepare_all_data()
 
-    ob_channels, ob_bands, pcx_channels, pcx_bands = get_enhanced_input_shapes(data)
-    print(f"  Enhanced input shapes: OB=({ob_channels}, {ob_bands}), PCx=({pcx_channels}, {pcx_bands})")
+    ob_channels, ob_bands, pcx_channels, pcx_bands = get_raw_input_shapes(data)
+    print(f"  Raw input shapes: OB=({ob_channels}, {ob_bands}), PCx=({pcx_channels}, {pcx_bands})")
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f"  Using device: {device}")
@@ -244,7 +238,7 @@ def profile_drn(data=None):
     return {
         'method': 'DRN (Ours)',
         'category': 'Deep Learning (Custom)',
-        'accuracy': 0.90,  # From paper
+        'accuracy': None,  # Set by benchmark_drn() when actually trained
         'total_parameters': int(total_params),
         'trainable_parameters': int(trainable_params),
         'model_size_mb': float(model_size_mb),
@@ -261,10 +255,8 @@ def profile_drn(data=None):
         'inference_peak_memory_mb': float(memory['peak_memory_mb']),
         'n_parameters': int(total_params),
         'input_shapes': {
-            'ob_raw': [32, 21],
-            'pcx_raw': [32, 21],
-            'ob_enhanced': [ob_channels, ob_bands],
-            'pcx_enhanced': [pcx_channels, pcx_bands],
+            'ob': [ob_channels, ob_bands],
+            'pcx': [pcx_channels, pcx_bands],
         },
         'architecture_summary': {
             'shared_blocks': 3,
@@ -285,6 +277,82 @@ def profile_drn(data=None):
             'gradient_clipping': 1.0,
         },
     }
+
+
+def benchmark_drn(data=None, config=None):
+    """
+    Train and evaluate DRN with raw (32,21) input shapes.
+    Uses the same train/test split as classical ML for fair comparison.
+    """
+    from config import CONFIG
+    from train import train_ensemble
+    from benchmark.data_utils import load_balanced_data
+
+    if data is None:
+        data = prepare_all_data()
+    if config is None:
+        config = CONFIG.copy()
+
+    X_ob, X_pcx, y_encoded, label_encoder = load_balanced_data()
+
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    print(f"  Training DRN at raw input shape (32, 21) on {device}...")
+
+    tracemalloc.start()
+    t0 = time.perf_counter()
+    models, ensemble_acc, metrics = train_ensemble(
+        X_ob, X_pcx, y_encoded, config, label_encoder, device=device,
+        use_enhancement=False,
+    )
+    train_time = time.perf_counter() - t0
+    _, train_mem = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
+
+    # Measure inference time on test set
+    ob_channels, ob_bands = data['X_ob_test'].shape[1], data['X_ob_test'].shape[2]
+    pcx_channels, pcx_bands = data['X_pcx_test'].shape[1], data['X_pcx_test'].shape[2]
+
+    model = models[0]
+    model.eval()
+    model.to(device)
+
+    # Normalize test data for inference timing
+    _, _, X_ob_te_n = normalize_data_robust(data['X_ob_train'], X_test=data['X_ob_test'])
+    _, _, X_pcx_te_n = normalize_data_robust(data['X_pcx_train'], X_test=data['X_pcx_test'])
+
+    ob_tensor = torch.FloatTensor(X_ob_te_n).to(device)
+    pcx_tensor = torch.FloatTensor(X_pcx_te_n).to(device)
+
+    tracemalloc.start()
+    times = []
+    with torch.no_grad():
+        for _ in range(10):
+            t0 = time.perf_counter()
+            _ = model(ob_tensor, pcx_tensor)
+            times.append(time.perf_counter() - t0)
+    _, infer_mem = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
+
+    infer_time = np.median(times)
+    n_test = len(data['y_test'])
+    total_params = sum(p.numel() for p in model.parameters())
+
+    # Get profiling results too
+    profile = profile_drn(data)
+    profile.update({
+        'accuracy': float(ensemble_acc),
+        'train_time_sec': float(train_time),
+        'inference_time_sec': float(infer_time),
+        'inference_time_per_sample_ms': float(infer_time / n_test * 1000),
+        'train_peak_memory_mb': float(train_mem / 1e6),
+        'inference_peak_memory_mb': float(infer_mem / 1e6),
+        'n_parameters': int(total_params),
+        'val_metrics': metrics,
+    })
+
+    print(f"  DRN Accuracy: {ensemble_acc*100:.2f}%")
+    print(f"  Train time: {train_time:.1f}s, Params: {total_params:,}")
+    return profile
 
 
 if __name__ == '__main__':

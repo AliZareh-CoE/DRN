@@ -1,6 +1,5 @@
 """
 AutoML benchmarks: H2O AutoML, AutoGluon.
-Google AutoML handled as theoretical-only.
 """
 
 import time
@@ -140,30 +139,6 @@ def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
         shutil.rmtree(tmpdir, ignore_errors=True)
 
 
-def _google_automl_theoretical():
-    """Google AutoML Tables: theoretical analysis only (cloud-only service)."""
-    return {
-        'method': 'Google AutoML Tables',
-        'category': 'AutoML (Cloud)',
-        'accuracy': None,
-        'note': 'Cloud-only service. Cannot benchmark locally. '
-                'Based on published literature, Google AutoML Tables typically achieves '
-                'comparable accuracy to H2O on tabular datasets. '
-                'Training time depends on cloud configuration (typically 1-8 hours). '
-                'Cost: ~$19.32/hour for training.',
-        'theoretical_complexity': {
-            'training': 'O(n * d * T_search) — neural architecture search budget',
-            'inference': 'O(d * model_size) — varies by selected architecture',
-            'memory': 'Cloud-managed, typically 2-16 GB',
-        },
-        'train_time_sec': None,
-        'inference_time_sec': None,
-        'inference_time_per_sample_ms': None,
-        'train_peak_memory_mb': None,
-        'inference_peak_memory_mb': None,
-        'n_parameters': 'N/A (cloud-managed)',
-    }
-
 
 AUTOML_RUNNERS = {
     'H2O AutoML': _run_h2o,
@@ -209,8 +184,6 @@ def run_all_automl(data=None, time_budget=DEFAULT_TIME_BUDGET):
                 'n_parameters': None,
             })
 
-    # Always include Google AutoML theoretical entry
-    results.append(_google_automl_theoretical())
     return results
 
 

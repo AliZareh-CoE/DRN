@@ -122,20 +122,6 @@ def theoretical_complexity(n=1140, d=1344, K=4):
         'scales_with_n_inference': False,
     }
 
-    methods['Google AutoML Tables'] = {
-        'training_complexity': r'$O(NAS \cdot C_{model})$',
-        'training_bigo': 'O(NAS*C_model)',
-        'inference_complexity': r'$O(C_{selected})$',
-        'inference_bigo': 'O(C_selected)',
-        'memory_complexity': 'Cloud-managed',
-        'memory_bigo': 'Cloud',
-        'training_ops': None,
-        'inference_ops': None,
-        'memory_elements': None,
-        'note': 'Neural Architecture Search; cloud-only, cost ~$19/hr',
-        'scales_with_n_inference': False,
-    }
-
     # --- DRN ---
     drn_params = 7_700_000  # Will be updated with actual measurement
     methods['DRN (Ours)'] = {

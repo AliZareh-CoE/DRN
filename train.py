@@ -117,7 +117,7 @@ def train_model(model, train_loader, val_loader, device, config, fold=1):
     return model, best_val_acc, []
 
 
-def train_ensemble(X_ob, X_pcx, y_encoded, config, label_encoder, device=None, model_kwargs=None):
+def train_ensemble(X_ob, X_pcx, y_encoded, config, label_encoder, device=None, model_kwargs=None, use_enhancement=True):
     """Train an ensemble with K-fold CV."""
     print("\n=== Training Ensemble ===")
     
@@ -180,12 +180,20 @@ def train_ensemble(X_ob, X_pcx, y_encoded, config, label_encoder, device=None, m
         _, _, X_ob_te_n = normalize_data_robust(X_ob_tr, None, X_ob_test)
         _, _, X_pcx_te_n = normalize_data_robust(X_pcx_tr, None, X_pcx_test)
 
-        X_ob_tr_e = enhance_features_advanced(X_ob_tr_n)
-        X_ob_va_e = enhance_features_advanced(X_ob_va_n)
-        X_ob_te_e = enhance_features_advanced(X_ob_te_n)
-        X_pcx_tr_e = enhance_features_advanced(X_pcx_tr_n)
-        X_pcx_va_e = enhance_features_advanced(X_pcx_va_n)
-        X_pcx_te_e = enhance_features_advanced(X_pcx_te_n)
+        if use_enhancement:
+            X_ob_tr_e = enhance_features_advanced(X_ob_tr_n)
+            X_ob_va_e = enhance_features_advanced(X_ob_va_n)
+            X_ob_te_e = enhance_features_advanced(X_ob_te_n)
+            X_pcx_tr_e = enhance_features_advanced(X_pcx_tr_n)
+            X_pcx_va_e = enhance_features_advanced(X_pcx_va_n)
+            X_pcx_te_e = enhance_features_advanced(X_pcx_te_n)
+        else:
+            X_ob_tr_e = X_ob_tr_n
+            X_ob_va_e = X_ob_va_n
+            X_ob_te_e = X_ob_te_n
+            X_pcx_tr_e = X_pcx_tr_n
+            X_pcx_va_e = X_pcx_va_n
+            X_pcx_te_e = X_pcx_te_n
 
         tr_ds = DualInputDataset(torch.FloatTensor(X_ob_tr_e), torch.FloatTensor(X_pcx_tr_e), torch.LongTensor(y_tr))
         va_ds = DualInputDataset(torch.FloatTensor(X_ob_va_e), torch.FloatTensor(X_pcx_va_e), torch.LongTensor(y_va))
