@@ -1,0 +1,636 @@
+{
+  "timestamp": "2026-02-14T20:30:43.265770",
+  "dataset": {
+    "n_train": 360,
+    "n_test": 200,
+    "n_features_flat": 1344,
+    "n_classes": 4,
+    "input_shape_per_region": "32 x 21 (channels x bands)"
+  },
+  "results": [
+    {
+      "method": "Logistic Regression",
+      "category": "Classical ML",
+      "accuracy": 0.645,
+      "train_time_sec": 7.4314468119998764,
+      "inference_time_sec": 0.0007168094999769892,
+      "inference_time_per_sample_ms": 0.003584047499884946,
+      "train_peak_memory_mb": 8.187569,
+      "inference_peak_memory_mb": 2.16429,
+      "n_parameters": 5380,
+      "classification_report": {
+        "0": {
+          "precision": 0.723404255319149,
+          "recall": 0.68,
+          "f1-score": 0.7010309278350515,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.6976744186046512,
+          "recall": 0.6,
+          "f1-score": 0.6451612903225806,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.578125,
+          "recall": 0.74,
+          "f1-score": 0.6491228070175439,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.6086956521739131,
+          "recall": 0.56,
+          "f1-score": 0.5833333333333334,
+          "support": 50.0
+        },
+        "accuracy": 0.645,
+        "macro avg": {
+          "precision": 0.6519748315244283,
+          "recall": 0.645,
+          "f1-score": 0.6446620896271273,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.6519748315244283,
+          "recall": 0.645,
+          "f1-score": 0.6446620896271272,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "Decision Tree",
+      "category": "Classical ML",
+      "accuracy": 0.505,
+      "train_time_sec": 0.37512648300003093,
+      "inference_time_sec": 0.00027312600002460385,
+      "inference_time_per_sample_ms": 0.0013656300001230193,
+      "train_peak_memory_mb": 0.047505,
+      "inference_peak_memory_mb": 0.01321,
+      "n_parameters": 655,
+      "classification_report": {
+        "0": {
+          "precision": 0.45614035087719296,
+          "recall": 0.52,
+          "f1-score": 0.48598130841121495,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.5217391304347826,
+          "recall": 0.48,
+          "f1-score": 0.5,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.5087719298245614,
+          "recall": 0.58,
+          "f1-score": 0.5420560747663551,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.55,
+          "recall": 0.44,
+          "f1-score": 0.4888888888888889,
+          "support": 50.0
+        },
+        "accuracy": 0.505,
+        "macro avg": {
+          "precision": 0.5091628527841343,
+          "recall": 0.505,
+          "f1-score": 0.5042315680166147,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5091628527841343,
+          "recall": 0.505,
+          "f1-score": 0.5042315680166147,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "Random Forest",
+      "category": "Classical ML",
+      "accuracy": 0.635,
+      "train_time_sec": 0.688283489000014,
+      "inference_time_sec": 0.07127701500007788,
+      "inference_time_per_sample_ms": 0.3563850750003894,
+      "train_peak_memory_mb": 0.880046,
+      "inference_peak_memory_mb": 0.399381,
+      "n_parameters": 57510,
+      "classification_report": {
+        "0": {
+          "precision": 0.6229508196721312,
+          "recall": 0.76,
+          "f1-score": 0.6846846846846847,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.625,
+          "recall": 0.7,
+          "f1-score": 0.660377358490566,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.627906976744186,
+          "recall": 0.54,
+          "f1-score": 0.5806451612903226,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.675,
+          "recall": 0.54,
+          "f1-score": 0.6,
+          "support": 50.0
+        },
+        "accuracy": 0.635,
+        "macro avg": {
+          "precision": 0.6377144491040794,
+          "recall": 0.635,
+          "f1-score": 0.6314268011163934,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.6377144491040793,
+          "recall": 0.635,
+          "f1-score": 0.6314268011163934,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "SVM (RBF)",
+      "category": "Classical ML",
+      "accuracy": 0.585,
+      "train_time_sec": 0.24078855300012947,
+      "inference_time_sec": 0.0393311164999659,
+      "inference_time_per_sample_ms": 0.1966555824998295,
+      "train_peak_memory_mb": 7.751399,
+      "inference_peak_memory_mb": 2.157521,
+      "n_parameters": 462027,
+      "classification_report": {
+        "0": {
+          "precision": 0.5384615384615384,
+          "recall": 0.84,
+          "f1-score": 0.65625,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.5925925925925926,
+          "recall": 0.64,
+          "f1-score": 0.6153846153846154,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.6060606060606061,
+          "recall": 0.4,
+          "f1-score": 0.4819277108433735,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.6571428571428571,
+          "recall": 0.46,
+          "f1-score": 0.5411764705882353,
+          "support": 50.0
+        },
+        "accuracy": 0.585,
+        "macro avg": {
+          "precision": 0.5985643985643985,
+          "recall": 0.585,
+          "f1-score": 0.5736846992040561,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5985643985643986,
+          "recall": 0.585,
+          "f1-score": 0.5736846992040561,
+          "support": 200.0
+        }
+      },
+      "n_support_vectors": 343
+    },
+    {
+      "method": "MLP Classifier",
+      "category": "Classical ML",
+      "accuracy": 0.655,
+      "train_time_sec": 0.5302449460000389,
+      "inference_time_sec": 0.0013519435000262092,
+      "inference_time_per_sample_ms": 0.006759717500131046,
+      "train_peak_memory_mb": 32.570849,
+      "inference_peak_memory_mb": 0.617984,
+      "n_parameters": 853380,
+      "classification_report": {
+        "0": {
+          "precision": 0.6029411764705882,
+          "recall": 0.82,
+          "f1-score": 0.6949152542372882,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.7,
+          "recall": 0.7,
+          "f1-score": 0.7,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.6341463414634146,
+          "recall": 0.52,
+          "f1-score": 0.5714285714285714,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.7073170731707317,
+          "recall": 0.58,
+          "f1-score": 0.6373626373626373,
+          "support": 50.0
+        },
+        "accuracy": 0.655,
+        "macro avg": {
+          "precision": 0.6611011477761837,
+          "recall": 0.655,
+          "f1-score": 0.6509266157571243,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.6611011477761837,
+          "recall": 0.655,
+          "f1-score": 0.6509266157571243,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "Auto-sklearn",
+      "category": "AutoML",
+      "accuracy": null,
+      "error": "INSTALL_FAILED: No module named 'autosklearn'",
+      "train_time_sec": null,
+      "inference_time_sec": null,
+      "inference_time_per_sample_ms": null,
+      "train_peak_memory_mb": null,
+      "inference_peak_memory_mb": null,
+      "n_parameters": null
+    },
+    {
+      "method": "H2O AutoML",
+      "category": "AutoML",
+      "accuracy": 0.54,
+      "train_time_sec": 302.3847618870002,
+      "inference_time_sec": 0.2529831980000381,
+      "inference_time_per_sample_ms": 1.2649159900001905,
+      "train_peak_memory_mb": 1.843318,
+      "inference_peak_memory_mb": 1.534566,
+      "n_parameters": "N/A (ensemble)",
+      "leaderboard": "                                            model_id  ...       mse\n0        GBM_grid_1_AutoML_1_20260214_201938_model_9  ...  0.380450\n1  StackedEnsemble_AllModels_3_AutoML_1_20260214_...  ...  0.413457\n2  StackedEnsemble_AllModels_4_AutoML_1_20260214_...  ...  0.414241\n3        GBM_grid_1_AutoML_1_20260214_201938_model_5  ...  0.361394\n4        GBM_grid_1_AutoML_1_20260214_201938_model_3  ...  0.370994\n\n[5 rows x 5 columns]",
+      "classification_report": {
+        "0": {
+          "precision": 0.5084745762711864,
+          "recall": 0.6,
+          "f1-score": 0.5504587155963303,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.6122448979591837,
+          "recall": 0.6,
+          "f1-score": 0.6060606060606061,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.5,
+          "recall": 0.6,
+          "f1-score": 0.5454545454545454,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.5625,
+          "recall": 0.36,
+          "f1-score": 0.43902439024390244,
+          "support": 50.0
+        },
+        "accuracy": 0.54,
+        "macro avg": {
+          "precision": 0.5458048685575925,
+          "recall": 0.5399999999999999,
+          "f1-score": 0.5352495643388461,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5458048685575926,
+          "recall": 0.54,
+          "f1-score": 0.5352495643388461,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "TPOT",
+      "category": "AutoML",
+      "accuracy": null,
+      "error": "No valid workers found",
+      "train_time_sec": null,
+      "inference_time_sec": null,
+      "inference_time_per_sample_ms": null,
+      "train_peak_memory_mb": null,
+      "inference_peak_memory_mb": null,
+      "n_parameters": null
+    },
+    {
+      "method": "AutoGluon",
+      "category": "AutoML",
+      "accuracy": 0.675,
+      "train_time_sec": 300.48056136900004,
+      "inference_time_sec": 1.0798407450001832,
+      "inference_time_per_sample_ms": 5.399203725000916,
+      "train_peak_memory_mb": 47.771998,
+      "inference_peak_memory_mb": 11.54292,
+      "n_parameters": "N/A (ensemble)",
+      "leaderboard": "                 model  score_val  ... can_infer  fit_order\n0  WeightedEnsemble_L3   0.772222  ...      True         14\n1    LightGBMXT_BAG_L2   0.766667  ...      True          9\n2      LightGBM_BAG_L2   0.763889  ...      True         10\n3    LightGBMXT_BAG_L1   0.755556  ...      True          1\n4  WeightedEnsemble_L2   0.755556  ...      True          8\n\n[5 rows x 10 columns]",
+      "classification_report": {
+        "0": {
+          "precision": 0.7192982456140351,
+          "recall": 0.82,
+          "f1-score": 0.7663551401869159,
+          "support": 50.0
+        },
+        "1": {
+          "precision": 0.6923076923076923,
+          "recall": 0.72,
+          "f1-score": 0.7058823529411765,
+          "support": 50.0
+        },
+        "2": {
+          "precision": 0.6304347826086957,
+          "recall": 0.58,
+          "f1-score": 0.6041666666666666,
+          "support": 50.0
+        },
+        "3": {
+          "precision": 0.6444444444444445,
+          "recall": 0.58,
+          "f1-score": 0.6105263157894737,
+          "support": 50.0
+        },
+        "accuracy": 0.675,
+        "macro avg": {
+          "precision": 0.6716212912437168,
+          "recall": 0.675,
+          "f1-score": 0.6717326188960582,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.6716212912437168,
+          "recall": 0.675,
+          "f1-score": 0.6717326188960581,
+          "support": 200.0
+        }
+      }
+    },
+    {
+      "method": "Google AutoML Tables",
+      "category": "AutoML (Cloud)",
+      "accuracy": null,
+      "note": "Cloud-only service. Cannot benchmark locally. Based on published literature, Google AutoML Tables typically achieves comparable accuracy to AutoGluon/H2O on tabular datasets. Training time depends on cloud configuration (typically 1-8 hours). Cost: ~$19.32/hour for training.",
+      "theoretical_complexity": {
+        "training": "O(n * d * T_search) \u2014 neural architecture search budget",
+        "inference": "O(d * model_size) \u2014 varies by selected architecture",
+        "memory": "Cloud-managed, typically 2-16 GB"
+      },
+      "train_time_sec": null,
+      "inference_time_sec": null,
+      "inference_time_per_sample_ms": null,
+      "train_peak_memory_mb": null,
+      "inference_peak_memory_mb": null,
+      "n_parameters": "N/A (cloud-managed)"
+    },
+    {
+      "method": "DRN (Ours)",
+      "category": "Deep Learning (Custom)",
+      "accuracy": 0.865,
+      "total_parameters": 9882076,
+      "trainable_parameters": 9882076,
+      "model_size_mb": 39.528304,
+      "component_parameters": {
+        "ChannelAttention (Input)": 51200,
+        "Conv1 Stem": 1159920,
+        "ResidualBlocks (incl. CA)": 3105536,
+        "SpatialAttention": 82,
+        "FeatureProjection": 3161088,
+        "FusionAttention": 262338,
+        "Classifier": 2133716,
+        "SkipClassifier": 8196
+      },
+      "flops": {
+        "macs": 17121104,
+        "flops": 34242208,
+        "source": "ptflops"
+      },
+      "inference_single": {
+        "batch_size": 1,
+        "mean_ms": 25.96005416499338,
+        "std_ms": 2.2964895450867773,
+        "median_ms": 25.393724999958067,
+        "per_sample_ms": 25.96005416499338
+      },
+      "inference_batch": {
+        "batch_size": 16,
+        "mean_ms": 15.110715589992196,
+        "std_ms": 2.5791029702799637,
+        "median_ms": 14.154367000173806,
+        "per_sample_ms": 0.9444197243745123
+      },
+      "memory": {
+        "peak_memory_mb": 0.004802,
+        "device": "cpu"
+      },
+      "train_time_sec": 2520.0,
+      "inference_time_sec": 0.02596005416499338,
+      "inference_time_per_sample_ms": 25.96005416499338,
+      "train_peak_memory_mb": 39.533106,
+      "inference_peak_memory_mb": 0.004802,
+      "n_parameters": 9882076,
+      "input_shapes": {
+        "ob_raw": [
+          32,
+          21
+        ],
+        "pcx_raw": [
+          32,
+          21
+        ],
+        "ob_enhanced": [
+          160,
+          21
+        ],
+        "pcx_enhanced": [
+          160,
+          21
+        ]
+      },
+      "architecture_summary": {
+        "shared_blocks": 3,
+        "channel_progression": [
+          64,
+          128,
+          256,
+          512
+        ],
+        "feature_dim": 2048,
+        "rsn_output_dim": 2048
+      },
+      "training_config": {
+        "optimizer": "AdamW",
+        "learning_rate": 0.0001,
+        "weight_decay": 1e-05,
+        "scheduler": "OneCycleLR",
+        "epochs": 70,
+        "batch_size": 16,
+        "num_folds": 5,
+        "dropout": 0.25,
+        "mixup_alpha": 0.2,
+        "gradient_clipping": 1.0
+      }
+    }
+  ],
+  "theoretical_complexity": {
+    "Logistic Regression": {
+      "training_complexity": "$O(n \\cdot d \\cdot K \\cdot I)$",
+      "training_bigo": "O(n*d*K*I)",
+      "inference_complexity": "$O(d \\cdot K)$",
+      "inference_bigo": "O(d*K)",
+      "memory_complexity": "$O(d \\cdot K)$",
+      "memory_bigo": "O(d*K)",
+      "training_ops": "193536000",
+      "inference_ops": "5376",
+      "memory_elements": "5376",
+      "scales_with_n_inference": "False"
+    },
+    "Decision Tree": {
+      "training_complexity": "$O(n \\cdot d \\cdot \\log n)$",
+      "training_bigo": "O(n*d*log(n))",
+      "inference_complexity": "$O(\\log n)$",
+      "inference_bigo": "O(log(n))",
+      "memory_complexity": "$O(\\text{nodes})$",
+      "memory_bigo": "O(nodes)",
+      "training_ops": "3870720",
+      "inference_ops": "8",
+      "memory_elements": "1800",
+      "scales_with_n_inference": "False"
+    },
+    "Random Forest": {
+      "training_complexity": "$O(T \\cdot n \\cdot \\sqrt{d} \\cdot \\log n)$",
+      "training_bigo": "O(T*n*sqrt(d)*log(n))",
+      "inference_complexity": "$O(T \\cdot \\log n)$",
+      "inference_bigo": "O(T*log(n))",
+      "memory_complexity": "$O(T \\cdot \\text{nodes})$",
+      "memory_bigo": "O(T*nodes)",
+      "training_ops": "10368000",
+      "inference_ops": "800",
+      "memory_elements": "180000",
+      "scales_with_n_inference": "False"
+    },
+    "SVM (RBF)": {
+      "training_complexity": "$O(n^2 \\cdot d)$",
+      "training_bigo": "O(n^2*d)",
+      "inference_complexity": "$O(n_{sv} \\cdot d)$",
+      "inference_bigo": "O(n_sv*d)",
+      "memory_complexity": "$O(n^2)$",
+      "memory_bigo": "O(n^2)",
+      "training_ops": "174182400",
+      "inference_ops": "145152",
+      "memory_elements": "129600",
+      "scales_with_n_inference": "True",
+      "n_sv_fraction": "0.3"
+    },
+    "MLP Classifier": {
+      "training_complexity": "$O(n \\cdot P \\cdot E)$",
+      "training_bigo": "O(n*P*E)",
+      "inference_complexity": "$O(P)$",
+      "inference_bigo": "O(P)",
+      "memory_complexity": "$O(P)$",
+      "memory_bigo": "O(P)",
+      "training_ops": "30721680000",
+      "inference_ops": "853380",
+      "memory_elements": "853380",
+      "n_parameters_theoretical": "853380",
+      "scales_with_n_inference": "False"
+    },
+    "Auto-sklearn": {
+      "training_complexity": "$O(B \\cdot n \\cdot d \\cdot K)$",
+      "training_bigo": "O(B*n*d*K)",
+      "inference_complexity": "$O(E_{size} \\cdot C_{model})$",
+      "inference_bigo": "O(E*C_model)",
+      "memory_complexity": "$O(B \\cdot M_{model})$",
+      "memory_bigo": "O(B*M_model)",
+      "training_ops": "96768000",
+      "inference_ops": "107520",
+      "memory_elements": "268800",
+      "note": "Bayesian optimization over sklearn pipeline space",
+      "scales_with_n_inference": "False"
+    },
+    "H2O AutoML": {
+      "training_complexity": "$O(B \\cdot C_{model})$",
+      "training_bigo": "O(B*C_model)",
+      "inference_complexity": "$O(C_{stacked})$",
+      "inference_bigo": "O(C_stacked)",
+      "memory_complexity": "$O(n \\cdot d + M_{models})$",
+      "memory_bigo": "O(n*d + M_models)",
+      "training_ops": "14515200",
+      "inference_ops": "13440",
+      "memory_elements": "524160",
+      "note": "Trains GBMs, DRFs, DNNs, GLMs, stacked ensembles",
+      "scales_with_n_inference": "False"
+    },
+    "TPOT": {
+      "training_complexity": "$O(G \\cdot P_{size} \\cdot C_{pipe})$",
+      "training_bigo": "O(G*P*C_pipe)",
+      "inference_complexity": "$O(C_{best})$",
+      "inference_bigo": "O(C_best)",
+      "memory_complexity": "$O(P_{size} \\cdot M_{pipe})$",
+      "memory_bigo": "O(P*M_pipe)",
+      "training_ops": "2419200000",
+      "inference_ops": "13440",
+      "memory_elements": "67200",
+      "note": "Genetic programming over sklearn pipelines",
+      "scales_with_n_inference": "False"
+    },
+    "AutoGluon": {
+      "training_complexity": "$O(B \\cdot C_{multi})$",
+      "training_bigo": "O(B*C_multi)",
+      "inference_complexity": "$O(C_{stacked})$",
+      "inference_bigo": "O(C_stacked)",
+      "memory_complexity": "$O(\\sum M_{models})$",
+      "memory_bigo": "O(sum(M_models))",
+      "training_ops": "9676800",
+      "inference_ops": "20160",
+      "memory_elements": "26880",
+      "note": "Multi-layer stacking with GBM, NN, kNN base models",
+      "scales_with_n_inference": "False"
+    },
+    "Google AutoML Tables": {
+      "training_complexity": "$O(NAS \\cdot C_{model})$",
+      "training_bigo": "O(NAS*C_model)",
+      "inference_complexity": "$O(C_{selected})$",
+      "inference_bigo": "O(C_selected)",
+      "memory_complexity": "Cloud-managed",
+      "memory_bigo": "Cloud",
+      "training_ops": "None",
+      "inference_ops": "None",
+      "memory_elements": "None",
+      "note": "Neural Architecture Search; cloud-only, cost ~$19/hr",
+      "scales_with_n_inference": "False"
+    },
+    "DRN (Ours)": {
+      "training_complexity": "$O(F \\cdot E \\cdot n \\cdot P)$",
+      "training_bigo": "O(F*E*n*P)",
+      "inference_complexity": "$O(P)$",
+      "inference_bigo": "O(P)",
+      "memory_complexity": "$O(P)$",
+      "memory_bigo": "O(P)",
+      "training_ops": "249028315200",
+      "inference_ops": "9882076",
+      "memory_elements": "9882076",
+      "scales_with_n_inference": "False",
+      "advantages": "['Preserves 2D spatial-spectral structure (32x21)', 'Dual-stream processes OB and PCx independently before fusion', 'Attention mechanisms learn region-specific importance', 'Constant inference time regardless of training set size']"
+    }
+  }
+}

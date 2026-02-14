@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering
+\caption{Comprehensive comparison of DRN against classical ML and AutoML methods on the 4-class odor discrimination task (n=360 training samples, d=1,344 features).}
+\label{tab:complexity}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Method} & \textbf{Category} & \textbf{Acc. (\%)} & \textbf{Train (s)} & \textbf{Infer (ms)} & \textbf{Mem. (MB)} & \textbf{Params} & \textbf{Train Complexity} \\
+\midrule
+Logistic Regression & Classical ML & 64.5 & 7.4 & 0.004 & 8.2 & 5K & $O(n \cdot d \cdot K \cdot I)$ \\
+Decision Tree & Classical ML & 50.5 & 0.4 & 0.001 & 0.0 & 655 & $O(n \cdot d \cdot \log n)$ \\
+Random Forest & Classical ML & 63.5 & 0.7 & 0.356 & 0.9 & 58K & $O(T \cdot n \cdot \sqrt{d} \cdot \log n)$ \\
+SVM (RBF) & Classical ML & 58.5 & 0.2 & 0.197 & 7.8 & 462K & $O(n^2 \cdot d)$ \\
+MLP Classifier & Classical ML & 65.5 & 0.5 & 0.007 & 32.6 & 853K & $O(n \cdot P \cdot E)$ \\
+\midrule
+Auto-sklearn & AutoML & -- & -- & -- & -- & None & $O(B \cdot n \cdot d \cdot K)$ \\
+H2O AutoML & AutoML & 54.0 & 302.4 & 1.265 & 1.8 & N/A (ensemble) & $O(B \cdot C_{model})$ \\
+TPOT & AutoML & -- & -- & -- & -- & None & $O(G \cdot P_{size} \cdot C_{pipe})$ \\
+AutoGluon & AutoML & 67.5 & 300.5 & 5.399 & 47.8 & N/A (ensemble) & $O(B \cdot C_{multi})$ \\
+\midrule
+Google AutoML Tables & AutoML (Cloud) & -- & -- & -- & -- & N/A (cloud-managed) & $O(NAS \cdot C_{model})$ \\
+\midrule
+\textbf{DRN (Ours)} & \textbf{Deep Learning (Custom)} & \textbf{86.5} & \textbf{2520.0} & \textbf{25.960} & \textbf{39.5} & \textbf{9.9M} & \textbf{$O(F \cdot E \cdot n \cdot P)$} \\
+\bottomrule
+\end{tabular}
+\end{table*}

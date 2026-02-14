@@ -1,0 +1,17 @@
+# Core (likely already installed)
+numpy>=1.21
+pandas>=1.3
+scikit-learn>=1.0
+torch>=1.12
+matplotlib>=3.5
+psutil>=5.9
+
+# DRN profiling (FLOPs counting)
+ptflops>=0.7
+thop>=0.1
+
+# AutoML frameworks (install what you can - each is independently optional)
+# auto-sklearn>=0.15       # Requires Python 3.8-3.10, sklearn<1.2
+# tpot>=0.12               # Genetic programming over sklearn pipelines
+# h2o>=3.40                # Requires Java 8+
+# autogluon.tabular>=0.8   # Multi-layer stacking
