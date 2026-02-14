@@ -1,5 +1,5 @@
 """
-AutoML benchmarks: Auto-sklearn, H2O, TPOT, AutoGluon.
+AutoML benchmarks: H2O, TPOT, AutoGluon.
 Each wrapped in try/except for graceful degradation.
 Google AutoML handled as theoretical-only.
 """
@@ -18,60 +18,6 @@ from benchmark.data_utils import prepare_all_data
 
 # Time budgets (seconds)
 DEFAULT_TIME_BUDGET = 600  # 10 minutes
-
-
-def _run_autosklearn(X_train, y_train, X_test, y_test, time_budget):
-    """Run auto-sklearn benchmark."""
-    import autosklearn.classification
-
-    tmp_dir = tempfile.mkdtemp(prefix='askl_tmp_')
-    out_dir = tempfile.mkdtemp(prefix='askl_out_')
-    try:
-        automl = autosklearn.classification.AutoSklearnClassifier(
-            time_left_for_this_task=time_budget,
-            per_run_time_limit=max(30, time_budget // 10),
-            memory_limit=8192,
-            n_jobs=-1,
-            seed=42,
-            ensemble_size=20,
-            tmp_folder=tmp_dir,
-            output_folder=out_dir,
-        )
-
-        tracemalloc.start()
-        t0 = time.perf_counter()
-        automl.fit(X_train, y_train)
-        train_time = time.perf_counter() - t0
-        _, train_mem = tracemalloc.get_traced_memory()
-        tracemalloc.stop()
-
-        tracemalloc.start()
-        times = []
-        for _ in range(5):
-            t0 = time.perf_counter()
-            y_pred = automl.predict(X_test)
-            times.append(time.perf_counter() - t0)
-        _, infer_mem = tracemalloc.get_traced_memory()
-        tracemalloc.stop()
-
-        infer_time = np.median(times)
-
-        return {
-            'method': 'Auto-sklearn',
-            'category': 'AutoML',
-            'accuracy': float(accuracy_score(y_test, y_pred)),
-            'train_time_sec': float(train_time),
-            'inference_time_sec': float(infer_time),
-            'inference_time_per_sample_ms': float(infer_time / len(y_test) * 1000),
-            'train_peak_memory_mb': float(train_mem / 1e6),
-            'inference_peak_memory_mb': float(infer_mem / 1e6),
-            'n_parameters': 'N/A (ensemble)',
-            'best_model': str(automl.show_models())[:500] if hasattr(automl, 'show_models') else 'N/A',
-            'classification_report': classification_report(y_test, y_pred, output_dict=True),
-        }
-    finally:
-        shutil.rmtree(tmp_dir, ignore_errors=True)
-        shutil.rmtree(out_dir, ignore_errors=True)
 
 
 def _run_h2o(X_train, y_train, X_test, y_test, time_budget):
@@ -272,7 +218,6 @@ def _google_automl_theoretical():
 
 
 AUTOML_RUNNERS = {
-    'Auto-sklearn': _run_autosklearn,
     'H2O AutoML': _run_h2o,
     'TPOT': _run_tpot,
     'AutoGluon': _run_autogluon,

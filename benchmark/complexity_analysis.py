@@ -94,20 +94,6 @@ def theoretical_complexity(n=1140, d=1344, K=4):
 
     # --- AutoML ---
 
-    methods['Auto-sklearn'] = {
-        'training_complexity': r'$O(B \cdot n \cdot d \cdot K)$',
-        'training_bigo': 'O(B*n*d*K)',
-        'inference_complexity': r'$O(E_{size} \cdot C_{model})$',
-        'inference_bigo': 'O(E*C_model)',
-        'memory_complexity': r'$O(B \cdot M_{model})$',
-        'memory_bigo': 'O(B*M_model)',
-        'training_ops': 50 * n * d * K,  # ~50 pipeline evaluations
-        'inference_ops': 20 * d * K,  # ensemble of ~20 models
-        'memory_elements': 50 * d * K,
-        'note': 'Bayesian optimization over sklearn pipeline space',
-        'scales_with_n_inference': False,
-    }
-
     methods['H2O AutoML'] = {
         'training_complexity': r'$O(B \cdot C_{model})$',
         'training_bigo': 'O(B*C_model)',

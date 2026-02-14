@@ -18,7 +18,6 @@ COLORS = {
     'Random Forest':       '#E15759',
     'SVM (RBF)':           '#76B7B2',
     'MLP Classifier':      '#59A14F',
-    'Auto-sklearn':        '#EDC948',
     'H2O AutoML':          '#B07AA1',
     'TPOT':                '#FF9DA7',
     'AutoGluon':           '#9C755F',
