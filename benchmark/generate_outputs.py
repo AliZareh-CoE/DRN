@@ -58,11 +58,11 @@ def generate_reviewer_response(all_results, theoretical, output_dir):
 {'='*70}
 
 We thank the reviewer for this insightful question. We acknowledge that AutoML
-frameworks (Auto-sklearn, H2O AutoML, TPOT, AutoGluon) offer powerful automated
+frameworks (H2O AutoML, AutoGluon) offer powerful automated
 model selection capabilities and have demonstrated strong performance across
 diverse tabular datasets. To address this question rigorously, we conducted a
 comprehensive empirical comparison of DRN against five classical ML methods and
-four AutoML frameworks, all evaluated on the identical train/test split.
+two AutoML frameworks, all evaluated on the identical train/test split.
 
 Our analysis reveals several key findings that justify our architectural choice:
 

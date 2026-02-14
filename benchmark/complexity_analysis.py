@@ -108,20 +108,6 @@ def theoretical_complexity(n=1140, d=1344, K=4):
         'scales_with_n_inference': False,
     }
 
-    methods['TPOT'] = {
-        'training_complexity': r'$O(G \cdot P_{size} \cdot C_{pipe})$',
-        'training_bigo': 'O(G*P*C_pipe)',
-        'inference_complexity': r'$O(C_{best})$',
-        'inference_bigo': 'O(C_best)',
-        'memory_complexity': r'$O(P_{size} \cdot M_{pipe})$',
-        'memory_bigo': 'O(P*M_pipe)',
-        'training_ops': 100 * 50 * n * d,  # 100 gens * 50 pop * pipeline eval
-        'inference_ops': d * 10,  # single best pipeline
-        'memory_elements': 50 * d,
-        'note': 'Genetic programming over sklearn pipelines',
-        'scales_with_n_inference': False,
-    }
-
     methods['AutoGluon'] = {
         'training_complexity': r'$O(B \cdot C_{multi})$',
         'training_bigo': 'O(B*C_multi)',

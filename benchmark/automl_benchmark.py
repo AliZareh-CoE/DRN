@@ -1,6 +1,5 @@
 """
-AutoML benchmarks: H2O, TPOT, AutoGluon.
-Each wrapped in try/except for graceful degradation.
+AutoML benchmarks: H2O AutoML, AutoGluon.
 Google AutoML handled as theoretical-only.
 """
 
@@ -9,7 +8,6 @@ import json
 import tracemalloc
 import tempfile
 import shutil
-import os
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
@@ -82,57 +80,6 @@ def _run_h2o(X_train, y_train, X_test, y_test, time_budget):
             pass
 
 
-def _run_tpot(X_train, y_train, X_test, y_test, time_budget):
-    """Run TPOT benchmark."""
-    from tpot import TPOTClassifier
-
-    tpot = TPOTClassifier(
-        max_time_mins=max(1, time_budget / 60),
-        cv=5,
-        n_jobs=1,
-        scorers=['accuracy'],
-        early_stop=5,
-    )
-
-    tracemalloc.start()
-    t0 = time.perf_counter()
-    tpot.fit(X_train, y_train)
-    train_time = time.perf_counter() - t0
-    _, train_mem = tracemalloc.get_traced_memory()
-    tracemalloc.stop()
-
-    tracemalloc.start()
-    times_list = []
-    for _ in range(5):
-        t0 = time.perf_counter()
-        y_pred = tpot.predict(X_test)
-        times_list.append(time.perf_counter() - t0)
-    _, infer_mem = tracemalloc.get_traced_memory()
-    tracemalloc.stop()
-
-    infer_time = np.median(times_list)
-
-    best_pipeline = ''
-    try:
-        best_pipeline = str(tpot.fitted_pipeline_)[:500]
-    except AttributeError:
-        pass
-
-    return {
-        'method': 'TPOT',
-        'category': 'AutoML',
-        'accuracy': float(accuracy_score(y_test, y_pred)),
-        'train_time_sec': float(train_time),
-        'inference_time_sec': float(infer_time),
-        'inference_time_per_sample_ms': float(infer_time / len(y_test) * 1000),
-        'train_peak_memory_mb': float(train_mem / 1e6),
-        'inference_peak_memory_mb': float(infer_mem / 1e6),
-        'n_parameters': 'N/A (pipeline)',
-        'best_pipeline': best_pipeline,
-        'classification_report': classification_report(y_test, y_pred, output_dict=True),
-    }
-
-
 def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
     """Run AutoGluon benchmark."""
     from autogluon.tabular import TabularPredictor
@@ -150,7 +97,8 @@ def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
             label='target', path=tmpdir, eval_metric='accuracy',
             verbosity=1,
         ).fit(
-            train_df, time_limit=time_budget, presets='best_quality'
+            train_df, time_limit=time_budget, presets='best_quality',
+            num_gpus=0,
         )
         train_time = time.perf_counter() - t0
         _, train_mem = tracemalloc.get_traced_memory()
@@ -200,7 +148,7 @@ def _google_automl_theoretical():
         'accuracy': None,
         'note': 'Cloud-only service. Cannot benchmark locally. '
                 'Based on published literature, Google AutoML Tables typically achieves '
-                'comparable accuracy to AutoGluon/H2O on tabular datasets. '
+                'comparable accuracy to H2O on tabular datasets. '
                 'Training time depends on cloud configuration (typically 1-8 hours). '
                 'Cost: ~$19.32/hour for training.',
         'theoretical_complexity': {
@@ -219,7 +167,6 @@ def _google_automl_theoretical():
 
 AUTOML_RUNNERS = {
     'H2O AutoML': _run_h2o,
-    'TPOT': _run_tpot,
     'AutoGluon': _run_autogluon,
 }
 

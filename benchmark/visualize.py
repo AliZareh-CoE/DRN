@@ -19,7 +19,6 @@ COLORS = {
     'SVM (RBF)':           '#76B7B2',
     'MLP Classifier':      '#59A14F',
     'H2O AutoML':          '#B07AA1',
-    'TPOT':                '#FF9DA7',
     'AutoGluon':           '#9C755F',
     'Google AutoML Tables': '#BAB0AC',
     'DRN (Ours)':          '#D62728',

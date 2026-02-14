@@ -10,7 +10,6 @@ psutil>=5.9
 ptflops>=0.7
 thop>=0.1
 
-# AutoML frameworks (install what you can - each is independently optional)
-# tpot>=0.12               # Genetic programming over sklearn pipelines
+# AutoML frameworks (independently optional)
 # h2o>=3.40                # Requires Java 8+
 # autogluon.tabular>=0.8   # Multi-layer stacking
