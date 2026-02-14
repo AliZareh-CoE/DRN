@@ -143,7 +143,7 @@ def _run_tpot(X_train, y_train, X_test, y_test, time_budget):
     tpot = TPOTClassifier(
         max_time_mins=max(1, time_budget / 60),
         cv=5,
-        n_jobs=-1,
+        n_jobs=1,
         scorers=['accuracy'],
         early_stop=5,
     )
