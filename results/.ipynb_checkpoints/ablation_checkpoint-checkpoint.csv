@@ -1,0 +1,6 @@
+experiment,seed,gpu_id,val_mean,val_std,val_sem,test_acc,status,error,elapsed_minutes,model_kwargs
+-CA (No Channel Attention),1337,6,84.12280701754386,3.417114242242535,1.366845696897014,85.5,success,,42.719903242588046,{'use_channel_attention': False}
+-CA (No Channel Attention),2024,7,82.10526315789474,2.4694189930279373,0.9877675972111748,85.0,success,,42.94900846481323,{'use_channel_attention': False}
+-CA (No Channel Attention),42,5,83.68421052631578,3.5279083424895106,1.411163336995804,81.0,success,,43.75027162631353,{'use_channel_attention': False}
+Full Model (Baseline),1337,1,84.82456140350878,3.048166728753346,1.2192666915013384,86.5,success,,47.61979743242264,{}
+Full Model (Baseline),7777,3,85.43859649122807,1.818986083625241,0.7275944334500963,84.5,success,,47.68975730339686,{}

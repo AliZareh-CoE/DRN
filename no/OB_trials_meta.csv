@@ -1,0 +1,2601 @@
+region,odor_name,post_odor_breath_start
+OB,mineral oil,98.035
+OB,mineral oil,208.04686
+OB,mineral oil,368.4235
+OB,mineral oil,608.8185
+OB,mineral oil,759.1235
+OB,mineral oil,848.895
+OB,mineral oil,999.102
+OB,mineral oil,1159.375
+OB,mineral oil,1329.473
+OB,mineral oil,1539.7455
+OB,mineral oil,1720.0175
+OB,mineral oil,1860.383
+OB,mineral oil,1980.0715
+OB,mineral oil,2130.5295
+OB,mineral oil,2370.686
+OB,mineral oil,2420.749
+OB,mineral oil,2580.984
+OB,mineral oil,2731.353
+OB,mineral oil,3021.6515
+OB,mineral oil,3122.1135
+OB,mineral oil,3252.1365
+OB,mineral oil,3392.291
+OB,mineral oil,3532.127
+OB,mineral oil,3702.5105
+OB,mineral oil,3962.665
+OB,mineral oil,4022.751
+OB,mineral oil,4192.9335
+OB,mineral oil,4373.6045
+OB,mineral oil,4533.797
+OB,mineral oil,4663.9795
+OB,ethyl butyrate at 0.03% v/v,108.161
+OB,ethyl butyrate at 0.03% v/v,298.4225
+OB,ethyl butyrate at 0.03% v/v,338.323
+OB,ethyl butyrate at 0.03% v/v,628.938
+OB,ethyl butyrate at 0.03% v/v,799.2015
+OB,ethyl butyrate at 0.03% v/v,938.923
+OB,ethyl butyrate at 0.03% v/v,1049.023
+OB,ethyl butyrate at 0.03% v/v,1259.3925
+OB,ethyl butyrate at 0.03% v/v,1409.6045
+OB,ethyl butyrate at 0.03% v/v,1460.023
+OB,ethyl butyrate at 0.03% v/v,1700.3905
+OB,ethyl butyrate at 0.03% v/v,1880.615
+OB,ethyl butyrate at 0.03% v/v,1960.072
+OB,ethyl butyrate at 0.03% v/v,2210.526
+OB,ethyl butyrate at 0.03% v/v,2401.0735
+OB,ethyl butyrate at 0.03% v/v,2451.0645
+OB,ethyl butyrate at 0.03% v/v,2641.3965
+OB,ethyl butyrate at 0.03% v/v,2841.589
+OB,ethyl butyrate at 0.03% v/v,2991.5485
+OB,ethyl butyrate at 0.03% v/v,3061.675
+OB,ethyl butyrate at 0.03% v/v,3272.0325
+OB,ethyl butyrate at 0.03% v/v,3381.99
+OB,ethyl butyrate at 0.03% v/v,3602.1315
+OB,ethyl butyrate at 0.03% v/v,3842.4395
+OB,ethyl butyrate at 0.03% v/v,4003.132
+OB,ethyl butyrate at 0.03% v/v,4032.9435
+OB,ethyl butyrate at 0.03% v/v,4223.1785
+OB,ethyl butyrate at 0.03% v/v,4483.433
+OB,ethyl butyrate at 0.03% v/v,4543.5205
+OB,ethyl butyrate at 0.03% v/v,4754.059
+OB,ethyl butyrate at 0.1% v/v,18.0985
+OB,ethyl butyrate at 0.1% v/v,278.658
+OB,ethyl butyrate at 0.1% v/v,348.359
+OB,ethyl butyrate at 0.1% v/v,528.8805
+OB,ethyl butyrate at 0.1% v/v,739.3145
+OB,ethyl butyrate at 0.1% v/v,899.6635
+OB,ethyl butyrate at 0.1% v/v,968.9735
+OB,ethyl butyrate at 0.1% v/v,1169.5065
+OB,ethyl butyrate at 0.1% v/v,1359.779
+OB,ethyl butyrate at 0.1% v/v,1499.679
+OB,ethyl butyrate at 0.1% v/v,1680.1165
+OB,ethyl butyrate at 0.1% v/v,1850.522
+OB,ethyl butyrate at 0.1% v/v,1970.219
+OB,ethyl butyrate at 0.1% v/v,2120.6255
+OB,ethyl butyrate at 0.1% v/v,2340.98
+OB,ethyl butyrate at 0.1% v/v,2540.99
+OB,ethyl butyrate at 0.1% v/v,2631.1975
+OB,ethyl butyrate at 0.1% v/v,2821.5475
+OB,ethyl butyrate at 0.1% v/v,2941.437
+OB,ethyl butyrate at 0.1% v/v,3182.1325
+OB,ethyl butyrate at 0.1% v/v,3352.276
+OB,ethyl butyrate at 0.1% v/v,3452.14
+OB,ethyl butyrate at 0.1% v/v,3652.291
+OB,ethyl butyrate at 0.1% v/v,3832.7675
+OB,ethyl butyrate at 0.1% v/v,3952.597
+OB,ethyl butyrate at 0.1% v/v,4092.639
+OB,ethyl butyrate at 0.1% v/v,4182.762
+OB,ethyl butyrate at 0.1% v/v,4363.6155
+OB,ethyl butyrate at 0.1% v/v,4644.0495
+OB,ethyl butyrate at 0.1% v/v,4673.736
+OB,ethyl butyrate at 0.3% v/v,118.5725
+OB,ethyl butyrate at 0.3% v/v,318.1295
+OB,ethyl butyrate at 0.3% v/v,468.686
+OB,ethyl butyrate at 0.3% v/v,589.1255
+OB,ethyl butyrate at 0.3% v/v,648.614
+OB,ethyl butyrate at 0.3% v/v,879.163
+OB,ethyl butyrate at 0.3% v/v,1028.985
+OB,ethyl butyrate at 0.3% v/v,1239.914
+OB,ethyl butyrate at 0.3% v/v,1440.0665
+OB,ethyl butyrate at 0.3% v/v,1480.729
+OB,ethyl butyrate at 0.3% v/v,1710.043
+OB,ethyl butyrate at 0.3% v/v,1820.2275
+OB,ethyl butyrate at 0.3% v/v,1930.304
+OB,ethyl butyrate at 0.3% v/v,2160.4955
+OB,ethyl butyrate at 0.3% v/v,2250.628
+OB,ethyl butyrate at 0.3% v/v,2410.707
+OB,ethyl butyrate at 0.3% v/v,2721.192
+OB,ethyl butyrate at 0.3% v/v,2871.521
+OB,ethyl butyrate at 0.3% v/v,2951.886
+OB,ethyl butyrate at 0.3% v/v,3171.9655
+OB,ethyl butyrate at 0.3% v/v,3342.139
+OB,ethyl butyrate at 0.3% v/v,3412.414
+OB,ethyl butyrate at 0.3% v/v,3632.42
+OB,ethyl butyrate at 0.3% v/v,3762.466
+OB,ethyl butyrate at 0.3% v/v,3912.755
+OB,ethyl butyrate at 0.3% v/v,4072.831
+OB,ethyl butyrate at 0.3% v/v,4293.2445
+OB,ethyl butyrate at 0.3% v/v,4443.6235
+OB,ethyl butyrate at 0.3% v/v,4493.383
+OB,ethyl butyrate at 0.3% v/v,4783.624
+OB,ethyl butyrate at 1% v/v,77.9085
+OB,ethyl butyrate at 1% v/v,228.5315
+OB,ethyl butyrate at 1% v/v,438.647
+OB,ethyl butyrate at 1% v/v,578.6445
+OB,ethyl butyrate at 1% v/v,659.1375
+OB,ethyl butyrate at 1% v/v,949.2665
+OB,ethyl butyrate at 1% v/v,988.9955
+OB,ethyl butyrate at 1% v/v,1209.6515
+OB,ethyl butyrate at 1% v/v,1319.4975
+OB,ethyl butyrate at 1% v/v,1489.6805
+OB,ethyl butyrate at 1% v/v,1639.8185
+OB,ethyl butyrate at 1% v/v,1830.233
+OB,ethyl butyrate at 1% v/v,1990.19
+OB,ethyl butyrate at 1% v/v,2200.699
+OB,ethyl butyrate at 1% v/v,2280.834
+OB,ethyl butyrate at 1% v/v,2551.034
+OB,ethyl butyrate at 1% v/v,2571.351
+OB,ethyl butyrate at 1% v/v,2861.62
+OB,ethyl butyrate at 1% v/v,3031.6415
+OB,ethyl butyrate at 1% v/v,3151.768
+OB,ethyl butyrate at 1% v/v,3221.701
+OB,ethyl butyrate at 1% v/v,3512.3395
+OB,ethyl butyrate at 1% v/v,3562.544
+OB,ethyl butyrate at 1% v/v,3712.515
+OB,ethyl butyrate at 1% v/v,3932.853
+OB,ethyl butyrate at 1% v/v,4123.0185
+OB,ethyl butyrate at 1% v/v,4303.0865
+OB,ethyl butyrate at 1% v/v,4383.68
+OB,ethyl butyrate at 1% v/v,4573.361
+OB,ethyl butyrate at 1% v/v,4683.5275
+OB,2-hexanone at 0.3% v/v,47.7845
+OB,2-hexanone at 0.3% v/v,288.402
+OB,2-hexanone at 0.3% v/v,478.738
+OB,2-hexanone at 0.3% v/v,488.744
+OB,2-hexanone at 0.3% v/v,768.9685
+OB,2-hexanone at 0.3% v/v,919.037
+OB,2-hexanone at 0.3% v/v,1018.8845
+OB,2-hexanone at 0.3% v/v,1139.156
+OB,2-hexanone at 0.3% v/v,1309.9795
+OB,2-hexanone at 0.3% v/v,1549.999
+OB,2-hexanone at 0.3% v/v,1750.317
+OB,2-hexanone at 0.3% v/v,1890.3485
+OB,2-hexanone at 0.3% v/v,2060.3395
+OB,2-hexanone at 0.3% v/v,2230.4575
+OB,2-hexanone at 0.3% v/v,2360.879
+OB,2-hexanone at 0.3% v/v,2470.928
+OB,2-hexanone at 0.3% v/v,2711.4665
+OB,2-hexanone at 0.3% v/v,2811.418
+OB,2-hexanone at 0.3% v/v,2971.8165
+OB,2-hexanone at 0.3% v/v,3141.729
+OB,2-hexanone at 0.3% v/v,3312.0965
+OB,2-hexanone at 0.3% v/v,3372.2135
+OB,2-hexanone at 0.3% v/v,3682.2135
+OB,2-hexanone at 0.3% v/v,3792.88863
+OB,2-hexanone at 0.3% v/v,3993.004
+OB,2-hexanone at 0.3% v/v,4103.09
+OB,2-hexanone at 0.3% v/v,4173.0922
+OB,2-hexanone at 0.3% v/v,4453.7565
+OB,2-hexanone at 0.3% v/v,4563.3995
+OB,2-hexanone at 0.3% v/v,4693.9475
+OB,isoamyl acetate at 0.3% v/v,67.7165
+OB,isoamyl acetate at 0.3% v/v,308.483
+OB,isoamyl acetate at 0.3% v/v,328.585
+OB,isoamyl acetate at 0.3% v/v,548.4885
+OB,isoamyl acetate at 0.3% v/v,698.9245
+OB,isoamyl acetate at 0.3% v/v,909.049
+OB,isoamyl acetate at 0.3% v/v,1059.283
+OB,isoamyl acetate at 0.3% v/v,1199.4475
+OB,isoamyl acetate at 0.3% v/v,1289.902
+OB,isoamyl acetate at 0.3% v/v,1449.5145
+OB,isoamyl acetate at 0.3% v/v,1760.2435
+OB,isoamyl acetate at 0.3% v/v,1790.1435
+OB,isoamyl acetate at 0.3% v/v,2040.5235
+OB,isoamyl acetate at 0.3% v/v,2110.4585
+OB,isoamyl acetate at 0.3% v/v,2290.653
+OB,isoamyl acetate at 0.3% v/v,2510.9095
+OB,isoamyl acetate at 0.3% v/v,2691.4885
+OB,isoamyl acetate at 0.3% v/v,2741.4825
+OB,isoamyl acetate at 0.3% v/v,2931.618
+OB,isoamyl acetate at 0.3% v/v,3112.031
+OB,isoamyl acetate at 0.3% v/v,3292.0145
+OB,isoamyl acetate at 0.3% v/v,3482.2145
+OB,isoamyl acetate at 0.3% v/v,3552.07736
+OB,isoamyl acetate at 0.3% v/v,3692.3815
+OB,isoamyl acetate at 0.3% v/v,3982.8715
+OB,isoamyl acetate at 0.3% v/v,4012.69376
+OB,isoamyl acetate at 0.3% v/v,4203.3025
+OB,isoamyl acetate at 0.3% v/v,4343.297
+OB,isoamyl acetate at 0.3% v/v,4623.604
+OB,isoamyl acetate at 0.3% v/v,4794.012
+OB,hexanal at 0.03% v/v,148.2165
+OB,hexanal at 0.03% v/v,268.53
+OB,hexanal at 0.03% v/v,388.5685
+OB,hexanal at 0.03% v/v,538.8255
+OB,hexanal at 0.03% v/v,678.8225
+OB,hexanal at 0.03% v/v,889.3805
+OB,hexanal at 0.03% v/v,1079.1145
+OB,hexanal at 0.03% v/v,1269.345
+OB,hexanal at 0.03% v/v,1389.6265
+OB,hexanal at 0.03% v/v,1599.8695
+OB,hexanal at 0.03% v/v,1630.033
+OB,hexanal at 0.03% v/v,1780.0565
+OB,hexanal at 0.03% v/v,1950.1915
+OB,hexanal at 0.03% v/v,2090.56
+OB,hexanal at 0.03% v/v,2380.809
+OB,hexanal at 0.03% v/v,2460.875
+OB,hexanal at 0.03% v/v,2611.1565
+OB,hexanal at 0.03% v/v,2831.245
+OB,hexanal at 0.03% v/v,3011.637
+OB,hexanal at 0.03% v/v,3131.6855
+OB,hexanal at 0.03% v/v,3322.258
+OB,hexanal at 0.03% v/v,3442.328
+OB,hexanal at 0.03% v/v,3612.148
+OB,hexanal at 0.03% v/v,3722.0715
+OB,hexanal at 0.03% v/v,3892.765
+OB,hexanal at 0.03% v/v,4042.43
+OB,hexanal at 0.03% v/v,4213.1795
+OB,hexanal at 0.03% v/v,4353.3455
+OB,hexanal at 0.03% v/v,4633.5785
+OB,hexanal at 0.03% v/v,4703.7245
+OB,hexanal at 0.1% v/v,38.055
+OB,hexanal at 0.1% v/v,258.457
+OB,hexanal at 0.1% v/v,448.551
+OB,hexanal at 0.1% v/v,568.7195
+OB,hexanal at 0.1% v/v,788.787
+OB,hexanal at 0.1% v/v,819.1985
+OB,hexanal at 0.1% v/v,1008.943
+OB,hexanal at 0.1% v/v,1129.352
+OB,hexanal at 0.1% v/v,1379.6125
+OB,hexanal at 0.1% v/v,1569.5745
+OB,hexanal at 0.1% v/v,1670.1085
+OB,hexanal at 0.1% v/v,1810.363
+OB,hexanal at 0.1% v/v,2050.856
+OB,hexanal at 0.1% v/v,2140.4495
+OB,hexanal at 0.1% v/v,2270.672
+OB,hexanal at 0.1% v/v,2561.2465
+OB,hexanal at 0.1% v/v,2621.2315
+OB,hexanal at 0.1% v/v,2781.256
+OB,hexanal at 0.1% v/v,2981.4615
+OB,hexanal at 0.1% v/v,3161.8155
+OB,hexanal at 0.1% v/v,3261.8225
+OB,hexanal at 0.1% v/v,3462.0005
+OB,hexanal at 0.1% v/v,3662.281
+OB,hexanal at 0.1% v/v,3772.7865
+OB,hexanal at 0.1% v/v,3942.9565
+OB,hexanal at 0.1% v/v,4082.823
+OB,hexanal at 0.1% v/v,4243.3685
+OB,hexanal at 0.1% v/v,4413.2655
+OB,hexanal at 0.1% v/v,4583.917
+OB,hexanal at 0.1% v/v,4653.9225
+OB,hexanal at 0.3% v/v,158.344
+OB,hexanal at 0.3% v/v,198.589
+OB,hexanal at 0.3% v/v,459.0095
+OB,hexanal at 0.3% v/v,508.8525
+OB,hexanal at 0.3% v/v,718.984
+OB,hexanal at 0.3% v/v,809.2305
+OB,hexanal at 0.3% v/v,1089.461
+OB,hexanal at 0.3% v/v,1219.6205
+OB,hexanal at 0.3% v/v,1299.404
+OB,hexanal at 0.3% v/v,1560.286
+OB,hexanal at 0.3% v/v,1690.015
+OB,hexanal at 0.3% v/v,1840.5665
+OB,hexanal at 0.3% v/v,2010.354
+OB,hexanal at 0.3% v/v,2190.7395
+OB,hexanal at 0.3% v/v,2260.5905
+OB,hexanal at 0.3% v/v,2501.2768
+OB,hexanal at 0.3% v/v,2671.4485
+OB,hexanal at 0.3% v/v,2761.536
+OB,hexanal at 0.3% v/v,2961.828
+OB,hexanal at 0.3% v/v,3101.9645
+OB,hexanal at 0.3% v/v,3302.2365
+OB,hexanal at 0.3% v/v,3502.0125
+OB,hexanal at 0.3% v/v,3642.2845
+OB,hexanal at 0.3% v/v,3802.61
+OB,hexanal at 0.3% v/v,3852.6065
+OB,hexanal at 0.3% v/v,4112.7895
+OB,hexanal at 0.3% v/v,4273.2985
+OB,hexanal at 0.3% v/v,4473.7655
+OB,hexanal at 0.3% v/v,4503.315
+OB,hexanal at 0.3% v/v,4743.707
+OB,hexanal at 1% v/v,127.9205
+OB,hexanal at 1% v/v,218.143
+OB,hexanal at 1% v/v,358.365
+OB,hexanal at 1% v/v,618.6305
+OB,hexanal at 1% v/v,668.8425
+OB,hexanal at 1% v/v,868.912
+OB,hexanal at 1% v/v,1099.4675
+OB,hexanal at 1% v/v,1229.4775
+OB,hexanal at 1% v/v,1419.8115
+OB,hexanal at 1% v/v,1519.825
+OB,hexanal at 1% v/v,1740.388
+OB,hexanal at 1% v/v,1910.3385
+OB,hexanal at 1% v/v,1940.324
+OB,hexanal at 1% v/v,2170.7075
+OB,hexanal at 1% v/v,2300.494
+OB,hexanal at 1% v/v,2491.1055
+OB,hexanal at 1% v/v,2601.019
+OB,hexanal at 1% v/v,2881.37
+OB,hexanal at 1% v/v,2911.463
+OB,hexanal at 1% v/v,3091.882
+OB,hexanal at 1% v/v,3211.9815
+OB,hexanal at 1% v/v,3431.9395
+OB,hexanal at 1% v/v,3572.576
+OB,hexanal at 1% v/v,3732.541
+OB,hexanal at 1% v/v,3922.734
+OB,hexanal at 1% v/v,4052.7685
+OB,hexanal at 1% v/v,4253.1985
+OB,hexanal at 1% v/v,4393.323
+OB,hexanal at 1% v/v,4523.821
+OB,hexanal at 1% v/v,4773.7565
+OB,ethyl tiglate at 0.3% v/v,87.78779
+OB,ethyl tiglate at 0.3% v/v,248.3725
+OB,ethyl tiglate at 0.3% v/v,408.7215
+OB,ethyl tiglate at 0.3% v/v,558.79
+OB,ethyl tiglate at 0.3% v/v,749.071
+OB,ethyl tiglate at 0.3% v/v,959.246
+OB,ethyl tiglate at 0.3% v/v,1039.151
+OB,ethyl tiglate at 0.3% v/v,1149.3265
+OB,ethyl tiglate at 0.3% v/v,1349.388
+OB,ethyl tiglate at 0.3% v/v,1529.9695
+OB,ethyl tiglate at 0.3% v/v,1619.944
+OB,ethyl tiglate at 0.3% v/v,1920.498
+OB,ethyl tiglate at 0.3% v/v,2070.3885
+OB,ethyl tiglate at 0.3% v/v,2180.6965
+OB,ethyl tiglate at 0.3% v/v,2330.9475
+OB,ethyl tiglate at 0.3% v/v,2481.0025
+OB,ethyl tiglate at 0.3% v/v,2590.956
+OB,ethyl tiglate at 0.3% v/v,2801.657
+OB,ethyl tiglate at 0.3% v/v,2901.627
+OB,ethyl tiglate at 0.3% v/v,3051.639
+OB,ethyl tiglate at 0.3% v/v,3242.04318
+OB,ethyl tiglate at 0.3% v/v,3401.96618
+OB,ethyl tiglate at 0.3% v/v,3592.13347
+OB,ethyl tiglate at 0.3% v/v,3822.86349
+OB,ethyl tiglate at 0.3% v/v,3872.87398
+OB,ethyl tiglate at 0.3% v/v,4143.1524
+OB,ethyl tiglate at 0.3% v/v,4263.204
+OB,ethyl tiglate at 0.3% v/v,4433.4455
+OB,ethyl tiglate at 0.3% v/v,4593.8485
+OB,ethyl tiglate at 0.3% v/v,4723.565
+OB,ethyl acetate at 0.3% v/v,28.16558
+OB,ethyl acetate at 0.3% v/v,168.069
+OB,ethyl acetate at 0.3% v/v,428.6225
+OB,ethyl acetate at 0.3% v/v,598.557
+OB,ethyl acetate at 0.3% v/v,728.9645
+OB,ethyl acetate at 0.3% v/v,829.019
+OB,ethyl acetate at 0.3% v/v,978.952
+OB,ethyl acetate at 0.3% v/v,1189.5955
+OB,ethyl acetate at 0.3% v/v,1369.6555
+OB,ethyl acetate at 0.3% v/v,1469.837
+OB,ethyl acetate at 0.3% v/v,1660.464
+OB,ethyl acetate at 0.3% v/v,1900.9445
+OB,ethyl acetate at 0.3% v/v,2020.4825
+OB,ethyl acetate at 0.3% v/v,2100.384
+OB,ethyl acetate at 0.3% v/v,2350.738
+OB,ethyl acetate at 0.3% v/v,2521.3265
+OB,ethyl acetate at 0.3% v/v,2651.1135
+OB,ethyl acetate at 0.3% v/v,2851.3985
+OB,ethyl acetate at 0.3% v/v,2921.79
+OB,ethyl acetate at 0.3% v/v,3071.6855
+OB,ethyl acetate at 0.3% v/v,3231.886
+OB,ethyl acetate at 0.3% v/v,3472.3405
+OB,ethyl acetate at 0.3% v/v,3672.26
+OB,ethyl acetate at 0.3% v/v,3742.505
+OB,ethyl acetate at 0.3% v/v,3882.82898
+OB,ethyl acetate at 0.3% v/v,4163.2605
+OB,ethyl acetate at 0.3% v/v,4323.385
+OB,ethyl acetate at 0.3% v/v,4333.2205
+OB,ethyl acetate at 0.3% v/v,4513.336
+OB,ethyl acetate at 0.3% v/v,4763.9205
+OB,mineral oil,78.451
+OB,mineral oil,198.615
+OB,mineral oil,379.3255
+OB,mineral oil,518.605
+OB,mineral oil,658.921
+OB,mineral oil,829.7395
+OB,mineral oil,999.383
+OB,mineral oil,1139.1905
+OB,mineral oil,1290.087
+OB,mineral oil,1459.553
+OB,mineral oil,1639.746
+OB,mineral oil,1810.0605
+OB,mineral oil,1950.6655
+OB,mineral oil,2120.6635
+OB,mineral oil,2250.969
+OB,mineral oil,2440.861
+OB,mineral oil,2681.1775
+OB,mineral oil,2831.1975
+OB,mineral oil,2941.2225
+OB,mineral oil,3161.66442
+OB,mineral oil,3301.79
+OB,mineral oil,3421.8355
+OB,mineral oil,3561.9795
+OB,mineral oil,3762.4455
+OB,mineral oil,3862.3265
+OB,mineral oil,4022.54089
+OB,mineral oil,4172.966
+OB,mineral oil,4333.0295
+OB,mineral oil,4553.356
+OB,mineral oil,4763.42152
+OB,ethyl butyrate at 0.03% v/v,128.3685
+OB,ethyl butyrate at 0.03% v/v,288.1635
+OB,ethyl butyrate at 0.03% v/v,429.021
+OB,ethyl butyrate at 0.03% v/v,498.8255
+OB,ethyl butyrate at 0.03% v/v,799.613
+OB,ethyl butyrate at 0.03% v/v,859.0435
+OB,ethyl butyrate at 0.03% v/v,988.8755
+OB,ethyl butyrate at 0.03% v/v,1149.527
+OB,ethyl butyrate at 0.03% v/v,1419.728
+OB,ethyl butyrate at 0.03% v/v,1519.7055
+OB,ethyl butyrate at 0.03% v/v,1750.6855
+OB,ethyl butyrate at 0.03% v/v,1850.1625
+OB,ethyl butyrate at 0.03% v/v,1960.8445
+OB,ethyl butyrate at 0.03% v/v,2170.5105
+OB,ethyl butyrate at 0.03% v/v,2281.172
+OB,ethyl butyrate at 0.03% v/v,2480.8095
+OB,ethyl butyrate at 0.03% v/v,2661.294
+OB,ethyl butyrate at 0.03% v/v,2801.435
+OB,ethyl butyrate at 0.03% v/v,2931.4735
+OB,ethyl butyrate at 0.03% v/v,3101.4975
+OB,ethyl butyrate at 0.03% v/v,3241.7005
+OB,ethyl butyrate at 0.03% v/v,3442.0415
+OB,ethyl butyrate at 0.03% v/v,3541.8955
+OB,ethyl butyrate at 0.03% v/v,3802.4745
+OB,ethyl butyrate at 0.03% v/v,3932.436
+OB,ethyl butyrate at 0.03% v/v,4032.442
+OB,ethyl butyrate at 0.03% v/v,4222.8235
+OB,ethyl butyrate at 0.03% v/v,4463.462
+OB,ethyl butyrate at 0.03% v/v,4563.4175
+OB,ethyl butyrate at 0.03% v/v,4713.537
+OB,ethyl butyrate at 0.1% v/v,88.511
+OB,ethyl butyrate at 0.1% v/v,178.4395
+OB,ethyl butyrate at 0.1% v/v,398.536
+OB,ethyl butyrate at 0.1% v/v,618.8555
+OB,ethyl butyrate at 0.1% v/v,678.704
+OB,ethyl butyrate at 0.1% v/v,949.0415
+OB,ethyl butyrate at 0.1% v/v,1099.216
+OB,ethyl butyrate at 0.1% v/v,1219.4355
+OB,ethyl butyrate at 0.1% v/v,1369.565
+OB,ethyl butyrate at 0.1% v/v,1530.118
+OB,ethyl butyrate at 0.1% v/v,1610.0035
+OB,ethyl butyrate at 0.1% v/v,1860.073
+OB,ethyl butyrate at 0.1% v/v,1970.3785
+OB,ethyl butyrate at 0.1% v/v,2110.36
+OB,ethyl butyrate at 0.1% v/v,2340.911
+OB,ethyl butyrate at 0.1% v/v,2410.7515
+OB,ethyl butyrate at 0.1% v/v,2620.911
+OB,ethyl butyrate at 0.1% v/v,2781.3615
+OB,ethyl butyrate at 0.1% v/v,3031.7125
+OB,ethyl butyrate at 0.1% v/v,3131.5405
+OB,ethyl butyrate at 0.1% v/v,3311.816
+OB,ethyl butyrate at 0.1% v/v,3501.956
+OB,ethyl butyrate at 0.1% v/v,3592.2175
+OB,ethyl butyrate at 0.1% v/v,3702.5145
+OB,ethyl butyrate at 0.1% v/v,4002.5065
+OB,ethyl butyrate at 0.1% v/v,4042.877
+OB,ethyl butyrate at 0.1% v/v,4193.1295
+OB,ethyl butyrate at 0.1% v/v,4483.357
+OB,ethyl butyrate at 0.1% v/v,4513.3855
+OB,ethyl butyrate at 0.1% v/v,4703.3025
+OB,ethyl butyrate at 0.3% v/v,158.1405
+OB,ethyl butyrate at 0.3% v/v,248.285
+OB,ethyl butyrate at 0.3% v/v,478.427
+OB,ethyl butyrate at 0.3% v/v,489.4415
+OB,ethyl butyrate at 0.3% v/v,749.0795
+OB,ethyl butyrate at 0.3% v/v,839.3665
+OB,ethyl butyrate at 0.3% v/v,1119.316
+OB,ethyl butyrate at 0.3% v/v,1189.6045
+OB,ethyl butyrate at 0.3% v/v,1439.348
+OB,ethyl butyrate at 0.3% v/v,1539.988
+OB,ethyl butyrate at 0.3% v/v,1740.115
+OB,ethyl butyrate at 0.3% v/v,1830.4365
+OB,ethyl butyrate at 0.3% v/v,2000.4185
+OB,ethyl butyrate at 0.3% v/v,2100.142
+OB,ethyl butyrate at 0.3% v/v,2300.5135
+OB,ethyl butyrate at 0.3% v/v,2500.722
+OB,ethyl butyrate at 0.3% v/v,2641.0325
+OB,ethyl butyrate at 0.3% v/v,2741.087
+OB,ethyl butyrate at 0.3% v/v,2891.2625
+OB,ethyl butyrate at 0.3% v/v,3151.92409
+OB,ethyl butyrate at 0.3% v/v,3221.6395
+OB,ethyl butyrate at 0.3% v/v,3482.103
+OB,ethyl butyrate at 0.3% v/v,3572.02
+OB,ethyl butyrate at 0.3% v/v,3842.244
+OB,ethyl butyrate at 0.3% v/v,3982.4445
+OB,ethyl butyrate at 0.3% v/v,4062.6735
+OB,ethyl butyrate at 0.3% v/v,4293.0345
+OB,ethyl butyrate at 0.3% v/v,4373.31165
+OB,ethyl butyrate at 0.3% v/v,4493.399
+OB,ethyl butyrate at 0.3% v/v,4663.317
+OB,ethyl butyrate at 1% v/v,18.1765
+OB,ethyl butyrate at 1% v/v,238.5525
+OB,ethyl butyrate at 1% v/v,359.18
+OB,ethyl butyrate at 1% v/v,578.9835
+OB,ethyl butyrate at 1% v/v,769.421
+OB,ethyl butyrate at 1% v/v,899.0815
+OB,ethyl butyrate at 1% v/v,1029.2685
+OB,ethyl butyrate at 1% v/v,1169.6095
+OB,ethyl butyrate at 1% v/v,1339.6655
+OB,ethyl butyrate at 1% v/v,1580.123
+OB,ethyl butyrate at 1% v/v,1700.3805
+OB,ethyl butyrate at 1% v/v,1780.0675
+OB,ethyl butyrate at 1% v/v,1990.2225
+OB,ethyl butyrate at 1% v/v,2241.496
+OB,ethyl butyrate at 1% v/v,2380.56
+OB,ethyl butyrate at 1% v/v,2470.9235
+OB,ethyl butyrate at 1% v/v,2710.9515
+OB,ethyl butyrate at 1% v/v,2791.4375
+OB,ethyl butyrate at 1% v/v,2901.395
+OB,ethyl butyrate at 1% v/v,3081.7455
+OB,ethyl butyrate at 1% v/v,3231.5985
+OB,ethyl butyrate at 1% v/v,3522.216
+OB,ethyl butyrate at 1% v/v,3622.405
+OB,ethyl butyrate at 1% v/v,3712.335
+OB,ethyl butyrate at 1% v/v,3892.538
+OB,ethyl butyrate at 1% v/v,4112.942
+OB,ethyl butyrate at 1% v/v,4323.0545
+OB,ethyl butyrate at 1% v/v,4443.005
+OB,ethyl butyrate at 1% v/v,4533.1365
+OB,ethyl butyrate at 1% v/v,4783.396
+OB,2-hexanone at 0.3% v/v,28.3555
+OB,2-hexanone at 0.3% v/v,308.62455
+OB,2-hexanone at 0.3% v/v,349.1195
+OB,2-hexanone at 0.3% v/v,639.463
+OB,2-hexanone at 0.3% v/v,788.926
+OB,2-hexanone at 0.3% v/v,919.275
+OB,2-hexanone at 0.3% v/v,1049.3375
+OB,2-hexanone at 0.3% v/v,1159.668
+OB,2-hexanone at 0.3% v/v,1400.187
+OB,2-hexanone at 0.3% v/v,1549.624
+OB,2-hexanone at 0.3% v/v,1709.975
+OB,2-hexanone at 0.3% v/v,1900.1665
+OB,2-hexanone at 0.3% v/v,2060.6405
+OB,2-hexanone at 0.3% v/v,2130.509
+OB,2-hexanone at 0.3% v/v,2390.656
+OB,2-hexanone at 0.3% v/v,2460.9525
+OB,2-hexanone at 0.3% v/v,2651.172
+OB,2-hexanone at 0.3% v/v,2811.3625
+OB,2-hexanone at 0.3% v/v,2981.487
+OB,2-hexanone at 0.3% v/v,3121.6245
+OB,2-hexanone at 0.3% v/v,3261.9285
+OB,2-hexanone at 0.3% v/v,3402.0535
+OB,2-hexanone at 0.3% v/v,3602.3275
+OB,2-hexanone at 0.3% v/v,3832.453
+OB,2-hexanone at 0.3% v/v,3872.406
+OB,2-hexanone at 0.3% v/v,4082.7035
+OB,2-hexanone at 0.3% v/v,4213.019
+OB,2-hexanone at 0.3% v/v,4412.9985
+OB,2-hexanone at 0.3% v/v,4583.524
+OB,2-hexanone at 0.3% v/v,4683.564
+OB,isoamyl acetate at 0.3% v/v,7.91
+OB,isoamyl acetate at 0.3% v/v,188.688
+OB,isoamyl acetate at 0.3% v/v,328.6365
+OB,isoamyl acetate at 0.3% v/v,559.0195
+OB,isoamyl acetate at 0.3% v/v,719.46
+OB,isoamyl acetate at 0.3% v/v,890.7982
+OB,isoamyl acetate at 0.3% v/v,980.155
+OB,isoamyl acetate at 0.3% v/v,1129.8845
+OB,isoamyl acetate at 0.3% v/v,1299.4925
+OB,isoamyl acetate at 0.3% v/v,1509.521
+OB,isoamyl acetate at 0.3% v/v,1670.42609
+OB,isoamyl acetate at 0.3% v/v,1909.9815
+OB,isoamyl acetate at 0.3% v/v,2010.4305
+OB,isoamyl acetate at 0.3% v/v,2150.1685
+OB,isoamyl acetate at 0.3% v/v,2330.4945
+OB,isoamyl acetate at 0.3% v/v,2550.7155
+OB,isoamyl acetate at 0.3% v/v,2580.8435
+OB,isoamyl acetate at 0.3% v/v,2841.241
+OB,isoamyl acetate at 0.3% v/v,2961.4115
+OB,isoamyl acetate at 0.3% v/v,3111.617
+OB,isoamyl acetate at 0.3% v/v,3291.694
+OB,isoamyl acetate at 0.3% v/v,3372.118
+OB,isoamyl acetate at 0.3% v/v,3552.3425
+OB,isoamyl acetate at 0.3% v/v,3782.482
+OB,isoamyl acetate at 0.3% v/v,3852.5435
+OB,isoamyl acetate at 0.3% v/v,4092.9705
+OB,isoamyl acetate at 0.3% v/v,4242.976
+OB,isoamyl acetate at 0.3% v/v,4473.3235
+OB,isoamyl acetate at 0.3% v/v,4643.7195
+OB,isoamyl acetate at 0.3% v/v,4743.5545
+OB,hexanal at 0.03% v/v,58.1645
+OB,hexanal at 0.03% v/v,168.295
+OB,hexanal at 0.03% v/v,388.8335
+OB,hexanal at 0.03% v/v,609.424
+OB,hexanal at 0.03% v/v,778.9955
+OB,hexanal at 0.03% v/v,809.222
+OB,hexanal at 0.03% v/v,1019.352
+OB,hexanal at 0.03% v/v,1199.746
+OB,hexanal at 0.03% v/v,1429.777
+OB,hexanal at 0.03% v/v,1499.821
+OB,hexanal at 0.03% v/v,1679.798
+OB,hexanal at 0.03% v/v,1801.18
+OB,hexanal at 0.03% v/v,1940.277
+OB,hexanal at 0.03% v/v,2210.9895
+OB,hexanal at 0.03% v/v,2400.853
+OB,hexanal at 0.03% v/v,2491.0905
+OB,hexanal at 0.03% v/v,2571.0935
+OB,hexanal at 0.03% v/v,2761.416
+OB,hexanal at 0.03% v/v,3011.5095
+OB,hexanal at 0.03% v/v,3181.869
+OB,hexanal at 0.03% v/v,3272.031
+OB,hexanal at 0.03% v/v,3391.926
+OB,hexanal at 0.03% v/v,3672.09
+OB,hexanal at 0.03% v/v,3742.3325
+OB,hexanal at 0.03% v/v,3972.6455
+OB,hexanal at 0.03% v/v,4133.0355
+OB,hexanal at 0.03% v/v,4302.9135
+OB,hexanal at 0.03% v/v,4362.963
+OB,hexanal at 0.03% v/v,4573.4315
+OB,hexanal at 0.03% v/v,4723.6295
+OB,hexanal at 0.1% v/v,68.0405
+OB,hexanal at 0.1% v/v,318.977
+OB,hexanal at 0.1% v/v,368.742
+OB,hexanal at 0.1% v/v,628.8465
+OB,hexanal at 0.1% v/v,739.444
+OB,hexanal at 0.1% v/v,909.5615
+OB,hexanal at 0.1% v/v,1059.159
+OB,hexanal at 0.1% v/v,1270.1735
+OB,hexanal at 0.1% v/v,1349.8355
+OB,hexanal at 0.1% v/v,1450.0215
+OB,hexanal at 0.1% v/v,1649.796
+OB,hexanal at 0.1% v/v,1870.129
+OB,hexanal at 0.1% v/v,2050.269
+OB,hexanal at 0.1% v/v,2090.6895
+OB,hexanal at 0.1% v/v,2290.6
+OB,hexanal at 0.1% v/v,2560.9975
+OB,hexanal at 0.1% v/v,2721.336
+OB,hexanal at 0.1% v/v,2751.0385
+OB,hexanal at 0.1% v/v,3041.3635
+OB,hexanal at 0.1% v/v,3141.796
+OB,hexanal at 0.1% v/v,3332.0415
+OB,hexanal at 0.1% v/v,3452.2025
+OB,hexanal at 0.1% v/v,3582.036
+OB,hexanal at 0.1% v/v,3732.4815
+OB,hexanal at 0.1% v/v,3992.6575
+OB,hexanal at 0.1% v/v,4122.769
+OB,hexanal at 0.1% v/v,4262.8365
+OB,hexanal at 0.1% v/v,4352.958
+OB,hexanal at 0.1% v/v,4523.024
+OB,hexanal at 0.1% v/v,4773.629
+OB,hexanal at 0.3% v/v,109.018
+OB,hexanal at 0.3% v/v,268.157
+OB,hexanal at 0.3% v/v,439.1125
+OB,hexanal at 0.3% v/v,569.12997
+OB,hexanal at 0.3% v/v,649.3785
+OB,hexanal at 0.3% v/v,959.6205
+OB,hexanal at 0.3% v/v,1089.252
+OB,hexanal at 0.3% v/v,1229.516
+OB,hexanal at 0.3% v/v,1409.523
+OB,hexanal at 0.3% v/v,1469.907
+OB,hexanal at 0.3% v/v,1660.233
+OB,hexanal at 0.3% v/v,1879.8865
+OB,hexanal at 0.3% v/v,2070.155
+OB,hexanal at 0.3% v/v,2221.27605
+OB,hexanal at 0.3% v/v,2310.9805
+OB,hexanal at 0.3% v/v,2420.8945
+OB,hexanal at 0.3% v/v,2630.9175
+OB,hexanal at 0.3% v/v,2851.315
+OB,hexanal at 0.3% v/v,2921.454
+OB,hexanal at 0.3% v/v,3051.461
+OB,hexanal at 0.3% v/v,3251.835
+OB,hexanal at 0.3% v/v,3472.026
+OB,hexanal at 0.3% v/v,3632.0625
+OB,hexanal at 0.3% v/v,3692.1705
+OB,hexanal at 0.3% v/v,3952.715
+OB,hexanal at 0.3% v/v,4052.7965
+OB,hexanal at 0.3% v/v,4313.1065
+OB,hexanal at 0.3% v/v,4403.0165
+OB,hexanal at 0.3% v/v,4623.2535
+OB,hexanal at 0.3% v/v,4673.518
+OB,hexanal at 1% v/v,148.9475
+OB,hexanal at 1% v/v,209.3305
+OB,hexanal at 1% v/v,418.2545
+OB,hexanal at 1% v/v,538.5665
+OB,hexanal at 1% v/v,698.849
+OB,hexanal at 1% v/v,819.201
+OB,hexanal at 1% v/v,1079.205
+OB,hexanal at 1% v/v,1209.722
+OB,hexanal at 1% v/v,1389.518
+OB,hexanal at 1% v/v,1569.8745
+OB,hexanal at 1% v/v,1619.961
+OB,hexanal at 1% v/v,1820.2815
+OB,hexanal at 1% v/v,2080.5725
+OB,hexanal at 1% v/v,2200.1835
+OB,hexanal at 1% v/v,2320.79
+OB,hexanal at 1% v/v,2540.921
+OB,hexanal at 1% v/v,2600.905
+OB,hexanal at 1% v/v,2871.2085
+OB,hexanal at 1% v/v,3001.497
+OB,hexanal at 1% v/v,3061.57
+OB,hexanal at 1% v/v,3321.977
+OB,hexanal at 1% v/v,3412.172
+OB,hexanal at 1% v/v,3682.3685
+OB,hexanal at 1% v/v,3812.148
+OB,hexanal at 1% v/v,3882.6675
+OB,hexanal at 1% v/v,4072.5035
+OB,hexanal at 1% v/v,4253.066
+OB,hexanal at 1% v/v,4393.021
+OB,hexanal at 1% v/v,4613.637
+OB,hexanal at 1% v/v,4803.488
+OB,ethyl tiglate at 0.3% v/v,117.999
+OB,ethyl tiglate at 0.3% v/v,228.2755
+OB,ethyl tiglate at 0.3% v/v,458.3495
+OB,ethyl tiglate at 0.3% v/v,599.5735
+OB,ethyl tiglate at 0.3% v/v,689.123
+OB,ethyl tiglate at 0.3% v/v,869.2025
+OB,ethyl tiglate at 0.3% v/v,1039.388
+OB,ethyl tiglate at 0.3% v/v,1259.946
+OB,ethyl tiglate at 0.3% v/v,1310.43
+OB,ethyl tiglate at 0.3% v/v,1560.1295
+OB,ethyl tiglate at 0.3% v/v,1689.718
+OB,ethyl tiglate at 0.3% v/v,1920.2005
+OB,ethyl tiglate at 0.3% v/v,2030.6585
+OB,ethyl tiglate at 0.3% v/v,2160.4115
+OB,ethyl tiglate at 0.3% v/v,2370.5735
+OB,ethyl tiglate at 0.3% v/v,2511.0105
+OB,ethyl tiglate at 0.3% v/v,2691.269
+OB,ethyl tiglate at 0.3% v/v,2771.4095
+OB,ethyl tiglate at 0.3% v/v,2951.3125
+OB,ethyl tiglate at 0.3% v/v,3171.767
+OB,ethyl tiglate at 0.3% v/v,3351.853
+OB,ethyl tiglate at 0.3% v/v,3461.829
+OB,ethyl tiglate at 0.3% v/v,3642.228
+OB,ethyl tiglate at 0.3% v/v,3772.195
+OB,ethyl tiglate at 0.3% v/v,3902.7555
+OB,ethyl tiglate at 0.3% v/v,4163.0645
+OB,ethyl tiglate at 0.3% v/v,4182.884
+OB,ethyl tiglate at 0.3% v/v,4423.3725
+OB,ethyl tiglate at 0.3% v/v,4603.129
+OB,ethyl tiglate at 0.3% v/v,4753.739
+OB,ethyl acetate at 0.3% v/v,48.007
+OB,ethyl acetate at 0.3% v/v,278.6985
+OB,ethyl acetate at 0.3% v/v,469.025
+OB,ethyl acetate at 0.3% v/v,529.016
+OB,ethyl acetate at 0.3% v/v,670.0915
+OB,ethyl acetate at 0.3% v/v,939.6735
+OB,ethyl acetate at 0.3% v/v,968.8845
+OB,ethyl acetate at 0.3% v/v,1280.09
+OB,ethyl acetate at 0.3% v/v,1379.8225
+OB,ethyl acetate at 0.3% v/v,1480.318
+OB,ethyl acetate at 0.3% v/v,1719.7
+OB,ethyl acetate at 0.3% v/v,1770.243
+OB,ethyl acetate at 0.3% v/v,1980.4275
+OB,ethyl acetate at 0.3% v/v,2180.297
+OB,ethyl acetate at 0.3% v/v,2260.25198
+OB,ethyl acetate at 0.3% v/v,2450.731
+OB,ethyl acetate at 0.3% v/v,2610.9545
+OB,ethyl acetate at 0.3% v/v,2861.494
+OB,ethyl acetate at 0.3% v/v,2911.4005
+OB,ethyl acetate at 0.3% v/v,3201.511
+OB,ethyl acetate at 0.3% v/v,3211.5685
+OB,ethyl acetate at 0.3% v/v,3381.78738
+OB,ethyl acetate at 0.3% v/v,3652.2975
+OB,ethyl acetate at 0.3% v/v,3792.1685
+OB,ethyl acetate at 0.3% v/v,3922.314
+OB,ethyl acetate at 0.3% v/v,4142.876
+OB,ethyl acetate at 0.3% v/v,4232.70658
+OB,ethyl acetate at 0.3% v/v,4453.02
+OB,ethyl acetate at 0.3% v/v,4503.4055
+OB,ethyl acetate at 0.3% v/v,4653.2955
+OB,mineral oil,128.331
+OB,mineral oil,209.5005
+OB,mineral oil,389.1085
+OB,mineral oil,629.6515
+OB,mineral oil,738.918
+OB,mineral oil,919.9315
+OB,mineral oil,1079.62599
+OB,mineral oil,1230.5755
+OB,mineral oil,1340.549
+OB,mineral oil,1530.0325
+OB,mineral oil,1657.38078
+OB,mineral oil,1887.6715
+OB,mineral oil,1957.729
+OB,mineral oil,2107.9435
+OB,mineral oil,2287.8945
+OB,mineral oil,2438.374
+OB,mineral oil,2678.1155
+OB,mineral oil,2828.79795
+OB,mineral oil,2998.7375
+OB,mineral oil,3058.8985
+OB,ethyl butyrate at 0.03% v/v,9.192
+OB,ethyl butyrate at 0.03% v/v,278.5915
+OB,ethyl butyrate at 0.03% v/v,338.523
+OB,ethyl butyrate at 0.03% v/v,599.1575
+OB,ethyl butyrate at 0.03% v/v,658.5155
+OB,ethyl butyrate at 0.03% v/v,848.885
+OB,ethyl butyrate at 0.03% v/v,1109.076
+OB,ethyl butyrate at 0.03% v/v,1140.311
+OB,ethyl butyrate at 0.03% v/v,1330.512
+OB,ethyl butyrate at 0.03% v/v,1470.161
+OB,ethyl butyrate at 0.03% v/v,1626.803
+OB,ethyl butyrate at 0.03% v/v,1907.446
+OB,ethyl butyrate at 0.03% v/v,2047.88
+OB,ethyl butyrate at 0.03% v/v,2198.144
+OB,ethyl butyrate at 0.03% v/v,2278.139
+OB,ethyl butyrate at 0.03% v/v,2427.8055
+OB,ethyl butyrate at 0.03% v/v,2668.645
+OB,ethyl butyrate at 0.03% v/v,2818.311
+OB,ethyl butyrate at 0.03% v/v,2988.9695
+OB,ethyl butyrate at 0.03% v/v,3149.023
+OB,ethyl butyrate at 0.1% v/v,108.1905
+OB,ethyl butyrate at 0.1% v/v,238.92
+OB,ethyl butyrate at 0.1% v/v,368.836
+OB,ethyl butyrate at 0.1% v/v,549.5935
+OB,ethyl butyrate at 0.1% v/v,788.773
+OB,ethyl butyrate at 0.1% v/v,889.655
+OB,ethyl butyrate at 0.1% v/v,1049.3865
+OB,ethyl butyrate at 0.1% v/v,1219.9905
+OB,ethyl butyrate at 0.1% v/v,1309.9245
+OB,ethyl butyrate at 0.1% v/v,1600.3045
+OB,ethyl butyrate at 0.1% v/v,1727.283
+OB,ethyl butyrate at 0.1% v/v,1807.1325
+OB,ethyl butyrate at 0.1% v/v,2037.725
+OB,ethyl butyrate at 0.1% v/v,2227.769
+OB,ethyl butyrate at 0.1% v/v,2257.9065
+OB,ethyl butyrate at 0.1% v/v,2487.9075
+OB,ethyl butyrate at 0.1% v/v,2698.703
+OB,ethyl butyrate at 0.1% v/v,2808.4075
+OB,ethyl butyrate at 0.1% v/v,2938.884
+OB,ethyl butyrate at 0.1% v/v,3188.8325
+OB,ethyl butyrate at 0.3% v/v,99.51487
+OB,ethyl butyrate at 0.3% v/v,288.7705
+OB,ethyl butyrate at 0.3% v/v,419.546
+OB,ethyl butyrate at 0.3% v/v,518.78165
+OB,ethyl butyrate at 0.3% v/v,699.525
+OB,ethyl butyrate at 0.3% v/v,828.79295
+OB,ethyl butyrate at 0.3% v/v,990.074
+OB,ethyl butyrate at 0.3% v/v,1239.77
+OB,ethyl butyrate at 0.3% v/v,1429.4785
+OB,ethyl butyrate at 0.3% v/v,1540.278
+OB,ethyl butyrate at 0.3% v/v,1677.113
+OB,ethyl butyrate at 0.3% v/v,1786.9125
+OB,ethyl butyrate at 0.3% v/v,2027.5955
+OB,ethyl butyrate at 0.3% v/v,2178.01158
+OB,ethyl butyrate at 0.3% v/v,2358.0615
+OB,ethyl butyrate at 0.3% v/v,2418.3895
+OB,ethyl butyrate at 0.3% v/v,2658.3245
+OB,ethyl butyrate at 0.3% v/v,2858.9695
+OB,ethyl butyrate at 0.3% v/v,3008.9045
+OB,ethyl butyrate at 0.3% v/v,3098.9375
+OB,ethyl butyrate at 1% v/v,117.9065
+OB,ethyl butyrate at 1% v/v,198.3265
+OB,ethyl butyrate at 1% v/v,479.2235
+OB,ethyl butyrate at 1% v/v,609.938
+OB,ethyl butyrate at 1% v/v,679.4605
+OB,ethyl butyrate at 1% v/v,949.2975
+OB,ethyl butyrate at 1% v/v,1000.31
+OB,ethyl butyrate at 1% v/v,1270.271
+OB,ethyl butyrate at 1% v/v,1409.3535
+OB,ethyl butyrate at 1% v/v,1480.7665
+OB,ethyl butyrate at 1% v/v,1667.5555
+OB,ethyl butyrate at 1% v/v,1857.409
+OB,ethyl butyrate at 1% v/v,1997.87
+OB,ethyl butyrate at 1% v/v,2097.6735
+OB,ethyl butyrate at 1% v/v,2298.2005
+OB,ethyl butyrate at 1% v/v,2508.5135
+OB,ethyl butyrate at 1% v/v,2708.6985
+OB,ethyl butyrate at 1% v/v,2738.351
+OB,ethyl butyrate at 1% v/v,3019.0015
+OB,ethyl butyrate at 1% v/v,3199.1405
+OB,2-hexanone at 0.3% v/v,57.8385
+OB,2-hexanone at 0.3% v/v,168.379
+OB,2-hexanone at 0.3% v/v,470.33429
+OB,2-hexanone at 0.3% v/v,509.167
+OB,2-hexanone at 0.3% v/v,729.6105
+OB,2-hexanone at 0.3% v/v,899.5985
+OB,2-hexanone at 0.3% v/v,1120.0715
+OB,2-hexanone at 0.3% v/v,1199.758
+OB,2-hexanone at 0.3% v/v,1369.5355
+OB,2-hexanone at 0.3% v/v,1590.5485
+OB,2-hexanone at 0.3% v/v,1717.454
+OB,2-hexanone at 0.3% v/v,1837.479
+OB,2-hexanone at 0.3% v/v,2017.394
+OB,2-hexanone at 0.3% v/v,2168.022
+OB,2-hexanone at 0.3% v/v,2378.0005
+OB,2-hexanone at 0.3% v/v,2448.228
+OB,2-hexanone at 0.3% v/v,2688.556
+OB,2-hexanone at 0.3% v/v,2788.3755
+OB,2-hexanone at 0.3% v/v,2899.0045
+OB,2-hexanone at 0.3% v/v,3138.8675
+OB,isoamyl acetate at 0.3% v/v,38.17636
+OB,isoamyl acetate at 0.3% v/v,299.4175
+OB,isoamyl acetate at 0.3% v/v,349.061
+OB,isoamyl acetate at 0.3% v/v,528.505
+OB,isoamyl acetate at 0.3% v/v,709.2665
+OB,isoamyl acetate at 0.3% v/v,909.572
+OB,isoamyl acetate at 0.3% v/v,1019.6815
+OB,isoamyl acetate at 0.3% v/v,1279.9485
+OB,isoamyl acetate at 0.3% v/v,1390.01761
+OB,isoamyl acetate at 0.3% v/v,1580.5025
+OB,isoamyl acetate at 0.3% v/v,1647.40023
+OB,isoamyl acetate at 0.3% v/v,1777.25
+OB,isoamyl acetate at 0.3% v/v,2087.421
+OB,isoamyl acetate at 0.3% v/v,2147.833
+OB,isoamyl acetate at 0.3% v/v,2348.204
+OB,isoamyl acetate at 0.3% v/v,2468.187
+OB,isoamyl acetate at 0.3% v/v,2728.37769
+OB,isoamyl acetate at 0.3% v/v,2778.751
+OB,isoamyl acetate at 0.3% v/v,3028.8095
+OB,isoamyl acetate at 0.3% v/v,3108.8415
+OB,hexanal at 0.03% v/v,138.2615
+OB,hexanal at 0.03% v/v,319.4675
+OB,hexanal at 0.03% v/v,428.6605
+OB,hexanal at 0.03% v/v,568.7735
+OB,hexanal at 0.03% v/v,799.292
+OB,hexanal at 0.03% v/v,859.638
+OB,hexanal at 0.03% v/v,978.9205
+OB,hexanal at 0.03% v/v,1149.7565
+OB,hexanal at 0.03% v/v,1320.341
+OB,hexanal at 0.03% v/v,1519.8885
+OB,hexanal at 0.03% v/v,1767.228
+OB,hexanal at 0.03% v/v,1927.74
+OB,hexanal at 0.03% v/v,1947.8845
+OB,hexanal at 0.03% v/v,2207.6245
+OB,hexanal at 0.03% v/v,2268.214
+OB,hexanal at 0.03% v/v,2548.0665
+OB,hexanal at 0.03% v/v,2648.413
+OB,hexanal at 0.03% v/v,2878.909
+OB,hexanal at 0.03% v/v,2958.527
+OB,hexanal at 0.03% v/v,3068.7975
+OB,hexanal at 0.1% v/v,67.955
+OB,hexanal at 0.1% v/v,189.291
+OB,hexanal at 0.1% v/v,329.114
+OB,hexanal at 0.1% v/v,488.8175
+OB,hexanal at 0.1% v/v,759.7225
+OB,hexanal at 0.1% v/v,839.3865
+OB,hexanal at 0.1% v/v,1059.36
+OB,hexanal at 0.1% v/v,1259.289
+OB,hexanal at 0.1% v/v,1439.6975
+OB,hexanal at 0.1% v/v,1489.866
+OB,hexanal at 0.1% v/v,1707.193
+OB,hexanal at 0.1% v/v,1917.4655
+OB,hexanal at 0.1% v/v,2077.771
+OB,hexanal at 0.1% v/v,2187.5685
+OB,hexanal at 0.1% v/v,2317.948
+OB,hexanal at 0.1% v/v,2538.2535
+OB,hexanal at 0.1% v/v,2588.464
+OB,hexanal at 0.1% v/v,2748.2685
+OB,hexanal at 0.1% v/v,2908.6675
+OB,hexanal at 0.1% v/v,3209.283
+OB,hexanal at 0.3% v/v,17.784
+OB,hexanal at 0.3% v/v,308.1465
+OB,hexanal at 0.3% v/v,438.82134
+OB,hexanal at 0.3% v/v,499.56914
+OB,hexanal at 0.3% v/v,689.5505
+OB,hexanal at 0.3% v/v,880.30451
+OB,hexanal at 0.3% v/v,1030.0035
+OB,hexanal at 0.3% v/v,1169.5065
+OB,hexanal at 0.3% v/v,1299.985
+OB,hexanal at 0.3% v/v,1450.189
+OB,hexanal at 0.3% v/v,1687.3925
+OB,hexanal at 0.3% v/v,1797.2485
+OB,hexanal at 0.3% v/v,2007.421
+OB,hexanal at 0.3% v/v,2217.904
+OB,hexanal at 0.3% v/v,2397.7135
+OB,hexanal at 0.3% v/v,2498.094
+OB,hexanal at 0.3% v/v,2598.522
+OB,hexanal at 0.3% v/v,2848.53373
+OB,hexanal at 0.3% v/v,2948.756
+OB,hexanal at 0.3% v/v,3088.664
+OB,hexanal at 1% v/v,88.0985
+OB,hexanal at 1% v/v,229.137
+OB,hexanal at 1% v/v,398.821
+OB,hexanal at 1% v/v,540.584
+OB,hexanal at 1% v/v,669.797
+OB,hexanal at 1% v/v,819.243
+OB,hexanal at 1% v/v,1070.001
+OB,hexanal at 1% v/v,1159.627
+OB,hexanal at 1% v/v,1419.8995
+OB,hexanal at 1% v/v,1569.929
+OB,hexanal at 1% v/v,1757.445
+OB,hexanal at 1% v/v,1827.208
+OB,hexanal at 1% v/v,2067.5415
+OB,hexanal at 1% v/v,2127.907
+OB,hexanal at 1% v/v,2328.076
+OB,hexanal at 1% v/v,2458.321
+OB,hexanal at 1% v/v,2578.467
+OB,hexanal at 1% v/v,2888.68
+OB,hexanal at 1% v/v,2929.107
+OB,hexanal at 1% v/v,3118.875
+OB,ethyl tiglate at 0.3% v/v,78.8595
+OB,ethyl tiglate at 0.3% v/v,218.546
+OB,ethyl tiglate at 0.3% v/v,379.193
+OB,ethyl tiglate at 0.3% v/v,559.15
+OB,ethyl tiglate at 0.3% v/v,649.4281
+OB,ethyl tiglate at 0.3% v/v,809.864
+OB,ethyl tiglate at 0.3% v/v,970.48408
+OB,ethyl tiglate at 0.3% v/v,1190.03727
+OB,ethyl tiglate at 0.3% v/v,1350.014
+OB,ethyl tiglate at 0.3% v/v,1499.93721
+OB,ethyl tiglate at 0.3% v/v,1637.0895
+OB,ethyl tiglate at 0.3% v/v,1847.697
+OB,ethyl tiglate at 0.3% v/v,1967.5405
+OB,ethyl tiglate at 0.3% v/v,2117.9215
+OB,ethyl tiglate at 0.3% v/v,2408.3605
+OB,ethyl tiglate at 0.3% v/v,2528.074
+OB,ethyl tiglate at 0.3% v/v,2608.526
+OB,ethyl tiglate at 0.3% v/v,2768.5045
+OB,ethyl tiglate at 0.3% v/v,3039.095
+OB,ethyl tiglate at 0.3% v/v,3079.1105
+OB,ethyl acetate at 0.3% v/v,47.992
+OB,ethyl acetate at 0.3% v/v,179.5695
+OB,ethyl acetate at 0.3% v/v,358.197
+OB,ethyl acetate at 0.3% v/v,578.83161
+OB,ethyl acetate at 0.3% v/v,778.946
+OB,ethyl acetate at 0.3% v/v,960.2485
+OB,ethyl acetate at 0.3% v/v,1039.2395
+OB,ethyl acetate at 0.3% v/v,1209.5765
+OB,ethyl acetate at 0.3% v/v,1399.921
+OB,ethyl acetate at 0.3% v/v,1510.4445
+OB,ethyl acetate at 0.3% v/v,1617.501
+OB,ethyl acetate at 0.3% v/v,1877.796
+OB,ethyl acetate at 0.3% v/v,1977.682
+OB,ethyl acetate at 0.3% v/v,2238.1505
+OB,ethyl acetate at 0.3% v/v,2388.3935
+OB,ethyl acetate at 0.3% v/v,2518.335
+OB,ethyl acetate at 0.3% v/v,2618.294
+OB,ethyl acetate at 0.3% v/v,2798.6245
+OB,ethyl acetate at 0.3% v/v,2968.739
+OB,ethyl acetate at 0.3% v/v,3158.9045
+OB,mineral oil,87.87
+OB,mineral oil,247.9995
+OB,mineral oil,458.4035
+OB,mineral oil,519.1795
+OB,mineral oil,668.6945
+OB,mineral oil,938.988
+OB,mineral oil,969.10272
+OB,mineral oil,1179.315
+OB,mineral oil,1399.486
+OB,mineral oil,1489.821
+OB,mineral oil,1669.8915
+OB,mineral oil,1810.3445
+OB,mineral oil,1950.3655
+OB,mineral oil,2140.573
+OB,mineral oil,2270.6985
+OB,mineral oil,2490.937
+OB,mineral oil,2601.365
+OB,mineral oil,2781.416
+OB,mineral oil,2961.912
+OB,mineral oil,3062.115
+OB,mineral oil,3282.2245
+OB,mineral oil,3382.6115
+OB,mineral oil,3632.5965
+OB,mineral oil,3692.6075
+OB,mineral oil,3893.0865
+OB,mineral oil,4023.275
+OB,mineral oil,4233.634
+OB,mineral oil,4383.93352
+OB,mineral oil,4494.1173
+OB,mineral oil,4674.2035
+OB,mineral oil,4814.3735
+OB,mineral oil,5074.6
+OB,mineral oil,5194.932
+OB,mineral oil,5345.3865
+OB,mineral oil,5465.18638
+OB,mineral oil,5645.29386
+OB,mineral oil,5775.7165
+OB,mineral oil,6005.81663
+OB,mineral oil,6136.35006
+OB,mineral oil,6386.719
+OB,mineral oil,6436.3595
+OB,mineral oil,6616.578
+OB,mineral oil,6766.914
+OB,mineral oil,6947.2975
+OB,mineral oil,7187.804
+OB,mineral oil,7277.5855
+OB,mineral oil,7428.08588
+OB,mineral oil,7557.87867
+OB,mineral oil,7718.24973
+OB,mineral oil,7998.863
+OB,mineral oil,8068.621
+OB,mineral oil,8178.992
+OB,mineral oil,8368.9245
+OB,mineral oil,8569.6215
+OB,mineral oil,8720.088
+OB,mineral oil,8910.81384
+OB,mineral oil,9000.73156
+OB,mineral oil,9150.3145
+OB,mineral oil,9321.4305
+OB,mineral oil,9530.8155
+OB,ethyl butyrate at 0.03% v/v,78.319
+OB,ethyl butyrate at 0.03% v/v,268.2915
+OB,ethyl butyrate at 0.03% v/v,408.604
+OB,ethyl butyrate at 0.03% v/v,558.637
+OB,ethyl butyrate at 0.03% v/v,648.9425
+OB,ethyl butyrate at 0.03% v/v,808.711
+OB,ethyl butyrate at 0.03% v/v,999.118
+OB,ethyl butyrate at 0.03% v/v,1219.5415
+OB,ethyl butyrate at 0.03% v/v,1289.3865
+OB,ethyl butyrate at 0.03% v/v,1560.0635
+OB,ethyl butyrate at 0.03% v/v,1660.1905
+OB,ethyl butyrate at 0.03% v/v,1910.1935
+OB,ethyl butyrate at 0.03% v/v,2070.616
+OB,ethyl butyrate at 0.03% v/v,2240.839
+OB,ethyl butyrate at 0.03% v/v,2261.269
+OB,ethyl butyrate at 0.03% v/v,2561.1855
+OB,ethyl butyrate at 0.03% v/v,2671.471
+OB,ethyl butyrate at 0.03% v/v,2811.515
+OB,ethyl butyrate at 0.03% v/v,2921.585
+OB,ethyl butyrate at 0.03% v/v,3202.0835
+OB,ethyl butyrate at 0.03% v/v,3312.297
+OB,ethyl butyrate at 0.03% v/v,3492.7535
+OB,ethyl butyrate at 0.03% v/v,3582.557
+OB,ethyl butyrate at 0.03% v/v,3712.961
+OB,ethyl butyrate at 0.03% v/v,3963.1915
+OB,ethyl butyrate at 0.03% v/v,4033.2995
+OB,ethyl butyrate at 0.03% v/v,4183.6305
+OB,ethyl butyrate at 0.03% v/v,4424.1395
+OB,ethyl butyrate at 0.03% v/v,4644.2225
+OB,ethyl butyrate at 0.03% v/v,4653.801
+OB,ethyl butyrate at 0.03% v/v,4864.3545
+OB,ethyl butyrate at 0.03% v/v,5014.68
+OB,ethyl butyrate at 0.03% v/v,5165.062
+OB,ethyl butyrate at 0.03% v/v,5404.996
+OB,ethyl butyrate at 0.03% v/v,5505.183
+OB,ethyl butyrate at 0.03% v/v,5685.639
+OB,ethyl butyrate at 0.03% v/v,5845.8815
+OB,ethyl butyrate at 0.03% v/v,5956.095
+OB,ethyl butyrate at 0.03% v/v,6105.69
+OB,ethyl butyrate at 0.03% v/v,6306.223
+OB,ethyl butyrate at 0.03% v/v,6426.46
+OB,ethyl butyrate at 0.03% v/v,6646.8865
+OB,ethyl butyrate at 0.03% v/v,6877.417
+OB,ethyl butyrate at 0.03% v/v,6997.1155
+OB,ethyl butyrate at 0.03% v/v,7207.38
+OB,ethyl butyrate at 0.03% v/v,7337.7555
+OB,ethyl butyrate at 0.03% v/v,7437.7275
+OB,ethyl butyrate at 0.03% v/v,7687.9755
+OB,ethyl butyrate at 0.03% v/v,7838.5355
+OB,ethyl butyrate at 0.03% v/v,7968.4575
+OB,ethyl butyrate at 0.03% v/v,8138.633
+OB,ethyl butyrate at 0.03% v/v,8258.452
+OB,ethyl butyrate at 0.03% v/v,8489.214
+OB,ethyl butyrate at 0.03% v/v,8599.2625
+OB,ethyl butyrate at 0.03% v/v,8659.443
+OB,ethyl butyrate at 0.03% v/v,8889.8045
+OB,ethyl butyrate at 0.03% v/v,8989.785
+OB,ethyl butyrate at 0.03% v/v,9240.302
+OB,ethyl butyrate at 0.03% v/v,9401.335
+OB,ethyl butyrate at 0.03% v/v,9511.2255
+OB,ethyl butyrate at 0.1% v/v,97.72
+OB,ethyl butyrate at 0.1% v/v,188.2515
+OB,ethyl butyrate at 0.1% v/v,448.504
+OB,ethyl butyrate at 0.1% v/v,548.969
+OB,ethyl butyrate at 0.1% v/v,688.5345
+OB,ethyl butyrate at 0.1% v/v,899.0405
+OB,ethyl butyrate at 0.1% v/v,1119.498
+OB,ethyl butyrate at 0.1% v/v,1249.715
+OB,ethyl butyrate at 0.1% v/v,1339.706
+OB,ethyl butyrate at 0.1% v/v,1499.8825
+OB,ethyl butyrate at 0.1% v/v,1620.184
+OB,ethyl butyrate at 0.1% v/v,1850.3165
+OB,ethyl butyrate at 0.1% v/v,1930.204
+OB,ethyl butyrate at 0.1% v/v,2180.5915
+OB,ethyl butyrate at 0.1% v/v,2371.184
+OB,ethyl butyrate at 0.1% v/v,2540.848
+OB,ethyl butyrate at 0.1% v/v,2661.6165
+OB,ethyl butyrate at 0.1% v/v,2861.7815
+OB,ethyl butyrate at 0.1% v/v,2941.6025
+OB,ethyl butyrate at 0.1% v/v,3131.9
+OB,ethyl butyrate at 0.1% v/v,3302.121
+OB,ethyl butyrate at 0.1% v/v,3432.576
+OB,ethyl butyrate at 0.1% v/v,3552.4315
+OB,ethyl butyrate at 0.1% v/v,3792.748
+OB,ethyl butyrate at 0.1% v/v,3862.9145
+OB,ethyl butyrate at 0.1% v/v,4093.0725
+OB,ethyl butyrate at 0.1% v/v,4213.52
+OB,ethyl butyrate at 0.1% v/v,4343.5495
+OB,ethyl butyrate at 0.1% v/v,4564.213
+OB,ethyl butyrate at 0.1% v/v,4734.2395
+OB,ethyl butyrate at 0.1% v/v,4924.74
+OB,ethyl butyrate at 0.1% v/v,5004.6875
+OB,ethyl butyrate at 0.1% v/v,5155.1005
+OB,ethyl butyrate at 0.1% v/v,5315.1905
+OB,ethyl butyrate at 0.1% v/v,5545.558
+OB,ethyl butyrate at 0.1% v/v,5625.402
+OB,ethyl butyrate at 0.1% v/v,5915.5245
+OB,ethyl butyrate at 0.1% v/v,5976.0455
+OB,ethyl butyrate at 0.1% v/v,6096.3845
+OB,ethyl butyrate at 0.1% v/v,6336.2375
+OB,ethyl butyrate at 0.1% v/v,6466.7525
+OB,ethyl butyrate at 0.1% v/v,6586.529
+OB,ethyl butyrate at 0.1% v/v,6797.24
+OB,ethyl butyrate at 0.1% v/v,6977.135
+OB,ethyl butyrate at 0.1% v/v,7087.4355
+OB,ethyl butyrate at 0.1% v/v,7217.6955
+OB,ethyl butyrate at 0.1% v/v,7408.075
+OB,ethyl butyrate at 0.1% v/v,7578.334
+OB,ethyl butyrate at 0.1% v/v,7798.2
+OB,ethyl butyrate at 0.1% v/v,7918.7085
+OB,ethyl butyrate at 0.1% v/v,8088.8175
+OB,ethyl butyrate at 0.1% v/v,8268.881
+OB,ethyl butyrate at 0.1% v/v,8429.3905
+OB,ethyl butyrate at 0.1% v/v,8559.868
+OB,ethyl butyrate at 0.1% v/v,8759.921
+OB,ethyl butyrate at 0.1% v/v,8860.3415
+OB,ethyl butyrate at 0.1% v/v,9040.5305
+OB,ethyl butyrate at 0.1% v/v,9230.6165
+OB,ethyl butyrate at 0.1% v/v,9441.0945
+OB,ethyl butyrate at 0.1% v/v,9491.373
+OB,ethyl butyrate at 0.3% v/v,128.8185
+OB,ethyl butyrate at 0.3% v/v,288.0915
+OB,ethyl butyrate at 0.3% v/v,358.4535
+OB,ethyl butyrate at 0.3% v/v,598.6845
+OB,ethyl butyrate at 0.3% v/v,708.807
+OB,ethyl butyrate at 0.3% v/v,909.10531
+OB,ethyl butyrate at 0.3% v/v,989.05
+OB,ethyl butyrate at 0.3% v/v,1269.681
+OB,ethyl butyrate at 0.3% v/v,1379.8895
+OB,ethyl butyrate at 0.3% v/v,1579.903
+OB,ethyl butyrate at 0.3% v/v,1740.1605
+OB,ethyl butyrate at 0.3% v/v,1780.139
+OB,ethyl butyrate at 0.3% v/v,1940.5205
+OB,ethyl butyrate at 0.3% v/v,2100.6965
+OB,ethyl butyrate at 0.3% v/v,2361.1415
+OB,ethyl butyrate at 0.3% v/v,2461.016
+OB,ethyl butyrate at 0.3% v/v,2641.251
+OB,ethyl butyrate at 0.3% v/v,2791.3655
+OB,ethyl butyrate at 0.3% v/v,2911.8665
+OB,ethyl butyrate at 0.3% v/v,3072.007
+OB,ethyl butyrate at 0.3% v/v,3252.347
+OB,ethyl butyrate at 0.3% v/v,3512.3745
+OB,ethyl butyrate at 0.3% v/v,3602.47774
+OB,ethyl butyrate at 0.3% v/v,3783.068
+OB,ethyl butyrate at 0.3% v/v,3943.1155
+OB,ethyl butyrate at 0.3% v/v,4103.5665
+OB,ethyl butyrate at 0.3% v/v,4193.346
+OB,ethyl butyrate at 0.3% v/v,4333.9045
+OB,ethyl butyrate at 0.3% v/v,4634.1015
+OB,ethyl butyrate at 0.3% v/v,4684.0
+OB,ethyl butyrate at 0.3% v/v,4854.545
+OB,ethyl butyrate at 0.3% v/v,5064.728
+OB,ethyl butyrate at 0.3% v/v,5274.7625
+OB,ethyl butyrate at 0.3% v/v,5324.881
+OB,ethyl butyrate at 0.3% v/v,5565.5705
+OB,ethyl butyrate at 0.3% v/v,5635.4375
+OB,ethyl butyrate at 0.3% v/v,5895.601
+OB,ethyl butyrate at 0.3% v/v,5945.9205
+OB,ethyl butyrate at 0.3% v/v,6186.45022
+OB,ethyl butyrate at 0.3% v/v,6296.6455
+OB,ethyl butyrate at 0.3% v/v,6476.69752
+OB,ethyl butyrate at 0.3% v/v,6596.5745
+OB,ethyl butyrate at 0.3% v/v,6776.9975
+OB,ethyl butyrate at 0.3% v/v,6897.3325
+OB,ethyl butyrate at 0.3% v/v,7157.5875
+OB,ethyl butyrate at 0.3% v/v,7347.6475
+OB,ethyl butyrate at 0.3% v/v,7527.7745
+OB,ethyl butyrate at 0.3% v/v,7648.28272
+OB,ethyl butyrate at 0.3% v/v,7698.5295
+OB,ethyl butyrate at 0.3% v/v,7858.2175
+OB,ethyl butyrate at 0.3% v/v,8158.541
+OB,ethyl butyrate at 0.3% v/v,8198.78201
+OB,ethyl butyrate at 0.3% v/v,8379.1305
+OB,ethyl butyrate at 0.3% v/v,8508.79
+OB,ethyl butyrate at 0.3% v/v,8799.8525
+OB,ethyl butyrate at 0.3% v/v,8820.625
+OB,ethyl butyrate at 0.3% v/v,9010.76
+OB,ethyl butyrate at 0.3% v/v,9140.352
+OB,ethyl butyrate at 0.3% v/v,9410.3425
+OB,ethyl butyrate at 0.3% v/v,9551.0745
+OB,ethyl butyrate at 1% v/v,108.7825
+OB,ethyl butyrate at 1% v/v,308.4765
+OB,ethyl butyrate at 1% v/v,398.9765
+OB,ethyl butyrate at 1% v/v,538.6905
+OB,ethyl butyrate at 1% v/v,679.495
+OB,ethyl butyrate at 1% v/v,819.522
+OB,ethyl butyrate at 1% v/v,979.429
+OB,ethyl butyrate at 1% v/v,1139.5115
+OB,ethyl butyrate at 1% v/v,1299.3125
+OB,ethyl butyrate at 1% v/v,1540.0045
+OB,ethyl butyrate at 1% v/v,1690.1515
+OB,ethyl butyrate at 1% v/v,1920.2415
+OB,ethyl butyrate at 1% v/v,2010.6015
+OB,ethyl butyrate at 1% v/v,2231.465
+OB,ethyl butyrate at 1% v/v,2400.8725
+OB,ethyl butyrate at 1% v/v,2530.951
+OB,ethyl butyrate at 1% v/v,2631.341
+OB,ethyl butyrate at 1% v/v,2881.671
+OB,ethyl butyrate at 1% v/v,2891.4975
+OB,ethyl butyrate at 1% v/v,3181.9875
+OB,ethyl butyrate at 1% v/v,3322.07
+OB,ethyl butyrate at 1% v/v,3472.5965
+OB,ethyl butyrate at 1% v/v,3612.487
+OB,ethyl butyrate at 1% v/v,3733.001
+OB,ethyl butyrate at 1% v/v,3953.302
+OB,ethyl butyrate at 1% v/v,4113.4225
+OB,ethyl butyrate at 1% v/v,4303.775
+OB,ethyl butyrate at 1% v/v,4474.0475
+OB,ethyl butyrate at 1% v/v,4604.2835
+OB,ethyl butyrate at 1% v/v,4664.174
+OB,ethyl butyrate at 1% v/v,4884.413
+OB,ethyl butyrate at 1% v/v,5114.9665
+OB,ethyl butyrate at 1% v/v,5144.782
+OB,ethyl butyrate at 1% v/v,5415.0695
+OB,ethyl butyrate at 1% v/v,5495.106
+OB,ethyl butyrate at 1% v/v,5745.532
+OB,ethyl butyrate at 1% v/v,5885.49
+OB,ethyl butyrate at 1% v/v,6065.6085
+OB,ethyl butyrate at 1% v/v,6205.94
+OB,ethyl butyrate at 1% v/v,6396.376
+OB,ethyl butyrate at 1% v/v,6516.567
+OB,ethyl butyrate at 1% v/v,6726.811
+OB,ethyl butyrate at 1% v/v,6827.035
+OB,ethyl butyrate at 1% v/v,7007.392
+OB,ethyl butyrate at 1% v/v,7097.4315
+OB,ethyl butyrate at 1% v/v,7257.5045
+OB,ethyl butyrate at 1% v/v,7478.1535
+OB,ethyl butyrate at 1% v/v,7618.1415
+OB,ethyl butyrate at 1% v/v,7748.435
+OB,ethyl butyrate at 1% v/v,7898.5845
+OB,ethyl butyrate at 1% v/v,8108.733
+OB,ethyl butyrate at 1% v/v,8319.0265
+OB,ethyl butyrate at 1% v/v,8449.007
+OB,ethyl butyrate at 1% v/v,8499.5155
+OB,ethyl butyrate at 1% v/v,8729.687
+OB,ethyl butyrate at 1% v/v,8870.256
+OB,ethyl butyrate at 1% v/v,9029.821
+OB,ethyl butyrate at 1% v/v,9220.1355
+OB,ethyl butyrate at 1% v/v,9340.125
+OB,ethyl butyrate at 1% v/v,9460.434
+OB,2-hexanone at 0.3% v/v,47.842
+OB,2-hexanone at 0.3% v/v,218.224
+OB,2-hexanone at 0.3% v/v,338.21
+OB,2-hexanone at 0.3% v/v,498.6586
+OB,2-hexanone at 0.3% v/v,758.70009
+OB,2-hexanone at 0.3% v/v,879.0165
+OB,2-hexanone at 0.3% v/v,1019.1115
+OB,2-hexanone at 0.3% v/v,1159.3325
+OB,2-hexanone at 0.3% v/v,1410.012
+OB,2-hexanone at 0.3% v/v,1509.705
+OB,2-hexanone at 0.3% v/v,1719.9205
+OB,2-hexanone at 0.3% v/v,1770.05489
+OB,2-hexanone at 0.3% v/v,2040.512
+OB,2-hexanone at 0.3% v/v,2150.545
+OB,2-hexanone at 0.3% v/v,2320.68203
+OB,2-hexanone at 0.3% v/v,2420.8015
+OB,2-hexanone at 0.3% v/v,2711.439
+OB,2-hexanone at 0.3% v/v,2761.566
+OB,2-hexanone at 0.3% v/v,2931.8015
+OB,2-hexanone at 0.3% v/v,3151.91
+OB,2-hexanone at 0.3% v/v,3272.5045
+OB,2-hexanone at 0.3% v/v,3482.369
+OB,2-hexanone at 0.3% v/v,3682.669
+OB,2-hexanone at 0.3% v/v,3833.093
+OB,2-hexanone at 0.3% v/v,3983.4985
+OB,2-hexanone at 0.3% v/v,4013.271
+OB,2-hexanone at 0.3% v/v,4263.6415
+OB,2-hexanone at 0.3% v/v,4454.015
+OB,2-hexanone at 0.3% v/v,4543.9405
+OB,2-hexanone at 0.3% v/v,4804.0865
+OB,2-hexanone at 0.3% v/v,4834.2785
+OB,2-hexanone at 0.3% v/v,5085.033
+OB,2-hexanone at 0.3% v/v,5185.016
+OB,2-hexanone at 0.3% v/v,5445.214
+OB,2-hexanone at 0.3% v/v,5455.058
+OB,2-hexanone at 0.3% v/v,5615.284
+OB,2-hexanone at 0.3% v/v,5795.7165
+OB,2-hexanone at 0.3% v/v,6086.2195
+OB,2-hexanone at 0.3% v/v,6196.0005
+OB,2-hexanone at 0.3% v/v,6376.625
+OB,2-hexanone at 0.3% v/v,6566.83694
+OB,2-hexanone at 0.3% v/v,6626.9855
+OB,2-hexanone at 0.3% v/v,6786.93737
+OB,2-hexanone at 0.3% v/v,6907.1825
+OB,2-hexanone at 0.3% v/v,7167.4405
+OB,2-hexanone at 0.3% v/v,7367.909
+OB,2-hexanone at 0.3% v/v,7387.6685
+OB,2-hexanone at 0.3% v/v,7538.147
+OB,2-hexanone at 0.3% v/v,7788.33173
+OB,2-hexanone at 0.3% v/v,7908.3425
+OB,2-hexanone at 0.3% v/v,8018.535
+OB,2-hexanone at 0.3% v/v,8239.1395
+OB,2-hexanone at 0.3% v/v,8469.996
+OB,2-hexanone at 0.3% v/v,8629.73638
+OB,2-hexanone at 0.3% v/v,8749.7965
+OB,2-hexanone at 0.3% v/v,8950.47072
+OB,2-hexanone at 0.3% v/v,9059.8035
+OB,2-hexanone at 0.3% v/v,9160.614
+OB,2-hexanone at 0.3% v/v,9420.403
+OB,2-hexanone at 0.3% v/v,9561.207
+OB,isoamyl acetate at 0.3% v/v,157.9525
+OB,isoamyl acetate at 0.3% v/v,208.1995
+OB,isoamyl acetate at 0.3% v/v,429.073
+OB,isoamyl acetate at 0.3% v/v,508.3255
+OB,isoamyl acetate at 0.3% v/v,738.938
+OB,isoamyl acetate at 0.3% v/v,829.0855
+OB,isoamyl acetate at 0.3% v/v,1079.1565
+OB,isoamyl acetate at 0.3% v/v,1279.52475
+OB,isoamyl acetate at 0.3% v/v,1419.986
+OB,isoamyl acetate at 0.3% v/v,1459.7985
+OB,isoamyl acetate at 0.3% v/v,1730.3505
+OB,isoamyl acetate at 0.3% v/v,1790.217
+OB,isoamyl acetate at 0.3% v/v,1990.4395
+OB,isoamyl acetate at 0.3% v/v,2130.529
+OB,isoamyl acetate at 0.3% v/v,2330.763
+OB,isoamyl acetate at 0.3% v/v,2440.9795
+OB,isoamyl acetate at 0.3% v/v,2611.3115
+OB,isoamyl acetate at 0.3% v/v,2871.52
+OB,isoamyl acetate at 0.3% v/v,2951.8845
+OB,isoamyl acetate at 0.3% v/v,3081.9705
+OB,isoamyl acetate at 0.3% v/v,3362.277
+OB,isoamyl acetate at 0.3% v/v,3422.311
+OB,isoamyl acetate at 0.3% v/v,3652.599
+OB,isoamyl acetate at 0.3% v/v,3703.03
+OB,isoamyl acetate at 0.3% v/v,3873.2785
+OB,isoamyl acetate at 0.3% v/v,4073.566
+OB,isoamyl acetate at 0.3% v/v,4223.673
+OB,isoamyl acetate at 0.3% v/v,4373.97166
+OB,isoamyl acetate at 0.3% v/v,4553.827
+OB,isoamyl acetate at 0.3% v/v,4714.1785
+OB,isoamyl acetate at 0.3% v/v,4844.5885
+OB,isoamyl acetate at 0.3% v/v,5104.8905
+OB,isoamyl acetate at 0.3% v/v,5134.845
+OB,isoamyl acetate at 0.3% v/v,5335.305
+OB,isoamyl acetate at 0.3% v/v,5535.3415
+OB,isoamyl acetate at 0.3% v/v,5655.4535
+OB,isoamyl acetate at 0.3% v/v,5825.774
+OB,isoamyl acetate at 0.3% v/v,5986.059
+OB,isoamyl acetate at 0.3% v/v,6156.1225
+OB,isoamyl acetate at 0.3% v/v,6286.343
+OB,isoamyl acetate at 0.3% v/v,6506.8265
+OB,isoamyl acetate at 0.3% v/v,6607.029
+OB,isoamyl acetate at 0.3% v/v,6847.426
+OB,isoamyl acetate at 0.3% v/v,7027.614
+OB,isoamyl acetate at 0.3% v/v,7127.4585
+OB,isoamyl acetate at 0.3% v/v,7227.613
+OB,isoamyl acetate at 0.3% v/v,7418.103
+OB,isoamyl acetate at 0.3% v/v,7548.1495
+OB,isoamyl acetate at 0.3% v/v,7818.6615
+OB,isoamyl acetate at 0.3% v/v,7948.6705
+OB,isoamyl acetate at 0.3% v/v,8078.8735
+OB,isoamyl acetate at 0.3% v/v,8298.77
+OB,isoamyl acetate at 0.3% v/v,8389.4717
+OB,isoamyl acetate at 0.3% v/v,8590.02161
+OB,isoamyl acetate at 0.3% v/v,8679.4995
+OB,isoamyl acetate at 0.3% v/v,8849.5885
+OB,isoamyl acetate at 0.3% v/v,9121.077
+OB,isoamyl acetate at 0.3% v/v,9260.378
+OB,isoamyl acetate at 0.3% v/v,9351.0015
+OB,isoamyl acetate at 0.3% v/v,9470.2855
+OB,hexanal at 0.03% v/v,7.7345
+OB,hexanal at 0.03% v/v,198.273
+OB,hexanal at 0.03% v/v,478.5945
+OB,hexanal at 0.03% v/v,528.4725
+OB,hexanal at 0.03% v/v,719.0685
+OB,hexanal at 0.03% v/v,838.9815
+OB,hexanal at 0.03% v/v,1069.586
+OB,hexanal at 0.03% v/v,1209.4055
+OB,hexanal at 0.03% v/v,1329.619
+OB,hexanal at 0.03% v/v,1600.1075
+OB,hexanal at 0.03% v/v,1710.149
+OB,hexanal at 0.03% v/v,1890.267
+OB,hexanal at 0.03% v/v,1970.4915
+OB,hexanal at 0.03% v/v,2090.4395
+OB,hexanal at 0.03% v/v,2311.0415
+OB,hexanal at 0.03% v/v,2511.2755
+OB,hexanal at 0.03% v/v,2701.2955
+OB,hexanal at 0.03% v/v,2751.6355
+OB,hexanal at 0.03% v/v,3001.8105
+OB,hexanal at 0.03% v/v,3161.909
+OB,hexanal at 0.03% v/v,3242.309
+OB,hexanal at 0.03% v/v,3442.289
+OB,hexanal at 0.03% v/v,3673.0485
+OB,hexanal at 0.03% v/v,3773.0145
+OB,hexanal at 0.03% v/v,3923.0435
+OB,hexanal at 0.03% v/v,4123.3865
+OB,hexanal at 0.03% v/v,4253.4285
+OB,hexanal at 0.03% v/v,4413.8325
+OB,hexanal at 0.03% v/v,4534.1415
+OB,hexanal at 0.03% v/v,4694.2425
+OB,hexanal at 0.03% v/v,4894.497
+OB,hexanal at 0.03% v/v,5034.615
+OB,hexanal at 0.03% v/v,5255.0095
+OB,hexanal at 0.03% v/v,5435.1605
+OB,hexanal at 0.03% v/v,5485.1105
+OB,hexanal at 0.03% v/v,5695.727
+OB,hexanal at 0.03% v/v,5865.562
+OB,hexanal at 0.03% v/v,6055.949
+OB,hexanal at 0.03% v/v,6236.554
+OB,hexanal at 0.03% v/v,6256.4605
+OB,hexanal at 0.03% v/v,6536.7965
+OB,hexanal at 0.03% v/v,6706.7585
+OB,hexanal at 0.03% v/v,6746.8345
+OB,hexanal at 0.03% v/v,6967.2235
+OB,hexanal at 0.03% v/v,7177.335
+OB,hexanal at 0.03% v/v,7287.611
+OB,hexanal at 0.03% v/v,7497.958
+OB,hexanal at 0.03% v/v,7588.1
+OB,hexanal at 0.03% v/v,7738.1595
+OB,hexanal at 0.03% v/v,7938.308
+OB,hexanal at 0.03% v/v,8038.8535
+OB,hexanal at 0.03% v/v,8229.0325
+OB,hexanal at 0.03% v/v,8398.993
+OB,hexanal at 0.03% v/v,8649.7285
+OB,hexanal at 0.03% v/v,8739.8635
+OB,hexanal at 0.03% v/v,8960.832
+OB,hexanal at 0.03% v/v,9080.4625
+OB,hexanal at 0.03% v/v,9189.84
+OB,hexanal at 0.03% v/v,9361.4655
+OB,hexanal at 0.03% v/v,9581.442
+OB,hexanal at 0.1% v/v,27.6945
+OB,hexanal at 0.1% v/v,238.0745
+OB,hexanal at 0.1% v/v,368.133
+OB,hexanal at 0.1% v/v,608.6115
+OB,hexanal at 0.1% v/v,658.933
+OB,hexanal at 0.1% v/v,889.0975
+OB,hexanal at 0.1% v/v,1049.071
+OB,hexanal at 0.1% v/v,1189.762
+OB,hexanal at 0.1% v/v,1369.6035
+OB,hexanal at 0.1% v/v,1479.68
+OB,hexanal at 0.1% v/v,1760.3245
+OB,hexanal at 0.1% v/v,1800.44
+OB,hexanal at 0.1% v/v,2030.402
+OB,hexanal at 0.1% v/v,2110.366
+OB,hexanal at 0.1% v/v,2350.929
+OB,hexanal at 0.1% v/v,2431.114
+OB,hexanal at 0.1% v/v,2721.5325
+OB,hexanal at 0.1% v/v,2771.619
+OB,hexanal at 0.1% v/v,3012.104
+OB,hexanal at 0.1% v/v,3192.0425
+OB,hexanal at 0.1% v/v,3232.0695
+OB,hexanal at 0.1% v/v,3452.42
+OB,hexanal at 0.1% v/v,3532.608
+OB,hexanal at 0.1% v/v,3722.962
+OB,hexanal at 0.1% v/v,3913.261
+OB,hexanal at 0.1% v/v,4153.5445
+OB,hexanal at 0.1% v/v,4283.5885
+OB,hexanal at 0.1% v/v,4433.7855
+OB,hexanal at 0.1% v/v,4503.7265
+OB,hexanal at 0.1% v/v,4704.3925
+OB,hexanal at 0.1% v/v,4904.358
+OB,hexanal at 0.1% v/v,4994.8325
+OB,hexanal at 0.1% v/v,5205.1735
+OB,hexanal at 0.1% v/v,5385.236
+OB,hexanal at 0.1% v/v,5595.344
+OB,hexanal at 0.1% v/v,5715.41
+OB,hexanal at 0.1% v/v,5835.8365
+OB,hexanal at 0.1% v/v,5935.6565
+OB,hexanal at 0.1% v/v,6116.0695
+OB,hexanal at 0.1% v/v,6356.507
+OB,hexanal at 0.1% v/v,6446.298
+OB,hexanal at 0.1% v/v,6686.666
+OB,hexanal at 0.1% v/v,6756.8365
+OB,hexanal at 0.1% v/v,6917.106
+OB,hexanal at 0.1% v/v,7077.5245
+OB,hexanal at 0.1% v/v,7237.5965
+OB,hexanal at 0.1% v/v,7398.101
+OB,hexanal at 0.1% v/v,7567.782
+OB,hexanal at 0.1% v/v,7828.3725
+OB,hexanal at 0.1% v/v,7868.5695
+OB,hexanal at 0.1% v/v,8058.6
+OB,hexanal at 0.1% v/v,8218.789
+OB,hexanal at 0.1% v/v,8409.1165
+OB,hexanal at 0.1% v/v,8549.695
+OB,hexanal at 0.1% v/v,8699.1235
+OB,hexanal at 0.1% v/v,8920.1455
+OB,hexanal at 0.1% v/v,8980.4415
+OB,hexanal at 0.1% v/v,9280.5515
+OB,hexanal at 0.1% v/v,9330.3115
+OB,hexanal at 0.1% v/v,9520.317
+OB,hexanal at 0.3% v/v,38.233
+OB,hexanal at 0.3% v/v,228.0585
+OB,hexanal at 0.3% v/v,328.374
+OB,hexanal at 0.3% v/v,578.713
+OB,hexanal at 0.3% v/v,768.7485
+OB,hexanal at 0.3% v/v,919.084
+OB,hexanal at 0.3% v/v,1099.1455
+OB,hexanal at 0.3% v/v,1149.3575
+OB,hexanal at 0.3% v/v,1319.68
+OB,hexanal at 0.3% v/v,1449.8605
+OB,hexanal at 0.3% v/v,1609.9615
+OB,hexanal at 0.3% v/v,1870.49981
+OB,hexanal at 0.3% v/v,2080.7065
+OB,hexanal at 0.3% v/v,2210.5806
+OB,hexanal at 0.3% v/v,2380.888
+OB,hexanal at 0.3% v/v,2521.384
+OB,hexanal at 0.3% v/v,2681.3655
+OB,hexanal at 0.3% v/v,2801.51
+OB,hexanal at 0.3% v/v,3041.979
+OB,hexanal at 0.3% v/v,3091.8175
+OB,hexanal at 0.3% v/v,3352.4525
+OB,hexanal at 0.3% v/v,3392.291
+OB,hexanal at 0.3% v/v,3592.827
+OB,hexanal at 0.3% v/v,3743.148
+OB,hexanal at 0.3% v/v,3993.3955
+OB,hexanal at 0.3% v/v,4053.231
+OB,hexanal at 0.3% v/v,4293.878
+OB,hexanal at 0.3% v/v,4363.79681
+OB,hexanal at 0.3% v/v,4623.914
+OB,hexanal at 0.3% v/v,4784.258
+OB,hexanal at 0.3% v/v,4914.283
+OB,hexanal at 0.3% v/v,4974.31724
+OB,hexanal at 0.3% v/v,5285.3285
+OB,hexanal at 0.3% v/v,5295.073
+OB,hexanal at 0.3% v/v,5555.31159
+OB,hexanal at 0.3% v/v,5765.7505
+OB,hexanal at 0.3% v/v,5925.974
+OB,hexanal at 0.3% v/v,6045.839
+OB,hexanal at 0.3% v/v,6166.191
+OB,hexanal at 0.3% v/v,6276.11002
+OB,hexanal at 0.3% v/v,6486.4265
+OB,hexanal at 0.3% v/v,6696.7325
+OB,hexanal at 0.3% v/v,6887.3945
+OB,hexanal at 0.3% v/v,6927.477
+OB,hexanal at 0.3% v/v,7117.4585
+OB,hexanal at 0.3% v/v,7307.8675
+OB,hexanal at 0.3% v/v,7468.151
+OB,hexanal at 0.3% v/v,7608.0825
+OB,hexanal at 0.3% v/v,7848.296
+OB,hexanal at 0.3% v/v,7958.375
+OB,hexanal at 0.3% v/v,8098.5295
+OB,hexanal at 0.3% v/v,8288.947
+OB,hexanal at 0.3% v/v,8479.48315
+OB,hexanal at 0.3% v/v,8619.762
+OB,hexanal at 0.3% v/v,8780.642
+OB,hexanal at 0.3% v/v,8839.838
+OB,hexanal at 0.3% v/v,9090.8765
+OB,hexanal at 0.3% v/v,9210.253
+OB,hexanal at 0.3% v/v,9370.013
+OB,hexanal at 0.3% v/v,9480.7275
+OB,hexanal at 1% v/v,67.9635
+OB,hexanal at 1% v/v,318.322
+OB,hexanal at 1% v/v,378.413
+OB,hexanal at 1% v/v,628.8735
+OB,hexanal at 1% v/v,799.748
+OB,hexanal at 1% v/v,858.74
+OB,hexanal at 1% v/v,1109.3555
+OB,hexanal at 1% v/v,1229.6215
+OB,hexanal at 1% v/v,1439.742
+OB,hexanal at 1% v/v,1590.183
+OB,hexanal at 1% v/v,1630.14
+OB,hexanal at 1% v/v,1880.2545
+OB,hexanal at 1% v/v,1980.319
+OB,hexanal at 1% v/v,2170.853
+OB,hexanal at 1% v/v,2280.7935
+OB,hexanal at 1% v/v,2470.808
+OB,hexanal at 1% v/v,2621.407
+OB,hexanal at 1% v/v,2731.656
+OB,hexanal at 1% v/v,2982.147
+OB,hexanal at 1% v/v,3122.117
+OB,hexanal at 1% v/v,3212.045
+OB,hexanal at 1% v/v,3462.392
+OB,hexanal at 1% v/v,3622.6405
+OB,hexanal at 1% v/v,3842.837
+OB,hexanal at 1% v/v,3933.283
+OB,hexanal at 1% v/v,4163.553
+OB,hexanal at 1% v/v,4323.6935
+OB,hexanal at 1% v/v,4463.7385
+OB,hexanal at 1% v/v,4523.899
+OB,hexanal at 1% v/v,4774.313
+OB,hexanal at 1% v/v,4824.4035
+OB,hexanal at 1% v/v,5054.923
+OB,hexanal at 1% v/v,5235.153
+OB,hexanal at 1% v/v,5425.154
+OB,hexanal at 1% v/v,5525.2615
+OB,hexanal at 1% v/v,5725.3185
+OB,hexanal at 1% v/v,5905.6255
+OB,hexanal at 1% v/v,5995.747
+OB,hexanal at 1% v/v,6176.2135
+OB,hexanal at 1% v/v,6266.423
+OB,hexanal at 1% v/v,6456.314
+OB,hexanal at 1% v/v,6716.852
+OB,hexanal at 1% v/v,6856.877
+OB,hexanal at 1% v/v,7047.174
+OB,hexanal at 1% v/v,7057.1195
+OB,hexanal at 1% v/v,7247.596
+OB,hexanal at 1% v/v,7517.8665
+OB,hexanal at 1% v/v,7638.3495
+OB,hexanal at 1% v/v,7768.155
+OB,hexanal at 1% v/v,7888.23
+OB,hexanal at 1% v/v,8048.7435
+OB,hexanal at 1% v/v,8208.619
+OB,hexanal at 1% v/v,8339.1575
+OB,hexanal at 1% v/v,8539.274
+OB,hexanal at 1% v/v,8709.8405
+OB,hexanal at 1% v/v,8900.147
+OB,hexanal at 1% v/v,9099.7765
+OB,hexanal at 1% v/v,9170.8255
+OB,hexanal at 1% v/v,9380.414
+OB,hexanal at 1% v/v,9600.5825
+OB,ethyl tiglate at 0.3% v/v,17.8315
+OB,ethyl tiglate at 0.3% v/v,278.3485
+OB,ethyl tiglate at 0.3% v/v,438.3585
+OB,ethyl tiglate at 0.3% v/v,489.171
+OB,ethyl tiglate at 0.3% v/v,698.7005
+OB,ethyl tiglate at 0.3% v/v,929.1475
+OB,ethyl tiglate at 0.3% v/v,1059.559
+OB,ethyl tiglate at 0.3% v/v,1199.555
+OB,ethyl tiglate at 0.3% v/v,1309.746
+OB,ethyl tiglate at 0.3% v/v,1570.0835
+OB,ethyl tiglate at 0.3% v/v,1639.918
+OB,ethyl tiglate at 0.3% v/v,1820.1955
+OB,ethyl tiglate at 0.3% v/v,2060.537
+OB,ethyl tiglate at 0.3% v/v,2190.772
+OB,ethyl tiglate at 0.3% v/v,2250.8555
+OB,ethyl tiglate at 0.3% v/v,2480.9215
+OB,ethyl tiglate at 0.3% v/v,2581.342
+OB,ethyl tiglate at 0.3% v/v,2821.541
+OB,ethyl tiglate at 0.3% v/v,2901.6935
+OB,ethyl tiglate at 0.3% v/v,3051.913
+OB,ethyl tiglate at 0.3% v/v,3292.439
+OB,ethyl tiglate at 0.3% v/v,3372.5575
+OB,ethyl tiglate at 0.3% v/v,3542.5935
+OB,ethyl tiglate at 0.3% v/v,3813.124
+OB,ethyl tiglate at 0.3% v/v,3902.89845
+OB,ethyl tiglate at 0.3% v/v,4083.203
+OB,ethyl tiglate at 0.3% v/v,4203.439
+OB,ethyl tiglate at 0.3% v/v,4393.718
+OB,ethyl tiglate at 0.3% v/v,4514.1505
+OB,ethyl tiglate at 0.3% v/v,4764.425
+OB,ethyl tiglate at 0.3% v/v,4944.6775
+OB,ethyl tiglate at 0.3% v/v,5124.88193
+OB,ethyl tiglate at 0.3% v/v,5264.9025
+OB,ethyl tiglate at 0.3% v/v,5354.95432
+OB,ethyl tiglate at 0.3% v/v,5605.618
+OB,ethyl tiglate at 0.3% v/v,5665.68
+OB,ethyl tiglate at 0.3% v/v,5815.587
+OB,ethyl tiglate at 0.3% v/v,5965.6605
+OB,ethyl tiglate at 0.3% v/v,6246.524
+OB,ethyl tiglate at 0.3% v/v,6326.6364
+OB,ethyl tiglate at 0.3% v/v,6416.512
+OB,ethyl tiglate at 0.3% v/v,6667.07716
+OB,ethyl tiglate at 0.3% v/v,6806.8685
+OB,ethyl tiglate at 0.3% v/v,7037.2435
+OB,ethyl tiglate at 0.3% v/v,7137.4145
+OB,ethyl tiglate at 0.3% v/v,7267.696
+OB,ethyl tiglate at 0.3% v/v,7457.753
+OB,ethyl tiglate at 0.3% v/v,7668.4005
+OB,ethyl tiglate at 0.3% v/v,7808.483
+OB,ethyl tiglate at 0.3% v/v,7928.4195
+OB,ethyl tiglate at 0.3% v/v,8118.5855
+OB,ethyl tiglate at 0.3% v/v,8328.6225
+OB,ethyl tiglate at 0.3% v/v,8348.7995
+OB,ethyl tiglate at 0.3% v/v,8529.7145
+OB,ethyl tiglate at 0.3% v/v,8669.6985
+OB,ethyl tiglate at 0.3% v/v,8940.23815
+OB,ethyl tiglate at 0.3% v/v,9069.962
+OB,ethyl tiglate at 0.3% v/v,9270.2572
+OB,ethyl tiglate at 0.3% v/v,9301.478
+OB,ethyl tiglate at 0.3% v/v,9501.1195
+OB,ethyl acetate at 0.3% v/v,147.8615
+OB,ethyl acetate at 0.3% v/v,167.894
+OB,ethyl acetate at 0.3% v/v,388.1555
+OB,ethyl acetate at 0.3% v/v,618.993
+OB,ethyl acetate at 0.3% v/v,779.0155
+OB,ethyl acetate at 0.3% v/v,959.2635
+OB,ethyl acetate at 0.3% v/v,1089.11216
+OB,ethyl acetate at 0.3% v/v,1169.9195
+OB,ethyl acetate at 0.3% v/v,1389.548
+OB,ethyl acetate at 0.3% v/v,1549.883
+OB,ethyl acetate at 0.3% v/v,1679.9095
+OB,ethyl acetate at 0.3% v/v,1840.097
+OB,ethyl acetate at 0.3% v/v,2020.502
+OB,ethyl acetate at 0.3% v/v,2220.796
+OB,ethyl acetate at 0.3% v/v,2290.968
+OB,ethyl acetate at 0.3% v/v,2450.9035
+OB,ethyl acetate at 0.3% v/v,2591.0315
+OB,ethyl acetate at 0.3% v/v,2831.481
+OB,ethyl acetate at 0.3% v/v,3031.876
+OB,ethyl acetate at 0.3% v/v,3172.193
+OB,ethyl acetate at 0.3% v/v,3332.1933
+OB,ethyl acetate at 0.3% v/v,3412.3805
+OB,ethyl acetate at 0.3% v/v,3562.4135
+OB,ethyl acetate at 0.3% v/v,3763.04688
+OB,ethyl acetate at 0.3% v/v,3853.2315
+OB,ethyl acetate at 0.3% v/v,4133.435
+OB,ethyl acetate at 0.3% v/v,4243.7845
+OB,ethyl acetate at 0.3% v/v,4353.7615
+OB,ethyl acetate at 0.3% v/v,4613.942
+OB,ethyl acetate at 0.3% v/v,4744.1225
+OB,ethyl acetate at 0.3% v/v,4934.685
+OB,ethyl acetate at 0.3% v/v,4984.822
+OB,ethyl acetate at 0.3% v/v,5175.046
+OB,ethyl acetate at 0.3% v/v,5305.21114
+OB,ethyl acetate at 0.3% v/v,5475.2315
+OB,ethyl acetate at 0.3% v/v,5705.803
+OB,ethyl acetate at 0.3% v/v,5875.632
+OB,ethyl acetate at 0.3% v/v,6036.252
+OB,ethyl acetate at 0.3% v/v,6145.9635
+OB,ethyl acetate at 0.3% v/v,6316.484
+OB,ethyl acetate at 0.3% v/v,6526.6325
+OB,ethyl acetate at 0.3% v/v,6576.538
+OB,ethyl acetate at 0.3% v/v,6836.87788
+OB,ethyl acetate at 0.3% v/v,6987.2635
+OB,ethyl acetate at 0.3% v/v,7107.511
+OB,ethyl acetate at 0.3% v/v,7297.962
+OB,ethyl acetate at 0.3% v/v,7487.95238
+OB,ethyl acetate at 0.3% v/v,7628.017
+OB,ethyl acetate at 0.3% v/v,7708.3945
+OB,ethyl acetate at 0.3% v/v,7978.63
+OB,ethyl acetate at 0.3% v/v,8129.017
+OB,ethyl acetate at 0.3% v/v,8249.063
+OB,ethyl acetate at 0.3% v/v,8459.24
+OB,ethyl acetate at 0.3% v/v,8520.09514
+OB,ethyl acetate at 0.3% v/v,8790.1485
+OB,ethyl acetate at 0.3% v/v,8880.439
+OB,ethyl acetate at 0.3% v/v,9110.1435
+OB,ethyl acetate at 0.3% v/v,9180.18503
+OB,ethyl acetate at 0.3% v/v,9391.0545
+OB,ethyl acetate at 0.3% v/v,9590.89226
+OB,mineral oil,78.027
+OB,mineral oil,228.162
+OB,mineral oil,388.2005
+OB,mineral oil,568.732
+OB,mineral oil,739.05
+OB,mineral oil,879.2235
+OB,mineral oil,989.156
+OB,mineral oil,1149.393
+OB,mineral oil,1329.491
+OB,mineral oil,1500.0345
+OB,mineral oil,1699.8615
+OB,mineral oil,1830.3275
+OB,mineral oil,2010.4915
+OB,mineral oil,2100.4795
+OB,mineral oil,2260.76
+OB,mineral oil,2521.361
+OB,mineral oil,2631.177
+OB,mineral oil,2731.442
+OB,mineral oil,2961.839
+OB,mineral oil,3051.7595
+OB,mineral oil,3242.129
+OB,mineral oil,3412.3885
+OB,mineral oil,3662.9295
+OB,mineral oil,3743.0885
+OB,mineral oil,3893.1365
+OB,mineral oil,4133.2965
+OB,mineral oil,4273.8
+OB,mineral oil,4423.994
+OB,mineral oil,4604.113
+OB,mineral oil,4774.353
+OB,mineral oil,4814.3615
+OB,mineral oil,4974.3255
+OB,mineral oil,5194.9825
+OB,mineral oil,5315.1955
+OB,mineral oil,5515.322
+OB,mineral oil,5645.5105
+OB,mineral oil,5825.8245
+OB,mineral oil,6025.9845
+OB,mineral oil,6106.237
+OB,mineral oil,6306.639
+OB,mineral oil,6436.455
+OB,mineral oil,6636.8825
+OB,mineral oil,6817.0185
+OB,mineral oil,7007.0285
+OB,mineral oil,7097.8255
+OB,mineral oil,7287.362
+OB,mineral oil,7427.5095
+OB,mineral oil,7557.9805
+OB,mineral oil,7778.8145
+OB,mineral oil,7968.2585
+OB,mineral oil,8018.6345
+OB,mineral oil,8188.771
+OB,mineral oil,8379.3765
+OB,mineral oil,8569.2155
+OB,mineral oil,8719.5085
+OB,mineral oil,8869.7145
+OB,mineral oil,8989.7855
+OB,mineral oil,9170.139
+OB,mineral oil,9310.3425
+OB,mineral oil,9480.31
+OB,ethyl butyrate at 0.03% v/v,127.8655
+OB,ethyl butyrate at 0.03% v/v,178.1225
+OB,ethyl butyrate at 0.03% v/v,448.4045
+OB,ethyl butyrate at 0.03% v/v,558.527
+OB,ethyl butyrate at 0.03% v/v,789.013
+OB,ethyl butyrate at 0.03% v/v,818.848
+OB,ethyl butyrate at 0.03% v/v,1049.2655
+OB,ethyl butyrate at 0.03% v/v,1139.387
+OB,ethyl butyrate at 0.03% v/v,1349.627
+OB,ethyl butyrate at 0.03% v/v,1479.685
+OB,ethyl butyrate at 0.03% v/v,1750.3415
+OB,ethyl butyrate at 0.03% v/v,1860.1745
+OB,ethyl butyrate at 0.03% v/v,1930.227
+OB,ethyl butyrate at 0.03% v/v,2090.3735
+OB,ethyl butyrate at 0.03% v/v,2390.8655
+OB,ethyl butyrate at 0.03% v/v,2471.2065
+OB,ethyl butyrate at 0.03% v/v,2691.4735
+OB,ethyl butyrate at 0.03% v/v,2851.638
+OB,ethyl butyrate at 0.03% v/v,2891.7275
+OB,ethyl butyrate at 0.03% v/v,3111.896
+OB,ethyl butyrate at 0.03% v/v,3262.37
+OB,ethyl butyrate at 0.03% v/v,3372.3255
+OB,ethyl butyrate at 0.03% v/v,3632.818
+OB,ethyl butyrate at 0.03% v/v,3772.791
+OB,ethyl butyrate at 0.03% v/v,3933.132
+OB,ethyl butyrate at 0.03% v/v,4113.4605
+OB,ethyl butyrate at 0.03% v/v,4253.744
+OB,ethyl butyrate at 0.03% v/v,4393.591
+OB,ethyl butyrate at 0.03% v/v,4644.0695
+OB,ethyl butyrate at 0.03% v/v,4794.266
+OB,ethyl butyrate at 0.03% v/v,4944.2955
+OB,ethyl butyrate at 0.03% v/v,5104.58
+OB,ethyl butyrate at 0.03% v/v,5204.777
+OB,ethyl butyrate at 0.03% v/v,5435.3125
+OB,ethyl butyrate at 0.03% v/v,5465.3415
+OB,ethyl butyrate at 0.03% v/v,5765.489
+OB,ethyl butyrate at 0.03% v/v,5795.4785
+OB,ethyl butyrate at 0.03% v/v,5956.087
+OB,ethyl butyrate at 0.03% v/v,6216.2825
+OB,ethyl butyrate at 0.03% v/v,6346.194
+OB,ethyl butyrate at 0.03% v/v,6567.174
+OB,ethyl butyrate at 0.03% v/v,6716.906
+OB,ethyl butyrate at 0.03% v/v,6787.0775
+OB,ethyl butyrate at 0.03% v/v,6976.8625
+OB,ethyl butyrate at 0.03% v/v,7107.6665
+OB,ethyl butyrate at 0.03% v/v,7337.423
+OB,ethyl butyrate at 0.03% v/v,7387.573
+OB,ethyl butyrate at 0.03% v/v,7577.889
+OB,ethyl butyrate at 0.03% v/v,7718.276
+OB,ethyl butyrate at 0.03% v/v,7908.654
+OB,ethyl butyrate at 0.03% v/v,8088.272
+OB,ethyl butyrate at 0.03% v/v,8289.4665
+OB,ethyl butyrate at 0.03% v/v,8358.956
+OB,ethyl butyrate at 0.03% v/v,8539.387
+OB,ethyl butyrate at 0.03% v/v,8809.3655
+OB,ethyl butyrate at 0.03% v/v,8969.6615
+OB,ethyl butyrate at 0.03% v/v,9029.9765
+OB,ethyl butyrate at 0.03% v/v,9189.891
+OB,ethyl butyrate at 0.03% v/v,9420.51
+OB,ethyl butyrate at 0.03% v/v,9600.677
+OB,ethyl butyrate at 0.1% v/v,17.717
+OB,ethyl butyrate at 0.1% v/v,298.3335
+OB,ethyl butyrate at 0.1% v/v,338.5345
+OB,ethyl butyrate at 0.1% v/v,588.6265
+OB,ethyl butyrate at 0.1% v/v,798.953
+OB,ethyl butyrate at 0.1% v/v,808.898
+OB,ethyl butyrate at 0.1% v/v,1029.174
+OB,ethyl butyrate at 0.1% v/v,1199.365
+OB,ethyl butyrate at 0.1% v/v,1339.748
+OB,ethyl butyrate at 0.1% v/v,1529.9
+OB,ethyl butyrate at 0.1% v/v,1690.2785
+OB,ethyl butyrate at 0.1% v/v,1780.3955
+OB,ethyl butyrate at 0.1% v/v,1980.4745
+OB,ethyl butyrate at 0.1% v/v,2130.851
+OB,ethyl butyrate at 0.1% v/v,2310.7035
+OB,ethyl butyrate at 0.1% v/v,2481.485
+OB,ethyl butyrate at 0.1% v/v,2701.614
+OB,ethyl butyrate at 0.1% v/v,2781.546
+OB,ethyl butyrate at 0.1% v/v,2951.9395
+OB,ethyl butyrate at 0.1% v/v,3071.931
+OB,ethyl butyrate at 0.1% v/v,3252.267
+OB,ethyl butyrate at 0.1% v/v,3442.31
+OB,ethyl butyrate at 0.1% v/v,3612.728
+OB,ethyl butyrate at 0.1% v/v,3832.9755
+OB,ethyl butyrate at 0.1% v/v,3913.238
+OB,ethyl butyrate at 0.1% v/v,4103.179
+OB,ethyl butyrate at 0.1% v/v,4303.47
+OB,ethyl butyrate at 0.1% v/v,4363.8615
+OB,ethyl butyrate at 0.1% v/v,4564.155
+OB,ethyl butyrate at 0.1% v/v,4704.3455
+OB,ethyl butyrate at 0.1% v/v,4834.3595
+OB,ethyl butyrate at 0.1% v/v,5114.6985
+OB,ethyl butyrate at 0.1% v/v,5275.0085
+OB,ethyl butyrate at 0.1% v/v,5375.0225
+OB,ethyl butyrate at 0.1% v/v,5545.458
+OB,ethyl butyrate at 0.1% v/v,5715.364
+OB,ethyl butyrate at 0.1% v/v,5875.6375
+OB,ethyl butyrate at 0.1% v/v,5935.8815
+OB,ethyl butyrate at 0.1% v/v,6156.449
+OB,ethyl butyrate at 0.1% v/v,6316.7845
+OB,ethyl butyrate at 0.1% v/v,6516.6995
+OB,ethyl butyrate at 0.1% v/v,6626.907
+OB,ethyl butyrate at 0.1% v/v,6746.9975
+OB,ethyl butyrate at 0.1% v/v,6907.153
+OB,ethyl butyrate at 0.1% v/v,7177.374
+OB,ethyl butyrate at 0.1% v/v,7277.6815
+OB,ethyl butyrate at 0.1% v/v,7417.398
+OB,ethyl butyrate at 0.1% v/v,7668.0065
+OB,ethyl butyrate at 0.1% v/v,7819.2385
+OB,ethyl butyrate at 0.1% v/v,7868.6765
+OB,ethyl butyrate at 0.1% v/v,8059.035
+OB,ethyl butyrate at 0.1% v/v,8258.755
+OB,ethyl butyrate at 0.1% v/v,8338.8395
+OB,ethyl butyrate at 0.1% v/v,8618.9815
+OB,ethyl butyrate at 0.1% v/v,8749.413
+OB,ethyl butyrate at 0.1% v/v,8959.834
+OB,ethyl butyrate at 0.1% v/v,9089.712
+OB,ethyl butyrate at 0.1% v/v,9229.829
+OB,ethyl butyrate at 0.1% v/v,9330.4425
+OB,ethyl butyrate at 0.1% v/v,9470.413
+OB,ethyl butyrate at 0.3% v/v,28.0405
+OB,ethyl butyrate at 0.3% v/v,258.435
+OB,ethyl butyrate at 0.3% v/v,328.3845
+OB,ethyl butyrate at 0.3% v/v,528.4205
+OB,ethyl butyrate at 0.3% v/v,768.854
+OB,ethyl butyrate at 0.3% v/v,899.1895
+OB,ethyl butyrate at 0.3% v/v,1069.355
+OB,ethyl butyrate at 0.3% v/v,1169.263
+OB,ethyl butyrate at 0.3% v/v,1389.4605
+OB,ethyl butyrate at 0.3% v/v,1540.0025
+OB,ethyl butyrate at 0.3% v/v,1740.469
+OB,ethyl butyrate at 0.3% v/v,1900.5575
+OB,ethyl butyrate at 0.3% v/v,1990.3725
+OB,ethyl butyrate at 0.3% v/v,2110.789
+OB,ethyl butyrate at 0.3% v/v,2371.086
+OB,ethyl butyrate at 0.3% v/v,2501.888
+OB,ethyl butyrate at 0.3% v/v,2671.613
+OB,ethyl butyrate at 0.3% v/v,2871.7795
+OB,ethyl butyrate at 0.3% v/v,2901.8895
+OB,ethyl butyrate at 0.3% v/v,3162.0265
+OB,ethyl butyrate at 0.3% v/v,3302.2275
+OB,ethyl butyrate at 0.3% v/v,3382.372
+OB,ethyl butyrate at 0.3% v/v,3622.8725
+OB,ethyl butyrate at 0.3% v/v,3803.0565
+OB,ethyl butyrate at 0.3% v/v,3883.031
+OB,ethyl butyrate at 0.3% v/v,4143.619
+OB,ethyl butyrate at 0.3% v/v,4183.4195
+OB,ethyl butyrate at 0.3% v/v,4453.921
+OB,ethyl butyrate at 0.3% v/v,4494.031
+OB,ethyl butyrate at 0.3% v/v,4724.3465
+OB,ethyl butyrate at 0.3% v/v,4924.411
+OB,ethyl butyrate at 0.3% v/v,5124.7815
+OB,ethyl butyrate at 0.3% v/v,5254.971
+OB,ethyl butyrate at 0.3% v/v,5364.915
+OB,ethyl butyrate at 0.3% v/v,5475.3245
+OB,ethyl butyrate at 0.3% v/v,5695.7455
+OB,ethyl butyrate at 0.3% v/v,5805.8555
+OB,ethyl butyrate at 0.3% v/v,6005.8625
+OB,ethyl butyrate at 0.3% v/v,6176.395
+OB,ethyl butyrate at 0.3% v/v,6296.503
+OB,ethyl butyrate at 0.3% v/v,6496.4985
+OB,ethyl butyrate at 0.3% v/v,6707.4865
+OB,ethyl butyrate at 0.3% v/v,6836.858
+OB,ethyl butyrate at 0.3% v/v,6926.8845
+OB,ethyl butyrate at 0.3% v/v,7067.222
+OB,ethyl butyrate at 0.3% v/v,7217.542
+OB,ethyl butyrate at 0.3% v/v,7517.655
+OB,ethyl butyrate at 0.3% v/v,7678.2545
+OB,ethyl butyrate at 0.3% v/v,7698.359
+OB,ethyl butyrate at 0.3% v/v,7918.1885
+OB,ethyl butyrate at 0.3% v/v,8138.5465
+OB,ethyl butyrate at 0.3% v/v,8178.6065
+OB,ethyl butyrate at 0.3% v/v,8470.215
+OB,ethyl butyrate at 0.3% v/v,8499.235
+OB,ethyl butyrate at 0.3% v/v,8659.592
+OB,ethyl butyrate at 0.3% v/v,8880.2205
+OB,ethyl butyrate at 0.3% v/v,9119.907
+OB,ethyl butyrate at 0.3% v/v,9291.0065
+OB,ethyl butyrate at 0.3% v/v,9339.9475
+OB,ethyl butyrate at 0.3% v/v,9540.5605
+OB,ethyl butyrate at 1% v/v,37.95057
+OB,ethyl butyrate at 1% v/v,278.361
+OB,ethyl butyrate at 1% v/v,458.55351
+OB,ethyl butyrate at 1% v/v,518.6075
+OB,ethyl butyrate at 1% v/v,678.7615
+OB,ethyl butyrate at 1% v/v,869.00265
+OB,ethyl butyrate at 1% v/v,979.322
+OB,ethyl butyrate at 1% v/v,1209.19459
+OB,ethyl butyrate at 1% v/v,1370.07099
+OB,ethyl butyrate at 1% v/v,1489.62511
+OB,ethyl butyrate at 1% v/v,1660.0725
+OB,ethyl butyrate at 1% v/v,1800.0885
+OB,ethyl butyrate at 1% v/v,2000.26092
+OB,ethyl butyrate at 1% v/v,2190.4245
+OB,ethyl butyrate at 1% v/v,2330.73883
+OB,ethyl butyrate at 1% v/v,2531.49
+OB,ethyl butyrate at 1% v/v,2601.182
+OB,ethyl butyrate at 1% v/v,2801.5675
+OB,ethyl butyrate at 1% v/v,2941.6875
+OB,ethyl butyrate at 1% v/v,3131.8575
+OB,ethyl butyrate at 1% v/v,3212.2135
+OB,ethyl butyrate at 1% v/v,3522.4915
+OB,ethyl butyrate at 1% v/v,3682.846
+OB,ethyl butyrate at 1% v/v,3782.877
+OB,ethyl butyrate at 1% v/v,3943.2985
+OB,ethyl butyrate at 1% v/v,4083.38
+OB,ethyl butyrate at 1% v/v,4263.6885
+OB,ethyl butyrate at 1% v/v,4473.6935
+OB,ethyl butyrate at 1% v/v,4543.71
+OB,ethyl butyrate at 1% v/v,4653.87
+OB,ethyl butyrate at 1% v/v,4894.485
+OB,ethyl butyrate at 1% v/v,5014.657
+OB,ethyl butyrate at 1% v/v,5215.1185
+OB,ethyl butyrate at 1% v/v,5335.2075
+OB,ethyl butyrate at 1% v/v,5454.9585
+OB,ethyl butyrate at 1% v/v,5675.418
+OB,ethyl butyrate at 1% v/v,5886.0155
+OB,ethyl butyrate at 1% v/v,6066.347
+OB,ethyl butyrate at 1% v/v,6136.079
+OB,ethyl butyrate at 1% v/v,6276.4965
+OB,ethyl butyrate at 1% v/v,6536.975
+OB,ethyl butyrate at 1% v/v,6697.0065
+OB,ethyl butyrate at 1% v/v,6777.0005
+OB,ethyl butyrate at 1% v/v,6917.217
+OB,ethyl butyrate at 1% v/v,7117.651
+OB,ethyl butyrate at 1% v/v,7257.763
+OB,ethyl butyrate at 1% v/v,7507.8755
+OB,ethyl butyrate at 1% v/v,7647.895
+OB,ethyl butyrate at 1% v/v,7709.184
+OB,ethyl butyrate at 1% v/v,7958.542
+OB,ethyl butyrate at 1% v/v,8109.193
+OB,ethyl butyrate at 1% v/v,8299.0785
+OB,ethyl butyrate at 1% v/v,8409.286
+OB,ethyl butyrate at 1% v/v,8529.008
+OB,ethyl butyrate at 1% v/v,8669.2575
+OB,ethyl butyrate at 1% v/v,8930.1965
+OB,ethyl butyrate at 1% v/v,9059.691
+OB,ethyl butyrate at 1% v/v,9159.9545
+OB,ethyl butyrate at 1% v/v,9380.41
+OB,ethyl butyrate at 1% v/v,9570.29
+OB,2-hexanone at 0.3% v/v,107.8265
+OB,2-hexanone at 0.3% v/v,167.9695
+OB,2-hexanone at 0.3% v/v,418.4295
+OB,2-hexanone at 0.3% v/v,508.75
+OB,2-hexanone at 0.3% v/v,718.7495
+OB,2-hexanone at 0.3% v/v,849.0865
+OB,2-hexanone at 0.3% v/v,1119.5695
+OB,2-hexanone at 0.3% v/v,1239.5765
+OB,2-hexanone at 0.3% v/v,1319.4265
+OB,2-hexanone at 0.3% v/v,1570.198
+OB,2-hexanone at 0.3% v/v,1630.104
+OB,2-hexanone at 0.3% v/v,1850.1765
+OB,2-hexanone at 0.3% v/v,2080.525
+OB,2-hexanone at 0.3% v/v,2220.7095
+OB,2-hexanone at 0.3% v/v,2321.017
+OB,2-hexanone at 0.3% v/v,2551.0985
+OB,2-hexanone at 0.3% v/v,2651.484
+OB,2-hexanone at 0.3% v/v,2741.6715
+OB,2-hexanone at 0.3% v/v,2991.7035
+OB,2-hexanone at 0.3% v/v,3081.957
+OB,2-hexanone at 0.3% v/v,3322.1265
+OB,2-hexanone at 0.3% v/v,3432.345
+OB,2-hexanone at 0.3% v/v,3562.6835
+OB,2-hexanone at 0.3% v/v,3752.718
+OB,2-hexanone at 0.3% v/v,4003.5065
+OB,2-hexanone at 0.3% v/v,4093.1935
+OB,2-hexanone at 0.3% v/v,4293.556
+OB,2-hexanone at 0.3% v/v,4433.9935
+OB,2-hexanone at 0.3% v/v,4574.107
+OB,2-hexanone at 0.3% v/v,4764.3975
+OB,2-hexanone at 0.3% v/v,4884.4635
+OB,2-hexanone at 0.3% v/v,5094.544
+OB,2-hexanone at 0.3% v/v,5134.56
+OB,2-hexanone at 0.3% v/v,5355.2325
+OB,2-hexanone at 0.3% v/v,5605.251
+OB,2-hexanone at 0.3% v/v,5745.8655
+OB,2-hexanone at 0.3% v/v,5905.833
+OB,2-hexanone at 0.3% v/v,6086.3775
+OB,2-hexanone at 0.3% v/v,6146.2115
+OB,2-hexanone at 0.3% v/v,6266.527
+OB,2-hexanone at 0.3% v/v,6556.421
+OB,2-hexanone at 0.3% v/v,6657.169
+OB,2-hexanone at 0.3% v/v,6887.37
+OB,2-hexanone at 0.3% v/v,6987.1765
+OB,2-hexanone at 0.3% v/v,7137.131
+OB,2-hexanone at 0.3% v/v,7328.2235
+OB,2-hexanone at 0.3% v/v,7447.488
+OB,2-hexanone at 0.3% v/v,7658.5135
+OB,2-hexanone at 0.3% v/v,7838.746
+OB,2-hexanone at 0.3% v/v,7878.377
+OB,2-hexanone at 0.3% v/v,8038.971
+OB,2-hexanone at 0.3% v/v,8319.397
+OB,2-hexanone at 0.3% v/v,8418.9485
+OB,2-hexanone at 0.3% v/v,8629.191
+OB,2-hexanone at 0.3% v/v,8799.828
+OB,2-hexanone at 0.3% v/v,8909.6145
+OB,2-hexanone at 0.3% v/v,9099.9195
+OB,2-hexanone at 0.3% v/v,9210.928
+OB,2-hexanone at 0.3% v/v,9370.1405
+OB,2-hexanone at 0.3% v/v,9500.3535
+OB,isoamyl acetate at 0.3% v/v,57.7785
+OB,isoamyl acetate at 0.3% v/v,187.958
+OB,isoamyl acetate at 0.3% v/v,478.634
+OB,isoamyl acetate at 0.3% v/v,638.5945
+OB,isoamyl acetate at 0.3% v/v,688.814
+OB,isoamyl acetate at 0.3% v/v,859.153
+OB,isoamyl acetate at 0.3% v/v,1009.2795
+OB,isoamyl acetate at 0.3% v/v,1159.443
+OB,isoamyl acetate at 0.3% v/v,1409.7665
+OB,isoamyl acetate at 0.3% v/v,1560.1515
+OB,isoamyl acetate at 0.3% v/v,1760.0015
+OB,isoamyl acetate at 0.3% v/v,1840.303
+OB,isoamyl acetate at 0.3% v/v,2060.595
+OB,isoamyl acetate at 0.3% v/v,2120.6925
+OB,isoamyl acetate at 0.3% v/v,2361.0675
+OB,isoamyl acetate at 0.3% v/v,2410.899
+OB,isoamyl acetate at 0.3% v/v,2621.4145
+OB,isoamyl acetate at 0.3% v/v,2831.6075
+OB,isoamyl acetate at 0.3% v/v,2921.8895
+OB,isoamyl acetate at 0.3% v/v,3061.696
+OB,isoamyl acetate at 0.3% v/v,3222.0985
+OB,isoamyl acetate at 0.3% v/v,3392.5365
+OB,isoamyl acetate at 0.3% v/v,3652.9545
+OB,isoamyl acetate at 0.3% v/v,3692.7745
+OB,isoamyl acetate at 0.3% v/v,3993.2205
+OB,isoamyl acetate at 0.3% v/v,4063.2585
+OB,isoamyl acetate at 0.3% v/v,4223.6555
+OB,isoamyl acetate at 0.3% v/v,4404.0195
+OB,isoamyl acetate at 0.3% v/v,4623.964
+OB,isoamyl acetate at 0.3% v/v,4784.2
+OB,isoamyl acetate at 0.3% v/v,4934.2405
+OB,isoamyl acetate at 0.3% v/v,5044.4105
+OB,isoamyl acetate at 0.3% v/v,5244.76
+OB,isoamyl acetate at 0.3% v/v,5324.919
+OB,isoamyl acetate at 0.3% v/v,5495.009
+OB,isoamyl acetate at 0.3% v/v,5635.6065
+OB,isoamyl acetate at 0.3% v/v,5915.599
+OB,isoamyl acetate at 0.3% v/v,5985.86
+OB,isoamyl acetate at 0.3% v/v,6226.1545
+OB,isoamyl acetate at 0.3% v/v,6256.422
+OB,isoamyl acetate at 0.3% v/v,6416.3445
+OB,isoamyl acetate at 0.3% v/v,6576.3225
+OB,isoamyl acetate at 0.3% v/v,6756.783
+OB,isoamyl acetate at 0.3% v/v,6897.4665
+OB,isoamyl acetate at 0.3% v/v,7187.3915
+OB,isoamyl acetate at 0.3% v/v,7227.541
+OB,isoamyl acetate at 0.3% v/v,7468.012
+OB,isoamyl acetate at 0.3% v/v,7618.6975
+OB,isoamyl acetate at 0.3% v/v,7758.8815
+OB,isoamyl acetate at 0.3% v/v,7948.486
+OB,isoamyl acetate at 0.3% v/v,8098.574
+OB,isoamyl acetate at 0.3% v/v,8329.0115
+OB,isoamyl acetate at 0.3% v/v,8449.554
+OB,isoamyl acetate at 0.3% v/v,8508.8785
+OB,isoamyl acetate at 0.3% v/v,8769.9645
+OB,isoamyl acetate at 0.3% v/v,8819.4305
+OB,isoamyl acetate at 0.3% v/v,9069.6795
+OB,isoamyl acetate at 0.3% v/v,9250.067
+OB,isoamyl acetate at 0.3% v/v,9360.696
+OB,isoamyl acetate at 0.3% v/v,9580.459
+OB,hexanal at 0.03% v/v,98.356
+OB,hexanal at 0.03% v/v,288.206
+OB,hexanal at 0.03% v/v,428.6445
+OB,hexanal at 0.03% v/v,578.609
+OB,hexanal at 0.03% v/v,658.804
+OB,hexanal at 0.03% v/v,838.879
+OB,hexanal at 0.03% v/v,1079.2815
+OB,hexanal at 0.03% v/v,1179.2615
+OB,hexanal at 0.03% v/v,1359.5525
+OB,hexanal at 0.03% v/v,1459.6285
+OB,hexanal at 0.03% v/v,1670.117
+OB,hexanal at 0.03% v/v,1870.413
+OB,hexanal at 0.03% v/v,2040.686
+OB,hexanal at 0.03% v/v,2150.659
+OB,hexanal at 0.03% v/v,2340.9165
+OB,hexanal at 0.03% v/v,2511.4945
+OB,hexanal at 0.03% v/v,2611.294
+OB,hexanal at 0.03% v/v,2751.8095
+OB,hexanal at 0.03% v/v,3031.7485
+OB,hexanal at 0.03% v/v,3142.1665
+OB,hexanal at 0.03% v/v,3352.5195
+OB,hexanal at 0.03% v/v,3472.3795
+OB,hexanal at 0.03% v/v,3642.53
+OB,hexanal at 0.03% v/v,3762.748
+OB,hexanal at 0.03% v/v,3862.918
+OB,hexanal at 0.03% v/v,4013.1945
+OB,hexanal at 0.03% v/v,4193.6645
+OB,hexanal at 0.03% v/v,4353.818
+OB,hexanal at 0.03% v/v,4513.985
+OB,hexanal at 0.03% v/v,4694.225
+OB,hexanal at 0.03% v/v,4874.5515
+OB,hexanal at 0.03% v/v,5054.5815
+OB,hexanal at 0.03% v/v,5164.96
+OB,hexanal at 0.03% v/v,5304.807
+OB,hexanal at 0.03% v/v,5585.603
+OB,hexanal at 0.03% v/v,5705.385
+OB,hexanal at 0.03% v/v,5925.753
+OB,hexanal at 0.03% v/v,6036.2575
+OB,hexanal at 0.03% v/v,6236.5345
+OB,hexanal at 0.03% v/v,6376.8235
+OB,hexanal at 0.03% v/v,6466.5225
+OB,hexanal at 0.03% v/v,6647.769
+OB,hexanal at 0.03% v/v,6807.4745
+OB,hexanal at 0.03% v/v,6997.5375
+OB,hexanal at 0.03% v/v,7157.268
+OB,hexanal at 0.03% v/v,7367.68
+OB,hexanal at 0.03% v/v,7488.225
+OB,hexanal at 0.03% v/v,7588.252
+OB,hexanal at 0.03% v/v,7728.0345
+OB,hexanal at 0.03% v/v,7938.3375
+OB,hexanal at 0.03% v/v,8158.8205
+OB,hexanal at 0.03% v/v,8248.6935
+OB,hexanal at 0.03% v/v,8349.1685
+OB,hexanal at 0.03% v/v,8549.471
+OB,hexanal at 0.03% v/v,8689.851
+OB,hexanal at 0.03% v/v,8949.7095
+OB,hexanal at 0.03% v/v,9000.038
+OB,hexanal at 0.03% v/v,9200.394
+OB,hexanal at 0.03% v/v,9440.4775
+OB,hexanal at 0.03% v/v,9510.634
+OB,hexanal at 0.1% v/v,87.926
+OB,hexanal at 0.1% v/v,218.122
+OB,hexanal at 0.1% v/v,468.51
+OB,hexanal at 0.1% v/v,608.5175
+OB,hexanal at 0.1% v/v,648.6075
+OB,hexanal at 0.1% v/v,888.903
+OB,hexanal at 0.1% v/v,999.467
+OB,hexanal at 0.1% v/v,1249.314
+OB,hexanal at 0.1% v/v,1309.548
+OB,hexanal at 0.1% v/v,1509.7115
+OB,hexanal at 0.1% v/v,1730.2845
+OB,hexanal at 0.1% v/v,1810.1195
+OB,hexanal at 0.1% v/v,2070.655
+OB,hexanal at 0.1% v/v,2140.54
+OB,hexanal at 0.1% v/v,2270.655
+OB,hexanal at 0.1% v/v,2561.4755
+OB,hexanal at 0.1% v/v,2591.551
+OB,hexanal at 0.1% v/v,2761.5605
+OB,hexanal at 0.1% v/v,2931.9885
+OB,hexanal at 0.1% v/v,3151.9495
+OB,hexanal at 0.1% v/v,3332.4525
+OB,hexanal at 0.1% v/v,3452.3795
+OB,hexanal at 0.1% v/v,3542.629
+OB,hexanal at 0.1% v/v,3792.995
+OB,hexanal at 0.1% v/v,3983.1345
+OB,hexanal at 0.1% v/v,4053.483
+OB,hexanal at 0.1% v/v,4323.6255
+OB,hexanal at 0.1% v/v,4333.588
+OB,hexanal at 0.1% v/v,4554.057
+OB,hexanal at 0.1% v/v,4664.071
+OB,hexanal at 0.1% v/v,4854.4075
+OB,hexanal at 0.1% v/v,5064.6425
+OB,hexanal at 0.1% v/v,5174.5845
+OB,hexanal at 0.1% v/v,5445.229
+OB,hexanal at 0.1% v/v,5505.3145
+OB,hexanal at 0.1% v/v,5665.5795
+OB,hexanal at 0.1% v/v,5835.885
+OB,hexanal at 0.1% v/v,5996.026
+OB,hexanal at 0.1% v/v,6116.404
+OB,hexanal at 0.1% v/v,6406.5705
+OB,hexanal at 0.1% v/v,6546.2455
+OB,hexanal at 0.1% v/v,6586.549
+OB,hexanal at 0.1% v/v,6797.7945
+OB,hexanal at 0.1% v/v,6967.1315
+OB,hexanal at 0.1% v/v,7057.081
+OB,hexanal at 0.1% v/v,7347.2745
+OB,hexanal at 0.1% v/v,7407.9695
+OB,hexanal at 0.1% v/v,7567.7265
+OB,hexanal at 0.1% v/v,7798.7385
+OB,hexanal at 0.1% v/v,7858.877
+OB,hexanal at 0.1% v/v,8148.6525
+OB,hexanal at 0.1% v/v,8229.21
+OB,hexanal at 0.1% v/v,8429.2825
+OB,hexanal at 0.1% v/v,8589.748
+OB,hexanal at 0.1% v/v,8789.387
+OB,hexanal at 0.1% v/v,8849.3185
+OB,hexanal at 0.1% v/v,9109.659
+OB,hexanal at 0.1% v/v,9259.778
+OB,hexanal at 0.1% v/v,9390.5775
+OB,hexanal at 0.1% v/v,9610.8735
+OB,hexanal at 0.3% v/v,47.789
+OB,hexanal at 0.3% v/v,268.3025
+OB,hexanal at 0.3% v/v,438.6105
+OB,hexanal at 0.3% v/v,598.6615
+OB,hexanal at 0.3% v/v,668.7355
+OB,hexanal at 0.3% v/v,919.151
+OB,hexanal at 0.3% v/v,1019.312
+OB,hexanal at 0.3% v/v,1219.57
+OB,hexanal at 0.3% v/v,1429.6655
+OB,hexanal at 0.3% v/v,1590.0275
+OB,hexanal at 0.3% v/v,1620.119
+OB,hexanal at 0.3% v/v,1880.4895
+OB,hexanal at 0.3% v/v,2030.666
+OB,hexanal at 0.3% v/v,2180.7985
+OB,hexanal at 0.3% v/v,2290.8235
+OB,hexanal at 0.3% v/v,2441.0965
+OB,hexanal at 0.3% v/v,2681.3665
+OB,hexanal at 0.3% v/v,2861.734
+OB,hexanal at 0.3% v/v,3011.8445
+OB,hexanal at 0.3% v/v,3202.069
+OB,hexanal at 0.3% v/v,3362.291
+OB,hexanal at 0.3% v/v,3492.473
+OB,hexanal at 0.3% v/v,3532.7315
+OB,hexanal at 0.3% v/v,3813.155
+OB,hexanal at 0.3% v/v,3973.069
+OB,hexanal at 0.3% v/v,4153.5015
+OB,hexanal at 0.3% v/v,4233.519
+OB,hexanal at 0.3% v/v,4343.529
+OB,hexanal at 0.3% v/v,4613.8565
+OB,hexanal at 0.3% v/v,4674.2385
+OB,hexanal at 0.3% v/v,4864.143
+OB,hexanal at 0.3% v/v,5034.7145
+OB,hexanal at 0.3% v/v,5234.854
+OB,hexanal at 0.3% v/v,5415.4215
+OB,hexanal at 0.3% v/v,5575.2865
+OB,hexanal at 0.3% v/v,5755.474
+OB,hexanal at 0.3% v/v,5855.897
+OB,hexanal at 0.3% v/v,5975.812
+OB,hexanal at 0.3% v/v,6166.1545
+OB,hexanal at 0.3% v/v,6396.466
+OB,hexanal at 0.3% v/v,6446.569
+OB,hexanal at 0.3% v/v,6617.797
+OB,hexanal at 0.3% v/v,6877.166
+OB,hexanal at 0.3% v/v,7017.5945
+OB,hexanal at 0.3% v/v,7207.8185
+OB,hexanal at 0.3% v/v,7297.524
+OB,hexanal at 0.3% v/v,7477.7935
+OB,hexanal at 0.3% v/v,7688.2175
+OB,hexanal at 0.3% v/v,7848.1875
+OB,hexanal at 0.3% v/v,7889.2795
+OB,hexanal at 0.3% v/v,8118.6275
+OB,hexanal at 0.3% v/v,8198.7765
+OB,hexanal at 0.3% v/v,8459.207
+OB,hexanal at 0.3% v/v,8639.333
+OB,hexanal at 0.3% v/v,8709.8745
+OB,hexanal at 0.3% v/v,8829.7485
+OB,hexanal at 0.3% v/v,9049.779
+OB,hexanal at 0.3% v/v,9179.788
+OB,hexanal at 0.3% v/v,9320.071
+OB,hexanal at 0.3% v/v,9550.703
+OB,hexanal at 1% v/v,67.879
+OB,hexanal at 1% v/v,318.2435
+OB,hexanal at 1% v/v,398.7195
+OB,hexanal at 1% v/v,548.452
+OB,hexanal at 1% v/v,708.978
+OB,hexanal at 1% v/v,938.9635
+OB,hexanal at 1% v/v,1109.1185
+OB,hexanal at 1% v/v,1279.259
+OB,hexanal at 1% v/v,1439.9405
+OB,hexanal at 1% v/v,1450.004
+OB,hexanal at 1% v/v,1610.308
+OB,hexanal at 1% v/v,1820.3855
+OB,hexanal at 1% v/v,1970.292
+OB,hexanal at 1% v/v,2230.69
+OB,hexanal at 1% v/v,2381.203
+OB,hexanal at 1% v/v,2491.257
+OB,hexanal at 1% v/v,2711.6315
+OB,hexanal at 1% v/v,2811.5145
+OB,hexanal at 1% v/v,2911.72
+OB,hexanal at 1% v/v,3172.0285
+OB,hexanal at 1% v/v,3272.377
+OB,hexanal at 1% v/v,3402.537
+OB,hexanal at 1% v/v,3582.897
+OB,hexanal at 1% v/v,3733.024
+OB,hexanal at 1% v/v,3953.4045
+OB,hexanal at 1% v/v,4033.3695
+OB,hexanal at 1% v/v,4313.644
+OB,hexanal at 1% v/v,4383.987
+OB,hexanal at 1% v/v,4503.965
+OB,hexanal at 1% v/v,4754.055
+OB,hexanal at 1% v/v,4844.124
+OB,hexanal at 1% v/v,4994.392
+OB,hexanal at 1% v/v,5184.909
+OB,hexanal at 1% v/v,5345.2975
+OB,hexanal at 1% v/v,5525.28
+OB,hexanal at 1% v/v,5625.554
+OB,hexanal at 1% v/v,5895.6465
+OB,hexanal at 1% v/v,6055.981
+OB,hexanal at 1% v/v,6096.018
+OB,hexanal at 1% v/v,6336.6145
+OB,hexanal at 1% v/v,6426.729
+OB,hexanal at 1% v/v,6727.1205
+OB,hexanal at 1% v/v,6827.5775
+OB,hexanal at 1% v/v,7027.3795
+OB,hexanal at 1% v/v,7077.2475
+OB,hexanal at 1% v/v,7307.9995
+OB,hexanal at 1% v/v,7437.783
+OB,hexanal at 1% v/v,7638.348
+OB,hexanal at 1% v/v,7828.696
+OB,hexanal at 1% v/v,7928.315
+OB,hexanal at 1% v/v,8129.654
+OB,hexanal at 1% v/v,8218.763
+OB,hexanal at 1% v/v,8439.622
+OB,hexanal at 1% v/v,8559.154
+OB,hexanal at 1% v/v,8779.658
+OB,hexanal at 1% v/v,8839.66
+OB,hexanal at 1% v/v,9040.09
+OB,hexanal at 1% v/v,9219.9105
+OB,hexanal at 1% v/v,9410.6935
+OB,hexanal at 1% v/v,9460.713
+OB,ethyl tiglate at 0.3% v/v,147.9915
+OB,ethyl tiglate at 0.3% v/v,208.2
+OB,ethyl tiglate at 0.3% v/v,368.3145
+OB,ethyl tiglate at 0.3% v/v,538.4965
+OB,ethyl tiglate at 0.3% v/v,778.713
+OB,ethyl tiglate at 0.3% v/v,829.1695
+OB,ethyl tiglate at 0.3% v/v,1039.247
+OB,ethyl tiglate at 0.3% v/v,1129.4545
+OB,ethyl tiglate at 0.3% v/v,1379.548
+OB,ethyl tiglate at 0.3% v/v,1519.965
+OB,ethyl tiglate at 0.3% v/v,1680.1485
+OB,ethyl tiglate at 0.3% v/v,1890.264
+OB,ethyl tiglate at 0.3% v/v,1940.4655
+OB,ethyl tiglate at 0.3% v/v,2240.877
+OB,ethyl tiglate at 0.3% v/v,2301.1185
+OB,ethyl tiglate at 0.3% v/v,2451.3155
+OB,ethyl tiglate at 0.3% v/v,2571.2275
+OB,ethyl tiglate at 0.3% v/v,2791.9265
+OB,ethyl tiglate at 0.3% v/v,3002.117
+OB,ethyl tiglate at 0.3% v/v,3122.3425
+OB,ethyl tiglate at 0.3% v/v,3342.306
+OB,ethyl tiglate at 0.3% v/v,3422.552
+OB,ethyl tiglate at 0.3% v/v,3592.7155
+OB,ethyl tiglate at 0.3% v/v,3823.0955
+OB,ethyl tiglate at 0.3% v/v,3852.956
+OB,ethyl tiglate at 0.3% v/v,4123.387
+OB,ethyl tiglate at 0.3% v/v,4203.5465
+OB,ethyl tiglate at 0.3% v/v,4463.835
+OB,ethyl tiglate at 0.3% v/v,4583.785
+OB,ethyl tiglate at 0.3% v/v,4734.358
+OB,ethyl tiglate at 0.3% v/v,4914.4245
+OB,ethyl tiglate at 0.3% v/v,5004.499
+OB,ethyl tiglate at 0.3% v/v,5154.685
+OB,ethyl tiglate at 0.3% v/v,5295.133
+OB,ethyl tiglate at 0.3% v/v,5555.3595
+OB,ethyl tiglate at 0.3% v/v,5615.527
+OB,ethyl tiglate at 0.3% v/v,5785.5595
+OB,ethyl tiglate at 0.3% v/v,6015.7535
+OB,ethyl tiglate at 0.3% v/v,6196.164
+OB,ethyl tiglate at 0.3% v/v,6286.303
+OB,ethyl tiglate at 0.3% v/v,6526.684
+OB,ethyl tiglate at 0.3% v/v,6596.4535
+OB,ethyl tiglate at 0.3% v/v,6856.7955
+OB,ethyl tiglate at 0.3% v/v,6947.075
+OB,ethyl tiglate at 0.3% v/v,7086.9225
+OB,ethyl tiglate at 0.3% v/v,7317.299
+OB,ethyl tiglate at 0.3% v/v,7398.091
+OB,ethyl tiglate at 0.3% v/v,7547.999
+OB,ethyl tiglate at 0.3% v/v,7768.528
+OB,ethyl tiglate at 0.3% v/v,8009.0995
+OB,ethyl tiglate at 0.3% v/v,8028.8295
+OB,ethyl tiglate at 0.3% v/v,8238.8095
+OB,ethyl tiglate at 0.3% v/v,8399.755
+OB,ethyl tiglate at 0.3% v/v,8599.6235
+OB,ethyl tiglate at 0.3% v/v,8739.4035
+OB,ethyl tiglate at 0.3% v/v,8889.7215
+OB,ethyl tiglate at 0.3% v/v,9019.586
+OB,ethyl tiglate at 0.3% v/v,9149.9495
+OB,ethyl tiglate at 0.3% v/v,9450.4395
+OB,ethyl tiglate at 0.3% v/v,9590.752
+OB,ethyl acetate at 0.3% v/v,7.9475
+OB,ethyl acetate at 0.3% v/v,238.229
+OB,ethyl acetate at 0.3% v/v,348.3125
+OB,ethyl acetate at 0.3% v/v,488.5175
+OB,ethyl acetate at 0.3% v/v,698.67
+OB,ethyl acetate at 0.3% v/v,949.0475
+OB,ethyl acetate at 0.3% v/v,1099.114
+OB,ethyl acetate at 0.3% v/v,1229.388
+OB,ethyl acetate at 0.3% v/v,1289.715
+OB,ethyl acetate at 0.3% v/v,1599.7705
+OB,ethyl acetate at 0.3% v/v,1650.0225
+OB,ethyl acetate at 0.3% v/v,1770.234
+OB,ethyl acetate at 0.3% v/v,1960.571
+OB,ethyl acetate at 0.3% v/v,2160.888
+OB,ethyl acetate at 0.3% v/v,2250.868
+OB,ethyl acetate at 0.3% v/v,2420.8075
+OB,ethyl acetate at 0.3% v/v,2581.4485
+OB,ethyl acetate at 0.3% v/v,2821.7105
+OB,ethyl acetate at 0.3% v/v,3021.77
+OB,ethyl acetate at 0.3% v/v,3101.81
+OB,ethyl acetate at 0.3% v/v,3282.3355
+OB,ethyl acetate at 0.3% v/v,3502.662
+OB,ethyl acetate at 0.3% v/v,3552.5135
+OB,ethyl acetate at 0.3% v/v,3722.757
+OB,ethyl acetate at 0.3% v/v,3963.1965
+OB,ethyl acetate at 0.3% v/v,4043.541
+OB,ethyl acetate at 0.3% v/v,4243.3715
+OB,ethyl acetate at 0.3% v/v,4373.9455
+OB,ethyl acetate at 0.3% v/v,4533.687
+OB,ethyl acetate at 0.3% v/v,4684.394
+OB,ethyl acetate at 0.3% v/v,4964.334
+OB,ethyl acetate at 0.3% v/v,5084.4685
+OB,ethyl acetate at 0.3% v/v,5224.6635
+OB,ethyl acetate at 0.3% v/v,5395.2195
+OB,ethyl acetate at 0.3% v/v,5535.17
+OB,ethyl acetate at 0.3% v/v,5725.493
+OB,ethyl acetate at 0.3% v/v,5815.8325
+OB,ethyl acetate at 0.3% v/v,5966.258
+OB,ethyl acetate at 0.3% v/v,6246.5755
+OB,ethyl acetate at 0.3% v/v,6326.6105
+OB,ethyl acetate at 0.3% v/v,6476.3425
+OB,ethyl acetate at 0.3% v/v,6686.622
+OB,ethyl acetate at 0.3% v/v,6766.5715
+OB,ethyl acetate at 0.3% v/v,7047.2785
+OB,ethyl acetate at 0.3% v/v,7127.407
+OB,ethyl acetate at 0.3% v/v,7267.2735
+OB,ethyl acetate at 0.3% v/v,7528.103
+OB,ethyl acetate at 0.3% v/v,7537.6475
+OB,ethyl acetate at 0.3% v/v,7748.4325
+OB,ethyl acetate at 0.3% v/v,7978.8025
+OB,ethyl acetate at 0.3% v/v,8069.1255
+OB,ethyl acetate at 0.3% v/v,8309.2695
+OB,ethyl acetate at 0.3% v/v,8369.2395
+OB,ethyl acetate at 0.3% v/v,8579.295
+OB,ethyl acetate at 0.3% v/v,8699.209
+OB,ethyl acetate at 0.3% v/v,8919.528
+OB,ethyl acetate at 0.3% v/v,9079.6915
+OB,ethyl acetate at 0.3% v/v,9140.4145
+OB,ethyl acetate at 0.3% v/v,9400.539
+OB,ethyl acetate at 0.3% v/v,9520.53

@@ -1,0 +1,3532 @@
+================================================================================
+ARCHITECTURAL ABLATION STUDY
+Timestamp: 2026-01-30T14:44:12.195422
+================================================================================
+
+Loading data...
+Loading primary band-power pickles...
+Loading metadata CSV...
+OB shape:   (2349, 32, 21)
+PCx shape:  (2349, 32, 21)
+Samples:    2349
+Bands used: ['delta', 'theta', 'respiration', 'alpha_high', 'full_alpha', 'beta_low', 'beta_high', 'full_beta', 'gamma_low', 'gamma_mid', 'full_gamma', 'gamma_high_low', 'gamma_high_high', 'full_gamma_high', 'gamma_ultra_low', 'gamma_ultra_high', 'full_gamma_ultra', 'epsilon_low', 'epsilon_high', 'full_epsilon', 'full_spectrum']
+Distribution: Counter({'hexanal at 0.3% v/v': 337, 'mineral oil': 336, 'isoamyl acetate at 0.3% v/v': 336, '2-hexanone at 0.3% v/v': 335, 'ethyl acetate at 0.3% v/v': 335, 'ethyl butyrate at 0.3% v/v': 335, 'ethyl tiglate at 0.3% v/v': 335})
+Data loaded: OB=(2349, 32, 21), PCx=(2349, 32, 21)
+
+Detected 8 GPUs, using 8
+  GPU 0: NVIDIA A100-SXM4-80GB
+  GPU 1: NVIDIA A100-SXM4-80GB
+  GPU 2: NVIDIA A100-SXM4-80GB
+  GPU 3: NVIDIA A100-SXM4-80GB
+  GPU 4: NVIDIA A100-SXM4-80GB
+  GPU 5: NVIDIA A100-SXM4-80GB
+  GPU 6: NVIDIA A100-SXM4-80GB
+  GPU 7: NVIDIA A100-SXM4-80GB
+
+Total tasks: 55 (11 experiments × 5 seeds)
+Config: {'ester_representative': 'isoamyl acetate at 0.3% v/v', 'dropout_rate': 0.25, 'batch_size': 16, 'learning_rate': 0.0001, 'weight_decay': 1e-05, 'num_epochs': 70, 'use_early_stopping': False, 'use_mixup': True, 'num_folds': 5, 'use_ensemble': True, 'extended': False}
+[Worker GPU-0] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-1] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-2] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-3] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-4] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-5] Initialized on NVIDIA A100-SXM4-80GB
+[Worker GPU-6] Initialized on NVIDIA A100-SXM4-80GB
+[GPU 2] Starting: Full Model (Baseline) (seed=2024)
+[GPU 0] Starting: Full Model (Baseline) (seed=42)
+[GPU 5] Starting: -CA (No Channel Attention) (seed=42)
+[GPU 3] Starting: Full Model (Baseline) (seed=7777)[GPU 1] Starting: Full Model (Baseline) (seed=1337)
+
+[GPU 4] Starting: Full Model (Baseline) (seed=9999)
+[GPU 6] Starting: -CA (No Channel Attention) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+
+=== Training Ensemble ===
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False}
+Balanced splits: 285 train, 50 test per class
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+
+=== Fold 1/5 ===
+
+=== Fold 1/5 ===
+
+=== Fold 1/5 ===
+
+=== Fold 1/5 ===
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+
+Balanced 4-class dataset:  Total: 1340
+
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False}
+Balanced splits: 285 train, 50 test per class
+
+=== Fold 1/5 ===
+
+=== Fold 1/5 ===
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+
+=== Fold 1/5 ===
+[Worker GPU-7] Initialized on NVIDIA A100-SXM4-80GB
+[GPU 7] Starting: -CA (No Channel Attention) (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 10/70: Train=51.32%, Val=64.04%
+  Fold 1 Epoch 10/70: Train=47.70%, Val=70.61%
+  Fold 1 Epoch 10/70: Train=50.00%, Val=71.93%
+  Fold 1 Epoch 10/70: Train=46.60%, Val=59.65%
+  Fold 1 Epoch 10/70: Train=49.67%, Val=68.42%
+  Fold 1 Epoch 10/70: Train=48.68%, Val=71.05%
+  Fold 1 Epoch 10/70: Train=48.03%, Val=62.28%
+  Fold 1 Epoch 10/70: Train=49.67%, Val=66.67%
+  Fold 1 Epoch 20/70: Train=60.20%, Val=71.49%
+  Fold 1 Epoch 20/70: Train=54.71%, Val=74.56%
+  Fold 1 Epoch 20/70: Train=58.55%, Val=74.12%
+  Fold 1 Epoch 20/70: Train=57.79%, Val=75.44%
+  Fold 1 Epoch 20/70: Train=57.02%, Val=71.05%
+  Fold 1 Epoch 20/70: Train=58.22%, Val=72.81%
+  Fold 1 Epoch 20/70: Train=57.89%, Val=72.81%
+  Fold 1 Epoch 20/70: Train=58.11%, Val=73.68%
+  Fold 1 Epoch 30/70: Train=68.20%, Val=79.39%
+  Fold 1 Epoch 30/70: Train=66.34%, Val=76.32%
+  Fold 1 Epoch 30/70: Train=66.89%, Val=82.89%
+  Fold 1 Epoch 30/70: Train=65.24%, Val=77.63%
+  Fold 1 Epoch 30/70: Train=66.67%, Val=78.07%
+  Fold 1 Epoch 30/70: Train=67.00%, Val=77.19%
+  Fold 1 Epoch 30/70: Train=66.45%, Val=74.12%
+  Fold 1 Epoch 30/70: Train=67.43%, Val=75.88%
+  Fold 1 Epoch 40/70: Train=65.02%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=64.47%, Val=84.21%
+  Fold 1 Epoch 40/70: Train=64.69%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=64.69%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=66.01%, Val=82.46%
+  Fold 1 Epoch 40/70: Train=64.80%, Val=76.75%
+  Fold 1 Epoch 40/70: Train=67.32%, Val=78.07%
+  Fold 1 Epoch 40/70: Train=65.79%, Val=76.75%
+  Fold 1 Epoch 50/70: Train=74.34%, Val=78.95%
+  Fold 1 Epoch 50/70: Train=73.46%, Val=84.21%
+  Fold 1 Epoch 50/70: Train=74.12%, Val=78.51%
+  Fold 1 Epoch 50/70: Train=76.10%, Val=80.26%
+  Fold 1 Epoch 50/70: Train=75.44%, Val=80.26%
+  Fold 1 Epoch 50/70: Train=74.45%, Val=82.02%
+  Fold 1 Epoch 50/70: Train=74.12%, Val=82.46%
+  Fold 1 Epoch 50/70: Train=76.64%, Val=75.88%
+  Fold 1 Epoch 60/70: Train=72.37%, Val=86.40%
+  Fold 1 Epoch 60/70: Train=69.96%, Val=79.82%
+  Fold 1 Epoch 60/70: Train=70.50%, Val=79.39%
+  Fold 1 Epoch 60/70: Train=73.25%, Val=81.14%
+  Fold 1 Epoch 60/70: Train=69.52%, Val=81.14%
+  Fold 1 Epoch 60/70: Train=71.82%, Val=84.21%
+  Fold 1 Epoch 60/70: Train=71.93%, Val=80.26%
+  Fold 1 Epoch 60/70: Train=70.83%, Val=80.26%
+  Fold 1 Epoch 70/70: Train=56.25%, Val=85.53%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=58.33%, Val=80.70%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=59.10%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=57.02%, Val=80.70%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=60.09%, Val=84.65%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=58.88%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=59.32%, Val=79.82%
+  Fold 1 Epoch 70/70: Train=57.35%, Val=81.14%
+
+=== Fold 2/5 ===
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=43.53%, Val=76.75%
+  Fold 2 Epoch 10/70: Train=45.83%, Val=64.91%
+  Fold 2 Epoch 10/70: Train=48.36%, Val=65.35%
+  Fold 2 Epoch 10/70: Train=46.38%, Val=69.30%
+  Fold 2 Epoch 20/70: Train=50.77%, Val=75.44%
+  Fold 2 Epoch 20/70: Train=54.28%, Val=71.93%
+  Fold 2 Epoch 10/70: Train=45.39%, Val=69.30%
+  Fold 2 Epoch 10/70: Train=50.44%, Val=64.91%
+  Fold 2 Epoch 10/70: Train=46.16%, Val=60.09%
+  Fold 2 Epoch 10/70: Train=43.75%, Val=73.25%
+  Fold 2 Epoch 20/70: Train=52.52%, Val=71.93%
+  Fold 2 Epoch 30/70: Train=61.18%, Val=75.88%
+  Fold 2 Epoch 30/70: Train=61.62%, Val=80.70%
+  Fold 2 Epoch 20/70: Train=52.30%, Val=76.75%
+  Fold 2 Epoch 20/70: Train=53.29%, Val=71.49%
+  Fold 2 Epoch 20/70: Train=52.85%, Val=70.18%
+  Fold 2 Epoch 30/70: Train=61.51%, Val=77.63%
+  Fold 2 Epoch 20/70: Train=52.74%, Val=75.44%
+  Fold 2 Epoch 20/70: Train=53.62%, Val=73.68%
+  Fold 2 Epoch 40/70: Train=71.27%, Val=78.07%
+  Fold 2 Epoch 40/70: Train=69.08%, Val=81.58%
+  Fold 2 Epoch 30/70: Train=63.93%, Val=79.39%
+  Fold 2 Epoch 30/70: Train=60.86%, Val=76.32%
+  Fold 2 Epoch 30/70: Train=60.75%, Val=77.63%
+  Fold 2 Epoch 40/70: Train=71.60%, Val=78.95%
+  Fold 2 Epoch 30/70: Train=62.28%, Val=77.19%
+  Fold 2 Epoch 30/70: Train=60.96%, Val=74.56%
+  Fold 2 Epoch 50/70: Train=70.83%, Val=73.68%
+  Fold 2 Epoch 50/70: Train=70.39%, Val=81.58%
+  Fold 2 Epoch 40/70: Train=70.07%, Val=82.89%
+  Fold 2 Epoch 50/70: Train=71.60%, Val=80.26%
+  Fold 2 Epoch 40/70: Train=73.57%, Val=81.58%
+  Fold 2 Epoch 40/70: Train=70.50%, Val=78.51%
+  Fold 2 Epoch 40/70: Train=72.48%, Val=79.39%
+  Fold 2 Epoch 40/70: Train=71.27%, Val=81.58%
+  Fold 2 Epoch 60/70: Train=59.10%, Val=78.07%
+  Fold 2 Epoch 60/70: Train=58.66%, Val=85.53%
+  Fold 2 Epoch 60/70: Train=59.98%, Val=82.46%
+  Fold 2 Epoch 50/70: Train=68.31%, Val=81.58%
+  Fold 2 Epoch 50/70: Train=69.41%, Val=80.26%
+  Fold 2 Epoch 50/70: Train=68.64%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=69.08%, Val=81.14%
+  Fold 2 Epoch 50/70: Train=67.98%, Val=81.14%
+  Fold 2 Epoch 70/70: Train=61.51%, Val=77.63%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=61.18%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.96%, Val=83.33%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=61.84%, Val=78.95%
+  Fold 2 Epoch 60/70: Train=60.09%, Val=82.89%
+  Fold 2 Epoch 60/70: Train=59.76%, Val=81.58%
+  Fold 2 Epoch 60/70: Train=59.43%, Val=79.82%
+  Fold 2 Epoch 60/70: Train=61.07%, Val=83.33%
+  Fold 3 Epoch 10/70: Train=49.12%, Val=68.42%
+  Fold 3 Epoch 10/70: Train=47.26%, Val=63.60%
+  Fold 3 Epoch 10/70: Train=45.94%, Val=66.67%
+  Fold 2 Epoch 70/70: Train=61.40%, Val=78.95%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.75%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=59.21%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.86%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=63.05%, Val=83.33%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 20/70: Train=50.99%, Val=68.86%
+  Fold 3 Epoch 20/70: Train=53.62%, Val=68.86%
+  Fold 3 Epoch 20/70: Train=52.52%, Val=77.63%
+  Fold 3 Epoch 10/70: Train=48.36%, Val=65.35%
+  Fold 3 Epoch 10/70: Train=49.34%, Val=67.54%
+  Fold 3 Epoch 10/70: Train=49.56%, Val=70.18%
+  Fold 3 Epoch 30/70: Train=60.20%, Val=82.46%
+  Fold 3 Epoch 10/70: Train=49.23%, Val=70.61%
+  Fold 3 Epoch 30/70: Train=61.95%, Val=78.51%
+  Fold 3 Epoch 10/70: Train=47.48%, Val=69.30%
+  Fold 3 Epoch 30/70: Train=61.18%, Val=78.51%
+  Fold 3 Epoch 20/70: Train=52.74%, Val=75.44%
+  Fold 3 Epoch 20/70: Train=55.92%, Val=82.02%
+  Fold 3 Epoch 40/70: Train=64.80%, Val=85.96%
+  Fold 3 Epoch 40/70: Train=65.24%, Val=78.51%
+  Fold 3 Epoch 20/70: Train=53.84%, Val=79.39%
+  Fold 3 Epoch 20/70: Train=52.85%, Val=70.61%
+  Fold 3 Epoch 20/70: Train=57.68%, Val=78.07%
+  Fold 3 Epoch 40/70: Train=66.12%, Val=78.95%
+  Fold 3 Epoch 50/70: Train=65.24%, Val=83.33%
+  Fold 3 Epoch 50/70: Train=64.47%, Val=82.89%
+  Fold 3 Epoch 30/70: Train=59.32%, Val=76.32%
+  Fold 3 Epoch 30/70: Train=62.94%, Val=83.33%
+  Fold 3 Epoch 30/70: Train=61.40%, Val=81.14%
+  Fold 3 Epoch 30/70: Train=59.87%, Val=82.89%
+  Fold 3 Epoch 30/70: Train=61.95%, Val=78.07%
+  Fold 3 Epoch 50/70: Train=66.23%, Val=80.26%
+  Fold 3 Epoch 60/70: Train=62.94%, Val=84.21%
+  Fold 3 Epoch 60/70: Train=60.31%, Val=84.21%
+  Fold 3 Epoch 40/70: Train=66.56%, Val=76.32%
+  Fold 3 Epoch 40/70: Train=67.32%, Val=82.89%
+  Fold 3 Epoch 40/70: Train=67.76%, Val=78.51%
+  Fold 3 Epoch 40/70: Train=65.90%, Val=86.84%
+  Fold 3 Epoch 40/70: Train=68.42%, Val=80.26%
+  Fold 3 Epoch 60/70: Train=62.50%, Val=82.89%
+  Fold 3 Epoch 70/70: Train=64.91%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=65.13%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 50/70: Train=65.46%, Val=82.02%
+  Fold 3 Epoch 50/70: Train=62.94%, Val=85.96%
+  Fold 3 Epoch 50/70: Train=65.46%, Val=85.09%
+  Fold 3 Epoch 50/70: Train=64.25%, Val=82.89%
+  Fold 3 Epoch 70/70: Train=61.95%, Val=80.70%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 50/70: Train=63.38%, Val=84.21%
+  Fold 4 Epoch 10/70: Train=46.49%, Val=60.09%
+  Fold 4 Epoch 10/70: Train=50.00%, Val=62.28%
+  Fold 3 Epoch 60/70: Train=60.20%, Val=83.77%
+  Fold 3 Epoch 60/70: Train=59.87%, Val=84.21%
+  Fold 3 Epoch 60/70: Train=63.27%, Val=82.02%
+  Fold 3 Epoch 60/70: Train=63.49%, Val=85.96%
+  Fold 3 Epoch 60/70: Train=62.17%, Val=82.02%
+  Fold 4 Epoch 10/70: Train=50.77%, Val=67.54%
+  Fold 4 Epoch 20/70: Train=57.13%, Val=70.18%
+  Fold 4 Epoch 20/70: Train=55.81%, Val=70.61%
+  Fold 3 Epoch 70/70: Train=63.16%, Val=84.65%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=63.82%, Val=82.02%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=64.36%, Val=84.65%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=64.69%, Val=85.53%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 20/70: Train=57.79%, Val=70.61%
+  Fold 3 Epoch 70/70: Train=64.14%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=61.18%, Val=73.25%
+  Fold 4 Epoch 30/70: Train=60.96%, Val=75.88%
+  Fold 4 Epoch 10/70: Train=53.73%, Val=67.54%
+  Fold 4 Epoch 10/70: Train=48.57%, Val=66.67%
+  Fold 4 Epoch 10/70: Train=54.28%, Val=69.30%
+  Fold 4 Epoch 30/70: Train=62.50%, Val=75.88%
+  Fold 4 Epoch 10/70: Train=50.88%, Val=77.19%
+  Fold 4 Epoch 10/70: Train=48.57%, Val=66.67%
+  Fold 4 Epoch 40/70: Train=64.80%, Val=70.61%
+  Fold 4 Epoch 40/70: Train=66.45%, Val=77.63%
+  Fold 4 Epoch 40/70: Train=67.00%, Val=78.51%
+  Fold 4 Epoch 20/70: Train=58.99%, Val=73.25%
+  Fold 4 Epoch 20/70: Train=57.24%, Val=72.37%
+  Fold 4 Epoch 20/70: Train=57.89%, Val=78.95%
+  Fold 4 Epoch 20/70: Train=57.57%, Val=74.56%
+  Fold 4 Epoch 50/70: Train=67.11%, Val=72.37%
+  Fold 4 Epoch 20/70: Train=56.69%, Val=73.25%
+  Fold 4 Epoch 50/70: Train=67.43%, Val=77.19%
+  Fold 4 Epoch 50/70: Train=70.07%, Val=79.39%
+  Fold 4 Epoch 30/70: Train=63.49%, Val=73.68%
+  Fold 4 Epoch 30/70: Train=61.73%, Val=79.39%
+  Fold 4 Epoch 30/70: Train=60.09%, Val=82.89%
+  Fold 4 Epoch 60/70: Train=65.02%, Val=74.12%
+  Fold 4 Epoch 30/70: Train=63.60%, Val=85.53%
+  Fold 4 Epoch 30/70: Train=62.83%, Val=77.63%
+  Fold 4 Epoch 60/70: Train=65.02%, Val=79.39%
+  Fold 4 Epoch 60/70: Train=66.23%, Val=78.51%
+  Fold 4 Epoch 40/70: Train=66.78%, Val=78.95%
+  Fold 4 Epoch 40/70: Train=64.80%, Val=82.02%
+  Fold 4 Epoch 40/70: Train=65.90%, Val=76.75%
+  Fold 4 Epoch 70/70: Train=59.32%, Val=74.12%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=61.29%, Val=79.82%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 40/70: Train=65.90%, Val=77.63%
+  Fold 4 Epoch 40/70: Train=65.90%, Val=85.96%
+  Fold 4 Epoch 70/70: Train=60.86%, Val=78.07%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=68.42%, Val=78.07%
+  Fold 4 Epoch 50/70: Train=66.45%, Val=74.12%
+  Fold 5 Epoch 10/70: Train=47.70%, Val=67.11%
+  Fold 4 Epoch 50/70: Train=66.56%, Val=81.14%
+  Fold 4 Epoch 50/70: Train=68.42%, Val=78.07%
+  Fold 4 Epoch 50/70: Train=67.54%, Val=84.21%
+  Fold 5 Epoch 10/70: Train=45.39%, Val=70.18%
+  Fold 5 Epoch 10/70: Train=46.82%, Val=67.54%
+  Fold 4 Epoch 60/70: Train=65.02%, Val=80.70%
+  Fold 4 Epoch 60/70: Train=64.47%, Val=75.00%
+  Fold 5 Epoch 20/70: Train=55.48%, Val=75.44%
+  Fold 4 Epoch 60/70: Train=63.38%, Val=82.02%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=80.70%
+  Fold 5 Epoch 20/70: Train=55.04%, Val=75.00%
+  Fold 4 Epoch 60/70: Train=65.24%, Val=86.40%
+  Fold 5 Epoch 20/70: Train=57.24%, Val=75.00%
+  Fold 4 Epoch 70/70: Train=59.21%, Val=79.82%
+  Fold 5 Epoch 30/70: Train=56.69%, Val=80.26%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=59.54%, Val=76.32%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=61.18%, Val=81.58%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=58.11%, Val=79.82%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 30/70: Train=56.58%, Val=75.00%
+  Fold 4 Epoch 70/70: Train=59.76%, Val=85.53%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 30/70: Train=55.37%, Val=84.65%
+  Fold 5 Epoch 40/70: Train=60.53%, Val=81.14%
+  Fold 5 Epoch 40/70: Train=62.83%, Val=77.63%
+  Fold 5 Epoch 10/70: Train=44.63%, Val=65.79%
+  Fold 5 Epoch 10/70: Train=43.09%, Val=65.79%
+  Fold 5 Epoch 10/70: Train=45.83%, Val=71.05%
+  Fold 5 Epoch 10/70: Train=46.27%, Val=67.54%
+  Fold 5 Epoch 10/70: Train=48.25%, Val=68.42%
+  Fold 5 Epoch 40/70: Train=61.73%, Val=86.84%
+  Fold 5 Epoch 50/70: Train=65.24%, Val=82.02%
+  Fold 5 Epoch 50/70: Train=67.32%, Val=79.82%
+  Fold 5 Epoch 20/70: Train=51.86%, Val=73.68%
+  Fold 5 Epoch 20/70: Train=52.41%, Val=75.88%
+  Fold 5 Epoch 20/70: Train=55.92%, Val=79.82%
+  Fold 5 Epoch 20/70: Train=54.06%, Val=76.32%
+  Fold 5 Epoch 50/70: Train=65.79%, Val=87.72%
+  Fold 5 Epoch 20/70: Train=50.88%, Val=79.39%
+  Fold 5 Epoch 60/70: Train=65.46%, Val=81.58%
+  Fold 5 Epoch 60/70: Train=63.93%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=57.89%, Val=82.46%
+  Fold 5 Epoch 30/70: Train=54.71%, Val=75.00%
+  Fold 5 Epoch 30/70: Train=57.02%, Val=80.26%
+  Fold 5 Epoch 60/70: Train=64.58%, Val=87.28%
+  Fold 5 Epoch 30/70: Train=57.57%, Val=78.51%
+  Fold 5 Epoch 70/70: Train=63.71%, Val=81.58%
+
+=== Results ===
+Val Accs: [86.40350877192982, 85.52631578947368, 85.08771929824562, 78.0701754385965, 85.52631578947368]
+Mean Val: 84.12%
+Test Acc: 85.50%
+[GPU 6] ✓ -CA (No Channel Attention) (seed=1337): Val=84.12%, Test=85.50% (42.7 min)
+[Progress] 1/55 (1.8%)
+[GPU 6] Starting: -CA (No Channel Attention) (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 30/70: Train=57.46%, Val=83.77%
+  Fold 5 Epoch 70/70: Train=66.78%, Val=78.95%
+
+=== Results ===
+Val Accs: [81.57894736842105, 80.26315789473684, 86.40350877192982, 80.70175438596492, 81.57894736842105]
+Mean Val: 82.11%
+Test Acc: 85.00%
+[GPU 7] ✓ -CA (No Channel Attention) (seed=2024): Val=82.11%, Test=85.00% (42.9 min)
+[Progress] 2/55 (3.6%)
+[GPU 7] Starting: -CA (No Channel Attention) (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=64.25%, Val=88.16%
+
+=== Results ===
+Val Accs: [81.57894736842105, 83.7719298245614, 83.33333333333333, 80.26315789473684, 89.47368421052632]
+Mean Val: 83.68%
+Test Acc: 81.00%
+[GPU 5] ✓ -CA (No Channel Attention) (seed=42): Val=83.68%, Test=81.00% (43.8 min)
+[Progress] 3/55 (5.5%)
+[GPU 5] Starting: -SA (No Spatial Attention) (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 40/70: Train=60.31%, Val=76.32%
+  Fold 5 Epoch 40/70: Train=61.95%, Val=87.72%
+  Fold 5 Epoch 40/70: Train=61.84%, Val=85.53%
+  Fold 5 Epoch 40/70: Train=61.84%, Val=81.14%
+  Fold 1 Epoch 10/70: Train=51.43%, Val=74.56%
+  Fold 1 Epoch 10/70: Train=50.55%, Val=60.09%
+  Fold 5 Epoch 40/70: Train=61.73%, Val=85.53%
+  Fold 1 Epoch 10/70: Train=48.25%, Val=66.23%
+  Fold 5 Epoch 50/70: Train=66.12%, Val=80.70%
+  Fold 5 Epoch 50/70: Train=67.21%, Val=86.40%
+  Fold 1 Epoch 20/70: Train=59.21%, Val=69.30%
+  Fold 5 Epoch 50/70: Train=65.79%, Val=86.40%
+  Fold 5 Epoch 50/70: Train=66.78%, Val=80.70%
+  Fold 1 Epoch 20/70: Train=60.64%, Val=67.11%
+  Fold 5 Epoch 50/70: Train=66.45%, Val=85.96%
+  Fold 5 Epoch 60/70: Train=66.01%, Val=85.96%
+  Fold 1 Epoch 30/70: Train=66.78%, Val=75.44%
+  Fold 5 Epoch 60/70: Train=63.71%, Val=80.26%
+  Fold 5 Epoch 60/70: Train=65.24%, Val=85.53%
+  Fold 1 Epoch 20/70: Train=61.40%, Val=72.81%
+  Fold 5 Epoch 60/70: Train=66.89%, Val=84.65%
+  Fold 1 Epoch 30/70: Train=66.67%, Val=76.75%
+  Fold 5 Epoch 60/70: Train=65.79%, Val=86.40%
+  Fold 5 Epoch 70/70: Train=65.13%, Val=87.28%
+
+=== Results ===
+Val Accs: [85.52631578947368, 85.52631578947368, 85.08771929824562, 79.82456140350877, 88.15789473684211]
+Mean Val: 84.82%
+Test Acc: 86.50%
+[GPU 1] ✓ Full Model (Baseline) (seed=1337): Val=84.82%, Test=86.50% (47.6 min)
+[Progress] 4/55 (7.3%)
+[GPU 1] Starting: -SA (No Spatial Attention) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=65.79%, Val=75.00%
+  Fold 5 Epoch 70/70: Train=65.79%, Val=83.77%
+
+=== Results ===
+Val Accs: [84.64912280701755, 82.89473684210526, 87.71929824561404, 86.40350877192982, 85.52631578947368]
+Mean Val: 85.44%
+Test Acc: 84.50%
+[GPU 3] ✓ Full Model (Baseline) (seed=7777): Val=85.44%, Test=84.50% (47.7 min)
+[Progress] 5/55 (9.1%)
+[GPU 3] Starting: -SA (No Spatial Attention) (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=63.71%, Val=81.14%
+
+=== Results ===
+Val Accs: [84.21052631578948, 84.64912280701755, 86.84210526315789, 81.57894736842105, 82.01754385964912]
+Mean Val: 83.86%
+Test Acc: 88.00%
+[GPU 2] ✓ Full Model (Baseline) (seed=2024): Val=83.86%, Test=88.00% (47.8 min)
+[Progress] 6/55 (10.9%)
+[GPU 2] Starting: -SA (No Spatial Attention) (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 30/70: Train=68.42%, Val=80.26%
+  Fold 5 Epoch 70/70: Train=65.79%, Val=87.28%
+
+=== Results ===
+Val Accs: [80.26315789473684, 82.89473684210526, 85.08771929824562, 85.52631578947368, 88.15789473684211]
+Mean Val: 84.39%
+Test Acc: 88.50%
+[GPU 4] ✓ Full Model (Baseline) (seed=9999): Val=84.39%, Test=88.50% (47.8 min)
+[Progress] 7/55 (12.7%)
+[GPU 4] Starting: -SA (No Spatial Attention) (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=65.35%, Val=75.88%
+  Fold 5 Epoch 70/70: Train=62.83%, Val=88.60%
+
+=== Results ===
+Val Accs: [81.57894736842105, 84.21052631578948, 84.21052631578948, 81.14035087719299, 88.59649122807018]
+Mean Val: 83.95%
+Test Acc: 85.00%
+[GPU 0] ✓ Full Model (Baseline) (seed=42): Val=83.95%, Test=85.00% (48.5 min)
+[Progress] 8/55 (14.5%)
+[GPU 0] Starting: -FA (No Fusion Attention) (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_fusion_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 50/70: Train=75.55%, Val=78.95%
+  Fold 1 Epoch 10/70: Train=50.66%, Val=64.47%
+  Fold 1 Epoch 10/70: Train=49.12%, Val=70.18%
+  Fold 1 Epoch 50/70: Train=74.45%, Val=81.58%
+  Fold 1 Epoch 10/70: Train=51.86%, Val=67.11%
+  Fold 1 Epoch 40/70: Train=66.56%, Val=78.51%
+  Fold 1 Epoch 10/70: Train=52.08%, Val=65.35%
+  Fold 1 Epoch 10/70: Train=48.46%, Val=69.30%
+  Fold 1 Epoch 60/70: Train=72.04%, Val=80.70%
+  Fold 1 Epoch 60/70: Train=72.59%, Val=81.14%
+  Fold 1 Epoch 20/70: Train=59.32%, Val=74.56%
+  Fold 1 Epoch 20/70: Train=61.29%, Val=73.68%
+  Fold 1 Epoch 20/70: Train=62.61%, Val=75.44%
+  Fold 1 Epoch 20/70: Train=61.07%, Val=72.81%
+  Fold 1 Epoch 50/70: Train=76.21%, Val=82.89%
+  Fold 1 Epoch 20/70: Train=58.99%, Val=77.19%
+  Fold 1 Epoch 70/70: Train=58.88%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=59.76%, Val=81.14%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 30/70: Train=66.12%, Val=77.19%
+  Fold 1 Epoch 60/70: Train=71.38%, Val=82.46%
+  Fold 1 Epoch 30/70: Train=67.11%, Val=77.19%
+  Fold 1 Epoch 30/70: Train=66.34%, Val=75.00%
+  Fold 1 Epoch 30/70: Train=68.42%, Val=78.95%
+  Fold 1 Epoch 30/70: Train=67.65%, Val=81.14%
+  Fold 2 Epoch 10/70: Train=46.93%, Val=67.54%
+  Fold 2 Epoch 10/70: Train=45.18%, Val=67.98%
+  Fold 1 Epoch 40/70: Train=65.57%, Val=81.58%
+  Fold 1 Epoch 70/70: Train=59.65%, Val=85.09%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 40/70: Train=64.69%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=65.79%, Val=78.51%
+  Fold 1 Epoch 40/70: Train=67.54%, Val=81.14%
+  Fold 1 Epoch 40/70: Train=66.67%, Val=79.39%
+  Fold 2 Epoch 20/70: Train=51.75%, Val=79.82%
+  Fold 2 Epoch 20/70: Train=50.77%, Val=77.19%
+  Fold 1 Epoch 50/70: Train=75.11%, Val=80.70%
+  Fold 1 Epoch 50/70: Train=75.77%, Val=78.07%
+  Fold 1 Epoch 50/70: Train=73.25%, Val=83.33%
+  Fold 1 Epoch 50/70: Train=75.33%, Val=82.02%
+  Fold 2 Epoch 10/70: Train=47.48%, Val=65.79%
+  Fold 2 Epoch 30/70: Train=61.51%, Val=79.39%
+  Fold 2 Epoch 30/70: Train=60.42%, Val=77.19%
+  Fold 1 Epoch 50/70: Train=74.56%, Val=81.58%
+  Fold 1 Epoch 60/70: Train=71.93%, Val=82.46%
+  Fold 1 Epoch 60/70: Train=70.07%, Val=81.58%
+  Fold 1 Epoch 60/70: Train=73.57%, Val=85.09%
+  Fold 1 Epoch 60/70: Train=70.83%, Val=81.58%
+  Fold 2 Epoch 20/70: Train=54.17%, Val=69.74%
+  Fold 2 Epoch 40/70: Train=71.49%, Val=78.95%
+  Fold 2 Epoch 40/70: Train=69.52%, Val=80.70%
+  Fold 1 Epoch 60/70: Train=71.82%, Val=80.70%
+  Fold 1 Epoch 70/70: Train=58.11%, Val=82.02%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=60.31%, Val=79.39%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=60.86%, Val=85.53%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=58.66%, Val=80.70%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 30/70: Train=62.28%, Val=77.19%
+  Fold 2 Epoch 50/70: Train=69.19%, Val=79.39%
+  Fold 2 Epoch 50/70: Train=67.43%, Val=81.58%
+  Fold 1 Epoch 70/70: Train=61.51%, Val=80.26%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=46.82%, Val=66.23%
+  Fold 2 Epoch 10/70: Train=50.11%, Val=63.16%
+  Fold 2 Epoch 10/70: Train=46.82%, Val=59.21%
+  Fold 2 Epoch 10/70: Train=48.79%, Val=68.86%
+  Fold 2 Epoch 40/70: Train=73.14%, Val=78.07%
+  Fold 2 Epoch 60/70: Train=59.65%, Val=81.14%
+  Fold 2 Epoch 60/70: Train=59.98%, Val=82.02%
+  Fold 2 Epoch 10/70: Train=46.93%, Val=67.11%
+  Fold 2 Epoch 20/70: Train=55.26%, Val=76.32%
+  Fold 2 Epoch 50/70: Train=69.08%, Val=79.39%
+  Fold 2 Epoch 20/70: Train=54.93%, Val=75.88%
+  Fold 2 Epoch 20/70: Train=52.30%, Val=70.61%
+  Fold 2 Epoch 70/70: Train=61.18%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 20/70: Train=53.07%, Val=76.75%
+  Fold 2 Epoch 70/70: Train=61.62%, Val=82.02%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 20/70: Train=54.06%, Val=74.12%
+  Fold 2 Epoch 30/70: Train=61.40%, Val=79.82%
+  Fold 2 Epoch 30/70: Train=60.96%, Val=78.07%
+  Fold 2 Epoch 60/70: Train=58.44%, Val=83.77%
+  Fold 2 Epoch 30/70: Train=60.09%, Val=79.39%
+  Fold 2 Epoch 30/70: Train=60.53%, Val=78.51%
+  Fold 3 Epoch 10/70: Train=48.46%, Val=68.42%
+  Fold 3 Epoch 10/70: Train=48.57%, Val=69.30%
+  Fold 2 Epoch 30/70: Train=62.28%, Val=77.63%
+  Fold 2 Epoch 40/70: Train=73.03%, Val=82.89%
+  Fold 2 Epoch 40/70: Train=69.96%, Val=77.63%
+  Fold 2 Epoch 70/70: Train=60.42%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 40/70: Train=70.07%, Val=82.02%
+  Fold 3 Epoch 20/70: Train=51.21%, Val=73.68%
+  Fold 2 Epoch 40/70: Train=70.39%, Val=83.33%
+  Fold 3 Epoch 20/70: Train=59.32%, Val=75.00%
+  Fold 2 Epoch 40/70: Train=70.50%, Val=79.82%
+  Fold 2 Epoch 50/70: Train=69.19%, Val=83.77%
+  Fold 3 Epoch 30/70: Train=62.06%, Val=79.39%
+  Fold 2 Epoch 50/70: Train=70.83%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=68.97%, Val=82.46%
+  Fold 2 Epoch 50/70: Train=69.30%, Val=78.07%
+  Fold 3 Epoch 30/70: Train=60.20%, Val=81.14%
+  Fold 3 Epoch 10/70: Train=48.46%, Val=71.49%
+  Fold 2 Epoch 50/70: Train=70.83%, Val=83.33%
+  Fold 2 Epoch 60/70: Train=59.21%, Val=84.21%
+  Fold 3 Epoch 40/70: Train=66.56%, Val=82.02%
+  Fold 2 Epoch 60/70: Train=59.76%, Val=82.46%
+  Fold 2 Epoch 60/70: Train=59.87%, Val=80.70%
+  Fold 3 Epoch 40/70: Train=67.65%, Val=80.70%
+  Fold 2 Epoch 60/70: Train=58.22%, Val=79.39%
+  Fold 3 Epoch 20/70: Train=55.15%, Val=74.12%
+  Fold 2 Epoch 60/70: Train=62.61%, Val=84.65%
+  Fold 3 Epoch 50/70: Train=65.68%, Val=82.02%
+  Fold 2 Epoch 70/70: Train=59.21%, Val=84.21%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 50/70: Train=63.49%, Val=81.58%
+  Fold 2 Epoch 70/70: Train=61.84%, Val=83.33%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.86%, Val=84.21%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.96%, Val=78.51%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 30/70: Train=61.18%, Val=78.07%
+  Fold 2 Epoch 70/70: Train=59.98%, Val=83.33%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 60/70: Train=63.05%, Val=82.46%
+  Fold 3 Epoch 60/70: Train=63.27%, Val=82.89%
+  Fold 3 Epoch 10/70: Train=49.56%, Val=71.49%
+  Fold 3 Epoch 10/70: Train=51.21%, Val=70.18%
+  Fold 3 Epoch 10/70: Train=46.82%, Val=52.19%
+  Fold 3 Epoch 40/70: Train=64.91%, Val=80.70%
+  Fold 3 Epoch 10/70: Train=50.33%, Val=71.93%
+  Fold 3 Epoch 70/70: Train=64.47%, Val=82.02%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=62.28%, Val=83.77%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 10/70: Train=48.79%, Val=70.61%
+  Fold 3 Epoch 20/70: Train=56.14%, Val=72.37%
+  Fold 3 Epoch 20/70: Train=52.85%, Val=74.56%
+  Fold 3 Epoch 20/70: Train=55.26%, Val=78.95%
+  Fold 3 Epoch 20/70: Train=55.26%, Val=78.51%
+  Fold 3 Epoch 50/70: Train=65.24%, Val=81.58%
+  Fold 4 Epoch 10/70: Train=49.23%, Val=65.79%
+  Fold 4 Epoch 10/70: Train=50.55%, Val=66.67%
+  Fold 3 Epoch 20/70: Train=52.19%, Val=76.32%
+  Fold 3 Epoch 30/70: Train=63.93%, Val=81.14%
+  Fold 3 Epoch 30/70: Train=61.07%, Val=80.70%
+  Fold 3 Epoch 30/70: Train=60.96%, Val=81.14%
+  Fold 3 Epoch 30/70: Train=60.20%, Val=83.33%
+  Fold 3 Epoch 60/70: Train=64.69%, Val=83.33%
+  Fold 4 Epoch 20/70: Train=56.47%, Val=74.12%
+  Fold 4 Epoch 20/70: Train=55.04%, Val=72.81%
+  Fold 3 Epoch 30/70: Train=62.94%, Val=77.63%
+  Fold 3 Epoch 40/70: Train=66.56%, Val=82.02%
+  Fold 3 Epoch 40/70: Train=66.45%, Val=83.33%
+  Fold 3 Epoch 70/70: Train=65.24%, Val=82.89%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 40/70: Train=64.80%, Val=79.39%
+  Fold 3 Epoch 40/70: Train=66.45%, Val=84.65%
+  Fold 4 Epoch 30/70: Train=61.73%, Val=78.07%
+  Fold 4 Epoch 30/70: Train=63.05%, Val=78.95%
+  Fold 3 Epoch 40/70: Train=64.36%, Val=80.26%
+  Fold 3 Epoch 50/70: Train=66.12%, Val=82.02%
+  Fold 3 Epoch 50/70: Train=64.14%, Val=86.40%
+  Fold 3 Epoch 50/70: Train=65.35%, Val=82.02%
+  Fold 3 Epoch 50/70: Train=65.24%, Val=82.02%
+  Fold 4 Epoch 10/70: Train=49.78%, Val=67.11%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=79.39%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=82.46%
+  Fold 3 Epoch 50/70: Train=64.80%, Val=79.82%
+  Fold 3 Epoch 60/70: Train=62.61%, Val=83.33%
+  Fold 3 Epoch 60/70: Train=62.50%, Val=85.09%
+  Fold 3 Epoch 60/70: Train=60.75%, Val=83.33%
+  Fold 3 Epoch 60/70: Train=62.17%, Val=83.33%
+  Fold 4 Epoch 20/70: Train=58.88%, Val=78.95%
+  Fold 4 Epoch 50/70: Train=66.45%, Val=82.02%
+  Fold 4 Epoch 50/70: Train=67.98%, Val=81.14%
+  Fold 3 Epoch 60/70: Train=64.47%, Val=81.14%
+  Fold 3 Epoch 70/70: Train=63.71%, Val=82.02%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=63.38%, Val=85.53%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=63.71%, Val=81.58%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=63.05%, Val=85.53%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 60/70: Train=63.71%, Val=82.89%
+  Fold 4 Epoch 30/70: Train=63.27%, Val=81.14%
+  Fold 4 Epoch 60/70: Train=63.60%, Val=81.58%
+  Fold 3 Epoch 70/70: Train=65.02%, Val=82.02%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 10/70: Train=51.10%, Val=67.11%
+  Fold 4 Epoch 10/70: Train=51.75%, Val=65.35%
+  Fold 4 Epoch 70/70: Train=61.62%, Val=82.89%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=48.57%, Val=71.93%
+  Fold 4 Epoch 70/70: Train=58.88%, Val=82.02%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=51.64%, Val=71.49%
+  Fold 4 Epoch 40/70: Train=65.79%, Val=81.14%
+  Fold 4 Epoch 10/70: Train=49.67%, Val=64.47%
+  Fold 4 Epoch 20/70: Train=58.33%, Val=73.25%
+  Fold 4 Epoch 20/70: Train=58.77%, Val=75.00%
+  Fold 5 Epoch 10/70: Train=47.04%, Val=70.18%
+  Fold 5 Epoch 10/70: Train=47.92%, Val=67.54%
+  Fold 4 Epoch 20/70: Train=56.47%, Val=79.82%
+  Fold 4 Epoch 20/70: Train=58.88%, Val=69.74%
+  Fold 4 Epoch 50/70: Train=69.41%, Val=81.14%
+  Fold 5 Epoch 20/70: Train=56.14%, Val=78.95%
+  Fold 4 Epoch 30/70: Train=63.82%, Val=78.07%
+  Fold 4 Epoch 20/70: Train=58.00%, Val=72.37%
+  Fold 4 Epoch 30/70: Train=65.02%, Val=81.58%
+  Fold 5 Epoch 20/70: Train=52.52%, Val=74.12%
+  Fold 4 Epoch 60/70: Train=64.58%, Val=83.33%
+  Fold 4 Epoch 30/70: Train=65.13%, Val=80.26%
+  Fold 4 Epoch 30/70: Train=64.36%, Val=72.37%
+  Fold 5 Epoch 30/70: Train=57.46%, Val=78.07%
+  Fold 4 Epoch 40/70: Train=65.46%, Val=76.32%
+  Fold 4 Epoch 30/70: Train=62.94%, Val=77.63%
+  Fold 5 Epoch 30/70: Train=55.15%, Val=76.32%
+  Fold 4 Epoch 70/70: Train=60.31%, Val=82.02%
+  Fold 4 Epoch 40/70: Train=66.34%, Val=85.09%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 40/70: Train=66.67%, Val=76.75%
+  Fold 4 Epoch 40/70: Train=66.23%, Val=89.04%
+  Fold 5 Epoch 40/70: Train=63.71%, Val=82.02%
+  Fold 4 Epoch 50/70: Train=68.86%, Val=80.26%
+  Fold 5 Epoch 40/70: Train=61.07%, Val=77.63%
+  Fold 4 Epoch 50/70: Train=67.00%, Val=84.65%
+  Fold 4 Epoch 50/70: Train=68.20%, Val=76.75%
+  Fold 4 Epoch 40/70: Train=66.56%, Val=75.00%
+  Fold 5 Epoch 10/70: Train=47.92%, Val=74.12%
+  Fold 4 Epoch 50/70: Train=67.32%, Val=86.40%
+  Fold 5 Epoch 50/70: Train=65.79%, Val=83.77%
+  Fold 5 Epoch 50/70: Train=68.53%, Val=79.39%
+  Fold 4 Epoch 60/70: Train=63.93%, Val=81.14%
+  Fold 4 Epoch 60/70: Train=67.76%, Val=87.28%
+  Fold 4 Epoch 60/70: Train=66.67%, Val=76.75%
+  Fold 4 Epoch 50/70: Train=68.53%, Val=79.39%
+  Fold 5 Epoch 20/70: Train=55.15%, Val=78.95%
+  Fold 4 Epoch 60/70: Train=65.68%, Val=85.09%
+  Fold 5 Epoch 60/70: Train=65.68%, Val=84.65%
+  Fold 5 Epoch 60/70: Train=67.00%, Val=81.58%
+  Fold 4 Epoch 70/70: Train=62.72%, Val=80.70%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=61.95%, Val=85.09%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 60/70: Train=65.35%, Val=81.14%
+  Fold 4 Epoch 70/70: Train=63.49%, Val=77.19%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 70/70: Train=59.65%, Val=84.65%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 30/70: Train=55.92%, Val=84.65%
+  Fold 5 Epoch 70/70: Train=66.23%, Val=85.53%
+
+=== Results ===
+Val Accs: [82.89473684210526, 83.33333333333333, 85.08771929824562, 83.7719298245614, 86.40350877192982]
+Mean Val: 84.30%
+Test Acc: 83.50%
+[GPU 6] ✓ -CA (No Channel Attention) (seed=7777): Val=84.30%, Test=83.50% (43.1 min)
+[Progress] 9/55 (16.4%)
+[GPU 6] Starting: -FA (No Fusion Attention) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_fusion_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=64.69%, Val=82.02%
+
+=== Results ===
+Val Accs: [83.33333333333333, 84.21052631578948, 85.52631578947368, 85.52631578947368, 84.64912280701755]
+Mean Val: 84.65%
+Test Acc: 88.50%
+[GPU 7] ✓ -CA (No Channel Attention) (seed=9999): Val=84.65%, Test=88.50% (43.3 min)
+[Progress] 10/55 (18.2%)
+[GPU 7] Starting: -FA (No Fusion Attention) (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_fusion_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 10/70: Train=49.34%, Val=74.56%
+  Fold 4 Epoch 70/70: Train=60.75%, Val=80.70%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 10/70: Train=50.77%, Val=72.37%
+  Fold 5 Epoch 40/70: Train=60.86%, Val=85.53%
+  Fold 5 Epoch 10/70: Train=48.03%, Val=76.75%
+  Fold 5 Epoch 10/70: Train=46.82%, Val=69.30%
+  Fold 1 Epoch 10/70: Train=50.77%, Val=65.79%
+  Fold 1 Epoch 10/70: Train=50.77%, Val=71.93%
+  Fold 5 Epoch 20/70: Train=55.04%, Val=73.68%
+  Fold 5 Epoch 20/70: Train=56.80%, Val=74.56%
+  Fold 5 Epoch 10/70: Train=48.14%, Val=68.42%
+  Fold 5 Epoch 50/70: Train=65.57%, Val=86.40%
+  Fold 5 Epoch 20/70: Train=56.47%, Val=77.63%
+  Fold 5 Epoch 20/70: Train=56.14%, Val=74.12%
+  Fold 1 Epoch 20/70: Train=60.75%, Val=75.00%
+  Fold 1 Epoch 20/70: Train=59.54%, Val=76.32%
+  Fold 5 Epoch 30/70: Train=55.15%, Val=78.51%
+  Fold 5 Epoch 30/70: Train=56.91%, Val=80.26%
+  Fold 5 Epoch 20/70: Train=56.36%, Val=79.39%
+  Fold 5 Epoch 30/70: Train=55.37%, Val=82.02%
+  Fold 5 Epoch 60/70: Train=63.93%, Val=89.04%
+  Fold 5 Epoch 30/70: Train=54.82%, Val=74.56%
+  Fold 1 Epoch 30/70: Train=69.19%, Val=78.07%
+  Fold 1 Epoch 30/70: Train=67.00%, Val=79.82%
+  Fold 5 Epoch 40/70: Train=61.18%, Val=79.82%
+  Fold 5 Epoch 40/70: Train=62.83%, Val=86.40%
+  Fold 5 Epoch 30/70: Train=55.26%, Val=84.21%
+  Fold 5 Epoch 40/70: Train=60.96%, Val=81.14%
+  Fold 5 Epoch 70/70: Train=64.91%, Val=89.04%
+
+=== Results ===
+Val Accs: [85.08771929824562, 84.64912280701755, 85.08771929824562, 83.7719298245614, 89.91228070175438]
+Mean Val: 85.70%
+Test Acc: 82.50%
+[GPU 5] ✓ -SA (No Spatial Attention) (seed=42): Val=85.70%, Test=82.50% (47.7 min)
+[GPU 5] Starting: -FA (No Fusion Attention) (seed=7777)
+[Progress] 11/55 (20.0%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_fusion_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=66.56%, Val=79.82%
+  Fold 5 Epoch 40/70: Train=61.29%, Val=79.82%
+  Fold 1 Epoch 40/70: Train=67.43%, Val=81.58%
+  Fold 5 Epoch 50/70: Train=67.32%, Val=85.96%
+  Fold 5 Epoch 50/70: Train=65.46%, Val=82.02%
+  Fold 5 Epoch 50/70: Train=67.76%, Val=85.09%
+  Fold 5 Epoch 40/70: Train=63.05%, Val=83.33%
+  Fold 1 Epoch 10/70: Train=51.43%, Val=65.35%
+  Fold 1 Epoch 50/70: Train=75.44%, Val=82.89%
+  Fold 5 Epoch 50/70: Train=65.46%, Val=82.46%
+  Fold 1 Epoch 50/70: Train=74.78%, Val=85.53%
+  Fold 5 Epoch 60/70: Train=65.24%, Val=82.46%
+  Fold 5 Epoch 60/70: Train=64.36%, Val=87.72%
+  Fold 5 Epoch 60/70: Train=65.90%, Val=82.89%
+  Fold 5 Epoch 50/70: Train=65.68%, Val=85.09%
+  Fold 5 Epoch 60/70: Train=66.01%, Val=83.77%
+  Fold 1 Epoch 60/70: Train=69.41%, Val=84.21%
+  Fold 1 Epoch 20/70: Train=60.64%, Val=78.51%
+  Fold 1 Epoch 60/70: Train=71.27%, Val=85.09%
+  Fold 5 Epoch 70/70: Train=65.35%, Val=87.72%
+
+=== Results ===
+Val Accs: [83.33333333333333, 85.08771929824562, 87.71929824561404, 87.28070175438596, 89.03508771929825]
+Mean Val: 86.49%
+Test Acc: 86.50%
+[GPU 2] ✓ -SA (No Spatial Attention) (seed=7777): Val=86.49%, Test=86.50% (47.1 min)
+[GPU 2] Starting: -FA (No Fusion Attention) (seed=9999)
+[Progress] 12/55 (21.8%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_fusion_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=64.80%, Val=81.58%
+
+=== Results ===
+Val Accs: [83.33333333333333, 85.52631578947368, 84.64912280701755, 81.57894736842105, 83.33333333333333]
+Mean Val: 83.68%
+Test Acc: 88.50%
+[GPU 3] ✓ -SA (No Spatial Attention) (seed=2024): Val=83.68%, Test=88.50% (47.2 min)
+[Progress] 13/55 (23.6%)
+[GPU 3] Starting: -Skip (No Skip Classifier) (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_skip_classifier': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=65.35%, Val=82.02%
+
+=== Results ===
+Val Accs: [85.52631578947368, 85.08771929824562, 85.52631578947368, 78.94736842105263, 85.52631578947368]
+Mean Val: 84.12%
+Test Acc: 87.00%
+[GPU 1] ✓ -SA (No Spatial Attention) (seed=1337): Val=84.12%, Test=87.00% (47.4 min)
+[Progress] 14/55 (25.5%)
+[GPU 1] Starting: -Skip (No Skip Classifier) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_skip_classifier': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 60/70: Train=64.47%, Val=85.53%
+  Fold 5 Epoch 70/70: Train=64.47%, Val=82.89%
+
+=== Results ===
+Val Accs: [82.45614035087719, 80.70175438596492, 85.08771929824562, 89.03508771929825, 85.52631578947368]
+Mean Val: 84.56%
+Test Acc: 88.50%
+[GPU 4] ✓ -SA (No Spatial Attention) (seed=9999): Val=84.56%, Test=88.50% (47.8 min)
+[GPU 4] Starting: -Skip (No Skip Classifier) (seed=2024)
+[Progress] 15/55 (27.3%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_skip_classifier': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 30/70: Train=64.91%, Val=71.93%
+  Fold 1 Epoch 70/70: Train=57.57%, Val=83.77%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=59.76%, Val=84.65%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 10/70: Train=52.41%, Val=58.33%
+  Fold 1 Epoch 10/70: Train=48.03%, Val=72.81%
+  Fold 1 Epoch 10/70: Train=49.12%, Val=60.96%
+  Fold 5 Epoch 70/70: Train=65.24%, Val=86.40%
+
+=== Results ===
+Val Accs: [82.45614035087719, 85.08771929824562, 83.7719298245614, 83.7719298245614, 86.84210526315789]
+Mean Val: 84.39%
+Test Acc: 81.50%
+[GPU 0] ✓ -FA (No Fusion Attention) (seed=42): Val=84.39%, Test=81.50% (48.2 min)
+[GPU 0] Starting: -Skip (No Skip Classifier) (seed=7777)
+[Progress] 16/55 (29.1%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_skip_classifier': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=68.09%, Val=81.58%
+  Fold 2 Epoch 10/70: Train=41.78%, Val=68.42%
+  Fold 1 Epoch 10/70: Train=48.36%, Val=67.98%
+  Fold 2 Epoch 10/70: Train=43.53%, Val=68.42%
+  Fold 1 Epoch 20/70: Train=60.64%, Val=71.05%
+  Fold 1 Epoch 20/70: Train=57.24%, Val=76.75%
+  Fold 1 Epoch 20/70: Train=59.87%, Val=80.26%
+  Fold 1 Epoch 10/70: Train=46.71%, Val=68.86%
+  Fold 1 Epoch 50/70: Train=74.45%, Val=80.70%
+  Fold 2 Epoch 20/70: Train=56.69%, Val=78.51%
+  Fold 1 Epoch 20/70: Train=57.13%, Val=77.63%
+  Fold 2 Epoch 20/70: Train=55.26%, Val=77.19%
+  Fold 1 Epoch 30/70: Train=68.42%, Val=75.44%
+  Fold 1 Epoch 30/70: Train=66.89%, Val=75.44%
+  Fold 1 Epoch 30/70: Train=64.69%, Val=80.70%
+  Fold 1 Epoch 60/70: Train=71.71%, Val=81.14%
+  Fold 1 Epoch 20/70: Train=58.88%, Val=71.93%
+  Fold 2 Epoch 30/70: Train=64.25%, Val=82.46%
+  Fold 1 Epoch 30/70: Train=64.14%, Val=81.58%
+  Fold 2 Epoch 30/70: Train=60.42%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=67.65%, Val=81.58%
+  Fold 1 Epoch 40/70: Train=62.94%, Val=81.58%
+  Fold 1 Epoch 40/70: Train=63.82%, Val=83.77%
+  Fold 1 Epoch 70/70: Train=59.10%, Val=81.14%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 30/70: Train=66.89%, Val=77.19%
+  Fold 2 Epoch 40/70: Train=70.50%, Val=82.02%
+  Fold 1 Epoch 40/70: Train=62.72%, Val=80.70%
+  Fold 2 Epoch 40/70: Train=69.74%, Val=83.33%
+  Fold 1 Epoch 50/70: Train=73.79%, Val=80.26%
+  Fold 1 Epoch 50/70: Train=72.48%, Val=82.89%
+  Fold 1 Epoch 50/70: Train=72.15%, Val=82.46%
+  Fold 2 Epoch 10/70: Train=47.59%, Val=67.11%
+  Fold 1 Epoch 40/70: Train=65.79%, Val=79.82%
+  Fold 2 Epoch 50/70: Train=70.07%, Val=81.14%
+  Fold 1 Epoch 50/70: Train=72.81%, Val=84.65%
+  Fold 2 Epoch 50/70: Train=69.74%, Val=82.89%
+  Fold 1 Epoch 60/70: Train=70.61%, Val=79.82%
+  Fold 1 Epoch 60/70: Train=70.61%, Val=82.02%
+  Fold 1 Epoch 60/70: Train=71.93%, Val=85.09%
+  Fold 1 Epoch 50/70: Train=74.12%, Val=81.14%
+  Fold 2 Epoch 20/70: Train=55.59%, Val=75.44%
+  Fold 1 Epoch 60/70: Train=69.52%, Val=84.21%
+  Fold 2 Epoch 60/70: Train=60.09%, Val=84.65%
+  Fold 2 Epoch 60/70: Train=59.98%, Val=83.77%
+  Fold 1 Epoch 70/70: Train=57.89%, Val=81.14%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=60.20%, Val=83.33%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=57.13%, Val=85.96%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 60/70: Train=69.30%, Val=82.89%
+  Fold 2 Epoch 30/70: Train=62.39%, Val=77.63%
+  Fold 1 Epoch 70/70: Train=58.99%, Val=84.65%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 70/70: Train=61.07%, Val=83.77%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=62.06%, Val=83.33%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 10/70: Train=45.50%, Val=70.18%
+  Fold 2 Epoch 10/70: Train=42.00%, Val=63.60%
+  Fold 1 Epoch 70/70: Train=57.89%, Val=80.70%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 40/70: Train=73.46%, Val=78.95%
+  Fold 2 Epoch 10/70: Train=46.38%, Val=60.53%
+  Fold 3 Epoch 10/70: Train=46.38%, Val=70.61%
+  Fold 2 Epoch 10/70: Train=45.07%, Val=68.86%
+  Fold 3 Epoch 10/70: Train=47.37%, Val=77.63%
+  Fold 2 Epoch 20/70: Train=52.96%, Val=76.75%
+  Fold 2 Epoch 20/70: Train=49.56%, Val=74.12%
+  Fold 2 Epoch 50/70: Train=69.63%, Val=80.26%
+  Fold 2 Epoch 10/70: Train=45.94%, Val=69.30%
+  Fold 2 Epoch 20/70: Train=50.11%, Val=71.93%
+  Fold 3 Epoch 20/70: Train=56.14%, Val=75.44%
+  Fold 3 Epoch 20/70: Train=54.82%, Val=77.63%
+  Fold 2 Epoch 20/70: Train=54.17%, Val=76.32%
+  Fold 2 Epoch 30/70: Train=63.93%, Val=80.26%
+  Fold 2 Epoch 30/70: Train=56.91%, Val=75.00%
+  Fold 2 Epoch 60/70: Train=60.53%, Val=81.58%
+  Fold 2 Epoch 20/70: Train=54.93%, Val=75.00%
+  Fold 2 Epoch 30/70: Train=60.53%, Val=78.95%
+  Fold 3 Epoch 30/70: Train=59.76%, Val=76.32%
+  Fold 2 Epoch 30/70: Train=59.43%, Val=77.19%
+  Fold 3 Epoch 30/70: Train=60.20%, Val=85.09%
+  Fold 2 Epoch 40/70: Train=71.49%, Val=81.58%
+  Fold 2 Epoch 40/70: Train=68.97%, Val=78.51%
+  Fold 2 Epoch 70/70: Train=59.87%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 30/70: Train=60.42%, Val=82.89%
+  Fold 2 Epoch 40/70: Train=69.41%, Val=79.82%
+  Fold 3 Epoch 40/70: Train=67.32%, Val=79.39%
+  Fold 3 Epoch 40/70: Train=68.53%, Val=83.77%
+  Fold 2 Epoch 40/70: Train=69.85%, Val=79.82%
+  Fold 2 Epoch 50/70: Train=70.18%, Val=82.02%
+  Fold 2 Epoch 50/70: Train=66.45%, Val=79.82%
+  Fold 3 Epoch 10/70: Train=49.89%, Val=70.61%
+  Fold 2 Epoch 40/70: Train=71.60%, Val=82.89%
+  Fold 3 Epoch 50/70: Train=65.68%, Val=84.65%
+  Fold 2 Epoch 50/70: Train=67.98%, Val=85.09%
+  Fold 3 Epoch 50/70: Train=64.36%, Val=80.70%
+  Fold 2 Epoch 50/70: Train=68.09%, Val=82.46%
+  Fold 2 Epoch 60/70: Train=59.21%, Val=82.46%
+  Fold 2 Epoch 60/70: Train=58.66%, Val=82.46%
+  Fold 3 Epoch 20/70: Train=57.02%, Val=78.51%
+  Fold 2 Epoch 50/70: Train=68.42%, Val=83.77%
+  Fold 3 Epoch 60/70: Train=63.49%, Val=85.96%
+  Fold 2 Epoch 60/70: Train=60.64%, Val=85.09%
+  Fold 3 Epoch 60/70: Train=65.02%, Val=82.46%
+  Fold 2 Epoch 60/70: Train=56.91%, Val=84.21%
+  Fold 2 Epoch 70/70: Train=60.31%, Val=84.65%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=59.10%, Val=81.14%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 70/70: Train=65.13%, Val=85.53%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 60/70: Train=59.32%, Val=85.09%
+  Fold 3 Epoch 30/70: Train=59.98%, Val=80.70%
+  Fold 2 Epoch 70/70: Train=60.64%, Val=85.96%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=58.88%, Val=84.65%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 70/70: Train=62.39%, Val=80.70%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 10/70: Train=49.45%, Val=70.61%
+  Fold 3 Epoch 10/70: Train=47.70%, Val=68.86%
+  Fold 3 Epoch 40/70: Train=68.31%, Val=82.89%
+  Fold 2 Epoch 70/70: Train=60.31%, Val=85.96%
+
+=== Fold 3/5 ===
+  Fold 4 Epoch 10/70: Train=51.97%, Val=66.67%
+  Fold 3 Epoch 10/70: Train=49.01%, Val=66.23%
+  Fold 3 Epoch 10/70: Train=46.49%, Val=66.23%
+  Fold 4 Epoch 10/70: Train=51.32%, Val=65.35%
+  Fold 3 Epoch 20/70: Train=56.58%, Val=77.63%
+  Fold 3 Epoch 50/70: Train=65.02%, Val=84.65%
+  Fold 3 Epoch 20/70: Train=51.54%, Val=79.39%
+  Fold 4 Epoch 20/70: Train=59.65%, Val=74.12%
+  Fold 3 Epoch 20/70: Train=51.21%, Val=73.25%
+  Fold 3 Epoch 10/70: Train=48.03%, Val=71.49%
+  Fold 4 Epoch 20/70: Train=56.69%, Val=68.86%
+  Fold 3 Epoch 20/70: Train=50.77%, Val=79.82%
+  Fold 3 Epoch 30/70: Train=60.42%, Val=78.95%
+  Fold 3 Epoch 30/70: Train=57.35%, Val=82.46%
+  Fold 3 Epoch 60/70: Train=63.16%, Val=85.53%
+  Fold 4 Epoch 30/70: Train=62.61%, Val=79.39%
+  Fold 3 Epoch 30/70: Train=59.43%, Val=79.82%
+  Fold 3 Epoch 20/70: Train=53.51%, Val=77.63%
+  Fold 3 Epoch 30/70: Train=54.71%, Val=79.82%
+  Fold 4 Epoch 30/70: Train=63.05%, Val=71.93%
+  Fold 3 Epoch 40/70: Train=65.13%, Val=82.46%
+  Fold 3 Epoch 70/70: Train=65.90%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 40/70: Train=65.24%, Val=82.46%
+  Fold 3 Epoch 40/70: Train=62.94%, Val=82.89%
+  Fold 4 Epoch 40/70: Train=67.43%, Val=79.82%
+  Fold 3 Epoch 30/70: Train=58.00%, Val=78.95%
+  Fold 3 Epoch 40/70: Train=64.36%, Val=84.65%
+  Fold 4 Epoch 40/70: Train=66.56%, Val=74.56%
+  Fold 3 Epoch 50/70: Train=65.79%, Val=85.53%
+  Fold 4 Epoch 10/70: Train=46.27%, Val=64.47%
+  Fold 3 Epoch 50/70: Train=65.90%, Val=83.77%
+  Fold 4 Epoch 50/70: Train=66.34%, Val=81.14%
+  Fold 3 Epoch 50/70: Train=62.94%, Val=82.02%
+  Fold 3 Epoch 50/70: Train=62.50%, Val=85.09%
+  Fold 3 Epoch 40/70: Train=65.13%, Val=81.14%
+  Fold 4 Epoch 50/70: Train=67.21%, Val=76.75%
+  Fold 3 Epoch 60/70: Train=60.86%, Val=84.21%
+  Fold 3 Epoch 60/70: Train=62.06%, Val=82.89%
+  Fold 4 Epoch 20/70: Train=58.88%, Val=74.56%
+  Fold 4 Epoch 60/70: Train=64.47%, Val=80.70%
+  Fold 3 Epoch 60/70: Train=62.39%, Val=83.33%
+  Fold 3 Epoch 50/70: Train=60.31%, Val=82.02%
+  Fold 3 Epoch 60/70: Train=62.61%, Val=86.84%
+  Fold 3 Epoch 70/70: Train=63.27%, Val=84.65%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 60/70: Train=65.79%, Val=76.32%
+  Fold 3 Epoch 70/70: Train=62.28%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=62.83%, Val=80.26%
+  Fold 4 Epoch 70/70: Train=62.50%, Val=84.21%
+
+=== Fold 5/5 ===
+  Fold 3 Epoch 70/70: Train=64.80%, Val=83.33%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=62.17%, Val=79.39%
+  Fold 3 Epoch 70/70: Train=65.02%, Val=85.96%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 70/70: Train=63.27%, Val=77.19%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=50.99%, Val=62.28%
+  Fold 4 Epoch 40/70: Train=65.24%, Val=82.46%
+  Fold 4 Epoch 10/70: Train=47.70%, Val=67.54%
+  Fold 5 Epoch 10/70: Train=45.83%, Val=69.74%
+  Fold 3 Epoch 70/70: Train=63.93%, Val=81.58%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 10/70: Train=50.00%, Val=65.79%
+  Fold 4 Epoch 10/70: Train=52.52%, Val=67.54%
+  Fold 5 Epoch 10/70: Train=46.93%, Val=70.61%
+  Fold 4 Epoch 20/70: Train=54.82%, Val=72.81%
+  Fold 4 Epoch 50/70: Train=65.90%, Val=82.89%
+  Fold 4 Epoch 20/70: Train=53.51%, Val=76.32%
+  Fold 5 Epoch 20/70: Train=54.61%, Val=69.74%
+  Fold 4 Epoch 10/70: Train=47.81%, Val=63.16%
+  Fold 4 Epoch 20/70: Train=56.80%, Val=72.37%
+  Fold 5 Epoch 20/70: Train=56.69%, Val=82.02%
+  Fold 4 Epoch 30/70: Train=62.61%, Val=81.58%
+  Fold 4 Epoch 20/70: Train=51.86%, Val=76.32%
+  Fold 4 Epoch 60/70: Train=63.38%, Val=84.65%
+  Fold 4 Epoch 30/70: Train=61.07%, Val=75.00%
+  Fold 5 Epoch 30/70: Train=57.68%, Val=77.63%
+  Fold 4 Epoch 30/70: Train=62.50%, Val=76.75%
+  Fold 4 Epoch 20/70: Train=53.51%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=58.99%, Val=81.58%
+  Fold 4 Epoch 40/70: Train=63.60%, Val=85.09%
+  Fold 4 Epoch 30/70: Train=61.29%, Val=77.19%
+  Fold 4 Epoch 70/70: Train=60.86%, Val=85.09%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 40/70: Train=63.71%, Val=75.88%
+  Fold 5 Epoch 40/70: Train=60.20%, Val=76.32%
+  Fold 4 Epoch 30/70: Train=58.77%, Val=82.02%
+  Fold 4 Epoch 40/70: Train=64.36%, Val=75.44%
+  Fold 5 Epoch 40/70: Train=60.86%, Val=85.96%
+  Fold 4 Epoch 50/70: Train=66.45%, Val=84.65%
+  Fold 4 Epoch 40/70: Train=62.72%, Val=76.75%
+  Fold 5 Epoch 10/70: Train=48.79%, Val=70.61%
+  Fold 4 Epoch 50/70: Train=64.14%, Val=81.14%
+  Fold 5 Epoch 50/70: Train=64.36%, Val=78.95%
+  Fold 4 Epoch 40/70: Train=65.90%, Val=80.26%
+  Fold 4 Epoch 50/70: Train=66.12%, Val=77.63%
+  Fold 4 Epoch 60/70: Train=67.21%, Val=84.21%
+  Fold 5 Epoch 50/70: Train=66.23%, Val=86.40%
+  Fold 4 Epoch 50/70: Train=66.89%, Val=79.39%
+  Fold 5 Epoch 20/70: Train=54.61%, Val=81.14%
+  Fold 4 Epoch 60/70: Train=67.21%, Val=79.82%
+  Fold 5 Epoch 60/70: Train=65.90%, Val=80.26%
+  Fold 4 Epoch 50/70: Train=67.65%, Val=84.65%
+  Fold 4 Epoch 60/70: Train=64.69%, Val=78.51%
+  Fold 4 Epoch 70/70: Train=61.62%, Val=83.33%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 60/70: Train=66.12%, Val=87.28%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=80.26%
+  Fold 5 Epoch 70/70: Train=64.36%, Val=80.26%
+
+=== Results ===
+Val Accs: [87.71929824561404, 85.08771929824562, 87.71929824561404, 84.21052631578948, 82.89473684210526]
+Mean Val: 85.53%
+Test Acc: 87.00%
+[GPU 7] ✓ -FA (No Fusion Attention) (seed=2024): Val=85.53%, Test=87.00% (48.0 min)
+  Fold 4 Epoch 70/70: Train=58.22%, Val=81.14%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 30/70: Train=56.14%, Val=79.82%
+[Progress] 17/55 (30.9%)
+[GPU 7] Starting: -Skip (No Skip Classifier) (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_skip_classifier': False}
+
+=== Fold 1/5 ===
+  Fold 4 Epoch 60/70: Train=65.02%, Val=84.21%
+  Fold 4 Epoch 70/70: Train=59.54%, Val=77.19%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 10/70: Train=49.12%, Val=66.23%
+  Fold 5 Epoch 70/70: Train=65.02%, Val=87.28%
+
+=== Results ===
+Val Accs: [86.40350877192982, 85.52631578947368, 82.89473684210526, 81.57894736842105, 88.15789473684211]
+Mean Val: 84.91%
+Test Acc: 86.50%
+[GPU 6] ✓ -FA (No Fusion Attention) (seed=1337): Val=84.91%, Test=86.50% (48.9 min)
+[Progress] 18/55 (32.7%)
+[GPU 6] Starting: -Residual (No Skip Connections) (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_residual_connections': False}
+
+=== Fold 1/5 ===
+  Fold 4 Epoch 70/70: Train=60.53%, Val=80.26%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 40/70: Train=62.72%, Val=82.02%
+  Fold 4 Epoch 70/70: Train=58.99%, Val=83.77%
+
+=== Fold 5/5 ===
+  Fold 1 Epoch 10/70: Train=49.78%, Val=60.96%
+  Fold 5 Epoch 10/70: Train=46.82%, Val=74.12%
+  Fold 5 Epoch 20/70: Train=55.81%, Val=80.26%
+  Fold 5 Epoch 10/70: Train=47.26%, Val=74.56%
+  Fold 5 Epoch 10/70: Train=49.45%, Val=64.91%
+  Fold 1 Epoch 10/70: Train=45.39%, Val=60.96%
+  Fold 5 Epoch 50/70: Train=65.13%, Val=87.28%
+  Fold 1 Epoch 20/70: Train=56.14%, Val=68.86%
+  Fold 5 Epoch 20/70: Train=52.63%, Val=78.07%
+  Fold 5 Epoch 10/70: Train=46.82%, Val=68.42%
+  Fold 5 Epoch 30/70: Train=57.89%, Val=81.58%
+  Fold 5 Epoch 20/70: Train=51.86%, Val=79.39%
+  Fold 1 Epoch 20/70: Train=53.51%, Val=65.79%
+  Fold 5 Epoch 20/70: Train=54.71%, Val=75.44%
+  Fold 5 Epoch 60/70: Train=65.57%, Val=86.84%
+  Fold 1 Epoch 30/70: Train=65.02%, Val=75.88%
+  Fold 5 Epoch 30/70: Train=54.82%, Val=83.33%
+  Fold 5 Epoch 20/70: Train=51.97%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=56.80%, Val=79.82%
+  Fold 5 Epoch 40/70: Train=61.51%, Val=83.77%
+  Fold 1 Epoch 30/70: Train=60.86%, Val=73.25%
+  Fold 5 Epoch 30/70: Train=56.14%, Val=75.44%
+  Fold 5 Epoch 70/70: Train=63.60%, Val=85.09%
+
+=== Results ===
+Val Accs: [83.33333333333333, 84.21052631578948, 86.40350877192982, 86.84210526315789, 88.15789473684211]
+Mean Val: 85.79%
+Test Acc: 85.00%
+[GPU 5] ✓ -FA (No Fusion Attention) (seed=7777): Val=85.79%, Test=85.00% (48.4 min)
+[Progress] 19/55 (34.5%)
+[GPU 5] Starting: -Residual (No Skip Connections) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_residual_connections': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=62.72%, Val=76.75%
+  Fold 5 Epoch 40/70: Train=61.40%, Val=86.40%
+  Fold 5 Epoch 30/70: Train=56.14%, Val=79.39%
+  Fold 5 Epoch 40/70: Train=58.44%, Val=82.89%
+  Fold 5 Epoch 50/70: Train=66.89%, Val=87.28%
+  Fold 1 Epoch 40/70: Train=62.72%, Val=80.70%
+  Fold 5 Epoch 40/70: Train=60.64%, Val=78.51%
+  Fold 1 Epoch 10/70: Train=43.53%, Val=56.58%
+  Fold 1 Epoch 50/70: Train=75.22%, Val=78.51%
+  Fold 5 Epoch 50/70: Train=64.47%, Val=83.77%
+  Fold 5 Epoch 40/70: Train=60.96%, Val=81.58%
+  Fold 5 Epoch 60/70: Train=65.68%, Val=89.47%
+  Fold 5 Epoch 50/70: Train=65.68%, Val=85.53%
+  Fold 1 Epoch 50/70: Train=74.34%, Val=78.07%
+  Fold 5 Epoch 50/70: Train=66.56%, Val=76.32%
+  Fold 1 Epoch 20/70: Train=52.30%, Val=69.30%
+  Fold 5 Epoch 60/70: Train=64.69%, Val=85.96%
+  Fold 5 Epoch 70/70: Train=66.78%, Val=88.60%
+
+=== Results ===
+Val Accs: [82.45614035087719, 85.96491228070175, 86.40350877192982, 86.84210526315789, 89.91228070175438]
+Mean Val: 86.32%
+Test Acc: 88.50%
+[GPU 2] ✓ -FA (No Fusion Attention) (seed=9999): Val=86.32%, Test=88.50% (48.0 min)
+[Progress] 20/55 (36.4%)
+[GPU 2] Starting: -Residual (No Skip Connections) (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_residual_connections': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 60/70: Train=68.53%, Val=80.26%
+  Fold 1 Epoch 60/70: Train=71.82%, Val=79.39%
+  Fold 5 Epoch 50/70: Train=65.68%, Val=83.77%
+  Fold 5 Epoch 60/70: Train=66.01%, Val=86.40%
+  Fold 5 Epoch 60/70: Train=65.24%, Val=80.26%
+  Fold 1 Epoch 30/70: Train=64.69%, Val=76.32%
+  Fold 5 Epoch 70/70: Train=64.58%, Val=85.96%
+
+=== Results ===
+Val Accs: [83.7719298245614, 83.7719298245614, 85.52631578947368, 82.45614035087719, 87.71929824561404]
+Mean Val: 84.65%
+Test Acc: 86.00%
+[GPU 3] ✓ -Skip (No Skip Classifier) (seed=42): Val=84.65%, Test=86.00% (49.2 min)
+[Progress] 21/55 (38.2%)
+[GPU 3] Starting: -Residual (No Skip Connections) (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_residual_connections': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 70/70: Train=57.13%, Val=78.51%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=56.58%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 5 Epoch 60/70: Train=65.13%, Val=85.53%
+  Fold 1 Epoch 10/70: Train=44.19%, Val=63.16%
+  Fold 5 Epoch 70/70: Train=64.69%, Val=87.72%
+
+=== Results ===
+Val Accs: [86.84210526315789, 88.15789473684211, 84.64912280701755, 80.70175438596492, 87.71929824561404]
+Mean Val: 85.61%
+Test Acc: 85.50%
+[GPU 1] ✓ -Skip (No Skip Classifier) (seed=1337): Val=85.61%, Test=85.50% (49.4 min)
+[Progress] 22/55 (40.0%)
+[GPU 1] Starting: -Residual (No Skip Connections) (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_residual_connections': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=64.25%, Val=80.70%
+
+=== Results ===
+Val Accs: [86.40350877192982, 85.52631578947368, 86.84210526315789, 82.89473684210526, 82.01754385964912]
+Mean Val: 84.74%
+Test Acc: 86.50%
+[GPU 4] ✓ -Skip (No Skip Classifier) (seed=2024): Val=84.74%, Test=86.50% (49.3 min)
+[Progress] 23/55 (41.8%)
+[GPU 4] Starting: -CA-SA (No Attention) (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False, 'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=64.58%, Val=77.63%
+  Fold 1 Epoch 10/70: Train=42.76%, Val=57.02%
+  Fold 2 Epoch 10/70: Train=42.54%, Val=58.77%
+  Fold 1 Epoch 20/70: Train=55.48%, Val=62.72%
+  Fold 5 Epoch 70/70: Train=64.80%, Val=84.21%
+
+=== Results ===
+Val Accs: [83.33333333333333, 88.15789473684211, 82.89473684210526, 85.96491228070175, 86.84210526315789]
+Mean Val: 85.44%
+Test Acc: 84.50%
+[GPU 0] ✓ -Skip (No Skip Classifier) (seed=7777): Val=85.44%, Test=84.50% (49.1 min)
+[Progress] 24/55 (43.6%)
+[GPU 0] Starting: -CA-SA (No Attention) (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False, 'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 2 Epoch 10/70: Train=44.74%, Val=67.11%
+  Fold 1 Epoch 10/70: Train=45.83%, Val=60.96%
+  Fold 1 Epoch 10/70: Train=50.66%, Val=61.84%
+  Fold 1 Epoch 50/70: Train=73.68%, Val=79.39%
+  Fold 1 Epoch 20/70: Train=54.93%, Val=65.35%
+  Fold 1 Epoch 10/70: Train=49.56%, Val=62.72%
+  Fold 2 Epoch 20/70: Train=50.11%, Val=67.98%
+  Fold 1 Epoch 30/70: Train=64.47%, Val=77.19%
+  Fold 1 Epoch 20/70: Train=59.54%, Val=73.25%
+  Fold 1 Epoch 20/70: Train=54.93%, Val=67.11%
+  Fold 2 Epoch 20/70: Train=52.19%, Val=71.93%
+  Fold 1 Epoch 60/70: Train=70.50%, Val=79.39%
+  Fold 1 Epoch 30/70: Train=64.47%, Val=76.75%
+  Fold 1 Epoch 20/70: Train=57.35%, Val=75.00%
+  Fold 2 Epoch 30/70: Train=57.57%, Val=74.12%
+  Fold 1 Epoch 40/70: Train=65.79%, Val=80.26%
+  Fold 1 Epoch 30/70: Train=66.78%, Val=78.51%
+  Fold 1 Epoch 30/70: Train=63.05%, Val=69.30%
+  Fold 2 Epoch 30/70: Train=60.96%, Val=79.39%
+  Fold 1 Epoch 70/70: Train=57.68%, Val=78.07%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 30/70: Train=67.11%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=64.14%, Val=75.88%
+  Fold 1 Epoch 40/70: Train=66.34%, Val=78.95%
+  Fold 2 Epoch 40/70: Train=68.97%, Val=75.00%
+  Fold 1 Epoch 50/70: Train=73.90%, Val=78.95%
+  Fold 1 Epoch 40/70: Train=63.16%, Val=70.18%
+  Fold 2 Epoch 40/70: Train=70.29%, Val=78.51%
+  Fold 2 Epoch 10/70: Train=39.69%, Val=63.16%
+  Fold 1 Epoch 40/70: Train=66.56%, Val=78.07%
+  Fold 1 Epoch 50/70: Train=74.34%, Val=75.44%
+  Fold 1 Epoch 50/70: Train=73.25%, Val=81.58%
+  Fold 1 Epoch 60/70: Train=72.81%, Val=81.14%
+  Fold 2 Epoch 50/70: Train=66.78%, Val=77.19%
+  Fold 1 Epoch 50/70: Train=75.99%, Val=75.00%
+  Fold 2 Epoch 50/70: Train=69.30%, Val=80.26%
+  Fold 1 Epoch 50/70: Train=73.57%, Val=82.02%
+  Fold 2 Epoch 20/70: Train=50.55%, Val=73.25%
+  Fold 1 Epoch 60/70: Train=71.05%, Val=83.33%
+  Fold 1 Epoch 60/70: Train=69.41%, Val=75.00%
+  Fold 1 Epoch 70/70: Train=56.80%, Val=80.26%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 60/70: Train=61.07%, Val=78.51%
+  Fold 2 Epoch 60/70: Train=59.65%, Val=79.39%
+  Fold 1 Epoch 60/70: Train=70.29%, Val=75.88%
+  Fold 1 Epoch 60/70: Train=70.50%, Val=82.46%
+  Fold 2 Epoch 30/70: Train=59.76%, Val=75.00%
+  Fold 1 Epoch 70/70: Train=59.65%, Val=84.65%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=60.31%, Val=75.88%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=43.20%, Val=56.58%
+  Fold 2 Epoch 70/70: Train=61.95%, Val=77.63%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=59.87%, Val=80.26%
+
+=== Fold 3/5 ===
+  Fold 1 Epoch 70/70: Train=59.32%, Val=75.88%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=59.21%, Val=83.33%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=47.37%, Val=68.42%
+  Fold 2 Epoch 40/70: Train=70.83%, Val=80.70%
+  Fold 2 Epoch 10/70: Train=45.94%, Val=61.84%
+  Fold 2 Epoch 20/70: Train=50.88%, Val=71.49%
+  Fold 3 Epoch 10/70: Train=44.63%, Val=67.98%
+  Fold 2 Epoch 10/70: Train=48.79%, Val=64.04%
+  Fold 3 Epoch 10/70: Train=43.31%, Val=63.16%
+  Fold 2 Epoch 10/70: Train=41.89%, Val=62.72%
+  Fold 2 Epoch 20/70: Train=52.74%, Val=74.12%
+  Fold 2 Epoch 50/70: Train=67.54%, Val=83.33%
+  Fold 2 Epoch 20/70: Train=50.33%, Val=73.25%
+  Fold 2 Epoch 30/70: Train=58.88%, Val=76.32%
+  Fold 2 Epoch 20/70: Train=54.61%, Val=77.19%
+  Fold 3 Epoch 20/70: Train=50.77%, Val=67.11%
+  Fold 2 Epoch 30/70: Train=61.95%, Val=74.12%
+  Fold 3 Epoch 20/70: Train=53.07%, Val=71.05%
+  Fold 2 Epoch 60/70: Train=58.66%, Val=82.46%
+  Fold 2 Epoch 20/70: Train=52.41%, Val=71.05%
+  Fold 2 Epoch 30/70: Train=60.20%, Val=79.39%
+  Fold 2 Epoch 40/70: Train=69.96%, Val=76.32%
+  Fold 2 Epoch 30/70: Train=63.27%, Val=80.70%
+  Fold 2 Epoch 40/70: Train=72.15%, Val=76.75%
+  Fold 3 Epoch 30/70: Train=56.14%, Val=76.32%
+  Fold 2 Epoch 70/70: Train=60.42%, Val=82.02%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 30/70: Train=56.80%, Val=78.95%
+  Fold 2 Epoch 30/70: Train=60.75%, Val=76.32%
+  Fold 2 Epoch 40/70: Train=68.97%, Val=77.63%
+  Fold 2 Epoch 50/70: Train=69.08%, Val=78.95%
+  Fold 2 Epoch 40/70: Train=71.93%, Val=84.21%
+  Fold 2 Epoch 50/70: Train=69.08%, Val=76.75%
+  Fold 3 Epoch 40/70: Train=66.01%, Val=74.56%
+  Fold 3 Epoch 40/70: Train=65.24%, Val=79.82%
+  Fold 2 Epoch 40/70: Train=71.05%, Val=79.39%
+  Fold 3 Epoch 10/70: Train=42.43%, Val=55.70%
+  Fold 2 Epoch 50/70: Train=67.98%, Val=81.14%
+  Fold 2 Epoch 50/70: Train=69.96%, Val=84.21%
+  Fold 2 Epoch 60/70: Train=59.65%, Val=77.19%
+  Fold 2 Epoch 60/70: Train=61.84%, Val=76.75%
+  Fold 3 Epoch 50/70: Train=62.61%, Val=78.95%
+  Fold 2 Epoch 50/70: Train=69.63%, Val=78.07%
+  Fold 3 Epoch 50/70: Train=61.84%, Val=80.26%
+  Fold 3 Epoch 20/70: Train=50.33%, Val=72.81%
+  Fold 2 Epoch 60/70: Train=60.86%, Val=85.96%
+  Fold 2 Epoch 60/70: Train=62.06%, Val=82.46%
+  Fold 2 Epoch 70/70: Train=58.88%, Val=77.19%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.75%, Val=78.95%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 60/70: Train=61.18%, Val=81.14%
+  Fold 2 Epoch 60/70: Train=58.66%, Val=80.26%
+  Fold 3 Epoch 60/70: Train=63.05%, Val=82.02%
+  Fold 2 Epoch 70/70: Train=59.21%, Val=85.96%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 30/70: Train=58.11%, Val=76.75%
+  Fold 2 Epoch 70/70: Train=60.09%, Val=81.14%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=47.48%, Val=65.35%
+  Fold 3 Epoch 10/70: Train=45.07%, Val=64.91%
+  Fold 3 Epoch 70/70: Train=63.60%, Val=80.70%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 70/70: Train=60.64%, Val=78.07%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=47.70%, Val=70.61%
+  Fold 3 Epoch 70/70: Train=62.72%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 40/70: Train=67.32%, Val=76.75%
+  Fold 3 Epoch 10/70: Train=44.85%, Val=59.65%
+  Fold 3 Epoch 20/70: Train=56.25%, Val=74.56%
+  Fold 3 Epoch 20/70: Train=51.75%, Val=72.81%
+  Fold 4 Epoch 10/70: Train=42.00%, Val=65.35%
+  Fold 3 Epoch 20/70: Train=54.71%, Val=77.63%
+  Fold 3 Epoch 10/70: Train=46.16%, Val=63.60%
+  Fold 3 Epoch 50/70: Train=63.82%, Val=78.07%
+  Fold 3 Epoch 30/70: Train=62.94%, Val=77.63%
+  Fold 4 Epoch 10/70: Train=48.79%, Val=68.86%
+  Fold 3 Epoch 20/70: Train=53.51%, Val=76.75%
+  Fold 3 Epoch 30/70: Train=57.68%, Val=74.56%
+  Fold 4 Epoch 20/70: Train=52.85%, Val=73.25%
+  Fold 3 Epoch 30/70: Train=61.73%, Val=80.26%
+  Fold 3 Epoch 20/70: Train=49.45%, Val=74.12%
+  Fold 3 Epoch 60/70: Train=60.09%, Val=78.07%
+  Fold 3 Epoch 40/70: Train=65.24%, Val=78.51%
+  Fold 4 Epoch 20/70: Train=53.95%, Val=78.95%
+  Fold 3 Epoch 30/70: Train=60.31%, Val=81.58%
+  Fold 3 Epoch 40/70: Train=66.34%, Val=78.07%
+  Fold 3 Epoch 40/70: Train=66.01%, Val=84.21%
+  Fold 4 Epoch 30/70: Train=62.17%, Val=73.68%
+  Fold 3 Epoch 30/70: Train=55.48%, Val=75.88%
+  Fold 3 Epoch 50/70: Train=62.72%, Val=78.51%
+  Fold 3 Epoch 70/70: Train=63.16%, Val=77.63%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=65.13%, Val=82.02%
+  Fold 3 Epoch 40/70: Train=64.80%, Val=80.26%
+  Fold 3 Epoch 50/70: Train=65.02%, Val=84.21%
+  Fold 3 Epoch 50/70: Train=62.17%, Val=78.07%
+  Fold 4 Epoch 40/70: Train=64.69%, Val=77.63%
+  Fold 3 Epoch 40/70: Train=66.45%, Val=77.19%
+  Fold 3 Epoch 60/70: Train=61.84%, Val=79.82%
+  Fold 4 Epoch 10/70: Train=48.90%, Val=60.96%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=85.96%
+  Fold 3 Epoch 60/70: Train=62.39%, Val=85.53%
+  Fold 3 Epoch 60/70: Train=59.43%, Val=82.89%
+  Fold 3 Epoch 50/70: Train=63.16%, Val=84.65%
+  Fold 3 Epoch 50/70: Train=64.69%, Val=75.00%
+  Fold 4 Epoch 50/70: Train=67.43%, Val=77.19%
+  Fold 3 Epoch 70/70: Train=65.68%, Val=79.82%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 20/70: Train=53.07%, Val=69.30%
+  Fold 4 Epoch 50/70: Train=67.98%, Val=86.40%
+  Fold 3 Epoch 70/70: Train=62.83%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 70/70: Train=64.14%, Val=82.89%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=63.49%, Val=83.33%
+  Fold 4 Epoch 60/70: Train=63.71%, Val=78.95%
+  Fold 4 Epoch 10/70: Train=50.77%, Val=71.93%
+  Fold 3 Epoch 60/70: Train=62.94%, Val=77.19%
+  Fold 4 Epoch 30/70: Train=61.07%, Val=68.42%
+  Fold 4 Epoch 10/70: Train=52.85%, Val=64.91%
+  Fold 4 Epoch 60/70: Train=64.80%, Val=88.16%
+  Fold 3 Epoch 70/70: Train=64.25%, Val=82.02%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 10/70: Train=48.14%, Val=62.28%
+  Fold 4 Epoch 20/70: Train=57.68%, Val=73.68%
+  Fold 4 Epoch 70/70: Train=58.22%, Val=80.26%
+
+=== Fold 5/5 ===
+  Fold 3 Epoch 70/70: Train=63.71%, Val=77.19%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 40/70: Train=66.01%, Val=71.93%
+  Fold 4 Epoch 20/70: Train=55.70%, Val=68.42%
+  Fold 4 Epoch 70/70: Train=56.58%, Val=88.60%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=46.82%, Val=60.53%
+  Fold 4 Epoch 20/70: Train=53.40%, Val=67.98%
+  Fold 4 Epoch 30/70: Train=60.42%, Val=79.39%
+  Fold 5 Epoch 10/70: Train=43.86%, Val=67.98%
+  Fold 4 Epoch 10/70: Train=44.74%, Val=61.84%
+  Fold 4 Epoch 50/70: Train=66.56%, Val=73.25%
+  Fold 4 Epoch 30/70: Train=62.39%, Val=76.32%
+  Fold 4 Epoch 20/70: Train=54.61%, Val=77.19%
+  Fold 5 Epoch 10/70: Train=45.18%, Val=72.37%
+  Fold 4 Epoch 40/70: Train=67.32%, Val=80.26%
+  Fold 4 Epoch 30/70: Train=60.96%, Val=77.19%
+  Fold 5 Epoch 20/70: Train=49.23%, Val=74.56%
+  Fold 4 Epoch 20/70: Train=54.82%, Val=71.49%
+  Fold 4 Epoch 60/70: Train=64.80%, Val=75.44%
+  Fold 4 Epoch 40/70: Train=67.21%, Val=78.07%
+  Fold 4 Epoch 50/70: Train=67.54%, Val=79.39%
+  Fold 4 Epoch 30/70: Train=61.73%, Val=79.39%
+  Fold 4 Epoch 40/70: Train=65.46%, Val=76.32%
+  Fold 5 Epoch 20/70: Train=49.67%, Val=78.51%
+  Fold 5 Epoch 30/70: Train=56.47%, Val=83.33%
+  Fold 4 Epoch 30/70: Train=59.21%, Val=71.49%
+  Fold 4 Epoch 70/70: Train=59.54%, Val=74.12%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=67.54%, Val=78.51%
+  Fold 4 Epoch 60/70: Train=68.09%, Val=80.70%
+  Fold 4 Epoch 40/70: Train=64.58%, Val=81.58%
+  Fold 4 Epoch 50/70: Train=67.43%, Val=76.75%
+  Fold 5 Epoch 30/70: Train=54.39%, Val=83.33%
+  Fold 4 Epoch 40/70: Train=65.24%, Val=76.32%
+  Fold 4 Epoch 60/70: Train=65.35%, Val=76.32%
+  Fold 5 Epoch 40/70: Train=61.62%, Val=84.65%
+  Fold 5 Epoch 10/70: Train=38.49%, Val=57.46%
+  Fold 4 Epoch 70/70: Train=59.65%, Val=81.14%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=66.34%, Val=82.02%
+  Fold 4 Epoch 60/70: Train=63.82%, Val=78.51%
+  Fold 5 Epoch 40/70: Train=58.00%, Val=84.65%
+  Fold 4 Epoch 70/70: Train=61.18%, Val=77.19%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=65.79%, Val=76.32%
+  Fold 5 Epoch 50/70: Train=67.21%, Val=84.21%
+  Fold 5 Epoch 10/70: Train=49.67%, Val=66.67%
+  Fold 5 Epoch 20/70: Train=49.12%, Val=67.54%
+  Fold 4 Epoch 70/70: Train=58.77%, Val=80.26%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=82.02%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 60/70: Train=64.04%, Val=77.63%
+  Fold 5 Epoch 10/70: Train=48.14%, Val=67.11%
+  Fold 5 Epoch 50/70: Train=64.91%, Val=82.46%
+  Fold 5 Epoch 60/70: Train=66.01%, Val=87.72%
+  Fold 5 Epoch 20/70: Train=56.36%, Val=80.26%
+  Fold 5 Epoch 30/70: Train=55.04%, Val=77.63%
+  Fold 4 Epoch 70/70: Train=58.66%, Val=84.65%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 10/70: Train=42.43%, Val=62.72%
+  Fold 5 Epoch 20/70: Train=56.36%, Val=72.81%
+  Fold 4 Epoch 70/70: Train=60.42%, Val=77.63%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 60/70: Train=64.58%, Val=83.77%
+  Fold 5 Epoch 70/70: Train=62.50%, Val=87.28%
+
+=== Results ===
+Val Accs: [80.70175438596492, 80.26315789473684, 82.01754385964912, 81.57894736842105, 89.03508771929825]
+Mean Val: 82.72%
+Test Acc: 83.00%
+[GPU 6] ✓ -Residual (No Skip Connections) (seed=42): Val=82.72%, Test=83.00% (47.5 min)
+[Progress] 25/55 (45.5%)
+[GPU 6] Starting: -CA-SA (No Attention) (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False, 'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 30/70: Train=55.26%, Val=79.39%
+  Fold 5 Epoch 40/70: Train=60.86%, Val=78.07%
+  Fold 5 Epoch 20/70: Train=50.44%, Val=65.79%
+  Fold 5 Epoch 10/70: Train=43.42%, Val=64.04%
+  Fold 5 Epoch 30/70: Train=57.02%, Val=80.70%
+  Fold 5 Epoch 10/70: Train=42.32%, Val=58.33%
+  Fold 1 Epoch 10/70: Train=52.96%, Val=70.18%
+  Fold 5 Epoch 40/70: Train=58.77%, Val=83.33%
+  Fold 5 Epoch 70/70: Train=64.14%, Val=84.21%
+
+=== Results ===
+Val Accs: [82.45614035087719, 83.33333333333333, 82.89473684210526, 89.03508771929825, 86.40350877192982]
+Mean Val: 84.82%
+Test Acc: 86.50%
+[GPU 7] ✓ -Skip (No Skip Classifier) (seed=9999): Val=84.82%, Test=86.50% (49.3 min)
+[Progress] 26/55 (47.3%)
+[GPU 7] Starting: -CA-SA (No Attention) (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False, 'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 50/70: Train=65.02%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=52.85%, Val=71.49%
+  Fold 5 Epoch 40/70: Train=60.75%, Val=83.77%
+  Fold 5 Epoch 20/70: Train=53.73%, Val=77.19%
+  Fold 1 Epoch 20/70: Train=58.11%, Val=73.25%
+  Fold 5 Epoch 50/70: Train=66.89%, Val=83.33%
+  Fold 1 Epoch 10/70: Train=49.45%, Val=70.18%
+  Fold 5 Epoch 20/70: Train=52.08%, Val=67.11%
+  Fold 5 Epoch 60/70: Train=65.68%, Val=76.32%
+  Fold 5 Epoch 50/70: Train=65.13%, Val=82.89%
+  Fold 5 Epoch 40/70: Train=58.55%, Val=70.61%
+  Fold 5 Epoch 60/70: Train=66.56%, Val=84.65%
+  Fold 1 Epoch 30/70: Train=65.35%, Val=79.82%
+  Fold 5 Epoch 30/70: Train=56.14%, Val=78.95%
+  Fold 1 Epoch 20/70: Train=59.43%, Val=70.18%
+  Fold 5 Epoch 70/70: Train=65.13%, Val=76.75%
+
+=== Results ===
+Val Accs: [81.14035087719299, 84.64912280701755, 80.70175438596492, 76.75438596491227, 79.82456140350877]
+Mean Val: 80.61%
+Test Acc: 87.00%
+[GPU 5] ✓ -Residual (No Skip Connections) (seed=1337): Val=80.61%, Test=87.00% (46.4 min)
+[Progress] 27/55 (49.1%)
+[GPU 5] Starting: -CA-SA (No Attention) (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'use_channel_attention': False, 'use_spatial_attention': False}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 30/70: Train=55.92%, Val=78.07%
+  Fold 5 Epoch 60/70: Train=64.36%, Val=85.53%
+  Fold 5 Epoch 50/70: Train=65.02%, Val=75.88%
+  Fold 5 Epoch 70/70: Train=63.38%, Val=85.53%
+
+=== Results ===
+Val Accs: [85.52631578947368, 81.57894736842105, 82.45614035087719, 82.45614035087719, 88.59649122807018]
+Mean Val: 84.12%
+Test Acc: 83.50%
+[GPU 4] ✓ -CA-SA (No Attention) (seed=42): Val=84.12%, Test=83.50% (42.1 min)
+[Progress] 28/55 (50.9%)
+[GPU 4] Starting: Activation: ReLU (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'relu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=65.57%, Val=78.51%
+  Fold 1 Epoch 30/70: Train=66.78%, Val=77.19%
+  Fold 5 Epoch 40/70: Train=60.96%, Val=80.26%
+  Fold 1 Epoch 10/70: Train=50.00%, Val=62.28%
+  Fold 5 Epoch 40/70: Train=60.53%, Val=77.63%
+  Fold 5 Epoch 70/70: Train=64.04%, Val=84.65%
+
+=== Results ===
+Val Accs: [84.64912280701755, 88.15789473684211, 86.84210526315789, 78.94736842105263, 87.71929824561404]
+Mean Val: 85.26%
+Test Acc: 85.00%
+[GPU 0] ✓ -CA-SA (No Attention) (seed=1337): Val=85.26%, Test=85.00% (42.0 min)
+[Progress] 29/55 (52.7%)
+[GPU 0] Starting: Activation: ReLU (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'relu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 60/70: Train=62.94%, Val=72.81%
+  Fold 1 Epoch 50/70: Train=74.45%, Val=78.51%
+  Fold 1 Epoch 40/70: Train=67.65%, Val=74.56%
+  Fold 1 Epoch 10/70: Train=47.15%, Val=68.86%
+  Fold 5 Epoch 50/70: Train=65.79%, Val=82.46%
+  Fold 1 Epoch 20/70: Train=58.44%, Val=68.86%
+  Fold 5 Epoch 50/70: Train=65.46%, Val=78.51%
+  Fold 5 Epoch 70/70: Train=63.16%, Val=70.61%
+
+=== Results ===
+Val Accs: [81.57894736842105, 81.14035087719299, 83.7719298245614, 80.70175438596492, 77.19298245614036]
+Mean Val: 80.88%
+Test Acc: 86.50%
+[GPU 2] ✓ -Residual (No Skip Connections) (seed=2024): Val=80.88%, Test=86.50% (46.3 min)
+[Progress] 30/55 (54.5%)
+[GPU 2] Starting: Activation: ReLU (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'relu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 10/70: Train=48.14%, Val=64.04%
+  Fold 1 Epoch 60/70: Train=70.18%, Val=82.02%
+  Fold 1 Epoch 50/70: Train=75.88%, Val=79.39%
+  Fold 1 Epoch 30/70: Train=67.11%, Val=74.12%
+  Fold 5 Epoch 60/70: Train=65.46%, Val=84.65%
+  Fold 1 Epoch 20/70: Train=60.31%, Val=71.05%
+  Fold 5 Epoch 60/70: Train=66.67%, Val=78.07%
+  Fold 1 Epoch 70/70: Train=57.79%, Val=82.46%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 60/70: Train=71.82%, Val=78.95%
+  Fold 1 Epoch 10/70: Train=51.10%, Val=68.42%
+  Fold 1 Epoch 20/70: Train=56.80%, Val=70.61%
+  Fold 5 Epoch 70/70: Train=65.24%, Val=84.21%
+
+=== Results ===
+Val Accs: [78.94736842105263, 83.7719298245614, 85.96491228070175, 85.52631578947368, 85.08771929824562]
+Mean Val: 83.86%
+Test Acc: 82.00%
+[GPU 3] ✓ -Residual (No Skip Connections) (seed=7777): Val=83.86%, Test=82.00% (46.9 min)
+[Progress] 31/55 (56.4%)
+[GPU 3] Starting: Activation: ReLU (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'relu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 40/70: Train=66.34%, Val=82.46%
+  Fold 1 Epoch 30/70: Train=63.82%, Val=76.75%
+  Fold 5 Epoch 70/70: Train=65.57%, Val=80.70%
+
+=== Results ===
+Val Accs: [77.63157894736842, 80.26315789473684, 78.94736842105263, 81.14035087719299, 82.45614035087719]
+Mean Val: 80.09%
+Test Acc: 89.50%
+[GPU 1] ✓ -Residual (No Skip Connections) (seed=9999): Val=80.09%, Test=89.50% (46.9 min)
+[GPU 1] Starting: Activation: ReLU (seed=9999)
+[Progress] 32/55 (58.2%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'relu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 70/70: Train=60.09%, Val=80.26%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=47.15%, Val=73.68%
+  Fold 1 Epoch 30/70: Train=67.54%, Val=74.12%
+  Fold 1 Epoch 50/70: Train=75.00%, Val=82.46%
+  Fold 1 Epoch 20/70: Train=60.09%, Val=74.12%
+  Fold 1 Epoch 10/70: Train=49.34%, Val=66.23%
+  Fold 1 Epoch 40/70: Train=64.69%, Val=79.39%
+  Fold 1 Epoch 10/70: Train=47.15%, Val=57.46%
+  Fold 2 Epoch 10/70: Train=47.59%, Val=67.54%
+  Fold 2 Epoch 20/70: Train=55.70%, Val=78.51%
+  Fold 1 Epoch 60/70: Train=69.63%, Val=81.58%
+  Fold 1 Epoch 40/70: Train=65.02%, Val=79.39%
+  Fold 1 Epoch 30/70: Train=66.78%, Val=75.88%
+  Fold 1 Epoch 50/70: Train=76.21%, Val=81.58%
+  Fold 1 Epoch 20/70: Train=58.88%, Val=73.25%
+  Fold 2 Epoch 20/70: Train=52.85%, Val=75.44%
+  Fold 1 Epoch 20/70: Train=55.70%, Val=71.49%
+  Fold 2 Epoch 30/70: Train=59.10%, Val=78.07%
+  Fold 1 Epoch 70/70: Train=57.13%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 50/70: Train=73.68%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=67.32%, Val=81.14%
+  Fold 1 Epoch 60/70: Train=71.05%, Val=78.51%
+  Fold 1 Epoch 30/70: Train=67.11%, Val=79.82%
+  Fold 2 Epoch 30/70: Train=62.61%, Val=82.89%
+  Fold 2 Epoch 40/70: Train=71.05%, Val=79.39%
+  Fold 2 Epoch 10/70: Train=46.38%, Val=66.67%
+  Fold 1 Epoch 30/70: Train=68.09%, Val=72.81%
+  Fold 1 Epoch 60/70: Train=70.94%, Val=81.14%
+  Fold 1 Epoch 50/70: Train=74.12%, Val=81.58%
+  Fold 1 Epoch 70/70: Train=57.46%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 40/70: Train=65.68%, Val=78.95%
+  Fold 2 Epoch 40/70: Train=71.60%, Val=82.02%
+  Fold 2 Epoch 50/70: Train=69.41%, Val=82.46%
+  Fold 2 Epoch 20/70: Train=52.63%, Val=68.42%
+  Fold 1 Epoch 70/70: Train=57.89%, Val=79.82%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 40/70: Train=65.35%, Val=75.00%
+  Fold 1 Epoch 60/70: Train=73.14%, Val=78.51%
+  Fold 2 Epoch 50/70: Train=69.52%, Val=82.02%
+  Fold 2 Epoch 60/70: Train=62.50%, Val=83.77%
+  Fold 1 Epoch 50/70: Train=75.22%, Val=81.14%
+  Fold 2 Epoch 10/70: Train=45.50%, Val=64.04%
+  Fold 2 Epoch 30/70: Train=63.49%, Val=77.63%
+  Fold 1 Epoch 50/70: Train=76.97%, Val=75.44%
+  Fold 2 Epoch 10/70: Train=42.11%, Val=67.54%
+  Fold 1 Epoch 70/70: Train=56.58%, Val=78.51%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 60/70: Train=59.10%, Val=85.53%
+  Fold 2 Epoch 70/70: Train=59.54%, Val=84.21%
+
+=== Fold 3/5 ===
+  Fold 1 Epoch 60/70: Train=69.41%, Val=79.82%
+  Fold 2 Epoch 40/70: Train=71.49%, Val=80.26%
+  Fold 2 Epoch 20/70: Train=52.52%, Val=70.61%
+  Fold 1 Epoch 60/70: Train=71.60%, Val=78.95%
+  Fold 2 Epoch 20/70: Train=51.54%, Val=72.81%
+  Fold 2 Epoch 70/70: Train=60.42%, Val=84.65%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 10/70: Train=45.07%, Val=63.16%
+  Fold 3 Epoch 10/70: Train=48.36%, Val=63.16%
+  Fold 2 Epoch 50/70: Train=70.39%, Val=79.82%
+  Fold 1 Epoch 70/70: Train=60.20%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 30/70: Train=60.09%, Val=74.56%
+  Fold 1 Epoch 70/70: Train=59.21%, Val=78.51%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 30/70: Train=62.61%, Val=80.70%
+  Fold 3 Epoch 20/70: Train=51.43%, Val=77.63%
+  Fold 3 Epoch 10/70: Train=49.23%, Val=66.67%
+  Fold 2 Epoch 20/70: Train=51.64%, Val=77.19%
+  Fold 2 Epoch 60/70: Train=60.53%, Val=79.82%
+  Fold 2 Epoch 40/70: Train=71.71%, Val=80.70%
+  Fold 2 Epoch 10/70: Train=50.44%, Val=70.61%
+  Fold 2 Epoch 10/70: Train=42.98%, Val=68.42%
+  Fold 3 Epoch 30/70: Train=60.09%, Val=79.82%
+  Fold 3 Epoch 20/70: Train=53.73%, Val=75.88%
+  Fold 2 Epoch 40/70: Train=72.48%, Val=82.46%
+  Fold 2 Epoch 70/70: Train=60.64%, Val=80.26%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 30/70: Train=59.76%, Val=80.70%
+  Fold 2 Epoch 50/70: Train=67.43%, Val=80.70%
+  Fold 2 Epoch 20/70: Train=53.40%, Val=77.19%
+  Fold 2 Epoch 20/70: Train=52.52%, Val=75.88%
+  Fold 3 Epoch 30/70: Train=59.32%, Val=76.32%
+  Fold 3 Epoch 40/70: Train=67.98%, Val=81.58%
+  Fold 2 Epoch 50/70: Train=68.86%, Val=84.65%
+  Fold 3 Epoch 10/70: Train=51.43%, Val=64.04%
+  Fold 2 Epoch 40/70: Train=69.74%, Val=80.26%
+  Fold 2 Epoch 60/70: Train=60.53%, Val=81.58%
+  Fold 2 Epoch 30/70: Train=60.53%, Val=79.39%
+  Fold 3 Epoch 50/70: Train=63.93%, Val=83.33%
+  Fold 3 Epoch 40/70: Train=69.08%, Val=83.33%
+  Fold 2 Epoch 30/70: Train=65.46%, Val=75.00%
+  Fold 3 Epoch 20/70: Train=55.48%, Val=77.19%
+  Fold 2 Epoch 60/70: Train=59.32%, Val=84.21%
+  Fold 2 Epoch 50/70: Train=69.19%, Val=80.70%
+  Fold 2 Epoch 70/70: Train=62.50%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 40/70: Train=69.85%, Val=82.89%
+  Fold 3 Epoch 60/70: Train=63.27%, Val=84.65%
+  Fold 3 Epoch 50/70: Train=64.36%, Val=81.58%
+  Fold 2 Epoch 40/70: Train=72.26%, Val=77.19%
+  Fold 3 Epoch 30/70: Train=61.51%, Val=78.51%
+  Fold 2 Epoch 70/70: Train=60.86%, Val=84.65%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=60.42%, Val=82.02%
+  Fold 3 Epoch 70/70: Train=62.83%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=63.05%, Val=79.39%
+  Fold 2 Epoch 50/70: Train=68.86%, Val=81.14%
+  Fold 3 Epoch 10/70: Train=49.01%, Val=67.11%
+  Fold 3 Epoch 40/70: Train=67.11%, Val=83.77%
+  Fold 2 Epoch 50/70: Train=68.97%, Val=79.39%
+  Fold 3 Epoch 10/70: Train=47.04%, Val=62.28%
+  Fold 3 Epoch 70/70: Train=65.13%, Val=80.70%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 70/70: Train=59.43%, Val=82.89%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=61.95%, Val=80.26%
+  Fold 4 Epoch 10/70: Train=52.85%, Val=64.91%
+  Fold 3 Epoch 20/70: Train=56.25%, Val=73.25%
+  Fold 3 Epoch 50/70: Train=64.80%, Val=82.02%
+  Fold 2 Epoch 60/70: Train=59.76%, Val=77.19%
+  Fold 3 Epoch 20/70: Train=50.88%, Val=74.12%
+  Fold 4 Epoch 10/70: Train=50.22%, Val=72.81%
+  Fold 4 Epoch 20/70: Train=58.00%, Val=73.25%
+  Fold 3 Epoch 10/70: Train=49.12%, Val=69.74%
+  Fold 2 Epoch 70/70: Train=60.96%, Val=80.70%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 30/70: Train=60.75%, Val=75.88%
+  Fold 3 Epoch 60/70: Train=63.27%, Val=82.46%
+  Fold 2 Epoch 70/70: Train=61.40%, Val=77.19%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 30/70: Train=58.99%, Val=78.07%
+  Fold 4 Epoch 20/70: Train=59.87%, Val=71.49%
+  Fold 4 Epoch 30/70: Train=62.94%, Val=78.51%
+  Fold 3 Epoch 20/70: Train=54.82%, Val=75.44%
+  Fold 3 Epoch 10/70: Train=49.12%, Val=70.18%
+  Fold 3 Epoch 40/70: Train=68.20%, Val=79.39%
+  Fold 3 Epoch 70/70: Train=62.72%, Val=83.33%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 40/70: Train=66.78%, Val=79.82%
+  Fold 3 Epoch 10/70: Train=48.68%, Val=64.04%
+  Fold 4 Epoch 40/70: Train=65.68%, Val=75.88%
+  Fold 4 Epoch 30/70: Train=62.28%, Val=82.46%
+  Fold 3 Epoch 30/70: Train=61.18%, Val=75.88%
+  Fold 3 Epoch 50/70: Train=64.14%, Val=79.39%
+  Fold 3 Epoch 20/70: Train=56.03%, Val=80.26%
+  Fold 4 Epoch 10/70: Train=49.89%, Val=65.35%
+  Fold 3 Epoch 50/70: Train=65.24%, Val=81.58%
+  Fold 4 Epoch 50/70: Train=68.64%, Val=80.26%
+  Fold 4 Epoch 40/70: Train=64.04%, Val=82.46%
+  Fold 3 Epoch 20/70: Train=52.74%, Val=72.81%
+  Fold 3 Epoch 40/70: Train=67.54%, Val=82.46%
+  Fold 3 Epoch 60/70: Train=62.50%, Val=80.70%
+  Fold 4 Epoch 20/70: Train=55.04%, Val=77.63%
+  Fold 3 Epoch 30/70: Train=62.61%, Val=80.26%
+  Fold 4 Epoch 60/70: Train=67.98%, Val=79.82%
+  Fold 3 Epoch 60/70: Train=61.18%, Val=81.14%
+  Fold 4 Epoch 50/70: Train=65.90%, Val=81.58%
+  Fold 3 Epoch 30/70: Train=59.76%, Val=76.75%
+  Fold 3 Epoch 50/70: Train=64.04%, Val=82.02%
+  Fold 3 Epoch 70/70: Train=63.71%, Val=81.58%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=63.82%, Val=78.95%
+  Fold 3 Epoch 40/70: Train=65.68%, Val=82.02%
+  Fold 4 Epoch 70/70: Train=59.65%, Val=78.95%
+
+=== Fold 5/5 ===
+  Fold 3 Epoch 70/70: Train=63.38%, Val=79.82%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 60/70: Train=66.89%, Val=83.77%
+  Fold 3 Epoch 40/70: Train=67.54%, Val=77.63%
+  Fold 3 Epoch 60/70: Train=59.65%, Val=83.33%
+  Fold 4 Epoch 40/70: Train=65.02%, Val=82.46%
+  Fold 4 Epoch 10/70: Train=44.74%, Val=72.37%
+  Fold 3 Epoch 50/70: Train=64.04%, Val=83.77%
+  Fold 4 Epoch 70/70: Train=61.29%, Val=85.09%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 10/70: Train=51.75%, Val=71.05%
+  Fold 4 Epoch 10/70: Train=49.89%, Val=67.11%
+  Fold 3 Epoch 70/70: Train=64.14%, Val=83.33%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 50/70: Train=67.87%, Val=82.46%
+  Fold 3 Epoch 50/70: Train=65.13%, Val=79.39%
+  Fold 3 Epoch 60/70: Train=63.49%, Val=85.53%
+  Fold 4 Epoch 20/70: Train=57.02%, Val=72.81%
+  Fold 5 Epoch 20/70: Train=52.96%, Val=69.74%
+  Fold 5 Epoch 10/70: Train=46.27%, Val=67.98%
+  Fold 4 Epoch 60/70: Train=67.00%, Val=83.33%
+  Fold 4 Epoch 20/70: Train=56.58%, Val=71.49%
+  Fold 3 Epoch 60/70: Train=62.94%, Val=80.70%
+  Fold 4 Epoch 10/70: Train=53.40%, Val=69.74%
+  Fold 3 Epoch 70/70: Train=64.14%, Val=84.65%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=63.38%, Val=77.63%
+  Fold 5 Epoch 30/70: Train=54.50%, Val=76.75%
+  Fold 5 Epoch 20/70: Train=55.59%, Val=78.51%
+  Fold 4 Epoch 70/70: Train=60.09%, Val=81.58%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 30/70: Train=63.05%, Val=77.63%
+  Fold 3 Epoch 70/70: Train=63.82%, Val=79.82%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 20/70: Train=56.80%, Val=66.23%
+  Fold 4 Epoch 10/70: Train=51.86%, Val=69.74%
+  Fold 4 Epoch 40/70: Train=65.24%, Val=77.63%
+  Fold 5 Epoch 40/70: Train=60.31%, Val=77.19%
+  Fold 5 Epoch 30/70: Train=56.47%, Val=79.39%
+  Fold 5 Epoch 10/70: Train=45.72%, Val=64.47%
+  Fold 4 Epoch 40/70: Train=65.57%, Val=77.19%
+  Fold 4 Epoch 30/70: Train=62.28%, Val=78.07%
+  Fold 4 Epoch 10/70: Train=47.59%, Val=69.74%
+  Fold 5 Epoch 50/70: Train=64.14%, Val=76.75%
+  Fold 4 Epoch 50/70: Train=68.97%, Val=81.14%
+  Fold 5 Epoch 40/70: Train=62.61%, Val=80.26%
+  Fold 4 Epoch 20/70: Train=60.75%, Val=75.88%
+  Fold 5 Epoch 20/70: Train=53.73%, Val=79.82%
+  Fold 4 Epoch 50/70: Train=66.67%, Val=78.51%
+  Fold 4 Epoch 40/70: Train=66.34%, Val=76.75%
+  Fold 5 Epoch 60/70: Train=65.02%, Val=80.26%
+  Fold 5 Epoch 50/70: Train=64.69%, Val=83.77%
+  Fold 4 Epoch 20/70: Train=57.24%, Val=76.75%
+  Fold 4 Epoch 30/70: Train=63.82%, Val=81.58%
+  Fold 4 Epoch 60/70: Train=63.82%, Val=80.70%
+  Fold 5 Epoch 30/70: Train=58.33%, Val=70.18%
+  Fold 4 Epoch 60/70: Train=64.04%, Val=76.75%
+  Fold 5 Epoch 70/70: Train=63.16%, Val=78.07%
+
+=== Results ===
+Val Accs: [83.7719298245614, 85.96491228070175, 88.15789473684211, 81.14035087719299, 80.70175438596492]
+Mean Val: 83.95%
+Test Acc: 88.00%
+[GPU 6] ✓ -CA-SA (No Attention) (seed=2024): Val=83.95%, Test=88.00% (42.5 min)
+[Progress] 33/55 (60.0%)
+[GPU 6] Starting: Activation: GELU (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'gelu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 60/70: Train=64.91%, Val=83.33%
+  Fold 4 Epoch 50/70: Train=68.42%, Val=76.75%
+  Fold 4 Epoch 30/70: Train=59.65%, Val=79.39%
+  Fold 4 Epoch 70/70: Train=57.79%, Val=80.70%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 40/70: Train=66.12%, Val=85.96%
+  Fold 5 Epoch 40/70: Train=59.76%, Val=74.12%
+  Fold 4 Epoch 70/70: Train=59.98%, Val=76.32%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 70/70: Train=64.69%, Val=86.40%
+
+=== Results ===
+Val Accs: [81.57894736842105, 86.40350877192982, 84.64912280701755, 86.84210526315789, 86.84210526315789]
+Mean Val: 85.26%
+Test Acc: 83.50%
+[GPU 7] ✓ -CA-SA (No Attention) (seed=7777): Val=85.26%, Test=83.50% (42.5 min)
+[Progress] 34/55 (61.8%)
+[GPU 7] Starting: Activation: GELU (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'gelu'}
+
+=== Fold 1/5 ===
+  Fold 4 Epoch 60/70: Train=64.91%, Val=77.63%
+  Fold 4 Epoch 40/70: Train=64.80%, Val=83.77%
+  Fold 5 Epoch 50/70: Train=66.56%, Val=78.95%
+  Fold 1 Epoch 10/70: Train=47.37%, Val=71.93%
+  Fold 4 Epoch 50/70: Train=67.98%, Val=85.96%
+  Fold 5 Epoch 10/70: Train=48.36%, Val=71.05%
+  Fold 5 Epoch 10/70: Train=43.64%, Val=61.84%
+  Fold 4 Epoch 70/70: Train=58.55%, Val=78.07%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=66.78%, Val=83.33%
+  Fold 5 Epoch 60/70: Train=65.02%, Val=82.89%
+  Fold 1 Epoch 10/70: Train=49.34%, Val=68.42%
+  Fold 1 Epoch 20/70: Train=60.53%, Val=72.81%
+  Fold 4 Epoch 60/70: Train=65.68%, Val=85.96%
+  Fold 5 Epoch 20/70: Train=50.77%, Val=77.63%
+  Fold 5 Epoch 70/70: Train=64.14%, Val=82.02%
+
+=== Results ===
+Val Accs: [83.7719298245614, 82.45614035087719, 84.64912280701755, 85.08771929824562, 82.89473684210526]
+Mean Val: 83.77%
+Test Acc: 86.00%
+[GPU 5] ✓ -CA-SA (No Attention) (seed=9999): Val=83.77%, Test=86.00% (42.5 min)
+[Progress] 35/55 (63.6%)
+[GPU 5] Starting: Activation: GELU (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'gelu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 20/70: Train=53.29%, Val=73.68%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=85.09%
+  Fold 5 Epoch 10/70: Train=45.83%, Val=64.04%
+  Fold 1 Epoch 20/70: Train=59.98%, Val=69.74%
+  Fold 1 Epoch 30/70: Train=66.12%, Val=78.95%
+  Fold 4 Epoch 70/70: Train=59.76%, Val=86.84%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 30/70: Train=57.89%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=59.87%, Val=79.82%
+  Fold 4 Epoch 70/70: Train=61.29%, Val=85.96%
+
+=== Fold 5/5 ===
+  Fold 1 Epoch 10/70: Train=52.52%, Val=74.12%
+  Fold 5 Epoch 20/70: Train=51.21%, Val=73.25%
+  Fold 1 Epoch 30/70: Train=67.65%, Val=79.39%
+  Fold 1 Epoch 40/70: Train=65.68%, Val=77.19%
+  Fold 5 Epoch 10/70: Train=49.34%, Val=65.35%
+  Fold 5 Epoch 40/70: Train=61.95%, Val=85.09%
+  Fold 1 Epoch 20/70: Train=59.32%, Val=72.81%
+  Fold 5 Epoch 40/70: Train=61.51%, Val=81.14%
+  Fold 5 Epoch 30/70: Train=54.82%, Val=77.19%
+  Fold 1 Epoch 40/70: Train=65.35%, Val=76.75%
+  Fold 5 Epoch 10/70: Train=45.94%, Val=66.23%
+  Fold 1 Epoch 50/70: Train=76.32%, Val=79.39%
+  Fold 5 Epoch 20/70: Train=56.36%, Val=78.51%
+  Fold 5 Epoch 50/70: Train=66.34%, Val=86.84%
+  Fold 5 Epoch 50/70: Train=67.32%, Val=82.46%
+  Fold 1 Epoch 30/70: Train=67.11%, Val=81.14%
+  Fold 1 Epoch 50/70: Train=73.68%, Val=80.26%
+  Fold 5 Epoch 40/70: Train=60.75%, Val=80.70%
+  Fold 1 Epoch 60/70: Train=70.83%, Val=79.39%
+  Fold 5 Epoch 20/70: Train=56.47%, Val=70.18%
+  Fold 5 Epoch 30/70: Train=56.58%, Val=80.70%
+  Fold 5 Epoch 60/70: Train=65.79%, Val=87.72%
+  Fold 5 Epoch 60/70: Train=66.34%, Val=85.96%
+  Fold 1 Epoch 40/70: Train=66.89%, Val=81.58%
+  Fold 1 Epoch 70/70: Train=58.11%, Val=80.26%
+  Fold 1 Epoch 60/70: Train=72.15%, Val=83.77%
+
+=== Fold 2/5 ===
+  Fold 5 Epoch 50/70: Train=64.14%, Val=79.39%
+  Fold 5 Epoch 30/70: Train=57.79%, Val=82.46%
+  Fold 5 Epoch 40/70: Train=61.40%, Val=79.82%
+  Fold 5 Epoch 70/70: Train=62.72%, Val=87.72%
+
+=== Results ===
+Val Accs: [82.89473684210526, 82.89473684210526, 82.01754385964912, 82.01754385964912, 89.03508771929825]
+Mean Val: 83.77%
+Test Acc: 83.50%
+[GPU 4] ✓ Activation: ReLU (seed=42): Val=83.77%, Test=83.50% (47.8 min)
+[GPU 4] Starting: Activation: GELU (seed=7777)
+[Progress] 36/55 (65.5%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'gelu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=65.90%, Val=86.40%
+
+=== Results ===
+Val Accs: [82.01754385964912, 87.28070175438596, 82.89473684210526, 79.3859649122807, 86.40350877192982]
+Mean Val: 83.60%
+Test Acc: 84.00%
+[GPU 0] ✓ Activation: ReLU (seed=1337): Val=83.60%, Test=84.00% (47.8 min)
+[Progress] 37/55 (67.3%)
+[GPU 0] Starting: Activation: GELU (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'gelu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 50/70: Train=74.67%, Val=85.09%
+  Fold 1 Epoch 70/70: Train=58.44%, Val=82.02%
+
+=== Fold 2/5 ===
+  Fold 5 Epoch 60/70: Train=63.71%, Val=80.26%
+  Fold 5 Epoch 40/70: Train=62.39%, Val=83.33%
+  Fold 2 Epoch 10/70: Train=46.49%, Val=64.04%
+  Fold 5 Epoch 50/70: Train=67.43%, Val=83.33%
+  Fold 1 Epoch 10/70: Train=46.60%, Val=65.35%
+  Fold 1 Epoch 60/70: Train=72.70%, Val=81.58%
+  Fold 1 Epoch 10/70: Train=47.48%, Val=64.91%
+  Fold 5 Epoch 70/70: Train=62.39%, Val=80.70%
+
+=== Results ===
+Val Accs: [82.89473684210526, 83.7719298245614, 85.08771929824562, 80.26315789473684, 82.01754385964912]
+Mean Val: 82.81%
+Test Acc: 88.00%
+[GPU 2] ✓ Activation: ReLU (seed=2024): Val=82.81%, Test=88.00% (47.9 min)
+[Progress] 38/55 (69.1%)
+[GPU 2] Starting: Activation: ELU (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'elu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 50/70: Train=67.11%, Val=81.14%
+  Fold 2 Epoch 10/70: Train=45.07%, Val=67.11%
+  Fold 2 Epoch 20/70: Train=55.59%, Val=74.56%
+  Fold 5 Epoch 60/70: Train=65.68%, Val=82.02%
+  Fold 1 Epoch 20/70: Train=59.76%, Val=73.25%
+  Fold 1 Epoch 70/70: Train=56.91%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 20/70: Train=57.68%, Val=68.42%
+  Fold 5 Epoch 60/70: Train=66.67%, Val=83.33%
+  Fold 1 Epoch 10/70: Train=48.46%, Val=67.11%
+  Fold 2 Epoch 20/70: Train=52.41%, Val=75.44%
+  Fold 2 Epoch 30/70: Train=61.29%, Val=82.46%
+  Fold 5 Epoch 70/70: Train=65.46%, Val=82.89%
+
+=== Results ===
+Val Accs: [82.45614035087719, 83.7719298245614, 85.96491228070175, 88.59649122807018, 84.64912280701755]
+Mean Val: 85.09%
+Test Acc: 85.50%
+[GPU 3] ✓ Activation: ReLU (seed=7777): Val=85.09%, Test=85.50% (47.8 min)
+[GPU 3] Starting: Activation: ELU (seed=1337)
+[Progress] 39/55 (70.9%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'elu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 30/70: Train=68.31%, Val=76.75%
+  Fold 2 Epoch 10/70: Train=47.37%, Val=60.09%
+  Fold 1 Epoch 30/70: Train=68.64%, Val=77.19%
+  Fold 5 Epoch 70/70: Train=66.01%, Val=83.33%
+
+=== Results ===
+Val Accs: [79.3859649122807, 82.45614035087719, 82.01754385964912, 87.28070175438596, 85.08771929824562]
+Mean Val: 83.25%
+Test Acc: 88.50%
+[GPU 1] ✓ Activation: ReLU (seed=9999): Val=83.25%, Test=88.50% (48.5 min)
+[GPU 1] Starting: Activation: ELU (seed=2024)
+[Progress] 40/55 (72.7%)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'elu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 20/70: Train=57.79%, Val=72.81%
+  Fold 2 Epoch 40/70: Train=71.82%, Val=79.82%
+  Fold 2 Epoch 30/70: Train=63.49%, Val=83.33%
+  Fold 1 Epoch 10/70: Train=48.25%, Val=66.23%
+  Fold 1 Epoch 40/70: Train=64.80%, Val=76.75%
+  Fold 1 Epoch 40/70: Train=65.35%, Val=77.63%
+  Fold 2 Epoch 20/70: Train=53.73%, Val=72.37%
+  Fold 1 Epoch 30/70: Train=64.04%, Val=78.51%
+  Fold 2 Epoch 50/70: Train=67.43%, Val=80.26%
+  Fold 1 Epoch 10/70: Train=47.15%, Val=67.98%
+  Fold 2 Epoch 40/70: Train=72.70%, Val=84.65%
+  Fold 1 Epoch 20/70: Train=59.54%, Val=71.49%
+  Fold 1 Epoch 50/70: Train=75.44%, Val=77.63%
+  Fold 1 Epoch 50/70: Train=76.64%, Val=81.58%
+  Fold 2 Epoch 30/70: Train=61.40%, Val=82.46%
+  Fold 1 Epoch 40/70: Train=65.24%, Val=77.19%
+  Fold 2 Epoch 60/70: Train=60.09%, Val=81.14%
+  Fold 1 Epoch 20/70: Train=57.68%, Val=66.67%
+  Fold 2 Epoch 50/70: Train=69.08%, Val=89.04%
+  Fold 1 Epoch 30/70: Train=68.20%, Val=80.70%
+  Fold 1 Epoch 60/70: Train=69.63%, Val=79.39%
+  Fold 1 Epoch 60/70: Train=70.61%, Val=81.14%
+  Fold 1 Epoch 50/70: Train=76.54%, Val=83.33%
+  Fold 2 Epoch 40/70: Train=71.05%, Val=80.70%
+  Fold 2 Epoch 70/70: Train=62.50%, Val=79.82%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=59.32%, Val=84.21%
+  Fold 1 Epoch 30/70: Train=65.35%, Val=76.75%
+  Fold 1 Epoch 40/70: Train=65.13%, Val=78.51%
+  Fold 1 Epoch 70/70: Train=60.31%, Val=80.26%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 60/70: Train=71.82%, Val=81.14%
+  Fold 1 Epoch 70/70: Train=58.55%, Val=82.46%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 50/70: Train=69.63%, Val=81.14%
+  Fold 2 Epoch 70/70: Train=61.18%, Val=86.84%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=47.92%, Val=71.05%
+  Fold 1 Epoch 40/70: Train=67.21%, Val=81.58%
+  Fold 1 Epoch 50/70: Train=74.23%, Val=82.89%
+  Fold 2 Epoch 10/70: Train=50.11%, Val=63.16%
+  Fold 2 Epoch 60/70: Train=59.98%, Val=80.70%
+  Fold 1 Epoch 70/70: Train=57.68%, Val=82.46%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 10/70: Train=43.64%, Val=70.61%
+  Fold 3 Epoch 10/70: Train=47.26%, Val=68.86%
+  Fold 3 Epoch 20/70: Train=58.00%, Val=71.05%
+  Fold 1 Epoch 50/70: Train=75.44%, Val=81.14%
+  Fold 1 Epoch 60/70: Train=71.93%, Val=82.89%
+  Fold 2 Epoch 20/70: Train=53.95%, Val=78.51%
+  Fold 2 Epoch 70/70: Train=59.54%, Val=79.82%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 10/70: Train=46.27%, Val=64.47%
+  Fold 2 Epoch 20/70: Train=54.28%, Val=76.32%
+  Fold 3 Epoch 30/70: Train=61.29%, Val=79.39%
+  Fold 1 Epoch 60/70: Train=73.25%, Val=80.70%
+  Fold 1 Epoch 70/70: Train=58.66%, Val=82.89%
+  Fold 3 Epoch 20/70: Train=53.95%, Val=75.88%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 30/70: Train=62.61%, Val=83.33%
+  Fold 2 Epoch 20/70: Train=51.54%, Val=71.93%
+  Fold 3 Epoch 10/70: Train=50.66%, Val=64.91%
+  Fold 2 Epoch 30/70: Train=64.69%, Val=77.19%
+  Fold 3 Epoch 40/70: Train=68.31%, Val=78.95%
+  Fold 1 Epoch 70/70: Train=57.68%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 3 Epoch 30/70: Train=59.54%, Val=78.51%
+  Fold 2 Epoch 10/70: Train=45.50%, Val=71.05%
+  Fold 2 Epoch 40/70: Train=70.72%, Val=83.33%
+  Fold 2 Epoch 30/70: Train=60.09%, Val=73.25%
+  Fold 2 Epoch 40/70: Train=72.48%, Val=78.95%
+  Fold 3 Epoch 20/70: Train=54.82%, Val=76.32%
+  Fold 3 Epoch 50/70: Train=63.93%, Val=79.39%
+  Fold 2 Epoch 10/70: Train=47.04%, Val=62.72%
+  Fold 2 Epoch 20/70: Train=54.06%, Val=72.37%
+  Fold 3 Epoch 40/70: Train=66.78%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=68.97%, Val=79.82%
+  Fold 2 Epoch 40/70: Train=71.49%, Val=79.39%
+  Fold 2 Epoch 50/70: Train=69.41%, Val=77.63%
+  Fold 3 Epoch 60/70: Train=62.39%, Val=80.70%
+  Fold 3 Epoch 30/70: Train=61.62%, Val=80.26%
+  Fold 2 Epoch 30/70: Train=61.40%, Val=76.75%
+  Fold 2 Epoch 20/70: Train=52.30%, Val=67.54%
+  Fold 3 Epoch 50/70: Train=65.46%, Val=80.70%
+  Fold 2 Epoch 60/70: Train=62.61%, Val=81.14%
+  Fold 2 Epoch 60/70: Train=59.32%, Val=78.51%
+  Fold 2 Epoch 50/70: Train=67.65%, Val=77.19%
+  Fold 3 Epoch 70/70: Train=63.93%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 40/70: Train=67.11%, Val=82.46%
+  Fold 2 Epoch 30/70: Train=61.18%, Val=76.32%
+  Fold 3 Epoch 60/70: Train=61.18%, Val=83.77%
+  Fold 2 Epoch 40/70: Train=72.81%, Val=82.46%
+  Fold 2 Epoch 70/70: Train=60.64%, Val=82.02%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 70/70: Train=60.75%, Val=79.82%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=60.75%, Val=81.14%
+  Fold 3 Epoch 50/70: Train=62.83%, Val=83.33%
+  Fold 4 Epoch 10/70: Train=48.68%, Val=63.16%
+  Fold 3 Epoch 70/70: Train=63.60%, Val=83.77%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 40/70: Train=70.29%, Val=79.39%
+  Fold 2 Epoch 50/70: Train=68.42%, Val=86.84%
+  Fold 3 Epoch 10/70: Train=50.00%, Val=69.74%
+  Fold 2 Epoch 70/70: Train=62.39%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=48.57%, Val=71.49%
+  Fold 3 Epoch 60/70: Train=59.87%, Val=83.77%
+  Fold 4 Epoch 20/70: Train=56.25%, Val=72.81%
+  Fold 2 Epoch 50/70: Train=69.19%, Val=81.14%
+  Fold 2 Epoch 60/70: Train=58.99%, Val=85.09%
+  Fold 4 Epoch 10/70: Train=52.85%, Val=64.47%
+  Fold 3 Epoch 20/70: Train=56.58%, Val=78.95%
+  Fold 3 Epoch 20/70: Train=52.63%, Val=73.68%
+  Fold 3 Epoch 10/70: Train=49.23%, Val=63.60%
+  Fold 3 Epoch 70/70: Train=64.47%, Val=85.09%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 30/70: Train=64.47%, Val=82.02%
+  Fold 2 Epoch 70/70: Train=61.29%, Val=84.65%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=60.20%, Val=79.39%
+  Fold 4 Epoch 20/70: Train=58.55%, Val=73.68%
+  Fold 3 Epoch 30/70: Train=63.60%, Val=83.33%
+  Fold 3 Epoch 30/70: Train=57.89%, Val=77.19%
+  Fold 3 Epoch 20/70: Train=55.59%, Val=72.37%
+  Fold 4 Epoch 10/70: Train=53.29%, Val=69.74%
+  Fold 4 Epoch 40/70: Train=66.34%, Val=78.07%
+  Fold 2 Epoch 70/70: Train=59.10%, Val=79.39%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=49.12%, Val=64.91%
+  Fold 3 Epoch 40/70: Train=66.34%, Val=82.46%
+  Fold 4 Epoch 30/70: Train=64.69%, Val=78.51%
+  Fold 3 Epoch 40/70: Train=67.54%, Val=80.26%
+  Fold 3 Epoch 30/70: Train=60.96%, Val=72.37%
+  Fold 4 Epoch 50/70: Train=69.08%, Val=82.02%
+  Fold 4 Epoch 20/70: Train=58.55%, Val=72.81%
+  Fold 3 Epoch 10/70: Train=49.78%, Val=61.40%
+  Fold 3 Epoch 20/70: Train=53.73%, Val=68.86%
+  Fold 3 Epoch 50/70: Train=64.36%, Val=86.40%
+  Fold 4 Epoch 40/70: Train=65.46%, Val=78.51%
+  Fold 3 Epoch 50/70: Train=65.24%, Val=83.33%
+  Fold 3 Epoch 40/70: Train=68.86%, Val=77.19%
+  Fold 4 Epoch 60/70: Train=64.91%, Val=78.95%
+  Fold 4 Epoch 30/70: Train=62.17%, Val=80.26%
+  Fold 3 Epoch 30/70: Train=58.99%, Val=77.19%
+  Fold 3 Epoch 20/70: Train=54.61%, Val=81.58%
+  Fold 3 Epoch 60/70: Train=62.83%, Val=86.40%
+  Fold 4 Epoch 50/70: Train=67.00%, Val=77.63%
+  Fold 3 Epoch 60/70: Train=63.05%, Val=80.70%
+  Fold 3 Epoch 50/70: Train=63.93%, Val=83.77%
+  Fold 4 Epoch 70/70: Train=58.77%, Val=79.39%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 40/70: Train=66.45%, Val=78.51%
+  Fold 3 Epoch 40/70: Train=67.32%, Val=80.70%
+  Fold 3 Epoch 30/70: Train=60.86%, Val=81.58%
+  Fold 3 Epoch 70/70: Train=64.04%, Val=85.53%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 60/70: Train=65.68%, Val=83.33%
+  Fold 3 Epoch 70/70: Train=64.25%, Val=83.33%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=62.61%, Val=82.02%
+  Fold 5 Epoch 10/70: Train=48.57%, Val=71.49%
+  Fold 4 Epoch 50/70: Train=68.75%, Val=79.39%
+  Fold 3 Epoch 50/70: Train=65.79%, Val=80.70%
+  Fold 3 Epoch 40/70: Train=67.32%, Val=85.53%
+  Fold 4 Epoch 70/70: Train=60.09%, Val=82.46%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=50.55%, Val=71.49%
+  Fold 3 Epoch 70/70: Train=64.69%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 10/70: Train=51.32%, Val=56.58%
+  Fold 5 Epoch 20/70: Train=53.40%, Val=80.26%
+  Fold 4 Epoch 60/70: Train=65.35%, Val=78.95%
+  Fold 3 Epoch 60/70: Train=60.75%, Val=82.02%
+  Fold 3 Epoch 50/70: Train=62.39%, Val=84.65%
+  Fold 5 Epoch 10/70: Train=44.96%, Val=64.91%
+  Fold 4 Epoch 20/70: Train=58.66%, Val=75.00%
+  Fold 4 Epoch 20/70: Train=58.44%, Val=77.19%
+  Fold 4 Epoch 10/70: Train=47.81%, Val=67.54%
+  Fold 5 Epoch 30/70: Train=58.77%, Val=82.89%
+  Fold 4 Epoch 70/70: Train=58.88%, Val=77.63%
+
+=== Fold 5/5 ===
+  Fold 3 Epoch 70/70: Train=63.71%, Val=80.26%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=60.20%, Val=83.77%
+  Fold 5 Epoch 20/70: Train=52.96%, Val=72.81%
+  Fold 4 Epoch 30/70: Train=65.02%, Val=82.02%
+  Fold 4 Epoch 30/70: Train=62.17%, Val=78.51%
+  Fold 4 Epoch 20/70: Train=56.47%, Val=71.49%
+  Fold 5 Epoch 40/70: Train=62.94%, Val=88.16%
+  Fold 5 Epoch 10/70: Train=43.09%, Val=67.54%
+  Fold 3 Epoch 70/70: Train=64.47%, Val=83.77%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 10/70: Train=53.29%, Val=62.28%
+  Fold 5 Epoch 30/70: Train=58.33%, Val=76.32%
+  Fold 4 Epoch 40/70: Train=65.68%, Val=85.09%
+  Fold 4 Epoch 40/70: Train=66.34%, Val=83.77%
+  Fold 4 Epoch 30/70: Train=64.25%, Val=77.63%
+  Fold 5 Epoch 50/70: Train=67.76%, Val=87.28%
+  Fold 5 Epoch 20/70: Train=54.17%, Val=71.49%
+  Fold 4 Epoch 20/70: Train=57.89%, Val=66.23%
+  Fold 4 Epoch 10/70: Train=50.11%, Val=71.05%
+  Fold 4 Epoch 50/70: Train=67.43%, Val=84.65%
+  Fold 5 Epoch 40/70: Train=61.84%, Val=79.39%
+  Fold 4 Epoch 50/70: Train=66.23%, Val=83.33%
+  Fold 4 Epoch 40/70: Train=66.23%, Val=79.82%
+  Fold 5 Epoch 60/70: Train=65.90%, Val=89.04%
+  Fold 5 Epoch 30/70: Train=56.25%, Val=80.26%
+  Fold 4 Epoch 30/70: Train=63.38%, Val=73.25%
+  Fold 4 Epoch 20/70: Train=55.37%, Val=71.05%
+  Fold 4 Epoch 60/70: Train=65.24%, Val=83.77%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=82.46%
+  Fold 4 Epoch 50/70: Train=68.53%, Val=78.95%
+  Fold 5 Epoch 50/70: Train=67.32%, Val=80.70%
+  Fold 5 Epoch 70/70: Train=62.39%, Val=88.60%
+
+=== Results ===
+Val Accs: [80.26315789473684, 82.89473684210526, 83.7719298245614, 82.01754385964912, 89.03508771929825]
+Mean Val: 83.60%
+Test Acc: 86.00%
+[GPU 6] ✓ Activation: GELU (seed=42): Val=83.60%, Test=86.00% (47.7 min)
+[Progress] 41/55 (74.5%)
+[GPU 6] Starting: Activation: ELU (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'elu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 40/70: Train=60.96%, Val=78.07%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=75.00%
+  Fold 4 Epoch 70/70: Train=60.75%, Val=82.89%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 30/70: Train=59.98%, Val=79.82%
+  Fold 4 Epoch 70/70: Train=59.87%, Val=85.53%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 60/70: Train=64.36%, Val=82.02%
+  Fold 5 Epoch 60/70: Train=66.12%, Val=82.89%
+  Fold 1 Epoch 10/70: Train=47.37%, Val=59.65%
+  Fold 5 Epoch 50/70: Train=65.79%, Val=77.19%
+  Fold 4 Epoch 50/70: Train=66.89%, Val=78.51%
+  Fold 4 Epoch 70/70: Train=59.54%, Val=82.46%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 70/70: Train=66.23%, Val=83.33%
+
+=== Results ===
+Val Accs: [85.52631578947368, 89.03508771929825, 85.08771929824562, 83.33333333333333, 85.08771929824562]
+Mean Val: 85.61%
+Test Acc: 84.00%
+[GPU 7] ✓ Activation: GELU (seed=1337): Val=85.61%, Test=84.00% (48.9 min)
+[Progress] 42/55 (76.4%)
+[GPU 7] Starting: Activation: ELU (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'elu'}
+
+=== Fold 1/5 ===
+  Fold 4 Epoch 40/70: Train=66.45%, Val=80.26%
+  Fold 5 Epoch 10/70: Train=48.90%, Val=70.18%
+  Fold 5 Epoch 10/70: Train=49.23%, Val=67.11%
+  Fold 1 Epoch 20/70: Train=58.22%, Val=73.68%
+  Fold 5 Epoch 60/70: Train=63.38%, Val=79.39%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=78.07%
+  Fold 4 Epoch 50/70: Train=67.87%, Val=80.70%
+  Fold 1 Epoch 10/70: Train=44.85%, Val=57.46%
+  Fold 5 Epoch 10/70: Train=47.48%, Val=68.42%
+  Fold 5 Epoch 20/70: Train=57.35%, Val=74.56%
+  Fold 5 Epoch 20/70: Train=56.03%, Val=75.44%
+  Fold 1 Epoch 30/70: Train=66.12%, Val=76.75%
+  Fold 5 Epoch 70/70: Train=62.72%, Val=81.14%
+
+=== Results ===
+Val Accs: [85.08771929824562, 82.45614035087719, 85.08771929824562, 81.57894736842105, 82.45614035087719]
+Mean Val: 83.33%
+Test Acc: 85.50%
+[GPU 5] ✓ Activation: GELU (seed=2024): Val=83.33%, Test=85.50% (48.2 min)
+[Progress] 43/55 (78.2%)
+[GPU 5] Starting: Activation: SiLU (seed=42)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'silu'}
+
+=== Fold 1/5 ===
+  Fold 4 Epoch 70/70: Train=60.09%, Val=79.39%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 60/70: Train=64.80%, Val=82.89%
+  Fold 1 Epoch 20/70: Train=54.93%, Val=68.42%
+  Fold 5 Epoch 30/70: Train=57.46%, Val=79.39%
+  Fold 5 Epoch 20/70: Train=51.54%, Val=81.58%
+  Fold 5 Epoch 30/70: Train=57.13%, Val=81.14%
+  Fold 1 Epoch 40/70: Train=66.23%, Val=81.14%
+  Fold 5 Epoch 10/70: Train=43.20%, Val=63.60%
+  Fold 1 Epoch 10/70: Train=49.67%, Val=71.05%
+  Fold 4 Epoch 70/70: Train=59.54%, Val=80.70%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 40/70: Train=62.94%, Val=80.70%
+  Fold 5 Epoch 40/70: Train=61.18%, Val=79.82%
+  Fold 1 Epoch 30/70: Train=66.34%, Val=72.37%
+  Fold 5 Epoch 30/70: Train=57.35%, Val=77.19%
+  Fold 1 Epoch 50/70: Train=74.67%, Val=82.46%
+  Fold 5 Epoch 20/70: Train=51.21%, Val=74.56%
+  Fold 1 Epoch 20/70: Train=59.54%, Val=68.42%
+  Fold 5 Epoch 50/70: Train=66.01%, Val=82.02%
+  Fold 5 Epoch 50/70: Train=66.67%, Val=83.77%
+  Fold 1 Epoch 40/70: Train=65.79%, Val=77.63%
+  Fold 5 Epoch 10/70: Train=45.29%, Val=58.77%
+  Fold 5 Epoch 40/70: Train=62.06%, Val=85.96%
+  Fold 1 Epoch 60/70: Train=69.96%, Val=81.14%
+  Fold 5 Epoch 30/70: Train=57.02%, Val=80.26%
+  Fold 1 Epoch 30/70: Train=63.93%, Val=79.39%
+  Fold 5 Epoch 60/70: Train=65.13%, Val=82.46%
+  Fold 5 Epoch 60/70: Train=66.45%, Val=83.77%
+  Fold 1 Epoch 70/70: Train=60.31%, Val=82.02%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 50/70: Train=76.43%, Val=80.26%
+  Fold 5 Epoch 50/70: Train=66.89%, Val=84.65%
+  Fold 5 Epoch 20/70: Train=54.17%, Val=76.75%
+  Fold 5 Epoch 40/70: Train=61.51%, Val=80.26%
+  Fold 1 Epoch 40/70: Train=64.58%, Val=75.88%
+  Fold 5 Epoch 70/70: Train=65.68%, Val=83.33%
+
+=== Results ===
+Val Accs: [83.33333333333333, 80.70175438596492, 84.21052631578948, 85.08771929824562, 84.64912280701755]
+Mean Val: 83.60%
+Test Acc: 87.50%
+[GPU 0] ✓ Activation: GELU (seed=9999): Val=83.60%, Test=87.50% (47.4 min)
+[Progress] 44/55 (80.0%)
+[GPU 0] Starting: Activation: SiLU (seed=1337)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'silu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 70/70: Train=65.46%, Val=82.46%
+
+=== Results ===
+Val Accs: [82.45614035087719, 84.64912280701755, 87.28070175438596, 87.28070175438596, 83.7719298245614]
+Mean Val: 85.09%
+Test Acc: 84.50%
+[GPU 4] ✓ Activation: GELU (seed=7777): Val=85.09%, Test=84.50% (48.2 min)
+[Progress] 45/55 (81.8%)
+[GPU 4] Starting: Activation: SiLU (seed=2024)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'silu'}
+
+=== Fold 1/5 ===
+  Fold 5 Epoch 60/70: Train=65.90%, Val=86.40%
+  Fold 1 Epoch 60/70: Train=71.71%, Val=80.70%
+  Fold 2 Epoch 10/70: Train=48.68%, Val=67.54%
+  Fold 5 Epoch 30/70: Train=55.59%, Val=79.39%
+  Fold 5 Epoch 50/70: Train=66.78%, Val=85.53%
+  Fold 1 Epoch 50/70: Train=75.88%, Val=76.32%
+  Fold 5 Epoch 70/70: Train=62.72%, Val=86.40%
+
+=== Results ===
+Val Accs: [83.33333333333333, 82.89473684210526, 85.52631578947368, 82.89473684210526, 87.28070175438596]
+Mean Val: 84.39%
+Test Acc: 80.50%
+[GPU 2] ✓ Activation: ELU (seed=42): Val=84.39%, Test=80.50% (47.3 min)
+[Progress] 46/55 (83.6%)
+[GPU 2] Starting: Activation: SiLU (seed=7777)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'silu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 10/70: Train=49.56%, Val=73.25%
+  Fold 1 Epoch 10/70: Train=50.33%, Val=65.79%
+  Fold 1 Epoch 70/70: Train=58.55%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 5 Epoch 40/70: Train=60.96%, Val=78.51%
+  Fold 2 Epoch 20/70: Train=52.74%, Val=71.93%
+  Fold 5 Epoch 60/70: Train=66.56%, Val=85.96%
+  Fold 1 Epoch 60/70: Train=72.26%, Val=78.51%
+  Fold 1 Epoch 20/70: Train=61.40%, Val=75.88%
+  Fold 1 Epoch 20/70: Train=59.87%, Val=72.81%
+  Fold 1 Epoch 10/70: Train=47.70%, Val=66.23%
+  Fold 2 Epoch 10/70: Train=44.41%, Val=64.47%
+  Fold 5 Epoch 50/70: Train=65.90%, Val=77.19%
+  Fold 2 Epoch 30/70: Train=61.07%, Val=80.70%
+  Fold 5 Epoch 70/70: Train=65.90%, Val=84.65%
+
+=== Results ===
+Val Accs: [84.21052631578948, 86.84210526315789, 84.64912280701755, 79.3859649122807, 86.84210526315789]
+Mean Val: 84.39%
+Test Acc: 86.00%
+[GPU 3] ✓ Activation: ELU (seed=1337): Val=84.39%, Test=86.00% (47.7 min)
+[Progress] 47/55 (85.5%)
+[GPU 3] Starting: Activation: SiLU (seed=9999)
+
+Balanced 4-class dataset:
+  Selected ester: isoamyl acetate at 0.3% v/v
+  Samples per class: 335
+  Total: 1340
+  Classes: ['Aldehyde' 'Control' 'Ester' 'Ketone']
+
+=== Training Ensemble ===
+Balanced splits: 285 train, 50 test per class
+Ablation config: {'activation': 'silu'}
+
+=== Fold 1/5 ===
+  Fold 1 Epoch 70/70: Train=57.46%, Val=78.95%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 30/70: Train=69.30%, Val=76.32%
+  Fold 2 Epoch 20/70: Train=54.82%, Val=73.68%
+  Fold 1 Epoch 20/70: Train=59.54%, Val=76.75%
+  Fold 1 Epoch 30/70: Train=67.43%, Val=81.14%
+  Fold 5 Epoch 60/70: Train=63.71%, Val=78.95%
+  Fold 2 Epoch 40/70: Train=70.50%, Val=78.95%
+  Fold 1 Epoch 10/70: Train=48.46%, Val=64.91%
+  Fold 2 Epoch 10/70: Train=45.39%, Val=64.47%
+  Fold 1 Epoch 30/70: Train=66.67%, Val=75.88%
+  Fold 2 Epoch 30/70: Train=63.27%, Val=76.32%
+  Fold 1 Epoch 40/70: Train=65.57%, Val=79.82%
+  Fold 5 Epoch 70/70: Train=63.05%, Val=79.39%
+
+=== Results ===
+Val Accs: [83.33333333333333, 82.45614035087719, 85.52631578947368, 83.7719298245614, 81.57894736842105]
+Mean Val: 83.33%
+Test Acc: 86.50%
+[GPU 1] ✓ Activation: ELU (seed=2024): Val=83.33%, Test=86.50% (48.9 min)
+[Worker GPU-1] Shutting down
+[Progress] 48/55 (87.3%)
+  Fold 1 Epoch 40/70: Train=67.54%, Val=81.14%
+  Fold 2 Epoch 50/70: Train=69.41%, Val=79.82%
+  Fold 1 Epoch 20/70: Train=58.00%, Val=67.54%
+  Fold 2 Epoch 20/70: Train=54.71%, Val=68.42%
+  Fold 1 Epoch 50/70: Train=74.56%, Val=82.02%
+  Fold 2 Epoch 40/70: Train=72.48%, Val=80.70%
+  Fold 1 Epoch 40/70: Train=64.80%, Val=78.95%
+  Fold 2 Epoch 60/70: Train=63.16%, Val=79.82%
+  Fold 1 Epoch 50/70: Train=74.12%, Val=83.77%
+  Fold 1 Epoch 30/70: Train=67.54%, Val=75.44%
+  Fold 2 Epoch 30/70: Train=61.18%, Val=75.88%
+  Fold 2 Epoch 70/70: Train=61.18%, Val=80.70%
+
+=== Fold 3/5 ===
+  Fold 1 Epoch 60/70: Train=71.49%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=69.52%, Val=81.58%
+  Fold 1 Epoch 50/70: Train=74.78%, Val=78.95%
+  Fold 1 Epoch 60/70: Train=73.46%, Val=82.89%
+  Fold 1 Epoch 40/70: Train=65.90%, Val=75.44%
+  Fold 2 Epoch 40/70: Train=70.83%, Val=75.44%
+  Fold 1 Epoch 70/70: Train=58.77%, Val=82.89%
+
+=== Fold 2/5 ===
+  Fold 1 Epoch 70/70: Train=57.68%, Val=83.33%
+
+=== Fold 2/5 ===
+  Fold 3 Epoch 10/70: Train=47.81%, Val=64.91%
+  Fold 1 Epoch 60/70: Train=70.18%, Val=81.14%
+  Fold 2 Epoch 60/70: Train=59.98%, Val=83.77%
+  Fold 1 Epoch 50/70: Train=76.32%, Val=77.19%
+  Fold 2 Epoch 50/70: Train=67.87%, Val=79.39%
+  Fold 2 Epoch 10/70: Train=46.16%, Val=68.42%
+  Fold 2 Epoch 10/70: Train=49.01%, Val=63.16%
+  Fold 2 Epoch 70/70: Train=60.96%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 1 Epoch 70/70: Train=59.54%, Val=82.02%
+
+=== Fold 2/5 ===
+  Fold 3 Epoch 20/70: Train=53.07%, Val=78.51%
+  Fold 1 Epoch 60/70: Train=72.26%, Val=76.32%
+  Fold 2 Epoch 60/70: Train=59.76%, Val=81.58%
+  Fold 2 Epoch 20/70: Train=52.96%, Val=73.68%
+  Fold 2 Epoch 20/70: Train=53.18%, Val=70.61%
+  Fold 3 Epoch 30/70: Train=62.17%, Val=87.28%
+  Fold 3 Epoch 10/70: Train=48.79%, Val=71.93%
+  Fold 2 Epoch 10/70: Train=49.45%, Val=67.98%
+  Fold 1 Epoch 70/70: Train=59.21%, Val=74.56%
+
+=== Fold 2/5 ===
+  Fold 2 Epoch 70/70: Train=62.61%, Val=81.58%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 30/70: Train=63.71%, Val=85.09%
+  Fold 2 Epoch 30/70: Train=62.39%, Val=78.95%
+  Fold 3 Epoch 40/70: Train=65.24%, Val=81.58%
+  Fold 3 Epoch 20/70: Train=54.28%, Val=73.68%
+  Fold 2 Epoch 20/70: Train=54.71%, Val=78.95%
+  Fold 2 Epoch 10/70: Train=43.42%, Val=65.79%
+  Fold 3 Epoch 10/70: Train=48.90%, Val=72.81%
+  Fold 2 Epoch 40/70: Train=73.03%, Val=83.33%
+  Fold 3 Epoch 50/70: Train=64.58%, Val=84.65%
+  Fold 2 Epoch 40/70: Train=70.83%, Val=79.39%
+  Fold 3 Epoch 30/70: Train=57.89%, Val=78.07%
+  Fold 2 Epoch 30/70: Train=62.06%, Val=78.07%
+  Fold 2 Epoch 20/70: Train=54.82%, Val=75.00%
+  Fold 3 Epoch 20/70: Train=57.35%, Val=75.88%
+  Fold 3 Epoch 60/70: Train=63.27%, Val=85.53%
+  Fold 2 Epoch 50/70: Train=70.07%, Val=82.02%
+  Fold 2 Epoch 50/70: Train=68.86%, Val=81.14%
+  Fold 2 Epoch 40/70: Train=71.49%, Val=82.02%
+  Fold 3 Epoch 40/70: Train=67.98%, Val=83.33%
+  Fold 2 Epoch 30/70: Train=63.27%, Val=75.00%
+  Fold 3 Epoch 30/70: Train=63.05%, Val=80.70%
+  Fold 3 Epoch 70/70: Train=64.58%, Val=85.96%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 60/70: Train=59.21%, Val=83.33%
+  Fold 2 Epoch 60/70: Train=60.42%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=69.30%, Val=83.77%
+  Fold 3 Epoch 50/70: Train=64.91%, Val=84.65%
+  Fold 2 Epoch 40/70: Train=72.81%, Val=82.46%
+  Fold 3 Epoch 40/70: Train=68.53%, Val=78.95%
+  Fold 2 Epoch 70/70: Train=61.51%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 4 Epoch 10/70: Train=50.55%, Val=64.91%
+  Fold 2 Epoch 70/70: Train=58.66%, Val=84.21%
+
+=== Fold 3/5 ===
+  Fold 2 Epoch 60/70: Train=62.28%, Val=81.58%
+  Fold 3 Epoch 60/70: Train=63.38%, Val=83.33%
+  Fold 2 Epoch 50/70: Train=69.63%, Val=79.39%
+  Fold 3 Epoch 50/70: Train=63.49%, Val=80.70%
+  Fold 2 Epoch 70/70: Train=61.18%, Val=82.46%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 10/70: Train=48.03%, Val=65.79%
+  Fold 4 Epoch 20/70: Train=57.02%, Val=82.02%
+  Fold 3 Epoch 10/70: Train=51.32%, Val=73.25%
+  Fold 3 Epoch 70/70: Train=64.36%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 2 Epoch 60/70: Train=59.54%, Val=79.82%
+  Fold 3 Epoch 60/70: Train=62.06%, Val=83.33%
+  Fold 4 Epoch 30/70: Train=62.83%, Val=82.02%
+  Fold 3 Epoch 20/70: Train=52.96%, Val=77.19%
+  Fold 3 Epoch 10/70: Train=49.78%, Val=69.30%
+  Fold 3 Epoch 20/70: Train=55.92%, Val=77.19%
+  Fold 4 Epoch 10/70: Train=50.22%, Val=64.47%
+  Fold 2 Epoch 70/70: Train=61.40%, Val=82.02%
+
+=== Fold 3/5 ===
+  Fold 3 Epoch 70/70: Train=64.14%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 40/70: Train=65.90%, Val=84.21%
+  Fold 3 Epoch 30/70: Train=60.53%, Val=81.14%
+  Fold 3 Epoch 30/70: Train=60.42%, Val=81.14%
+  Fold 3 Epoch 20/70: Train=56.14%, Val=74.12%
+  Fold 4 Epoch 20/70: Train=56.36%, Val=77.19%
+  Fold 3 Epoch 10/70: Train=48.79%, Val=71.49%
+  Fold 4 Epoch 10/70: Train=47.70%, Val=69.74%
+  Fold 3 Epoch 40/70: Train=67.00%, Val=78.95%
+  Fold 4 Epoch 50/70: Train=67.00%, Val=85.53%
+  Fold 3 Epoch 40/70: Train=67.65%, Val=82.46%
+  Fold 4 Epoch 30/70: Train=59.10%, Val=77.63%
+  Fold 3 Epoch 30/70: Train=63.05%, Val=83.77%
+  Fold 3 Epoch 20/70: Train=53.84%, Val=72.81%
+  Fold 4 Epoch 20/70: Train=56.58%, Val=72.81%
+  Fold 3 Epoch 50/70: Train=65.35%, Val=84.65%
+  Fold 4 Epoch 60/70: Train=65.79%, Val=86.40%
+  Fold 3 Epoch 50/70: Train=62.39%, Val=82.46%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=80.26%
+  Fold 3 Epoch 40/70: Train=66.12%, Val=84.21%
+  Fold 3 Epoch 30/70: Train=58.88%, Val=75.88%
+  Fold 4 Epoch 30/70: Train=64.04%, Val=78.51%
+  Fold 3 Epoch 60/70: Train=60.96%, Val=85.53%
+  Fold 4 Epoch 70/70: Train=60.64%, Val=86.40%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 50/70: Train=67.11%, Val=82.02%
+  Fold 3 Epoch 60/70: Train=59.65%, Val=81.14%
+  Fold 3 Epoch 50/70: Train=64.14%, Val=84.21%
+  Fold 3 Epoch 40/70: Train=67.54%, Val=83.77%
+  Fold 4 Epoch 40/70: Train=66.89%, Val=75.88%
+  Fold 3 Epoch 70/70: Train=64.04%, Val=86.40%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 60/70: Train=64.36%, Val=82.46%
+  Fold 5 Epoch 10/70: Train=45.07%, Val=67.54%
+  Fold 3 Epoch 70/70: Train=63.93%, Val=80.26%
+
+=== Fold 4/5 ===
+  Fold 3 Epoch 60/70: Train=63.27%, Val=85.09%
+  Fold 3 Epoch 50/70: Train=64.91%, Val=82.46%
+  Fold 4 Epoch 50/70: Train=68.64%, Val=80.26%
+  Fold 4 Epoch 70/70: Train=60.64%, Val=82.46%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 10/70: Train=53.40%, Val=62.72%
+  Fold 3 Epoch 70/70: Train=64.47%, Val=82.46%
+
+=== Fold 4/5 ===
+  Fold 5 Epoch 20/70: Train=53.40%, Val=70.61%
+  Fold 4 Epoch 10/70: Train=52.63%, Val=69.30%
+  Fold 3 Epoch 60/70: Train=63.05%, Val=82.46%
+  Fold 4 Epoch 60/70: Train=63.82%, Val=82.46%
+  Fold 5 Epoch 10/70: Train=47.81%, Val=65.35%
+  Fold 4 Epoch 20/70: Train=56.91%, Val=71.93%
+  Fold 5 Epoch 30/70: Train=56.80%, Val=75.44%
+  Fold 4 Epoch 10/70: Train=51.32%, Val=68.42%
+  Fold 4 Epoch 20/70: Train=59.21%, Val=71.05%
+  Fold 3 Epoch 70/70: Train=64.04%, Val=81.14%
+
+=== Fold 4/5 ===
+  Fold 4 Epoch 70/70: Train=58.77%, Val=82.02%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 20/70: Train=55.59%, Val=74.56%
+  Fold 4 Epoch 30/70: Train=64.80%, Val=74.56%
+  Fold 5 Epoch 40/70: Train=61.18%, Val=80.26%
+  Fold 4 Epoch 20/70: Train=59.43%, Val=79.82%
+  Fold 4 Epoch 30/70: Train=62.72%, Val=80.70%
+  Fold 4 Epoch 10/70: Train=52.96%, Val=67.11%
+  Fold 5 Epoch 10/70: Train=48.46%, Val=71.05%
+  Fold 5 Epoch 30/70: Train=56.58%, Val=77.63%
+  Fold 4 Epoch 40/70: Train=65.46%, Val=74.56%
+  Fold 5 Epoch 50/70: Train=66.45%, Val=82.46%
+  Fold 4 Epoch 40/70: Train=66.01%, Val=81.14%
+  Fold 4 Epoch 30/70: Train=64.47%, Val=83.77%
+  Fold 4 Epoch 20/70: Train=58.88%, Val=78.51%
+  Fold 5 Epoch 20/70: Train=53.29%, Val=81.14%
+  Fold 5 Epoch 40/70: Train=62.50%, Val=79.82%
+  Fold 4 Epoch 50/70: Train=67.11%, Val=75.88%
+  Fold 5 Epoch 60/70: Train=65.35%, Val=82.89%
+  Fold 4 Epoch 50/70: Train=68.86%, Val=78.95%
+  Fold 4 Epoch 40/70: Train=66.23%, Val=85.53%
+  Fold 4 Epoch 30/70: Train=60.20%, Val=78.95%
+  Fold 5 Epoch 30/70: Train=57.89%, Val=85.09%
+  Fold 4 Epoch 60/70: Train=64.47%, Val=75.88%
+  Fold 5 Epoch 50/70: Train=67.11%, Val=85.53%
+  Fold 5 Epoch 70/70: Train=65.68%, Val=83.77%
+
+=== Results ===
+Val Accs: [84.21052631578948, 83.7719298245614, 87.71929824561404, 87.71929824561404, 85.08771929824562]
+Mean Val: 85.70%
+Test Acc: 81.00%
+[GPU 6] ✓ Activation: ELU (seed=7777): Val=85.70%, Test=81.00% (47.7 min)
+[Worker GPU-6] Shutting down
+[Progress] 49/55 (89.1%)
+  Fold 4 Epoch 60/70: Train=64.91%, Val=80.70%
+  Fold 4 Epoch 50/70: Train=67.98%, Val=85.53%
+  Fold 4 Epoch 40/70: Train=65.79%, Val=82.89%
+  Fold 5 Epoch 40/70: Train=62.06%, Val=86.40%
+  Fold 4 Epoch 70/70: Train=59.98%, Val=75.88%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 60/70: Train=66.67%, Val=86.84%
+  Fold 4 Epoch 70/70: Train=59.65%, Val=79.82%
+
+=== Fold 5/5 ===
+  Fold 4 Epoch 60/70: Train=65.57%, Val=88.16%
+  Fold 4 Epoch 50/70: Train=66.89%, Val=83.33%
+  Fold 5 Epoch 50/70: Train=66.34%, Val=85.96%
+  Fold 5 Epoch 10/70: Train=45.07%, Val=64.47%
+  Fold 5 Epoch 70/70: Train=66.45%, Val=86.84%
+
+=== Results ===
+Val Accs: [82.01754385964912, 83.7719298245614, 85.52631578947368, 85.96491228070175, 87.71929824561404]
+Mean Val: 85.00%
+Test Acc: 88.50%
+[GPU 7] ✓ Activation: ELU (seed=9999): Val=85.00%, Test=88.50% (47.9 min)
+[Worker GPU-7] Shutting down
+[Progress] 50/55 (90.9%)
+  Fold 4 Epoch 70/70: Train=59.76%, Val=88.16%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 10/70: Train=44.85%, Val=68.42%
+  Fold 4 Epoch 60/70: Train=64.36%, Val=86.40%
+  Fold 5 Epoch 60/70: Train=65.68%, Val=85.96%
+  Fold 5 Epoch 20/70: Train=55.37%, Val=75.00%
+  Fold 5 Epoch 10/70: Train=45.50%, Val=68.42%
+  Fold 5 Epoch 20/70: Train=54.71%, Val=68.42%
+  Fold 4 Epoch 70/70: Train=60.75%, Val=87.28%
+
+=== Fold 5/5 ===
+  Fold 5 Epoch 70/70: Train=62.28%, Val=87.28%
+
+=== Results ===
+Val Accs: [80.26315789473684, 82.01754385964912, 83.7719298245614, 82.89473684210526, 87.71929824561404]
+Mean Val: 83.33%
+Test Acc: 82.50%
+[GPU 5] ✓ Activation: SiLU (seed=42): Val=83.33%, Test=82.50% (48.1 min)
+[Worker GPU-5] Shutting down
+[Progress] 51/55 (92.7%)
+  Fold 5 Epoch 30/70: Train=58.33%, Val=82.02%
+  Fold 5 Epoch 30/70: Train=55.92%, Val=77.19%
+  Fold 5 Epoch 20/70: Train=54.93%, Val=79.82%
+  Fold 5 Epoch 10/70: Train=49.23%, Val=65.79%
+  Fold 5 Epoch 40/70: Train=61.51%, Val=83.77%
+  Fold 5 Epoch 40/70: Train=60.64%, Val=79.82%
+  Fold 5 Epoch 30/70: Train=58.00%, Val=78.95%
+  Fold 5 Epoch 20/70: Train=57.68%, Val=75.00%
+  Fold 5 Epoch 50/70: Train=67.43%, Val=83.33%
+  Fold 5 Epoch 40/70: Train=61.07%, Val=81.58%
+  Fold 5 Epoch 50/70: Train=66.12%, Val=80.70%
+  Fold 5 Epoch 30/70: Train=58.00%, Val=80.70%
+  Fold 5 Epoch 60/70: Train=66.45%, Val=82.89%
+  Fold 5 Epoch 50/70: Train=66.45%, Val=83.33%
+  Fold 5 Epoch 60/70: Train=63.60%, Val=83.33%
+  Fold 5 Epoch 40/70: Train=62.61%, Val=83.33%
+  Fold 5 Epoch 70/70: Train=65.68%, Val=84.65%
+
+=== Results ===
+Val Accs: [84.21052631578948, 85.52631578947368, 87.28070175438596, 76.75438596491227, 86.40350877192982]
+Mean Val: 84.04%
+Test Acc: 84.00%
+[GPU 0] ✓ Activation: SiLU (seed=1337): Val=84.04%, Test=84.00% (48.0 min)
+[Worker GPU-0] Shutting down
+[Progress] 52/55 (94.5%)
+  Fold 5 Epoch 70/70: Train=62.72%, Val=81.58%
+
+=== Results ===
+Val Accs: [85.08771929824562, 85.08771929824562, 84.64912280701755, 82.45614035087719, 83.33333333333333]
+Mean Val: 84.12%
+Test Acc: 88.00%
+[GPU 4] ✓ Activation: SiLU (seed=2024): Val=84.12%, Test=88.00% (48.3 min)
+[Worker GPU-4] Shutting down
+[Progress] 53/55 (96.4%)
+  Fold 5 Epoch 60/70: Train=65.79%, Val=82.46%
+  Fold 5 Epoch 50/70: Train=66.34%, Val=84.65%
+  Fold 5 Epoch 70/70: Train=65.24%, Val=82.46%
+
+=== Results ===
+Val Accs: [82.01754385964912, 83.7719298245614, 87.28070175438596, 89.03508771929825, 84.21052631578948]
+Mean Val: 85.26%
+Test Acc: 84.50%
+[GPU 2] ✓ Activation: SiLU (seed=7777): Val=85.26%, Test=84.50% (48.2 min)
+[Worker GPU-2] Shutting down
+[Progress] 54/55 (98.2%)
+  Fold 5 Epoch 60/70: Train=66.67%, Val=85.53%
+  Fold 5 Epoch 70/70: Train=66.34%, Val=85.96%
+
+=== Results ===
+Val Accs: [80.70175438596492, 83.33333333333333, 83.7719298245614, 87.71929824561404, 87.71929824561404]
+Mean Val: 84.65%
+Test Acc: 88.00%
+[GPU 3] ✓ Activation: SiLU (seed=9999): Val=84.65%, Test=88.00% (48.1 min)
+[Worker GPU-3] Shutting down
+[Progress] 55/55 (100.0%)
+
+All experiments completed!
+[SAVED] Detailed: results/ablation_detailed_20260130_201906.csv
+[SAVED] JSON: results/ablation_detailed_20260130_201906.json
+[SAVED] Summary: results/ablation_summary_20260130_201906.csv
+[SAVED] Latest: results/ablation_summary_latest.csv
+
+====================================================================================================
+ARCHITECTURAL ABLATION RESULTS
+====================================================================================================
+Experiment                       |   N |        Val Acc (%) |       Test Acc (%) |     Δ Test
+----------------------------------------------------------------------------------------------------
+Full Model (Baseline)            |   5 |       84.49 ± 0.65 |       86.50 ± 1.77 |          —
+-CA (No Channel Attention)       |   5 |       83.77 ± 0.99 |       84.70 ± 2.75 |      -1.80
+-SA (No Spatial Attention)       |   5 |       84.91 ± 1.16 |       86.60 ± 2.46 |      +0.10
+-FA (No Fusion Attention)        |   5 |       85.39 ± 0.75 |       85.70 ± 2.66 |      -0.80
+-Skip (No Skip Classifier)       |   5 |       85.05 ± 0.44 |       85.80 ± 0.84 |      -0.70
+-Residual (No Skip Connections)  |   5 |       81.63 ± 1.59 |       85.60 ± 3.07 |      -0.90
+-CA-SA (No Attention)            |   5 |       84.47 ± 0.73 |       85.20 ± 1.89 |      -1.30
+Activation: ReLU                 |   5 |       83.70 ± 0.86 |       85.90 ± 2.27 |      -0.60
+Activation: GELU                 |   5 |       84.25 ± 1.03 |       85.50 ± 1.37 |      -1.00
+Activation: ELU                  |   5 |       84.56 ± 0.87 |       84.50 ± 3.55 |      -2.00
+Activation: SiLU                 |   5 |       84.28 ± 0.72 |       85.40 ± 2.48 |      -1.10
+====================================================================================================
+
+================================================================================
+ABLATION STUDY COMPLETE
+Timestamp: 2026-01-30T20:19:06.453780
+================================================================================
