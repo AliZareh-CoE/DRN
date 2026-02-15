@@ -1,0 +1,48 @@
+RESPONSE TO REVIEWER
+Question: "Why didn't the authors compare against AutoML approaches?"
+======================================================================
+
+We thank the reviewer for this valuable suggestion. To address this concern
+rigorously, we benchmarked DRN against five classical machine learning methods
+(Logistic Regression, Decision Tree, Random Forest, SVM with RBF kernel, and
+MLP) and two leading AutoML frameworks (H2O AutoML and AutoGluon) on the
+identical 4-class odor discrimination task using the same train/test split
+(n_train = 360, n_test = 200, d = 1,344 features). H2O AutoML and AutoGluon
+were selected as they are widely regarded as the top-performing open-source
+AutoML frameworks for tabular data, consistently ranking highest in published
+benchmarks (Erickson et al., 2020; Gijsbers et al., 2024). Both were given
+a 5-minute training budget to enable full pipeline search and ensemble
+construction. The results are summarized in the new Table \ref{tab:complexity}
+and Figure \ref{fig:complexity}, and reveal three key findings:
+
+First, DRN achieves 86.5% test accuracy, substantially outperforming the
+best AutoML framework (AutoGluon, 67.5%; +19.0 percentage points) and the
+best classical method (MLP, 65.5%; +21.0 pp). This performance gap reflects
+a fundamental limitation of AutoML approaches for neural data: they require
+flattening the 32 x 21 (channel x frequency band) matrices from each brain
+region into a single 1,344-dimensional vector, destroying the spatial-spectral
+structure that DRN's convolutional architecture preserves natively. Furthermore,
+AutoML treats the concatenated OB and PCx features as an undifferentiated
+input, whereas DRN's dual-stream architecture with attention-based fusion
+learns to dynamically weight region-specific contributions---a design that
+mirrors the known functional hierarchy of the olfactory circuit.
+
+Second, DRN's inference complexity is O(P), meaning per-sample latency
+(25.96 ms on CPU) remains constant regardless of training set size. This is
+a critical requirement for real-time brain-machine interface deployment. By
+contrast, SVM inference scales as O(n_sv x d) and would degrade approximately
+44-fold at n = 50,000 training samples, while DRN's latency would remain
+unchanged (see asymptotic analysis in Figure \ref{fig:complexity}b--e).
+
+Third, DRN provides neuroscientifically interpretable outputs through its
+channel and spatial attention mechanisms, revealing which electrode contacts
+and frequency bands drive classification. AutoML ensembles, by nature, offer
+limited transparency into the neural coding principles underlying odor
+discrimination.
+
+We acknowledge that DRN requires longer training time (2,520 s vs. ~300 s for
+AutoML), which is expected given the 5-fold cross-validated deep learning
+pipeline. However, training is a one-time cost, and the accuracy advantage
+of +19.0 pp over AutoGluon---alongside constant-time inference and
+interpretability---justifies this investment for the neuroscience application
+at hand.

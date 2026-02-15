@@ -1,0 +1,30 @@
+% Figure caption for the benchmark comparison figure
+% Use with \ref{fig:complexity}
+
+\begin{figure*}[t]
+\centering
+% Include panels here, e.g.:
+% \includegraphics[width=\textwidth]{figures/complexity_composite.pdf}
+\caption{\textbf{DRN outperforms classical ML and AutoML baselines on 4-class
+odor discrimination.}
+\textbf{(a)}~Test accuracy across all methods. DRN achieves 86.5\%, exceeding
+the best AutoML framework (AutoGluon, 67.5\%) by 19.0 percentage points and
+the best classical method (MLP, 65.5\%) by 21.0~pp. Chance level is 25\%.
+\textbf{(b)}~Training time, inference latency, and peak memory footprint
+compared on logarithmic scale. AutoML frameworks (H2O, AutoGluon) require
+$\sim$300~s for pipeline search but achieve lower accuracy than DRN's
+2,520~s training budget, which includes 5-fold cross-validation over 70
+epochs.
+\textbf{(c)}~Asymptotic scaling analysis. DRN inference time (red) remains
+constant at $O(P)$ regardless of training set size~$n$, whereas SVM (RBF)
+inference scales as $O(n_{\text{sv}} \times d)$ and would degrade
+$\sim$44-fold at $n = 50{,}000$.
+The bottom-right panel shows the accuracy--training time Pareto frontier;
+DRN (star) occupies a distinct region of high accuracy that no other method
+approaches.
+All methods were evaluated on the identical hold-out test set ($n = 200$,
+4 balanced classes) using flattened $32 \times 21$ band-power features
+(1,344 dimensions) from the OB and PCx regions. H2O AutoML and AutoGluon
+were each given a 5-minute training budget.}
+\label{fig:complexity}
+\end{figure*}

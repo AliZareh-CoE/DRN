@@ -1,0 +1,45 @@
+% Results paragraph for the manuscript — insert in the Results section
+% after describing DRN's primary classification performance.
+
+\paragraph{Comparison with classical ML and AutoML baselines.}
+To situate DRN's performance within the broader landscape of automated and
+classical approaches, we benchmarked it against five classical machine
+learning methods and two state-of-the-art AutoML frameworks on the same
+4-class odor discrimination task (Table~\ref{tab:complexity},
+Fig.~\ref{fig:complexity}).
+All non-DRN methods received flattened 1,344-dimensional input vectors
+(32~channels~$\times$~21~frequency bands, concatenated across OB and PCx),
+as they cannot natively process the two-dimensional electrode--frequency
+structure.
+
+Among classical methods, the MLP classifier achieved the highest accuracy
+(65.5\%), followed by Logistic Regression (64.5\%) and Random Forest
+(63.5\%). SVM with RBF kernel reached 58.5\%, while a single Decision Tree
+yielded 50.5\%---only marginally above the 25\% chance level for four
+balanced classes. For AutoML, we evaluated H2O AutoML and AutoGluon, two
+frameworks that consistently rank among the top performers on tabular
+benchmarks. With a 5-minute training budget each, AutoGluon achieved 67.5\%
+through a multi-layer stacked ensemble of LightGBM, CatBoost, and neural
+network base learners, while H2O AutoML reached 54.0\% using a
+gradient-boosted machine ensemble. DRN surpassed all baselines by a
+substantial margin, achieving 86.5\% test accuracy---a gain of +19.0
+percentage points over AutoGluon and +21.0~pp over the best classical method
+(Fig.~\ref{fig:complexity}a).
+
+This performance gap is attributable to three architectural advantages.
+First, DRN's convolutional backbone preserves the spatial--spectral structure
+of each brain region's band-power matrix, rather than collapsing it into a
+flat vector. Second, the dual-stream design processes OB and PCx
+representations independently before fusing them through a learned attention
+mechanism, enabling the model to capture cross-region interactions that
+single-vector approaches cannot represent. Third, DRN's inference complexity
+is $O(P)$, where $P = 9.9 \times 10^6$ denotes the parameter count,
+ensuring that per-sample latency (25.96~ms on CPU) remains constant
+regardless of training set size---a property critical for real-time
+brain--machine interface deployment. By contrast, SVM inference scales as
+$O(n_{\text{sv}} \times d)$ and would degrade approximately 44-fold if the
+training set grew to $n = 50{,}000$ samples, while DRN's latency would
+remain unchanged (Fig.~\ref{fig:complexity}c). These results demonstrate
+that domain-specific architectural inductive biases---spatial structure
+preservation, dual-region fusion, and constant-time inference---yield
+accuracy gains that generic AutoML pipeline search cannot recover.
