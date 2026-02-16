@@ -92,6 +92,9 @@ def benchmark_classical_model(name, model_fn, X_train, y_train, X_test, y_test):
     n_params = count_model_params(model, name)
     n_sv = get_svm_support_vector_count(model, name)
 
+    # Model size: sklearn uses float64 (8 bytes per parameter)
+    model_size_mb = float(n_params * 8 / 1e6)
+
     result = {
         'method': name,
         'category': 'Classical ML',
@@ -99,6 +102,7 @@ def benchmark_classical_model(name, model_fn, X_train, y_train, X_test, y_test):
         'train_time_sec': float(train_time),
         'inference_time_sec': float(infer_time),
         'inference_time_per_sample_ms': float(infer_time / len(y_test) * 1000),
+        'model_size_mb': model_size_mb,
         'train_peak_memory_mb': float(train_peak_mem / 1e6),
         'inference_peak_memory_mb': float(infer_peak_mem / 1e6),
         'n_parameters': int(n_params),

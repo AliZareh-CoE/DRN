@@ -59,6 +59,9 @@ def _run_h2o(X_train, y_train, X_test, y_test, time_budget):
         infer_time = np.median(times)
         y_pred = preds['predict'].as_data_frame().values.flatten().astype(int)
 
+        # Model size: use peak RAM as proxy (can't count ensemble params)
+        model_size_mb = float(train_mem / 1e6)
+
         return {
             'method': 'H2O AutoML',
             'category': 'AutoML',
@@ -66,6 +69,7 @@ def _run_h2o(X_train, y_train, X_test, y_test, time_budget):
             'train_time_sec': float(train_time),
             'inference_time_sec': float(infer_time),
             'inference_time_per_sample_ms': float(infer_time / len(y_test) * 1000),
+            'model_size_mb': model_size_mb,
             'train_peak_memory_mb': float(train_mem / 1e6),
             'inference_peak_memory_mb': float(infer_mem / 1e6),
             'n_parameters': 'N/A (ensemble)',
@@ -127,6 +131,9 @@ def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
         except Exception:
             pass
 
+        # Model size: use peak RAM as proxy (can't count ensemble params)
+        model_size_mb = float(train_mem / 1e6)
+
         return {
             'method': 'AutoGluon',
             'category': 'AutoML',
@@ -134,6 +141,7 @@ def _run_autogluon(X_train, y_train, X_test, y_test, time_budget):
             'train_time_sec': float(train_time),
             'inference_time_sec': float(infer_time),
             'inference_time_per_sample_ms': float(infer_time / len(y_test) * 1000),
+            'model_size_mb': model_size_mb,
             'train_peak_memory_mb': float(train_mem / 1e6),
             'inference_peak_memory_mb': float(infer_mem / 1e6),
             'n_parameters': 'N/A (ensemble)',
@@ -180,6 +188,7 @@ def run_all_automl(data=None, time_budget=DEFAULT_TIME_BUDGET):
                 'accuracy': None, 'error': f'INSTALL_FAILED: {e}',
                 'train_time_sec': None, 'inference_time_sec': None,
                 'inference_time_per_sample_ms': None,
+                'model_size_mb': None,
                 'train_peak_memory_mb': None, 'inference_peak_memory_mb': None,
                 'n_parameters': None,
             })
@@ -190,6 +199,7 @@ def run_all_automl(data=None, time_budget=DEFAULT_TIME_BUDGET):
                 'accuracy': None, 'error': str(e),
                 'train_time_sec': None, 'inference_time_sec': None,
                 'inference_time_per_sample_ms': None,
+                'model_size_mb': None,
                 'train_peak_memory_mb': None, 'inference_peak_memory_mb': None,
                 'n_parameters': None,
             })

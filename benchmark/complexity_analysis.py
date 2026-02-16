@@ -163,7 +163,7 @@ def compute_scaling_projections(measured_results):
 
         t_train = result['train_time_sec']
         t_infer = result.get('inference_time_sec', 0.001)
-        m_mem = result.get('train_peak_memory_mb', 1.0)
+        m_mem = result.get('model_size_mb') or result.get('train_peak_memory_mb', 1.0)
 
         # Scaling exponents depend on method
         if name == 'Logistic Regression':

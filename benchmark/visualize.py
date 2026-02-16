@@ -70,7 +70,7 @@ def plot_absolute_comparison(results, output_dir):
     metrics = [
         ('train_time_sec', 'Training Time (s)', 'Training Time'),
         ('inference_time_per_sample_ms', 'Inference Time per Sample (ms)', 'Inference Time'),
-        ('train_peak_memory_mb', 'Peak Memory (MB)', 'Peak Memory'),
+        ('model_size_mb', 'Model Size (MB)', 'Model Size'),
     ]
 
     for ax, (key, ylabel, title) in zip(axes, metrics):
@@ -112,7 +112,7 @@ def plot_log_comparison(results, output_dir):
     metrics = [
         ('train_time_sec', 'Training Time (s)', 'Training Time (log scale)'),
         ('inference_time_per_sample_ms', 'Inference Time per Sample (ms)', 'Inference Time (log scale)'),
-        ('train_peak_memory_mb', 'Peak Memory (MB)', 'Peak Memory (log scale)'),
+        ('model_size_mb', 'Model Size (MB)', 'Model Size (log scale)'),
     ]
 
     for ax, (key, ylabel, title) in zip(axes, metrics):
@@ -194,8 +194,8 @@ def plot_asymptotic_analysis(projections, measured_results, output_dir):
         ax3.plot(proj['n_values'], proj['mem_vs_n'], '-^', color=color,
                  label=name, markersize=3, linewidth=lw)
     ax3.set_xlabel('Number of Training Samples (n)')
-    ax3.set_ylabel('Memory (MB)')
-    ax3.set_title('Memory vs. Dataset Size', fontweight='bold')
+    ax3.set_ylabel('Model Size (MB)')
+    ax3.set_title('Model Size vs. Dataset Size', fontweight='bold')
     ax3.set_xscale('log')
     ax3.set_yscale('log')
     ax3.axvline(x=n_ref, color='gray', linestyle='--', alpha=0.5, linewidth=0.8)
@@ -271,14 +271,16 @@ def generate_latex_table(results, theoretical, output_dir):
     lines.append(r'\begin{table*}[t]')
     lines.append(r'\centering')
     lines.append(r'\caption{Comprehensive comparison of DRN against classical ML and AutoML methods '
-                 r'on the 4-class odor discrimination task (n=1,140 training samples, d=1,344 features).}')
+                 r'on the 4-class odor discrimination task (n=1,140 training samples, d=1,344 features). '
+                 r'Model size is computed from parameter count (float32 for DRN, float64 for sklearn; '
+                 r'peak RAM for AutoML ensembles).}')
     lines.append(r'\label{tab:complexity}')
     lines.append(r'\small')
     lines.append(r'\begin{tabular}{lccccccc}')
     lines.append(r'\toprule')
     lines.append(r'\textbf{Method} & \textbf{Category} & \textbf{Acc. (\%)} & '
                  r'\textbf{Train (s)} & \textbf{Infer (ms)} & '
-                 r'\textbf{Mem. (MB)} & \textbf{Params} & \textbf{Train Complexity} \\')
+                 r'\textbf{Size (MB)} & \textbf{Params} & \textbf{Train Complexity} \\')
     lines.append(r'\midrule')
 
     prev_cat = None
@@ -294,7 +296,7 @@ def generate_latex_table(results, theoretical, output_dir):
         acc = f"{r['accuracy']*100:.1f}" if r.get('accuracy') else '--'
         tt = f"{r['train_time_sec']:.1f}" if r.get('train_time_sec') else '--'
         it = f"{r.get('inference_time_per_sample_ms', 0):.3f}" if r.get('inference_time_per_sample_ms') else '--'
-        mem = f"{r.get('train_peak_memory_mb', 0):.1f}" if r.get('train_peak_memory_mb') else '--'
+        mem = f"{r.get('model_size_mb', 0):.1f}" if r.get('model_size_mb') else '--'
 
         params = r.get('n_parameters', 'N/A')
         if isinstance(params, (int, float)) and params > 0:

@@ -36,7 +36,7 @@ def generate_reviewer_response(all_results, theoretical, output_dir):
     drn_acc = drn.get('accuracy', 0.90) * 100
     drn_params = drn.get('n_parameters', 7_700_000)
     drn_infer_ms = drn.get('inference_time_per_sample_ms', 0.5)
-    drn_mem = drn.get('train_peak_memory_mb', 30)
+    drn_mem = drn.get('model_size_mb', 30)
 
     # Find best classical and AutoML accuracies
     classical = [r for r in all_results if r.get('category') == 'Classical ML' and r.get('accuracy')]
@@ -125,7 +125,7 @@ def generate_talking_points(all_results, theoretical, output_dir):
     drn_acc = drn.get('accuracy', 0.90) * 100
     drn_params = drn.get('n_parameters', 7_700_000)
     drn_infer_ms = drn.get('inference_time_per_sample_ms', 0.5)
-    drn_mem = drn.get('train_peak_memory_mb', 30)
+    drn_mem = drn.get('model_size_mb', 30)
 
     measured = [r for r in all_results if r.get('accuracy') is not None]
 
@@ -167,8 +167,8 @@ def generate_talking_points(all_results, theoretical, output_dir):
     lines.append("- **SVM inference scales with data**: O(n_sv x d), grows linearly with n")
     lines.append("  - At n=50,000: SVM inference ~44x slower than at n=1,140")
     lines.append("  - DRN: identical speed regardless of n")
-    lines.append(f"- **DRN memory is fixed**: O(P) = {drn_mem:.1f} MB")
-    lines.append("- **SVM memory is O(n^2)**: kernel matrix grows quadratically")
+    lines.append(f"- **DRN model size is fixed**: O(P) = {drn_mem:.1f} MB")
+    lines.append("- **SVM model size is O(n^2)**: kernel matrix grows quadratically")
     lines.append("  - At n=100,000: SVM needs ~75 GB for kernel matrix alone")
 
     lines.append("\n## 4. Interpretability Arguments\n")
@@ -185,19 +185,19 @@ def generate_talking_points(all_results, theoretical, output_dir):
     lines.append("- SVM/RF inference grows with training data, unsuitable for deployed systems")
 
     lines.append("\n## 6. Summary Table\n")
-    lines.append("| Method | Accuracy | Infer (ms) | Memory | Scales? |")
-    lines.append("|--------|----------|------------|--------|---------|")
+    lines.append("| Method | Accuracy | Infer (ms) | Model Size | Scales? |")
+    lines.append("|--------|----------|------------|------------|---------|")
     for r in measured:
         name = r['method']
         acc = f"{r['accuracy']*100:.1f}%"
         infer = f"{r.get('inference_time_per_sample_ms', 0):.3f}" if r.get('inference_time_per_sample_ms') else '--'
-        mem = f"{r.get('train_peak_memory_mb', 0):.1f}" if r.get('train_peak_memory_mb') else '--'
+        size = f"{r.get('model_size_mb', 0):.1f}" if r.get('model_size_mb') else '--'
         scales = "No" if 'DRN' in name or name in ['Logistic Regression', 'MLP Classifier'] else "Yes"
         if 'SVM' in name:
             scales = "Yes (O(n))"
         bold = "**" if 'DRN' in name else ""
         lines.append(f"| {bold}{name}{bold} | {bold}{acc}{bold} | {bold}{infer}{bold} | "
-                     f"{bold}{mem} MB{bold} | {scales} |")
+                     f"{bold}{size} MB{bold} | {scales} |")
 
     path = os.path.join(output_dir, 'talking_points.md')
     with open(path, 'w') as f:
@@ -325,15 +325,15 @@ def main():
     print("\n" + "=" * 70)
     print("RESULTS SUMMARY")
     print("=" * 70)
-    print(f"{'Method':<25} {'Accuracy':>10} {'Train(s)':>10} {'Infer(ms)':>10} {'Memory(MB)':>10}")
+    print(f"{'Method':<25} {'Accuracy':>10} {'Train(s)':>10} {'Infer(ms)':>10} {'Size(MB)':>10}")
     print("-" * 70)
     for r in all_results:
         name = r.get('method', '?')[:24]
         acc = f"{r['accuracy']*100:.1f}%" if r.get('accuracy') else '--'
         tt = f"{r['train_time_sec']:.1f}" if r.get('train_time_sec') else '--'
         it = f"{r.get('inference_time_per_sample_ms', 0):.3f}" if r.get('inference_time_per_sample_ms') else '--'
-        mem = f"{r.get('train_peak_memory_mb', 0):.1f}" if r.get('train_peak_memory_mb') else '--'
-        print(f"{name:<25} {acc:>10} {tt:>10} {it:>10} {mem:>10}")
+        size = f"{r.get('model_size_mb', 0):.1f}" if r.get('model_size_mb') else '--'
+        print(f"{name:<25} {acc:>10} {tt:>10} {it:>10} {size:>10}")
 
     print("\n" + "=" * 70)
     print("BENCHMARK SUITE COMPLETE")

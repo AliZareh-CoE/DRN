@@ -251,6 +251,8 @@ def profile_drn(data=None):
         'train_time_sec': 2520.0,  # ~42 min on A100 for 5-fold ensemble
         'inference_time_sec': float(infer_single['mean_ms'] / 1000),
         'inference_time_per_sample_ms': float(infer_single['per_sample_ms']),
+        # model_size_mb is device-agnostic (params x 4 bytes for float32)
+        # — used for fair comparison across CPU and GPU methods
         'train_peak_memory_mb': float(model_size_mb + memory['peak_memory_mb']),
         'inference_peak_memory_mb': float(memory['peak_memory_mb']),
         'n_parameters': int(total_params),
