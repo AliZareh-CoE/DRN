@@ -58,8 +58,20 @@ def _get_measured(results):
     return [r for r in results if r.get('train_time_sec') is not None]
 
 
+def _format_param_count(v):
+    """Format parameter count for bar chart labels."""
+    if v >= 1e6:
+        return f'{v/1e6:.1f}M'
+    elif v >= 1e3:
+        return f'{v/1e3:.0f}K'
+    return str(int(v))
+
+
 def plot_absolute_comparison(results, output_dir):
-    """Bar charts: Training Time, Inference Time, Memory (absolute scale)."""
+    """Bar charts: Parameter Count, Inference Time, Model Size (absolute scale).
+
+    All three metrics are device-agnostic (no GPU-vs-CPU mixing).
+    """
     _apply_style()
     measured = _get_measured(results)
     names = [r['method'] for r in measured]
@@ -68,13 +80,17 @@ def plot_absolute_comparison(results, output_dir):
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
 
     metrics = [
-        ('train_time_sec', 'Training Time (s)', 'Training Time'),
+        ('n_parameters', 'Parameter Count', 'Parameters'),
         ('inference_time_per_sample_ms', 'Inference Time per Sample (ms)', 'Inference Time'),
         ('model_size_mb', 'Model Size (MB)', 'Model Size'),
     ]
 
     for ax, (key, ylabel, title) in zip(axes, metrics):
-        values = [r.get(key, 0) or 0 for r in measured]
+        values = []
+        for r in measured:
+            v = r.get(key, 0)
+            # n_parameters can be 'N/A (ensemble)' for AutoML
+            values.append(float(v) if isinstance(v, (int, float)) and v else 0)
         colors = [COLORS.get(name, '#999999') for name in names]
 
         bars = ax.bar(range(n), values, color=colors, edgecolor='black', linewidth=0.5)
@@ -91,7 +107,10 @@ def plot_absolute_comparison(results, output_dir):
 
         for i, v in enumerate(values):
             if v > 0:
-                fmt = f'{v:.1f}' if v >= 1 else f'{v:.3f}'
+                if key == 'n_parameters':
+                    fmt = _format_param_count(v)
+                else:
+                    fmt = f'{v:.1f}' if v >= 1 else f'{v:.3f}'
                 ax.text(i, v * 1.02, fmt, ha='center', va='bottom', fontsize=6)
 
     fig.suptitle('DRN vs. Classical ML & AutoML: Absolute Comparison',
@@ -110,13 +129,17 @@ def plot_log_comparison(results, output_dir):
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
 
     metrics = [
-        ('train_time_sec', 'Training Time (s)', 'Training Time (log scale)'),
+        ('n_parameters', 'Parameter Count', 'Parameters (log scale)'),
         ('inference_time_per_sample_ms', 'Inference Time per Sample (ms)', 'Inference Time (log scale)'),
         ('model_size_mb', 'Model Size (MB)', 'Model Size (log scale)'),
     ]
 
     for ax, (key, ylabel, title) in zip(axes, metrics):
-        values = [max(r.get(key, 0) or 0, 1e-6) for r in measured]
+        values = []
+        for r in measured:
+            v = r.get(key, 0)
+            v = float(v) if isinstance(v, (int, float)) and v else 1e-6
+            values.append(max(v, 1e-6))
         colors = [COLORS.get(name, '#999999') for name in names]
 
         bars = ax.bar(range(n), values, color=colors, edgecolor='black', linewidth=0.5)
@@ -240,23 +263,23 @@ def plot_asymptotic_analysis(projections, measured_results, output_dir):
     ax5.axvline(x=n_ref, color='gray', linestyle='--', alpha=0.5, linewidth=0.8)
     ax5.legend(fontsize=6, loc='upper left')
 
-    # --- Panel 6: Accuracy vs Training Time ---
+    # --- Panel 6: Accuracy vs Parameter Count ---
     ax6 = fig.add_subplot(gs[1, 2])
     measured = _get_measured(measured_results)
     for r in measured:
         name = r['method']
         acc = r.get('accuracy')
-        tt = r.get('train_time_sec')
-        if acc is not None and tt is not None:
+        params = r.get('n_parameters')
+        if acc is not None and isinstance(params, (int, float)) and params > 0:
             color = COLORS.get(name, '#999999')
             marker = '*' if 'DRN' in name else 'o'
             ms = 15 if 'DRN' in name else 8
-            ax6.scatter(tt, acc * 100, color=color, marker=marker, s=ms**2,
+            ax6.scatter(params, acc * 100, color=color, marker=marker, s=ms**2,
                         label=name, zorder=5 if 'DRN' in name else 3,
                         edgecolors='black', linewidth=0.5)
-    ax6.set_xlabel('Training Time (s)')
+    ax6.set_xlabel('Parameter Count')
     ax6.set_ylabel('Test Accuracy (%)')
-    ax6.set_title('Accuracy vs. Training Time', fontweight='bold')
+    ax6.set_title('Accuracy vs. Parameters', fontweight='bold')
     ax6.set_xscale('log')
     ax6.legend(fontsize=6, loc='lower right')
 
@@ -273,14 +296,17 @@ def generate_latex_table(results, theoretical, output_dir):
     lines.append(r'\caption{Comprehensive comparison of DRN against classical ML and AutoML methods '
                  r'on the 4-class odor discrimination task (n=1,140 training samples, d=1,344 features). '
                  r'Model size is computed from parameter count (float32 for DRN, float64 for sklearn; '
-                 r'peak RAM for AutoML ensembles).}')
+                 r'peak RAM for AutoML ensembles). '
+                 r'Training times are measured on different hardware and are not directly comparable '
+                 r'(see Device column).}')
     lines.append(r'\label{tab:complexity}')
     lines.append(r'\small')
-    lines.append(r'\begin{tabular}{lccccccc}')
+    lines.append(r'\begin{tabular}{lcccccccc}')
     lines.append(r'\toprule')
     lines.append(r'\textbf{Method} & \textbf{Category} & \textbf{Acc. (\%)} & '
-                 r'\textbf{Train (s)} & \textbf{Infer (ms)} & '
-                 r'\textbf{Size (MB)} & \textbf{Params} & \textbf{Train Complexity} \\')
+                 r'\textbf{Train (s)\textsuperscript{*}} & \textbf{Infer (ms)} & '
+                 r'\textbf{Size (MB)} & \textbf{Params} & \textbf{Device} & '
+                 r'\textbf{Train Complexity} \\')
     lines.append(r'\midrule')
 
     prev_cat = None
@@ -297,6 +323,12 @@ def generate_latex_table(results, theoretical, output_dir):
         tt = f"{r['train_time_sec']:.1f}" if r.get('train_time_sec') else '--'
         it = f"{r.get('inference_time_per_sample_ms', 0):.3f}" if r.get('inference_time_per_sample_ms') else '--'
         mem = f"{r.get('model_size_mb', 0):.1f}" if r.get('model_size_mb') else '--'
+
+        # Determine device for this method
+        if 'DRN' in name:
+            device = 'GPU'
+        else:
+            device = 'CPU'
 
         params = r.get('n_parameters', 'N/A')
         if isinstance(params, (int, float)) and params > 0:
@@ -325,13 +357,17 @@ def generate_latex_table(results, theoretical, output_dir):
             lines.append(f'\\textbf{{{name_tex}}} & \\textbf{{{cat_tex}}} & '
                          f'\\textbf{{{acc}}} & \\textbf{{{tt}}} & \\textbf{{{it}}} & '
                          f'\\textbf{{{mem}}} & \\textbf{{{params_tex}}} & '
-                         f'\\textbf{{{complexity}}} \\\\')
+                         f'\\textbf{{{device}}} & \\textbf{{{complexity}}} \\\\')
         else:
             lines.append(f'{name_tex} & {cat_tex} & {acc} & {tt} & {it} & '
-                         f'{mem} & {params_tex} & {complexity} \\\\')
+                         f'{mem} & {params_tex} & {device} & {complexity} \\\\')
 
     lines.append(r'\bottomrule')
     lines.append(r'\end{tabular}')
+    lines.append(r'\vspace{2pt}')
+    lines.append(r'\raggedright\footnotesize\textsuperscript{*}Training times are not directly comparable: '
+                 r'DRN was trained on a single NVIDIA A100 GPU, while classical ML and AutoML methods '
+                 r'were trained on CPU. AutoML training times reflect the allocated time budget.')
     lines.append(r'\end{table*}')
 
     tex_path = os.path.join(output_dir, 'complexity_table.tex')

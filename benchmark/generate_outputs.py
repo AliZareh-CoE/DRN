@@ -325,15 +325,17 @@ def main():
     print("\n" + "=" * 70)
     print("RESULTS SUMMARY")
     print("=" * 70)
-    print(f"{'Method':<25} {'Accuracy':>10} {'Train(s)':>10} {'Infer(ms)':>10} {'Size(MB)':>10}")
-    print("-" * 70)
+    print(f"{'Method':<25} {'Accuracy':>10} {'Train(s)':>10} {'Device':>8} {'Infer(ms)':>10} {'Size(MB)':>10}")
+    print("-" * 78)
     for r in all_results:
         name = r.get('method', '?')[:24]
         acc = f"{r['accuracy']*100:.1f}%" if r.get('accuracy') else '--'
         tt = f"{r['train_time_sec']:.1f}" if r.get('train_time_sec') else '--'
+        device = 'GPU' if 'DRN' in r.get('method', '') else 'CPU'
         it = f"{r.get('inference_time_per_sample_ms', 0):.3f}" if r.get('inference_time_per_sample_ms') else '--'
         size = f"{r.get('model_size_mb', 0):.1f}" if r.get('model_size_mb') else '--'
-        print(f"{name:<25} {acc:>10} {tt:>10} {it:>10} {size:>10}")
+        print(f"{name:<25} {acc:>10} {tt:>10} {device:>8} {it:>10} {size:>10}")
+    print("  * Training times are not directly comparable across devices (GPU vs CPU).")
 
     print("\n" + "=" * 70)
     print("BENCHMARK SUITE COMPLETE")
